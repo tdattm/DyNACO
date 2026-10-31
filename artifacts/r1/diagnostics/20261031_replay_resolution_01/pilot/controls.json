@@ -1,0 +1,210 @@
+[
+  {
+    "decision_id": "n500_i0_seed31415_t175",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 2,
+    "refresh_calls": 3,
+    "order": [
+      "hold_control",
+      "refresh",
+      "hold"
+    ]
+  },
+  {
+    "decision_id": "n500_i0_seed31415_t725",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 8,
+    "refresh_calls": 9,
+    "order": [
+      "hold",
+      "refresh",
+      "hold_control"
+    ]
+  },
+  {
+    "decision_id": "n500_i0_seed27182_t175",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 2,
+    "refresh_calls": 3,
+    "order": [
+      "hold_control",
+      "refresh",
+      "hold"
+    ]
+  },
+  {
+    "decision_id": "n500_i0_seed27182_t725",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 8,
+    "refresh_calls": 9,
+    "order": [
+      "hold",
+      "hold_control",
+      "refresh"
+    ]
+  },
+  {
+    "decision_id": "n500_i1_seed31415_t175",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 2,
+    "refresh_calls": 3,
+    "order": [
+      "refresh",
+      "hold_control",
+      "hold"
+    ]
+  },
+  {
+    "decision_id": "n500_i1_seed31415_t725",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 8,
+    "refresh_calls": 9,
+    "order": [
+      "hold_control",
+      "refresh",
+      "hold"
+    ]
+  },
+  {
+    "decision_id": "n500_i1_seed27182_t175",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 2,
+    "refresh_calls": 3,
+    "order": [
+      "hold_control",
+      "hold",
+      "refresh"
+    ]
+  },
+  {
+    "decision_id": "n500_i1_seed27182_t725",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 8,
+    "refresh_calls": 9,
+    "order": [
+      "hold_control",
+      "hold",
+      "refresh"
+    ]
+  },
+  {
+    "decision_id": "n1000_i0_seed31415_t175",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 2,
+    "refresh_calls": 3,
+    "order": [
+      "refresh",
+      "hold_control",
+      "hold"
+    ]
+  },
+  {
+    "decision_id": "n1000_i0_seed31415_t725",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 8,
+    "refresh_calls": 9,
+    "order": [
+      "hold",
+      "hold_control",
+      "refresh"
+    ]
+  },
+  {
+    "decision_id": "n1000_i0_seed27182_t175",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 2,
+    "refresh_calls": 3,
+    "order": [
+      "refresh",
+      "hold_control",
+      "hold"
+    ]
+  },
+  {
+    "decision_id": "n1000_i0_seed27182_t725",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 8,
+    "refresh_calls": 9,
+    "order": [
+      "hold",
+      "refresh",
+      "hold_control"
+    ]
+  },
+  {
+    "decision_id": "n1000_i1_seed31415_t175",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 2,
+    "refresh_calls": 3,
+    "order": [
+      "hold_control",
+      "hold",
+      "refresh"
+    ]
+  },
+  {
+    "decision_id": "n1000_i1_seed31415_t725",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 8,
+    "refresh_calls": 9,
+    "order": [
+      "hold",
+      "hold_control",
+      "refresh"
+    ]
+  },
+  {
+    "decision_id": "n1000_i1_seed27182_t175",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 2,
+    "refresh_calls": 3,
+    "order": [
+      "hold_control",
+      "hold",
+      "refresh"
+    ]
+  },
+  {
+    "decision_id": "n1000_i1_seed27182_t725",
+    "prefix_exact": true,
+    "hold_full_trajectory_exact": true,
+    "hold_final_state_exact": true,
+    "hold_calls": 8,
+    "refresh_calls": 9,
+    "order": [
+      "hold_control",
+      "hold",
+      "refresh"
+    ]
+  }
+]

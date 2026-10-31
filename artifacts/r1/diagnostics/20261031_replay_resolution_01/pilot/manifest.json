@@ -1,0 +1,109 @@
+{
+  "protocol": {
+    "schema_version": 1,
+    "sizes": [
+      500,
+      1000
+    ],
+    "instances_per_size": 2,
+    "dataset_seed": 20261101,
+    "solver_seeds": [
+      31415,
+      27182
+    ],
+    "probe_iterations": [
+      175,
+      725
+    ],
+    "horizons": [
+      25,
+      50,
+      100
+    ],
+    "resource_cap_seconds": 240,
+    "total_decisions": 16,
+    "arms": [
+      "HOLD",
+      "HOLD_CONTROL",
+      "REFRESH"
+    ],
+    "prehistory": "strict CUDA live inference fixed S100, no annealing, no injection; no refresh after probe except one intervention",
+    "measurement": "instrumented strict live inference; full replay reconstruction cost and neural execution separately recorded; not comparable to v1 default runtime",
+    "inference": "descriptive paired pilot; two independent instances per size, two correlated solver seeds; phase and prior age confounded at these two probe times; no significance or signal-predictiveness claim",
+    "continuation": "stop after this 16-decision pilot, no threshold tuning and no new scheduler"
+  },
+  "protocol_sha256": "63dec42f1da85f058a4cf0657860ca830b8fd250186f106b40c79cf1e6f3c431",
+  "settings": {
+    "workspace": ":4096:8",
+    "deterministic": true,
+    "warn_only": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "matmul_precision": "highest",
+    "torch": "2.7.1+cu126",
+    "cuda": "12.6"
+  },
+  "model_weights_sha256": "669a3b45018f5fb2f96860c313935c2d4c903c3fae64f32ccfccae48b0383ca4",
+  "checkpoint_sha256": "33f7da301e49f74d5b66de2a12c7bd95f247de8c217343c3410bb716a6f22358",
+  "datasets": [
+    {
+      "version": 1,
+      "n": 500,
+      "count": 2,
+      "seed": 20261101,
+      "path": "artifacts/r1/diagnostics/20261031_replay_resolution_01/pilot/datasets/tsp500_seed20261101_v1.npy",
+      "sha256": "bdca2800debf888ce19f4115e1e352f6d412f6fa1ea09dace4e20ca7a5072fba",
+      "rng": "PCG64 SeedSequence([dataset_seed,n])",
+      "distribution": "Uniform [0,1)^2",
+      "dtype": "float32",
+      "reference_optimum": null,
+      "instance_ids": [
+        "tsp500-20261101-v1-000",
+        "tsp500-20261101-v1-001"
+      ]
+    },
+    {
+      "version": 1,
+      "n": 1000,
+      "count": 2,
+      "seed": 20261101,
+      "path": "artifacts/r1/diagnostics/20261031_replay_resolution_01/pilot/datasets/tsp1000_seed20261101_v1.npy",
+      "sha256": "e684240b3c1e56ebc7db316e65e77516b923242026e2b3186ed6cf4bdeceaf9e",
+      "rng": "PCG64 SeedSequence([dataset_seed,n])",
+      "distribution": "Uniform [0,1)^2",
+      "dtype": "float32",
+      "reference_optimum": null,
+      "instance_ids": [
+        "tsp1000-20261101-v1-000",
+        "tsp1000-20261101-v1-001"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "r1/benchmark.py": "4f24c88e8df60311d1dc41a7a2fb90f31609242c8b7cf12a48c012784b858b4b",
+    "r1/datasets.py": "55fef4c223b0008865a54bd345051932408d815c706f5645572bc4a600995b2e",
+    "r1/engine.py": "87e57cdbf6916eb7eda7c88a933b226dae9b5920e77a7584e81abc6c9bef2e85",
+    "r1/metrics.py": "c8da71d67daa5e781af5b72efd6e2bde96d123202de6f43ce95144516cc80351",
+    "r1/replay_determinism.py": "9b16e5c517522b4647eafd034070a38f383b871a932b334565e29c74b910cab1",
+    "r1/replay_diagnose.py": "8e3abf3c35f0fe367f0610635cfd1cc0c180cbd31c982449be75c81915e255e2",
+    "r1/replay_pilot.py": "dda0df5feed74a44c3def7a3d7eb8f300c45cd42d670f2da5b12d9c548c3953b",
+    "r1/report.py": "a4094ec72cd9af20008771308f42f0532622fcbfad88262b6f4147e002e6b7b2",
+    "r1/scheduler.py": "916a5e37e17534d73117b1d41aa012602658d0ef8771fa1c4461829c8d8c6f07",
+    "r1/v2_describe.py": "8db4ac5d07615597f7ab000b76752e96a58dfffc77b9d4e5e289b2d50ea67625",
+    "r1/v2_experiment.py": "8b136b4c9997e6bd1036bd1147a7b25dd37368388c613402b8ad9e6df113abe7",
+    "r1/v2_replay.py": "8cc9013c432d5c44a0cf97d0e2139a27e33008f4856762cb3e10f599ba55496e",
+    "r1/v2_retrospective.py": "833737efc9cf7ae5fbcc80412ee0a25264a0a6f221e7780d30ecbb6e6416a070",
+    "r1/__init__.py": "1b67f272f19b209d980b0a67c6e53a2a90a5700eb9f168e139e43938b1532d1a"
+  },
+  "backend": "unchanged MFACO_TSP C++ OpenMP",
+  "threads": 2,
+  "device": "cuda:0",
+  "ants": 100,
+  "k": 32,
+  "rho": 0.1,
+  "min_new_edges": 12,
+  "timing": "strict CUDA live inference with diagnostic hashes; full prefix replay and suffix diagnostic overhead included; not ordinary runtime",
+  "gpu_before": "Sat Oct 31 13:18:06 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 575.64.04              Driver Version: 577.00         CUDA Version: 12.9     |\n|-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3050 ...    On  |   00000000:01:00.0 Off |                  N/A |\n| N/A   58C    P0             16W /   35W |     265MiB /   4096MiB |     55%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n                                                                                         \n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A             282      C   /python3.13                           N/A      |\n+-----------------------------------------------------------------------------------------+\n"
+}

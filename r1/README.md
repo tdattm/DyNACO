@@ -1,5 +1,19 @@
 # R1: event-triggered neural guidance PoC
 
+Round 2 exact replay now uses **opt-in strict CUDA**. Start the test process with
+the workspace variable set before PyTorch/CUDA initialization:
+
+```powershell
+wsl -d Ubuntu -- env CUBLAS_WORKSPACE_CONFIG=:4096:8 bash /mnt/d/GitRepository/DyNACO/artifacts/r1/environment/run.sh -m pytest tests -q
+```
+
+Only tests requesting `strict_cuda_replay` enable deterministic algorithms;
+their fixture restores the previous precision/backend flags. The original v1
+benchmark path does not enable this configuration. Replay diagnostic timings
+include strict kernels and hashing and must not be treated as v1 runtime.
+See `artifacts/r1/reports/R1_REPLAY_RESOLUTION.md` for the cause, exact replay
+contract, preserved failure evidence and bounded live-inference pilot.
+
 The hypothesis is unverified. This package compares scheduling policies using
 the frozen upstream TSP-1K model and unchanged MFACO search. The original
 `test.py`, `utils.py`, `faco.py`, `net.py` and native sources remain available.

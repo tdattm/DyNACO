@@ -1,0 +1,23 @@
+{
+  "status": "PASS_OBSERVATIONAL_ARTIFACTS_ONLY",
+  "v1_artifacts_unchanged": true,
+  "events": 1612,
+  "followup_observations": 4664,
+  "episode_records": 568,
+  "causal_gate": "BLOCKED: cached_prior_sha256 mismatch in identical HOLD replays",
+  "causal_decisions_executed": 0,
+  "held_out_benchmarks_executed": 0,
+  "source_hashes": {
+    "r1/benchmark.py": "4f24c88e8df60311d1dc41a7a2fb90f31609242c8b7cf12a48c012784b858b4b",
+    "r1/datasets.py": "55fef4c223b0008865a54bd345051932408d815c706f5645572bc4a600995b2e",
+    "r1/engine.py": "b6d5a9b8b7b3e80da854288e6c035ebe584dac529fd234d1a5717a22b6fcfec2",
+    "r1/metrics.py": "c8da71d67daa5e781af5b72efd6e2bde96d123202de6f43ce95144516cc80351",
+    "r1/report.py": "a4094ec72cd9af20008771308f42f0532622fcbfad88262b6f4147e002e6b7b2",
+    "r1/scheduler.py": "916a5e37e17534d73117b1d41aa012602658d0ef8771fa1c4461829c8d8c6f07",
+    "r1/v2_describe.py": "8db4ac5d07615597f7ab000b76752e96a58dfffc77b9d4e5e289b2d50ea67625",
+    "r1/v2_experiment.py": "8b136b4c9997e6bd1036bd1147a7b25dd37368388c613402b8ad9e6df113abe7",
+    "r1/v2_replay.py": "0420e74272923639a0eca956050aa68ecc208988cfc4c1401ae5fc3675d899cd",
+    "r1/v2_retrospective.py": "833737efc9cf7ae5fbcc80412ee0a25264a0a6f221e7780d30ecbb6e6416a070",
+    "r1/__init__.py": "1b67f272f19b209d980b0a67c6e53a2a90a5700eb9f168e139e43938b1532d1a"
+  }
+}

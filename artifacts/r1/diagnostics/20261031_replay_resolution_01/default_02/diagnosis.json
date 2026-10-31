@@ -1,0 +1,483 @@
+{
+  "settings": {
+    "workspace": null,
+    "deterministic": false,
+    "warn_only": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "matmul_tf32": false,
+    "cudnn_tf32": true,
+    "matmul_precision": "highest",
+    "torch": "2.7.1+cu126",
+    "cuda": "12.6"
+  },
+  "checkpoint_sha256": "33f7da301e49f74d5b66de2a12c7bd95f247de8c217343c3410bb716a6f22358",
+  "refresh_comparisons": [
+    {
+      "iteration": 0,
+      "metadata_equal": {
+        "model_eval": true,
+        "state_dict_sha256": true,
+        "coordinate_sha256": true
+      },
+      "arrays": {
+        "x": {
+          "shape": [
+            100,
+            2
+          ],
+          "dtype": "float32",
+          "byte_equal": true,
+          "unequal_elements": 0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0,
+          "rms": 0.0,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0,
+          "ulp_quantiles_0_50_90_99_100": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "edge_index": {
+          "shape": [
+            2,
+            3200
+          ],
+          "dtype": "int64",
+          "byte_equal": true,
+          "unequal_elements": 0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0,
+          "rms": 0.0,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0
+        },
+        "edge_attr": {
+          "shape": [
+            3200,
+            6
+          ],
+          "dtype": "float32",
+          "byte_equal": true,
+          "unequal_elements": 0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0,
+          "rms": 0.0,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0,
+          "ulp_quantiles_0_50_90_99_100": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "pheromone": {
+          "shape": [
+            100,
+            32
+          ],
+          "dtype": "float32",
+          "byte_equal": true,
+          "unequal_elements": 0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0,
+          "rms": 0.0,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0,
+          "ulp_quantiles_0_50_90_99_100": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "source_tour": {
+          "shape": [
+            100
+          ],
+          "dtype": "int32",
+          "byte_equal": true,
+          "unequal_elements": 0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0,
+          "rms": 0.0,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0
+        },
+        "prior": {
+          "shape": [
+            100,
+            32
+          ],
+          "dtype": "float32",
+          "byte_equal": false,
+          "unequal_elements": 2655,
+          "max_absolute": 4.9591064453125e-05,
+          "max_relative": 5.85653993637876e-05,
+          "rms": 8.187007694231496e-06,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0,
+          "ulp_quantiles_0_50_90_99_100": [
+            0.0,
+            2.0,
+            6.0,
+            16.0,
+            768.0
+          ]
+        },
+        "native_prior": {
+          "shape": [
+            100,
+            32
+          ],
+          "dtype": "float32",
+          "byte_equal": false,
+          "unequal_elements": 2655,
+          "max_absolute": 4.9591064453125e-05,
+          "max_relative": 5.85653993637876e-05,
+          "rms": 8.187007694231496e-06,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0,
+          "ulp_quantiles_0_50_90_99_100": [
+            0.0,
+            2.0,
+            6.0,
+            16.0,
+            768.0
+          ]
+        }
+      }
+    },
+    {
+      "iteration": 100,
+      "metadata_equal": {
+        "model_eval": true,
+        "state_dict_sha256": true,
+        "coordinate_sha256": true
+      },
+      "arrays": {
+        "x": {
+          "shape": [
+            100,
+            2
+          ],
+          "dtype": "float32",
+          "byte_equal": true,
+          "unequal_elements": 0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0,
+          "rms": 0.0,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0,
+          "ulp_quantiles_0_50_90_99_100": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "edge_index": {
+          "shape": [
+            2,
+            3200
+          ],
+          "dtype": "int64",
+          "byte_equal": true,
+          "unequal_elements": 0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0,
+          "rms": 0.0,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0
+        },
+        "edge_attr": {
+          "shape": [
+            3200,
+            6
+          ],
+          "dtype": "float32",
+          "byte_equal": true,
+          "unequal_elements": 0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0,
+          "rms": 0.0,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0,
+          "ulp_quantiles_0_50_90_99_100": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "pheromone": {
+          "shape": [
+            100,
+            32
+          ],
+          "dtype": "float32",
+          "byte_equal": true,
+          "unequal_elements": 0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0,
+          "rms": 0.0,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0,
+          "ulp_quantiles_0_50_90_99_100": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "source_tour": {
+          "shape": [
+            100
+          ],
+          "dtype": "int32",
+          "byte_equal": true,
+          "unequal_elements": 0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0,
+          "rms": 0.0,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0
+        },
+        "prior": {
+          "shape": [
+            100,
+            32
+          ],
+          "dtype": "float32",
+          "byte_equal": false,
+          "unequal_elements": 2944,
+          "max_absolute": 2.47955322265625e-05,
+          "max_relative": 0.008843165579978917,
+          "rms": 4.020529653098915e-06,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0,
+          "ulp_quantiles_0_50_90_99_100": [
+            0.0,
+            5.0,
+            33.0,
+            344.03999999999905,
+            115968.0
+          ]
+        },
+        "native_prior": {
+          "shape": [
+            100,
+            32
+          ],
+          "dtype": "float32",
+          "byte_equal": false,
+          "unequal_elements": 2944,
+          "max_absolute": 2.47955322265625e-05,
+          "max_relative": 0.008843165579978917,
+          "rms": 4.020529653098915e-06,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0,
+          "ulp_quantiles_0_50_90_99_100": [
+            0.0,
+            5.0,
+            33.0,
+            344.03999999999905,
+            115968.0
+          ]
+        }
+      }
+    }
+  ],
+  "frozen_graph": {
+    "cuda_repeats": [
+      {
+        "reconstructed": false,
+        "comparison": {
+          "shape": [
+            3200
+          ],
+          "dtype": "float32",
+          "byte_equal": false,
+          "unequal_elements": 2729,
+          "max_absolute": 3.0517578125e-05,
+          "max_relative": 3.416248271572826e-05,
+          "rms": 9.044834473936298e-06,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0,
+          "ulp_quantiles_0_50_90_99_100": [
+            0.0,
+            2.0,
+            6.0,
+            16.0,
+            448.0
+          ]
+        },
+        "first_divergent_module": "emb_net.layers.0.v_bn.module"
+      },
+      {
+        "reconstructed": false,
+        "comparison": {
+          "shape": [
+            3200
+          ],
+          "dtype": "float32",
+          "byte_equal": false,
+          "unequal_elements": 2670,
+          "max_absolute": 3.4332275390625e-05,
+          "max_relative": 0.0001393718151981203,
+          "rms": 8.180219059725798e-06,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0,
+          "ulp_quantiles_0_50_90_99_100": [
+            0.0,
+            2.0,
+            6.0,
+            16.0,
+            1408.0
+          ]
+        },
+        "first_divergent_module": "emb_net.layers.0.v_bn.module"
+      },
+      {
+        "reconstructed": true,
+        "comparison": {
+          "shape": [
+            3200
+          ],
+          "dtype": "float32",
+          "byte_equal": false,
+          "unequal_elements": 2777,
+          "max_absolute": 5.7220458984375e-05,
+          "max_relative": 0.0001203665676711039,
+          "rms": 9.957271233109733e-06,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0,
+          "ulp_quantiles_0_50_90_99_100": [
+            0.0,
+            2.0,
+            6.0,
+            17.009999999999764,
+            1216.0
+          ]
+        },
+        "first_divergent_module": "emb_net.layers.0.v_bn.module"
+      },
+      {
+        "reconstructed": true,
+        "comparison": {
+          "shape": [
+            3200
+          ],
+          "dtype": "float32",
+          "byte_equal": false,
+          "unequal_elements": 2703,
+          "max_absolute": 3.814697265625e-05,
+          "max_relative": 7.320532010513199e-05,
+          "rms": 9.163892845011193e-06,
+          "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+          "nan_count": 0,
+          "infinity_count": 0,
+          "signed_zero_changes": 0,
+          "ulp_quantiles_0_50_90_99_100": [
+            0.0,
+            2.0,
+            6.0,
+            19.0,
+            960.0
+          ]
+        },
+        "first_divergent_module": "emb_net.layers.0.v_bn.module"
+      }
+    ],
+    "isolated_first_layer_global_mean_pool": {
+      "shape": [
+        100,
+        32
+      ],
+      "dtype": "float32",
+      "byte_equal": false,
+      "unequal_elements": 1399,
+      "max_absolute": 2.9802322387695312e-08,
+      "max_relative": 2.137522192824167e-06,
+      "rms": 6.069950032966972e-09,
+      "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+      "nan_count": 0,
+      "infinity_count": 0,
+      "signed_zero_changes": 0,
+      "ulp_quantiles_0_50_90_99_100": [
+        0.0,
+        0.0,
+        1.0,
+        2.0,
+        32.0
+      ]
+    },
+    "cpu_repeat": {
+      "shape": [
+        3200
+      ],
+      "dtype": "float32",
+      "byte_equal": true,
+      "unequal_elements": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "rms": 0.0,
+      "relative_denominator": "max(abs(a),abs(b),dtype.tiny)",
+      "nan_count": 0,
+      "infinity_count": 0,
+      "signed_zero_changes": 0,
+      "ulp_quantiles_0_50_90_99_100": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "status": "completed"
+}

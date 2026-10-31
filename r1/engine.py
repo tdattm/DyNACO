@@ -55,7 +55,7 @@ def validate_tour(coords, tour, cost):
     return length
 
 
-def run(coords, model, config=RunConfig(), *, logging=True, scheduler=None):
+def run(coords, model, config=RunConfig(), *, logging=True, scheduler=None, observer=None, sample_observer=None):
     """One run; setup is separate from timed search, including RNG reset.
 
     Preserve upstream duplicate construction and NumPy-derived active seed.
@@ -112,6 +112,8 @@ def run(coords, model, config=RunConfig(), *, logging=True, scheduler=None):
     start = time.perf_counter()
     with torch.no_grad():
         for iteration in range(c.total_iterations):
+            if observer is not None:
+                observer(iteration, solver, prior, time.perf_counter() - start)
             decision_start = time.perf_counter()
             reason = ('initial' if iteration == 0 else 'fixed_interval') if iteration % c.fixed_s == 0 else None
             if scheduler is not None:
@@ -149,6 +151,8 @@ def run(coords, model, config=RunConfig(), *, logging=True, scheduler=None):
             totals['transfer_seconds'] += time.perf_counter() - tick
             tick = time.perf_counter()
             costs, tours, *_ = solver.sample(require_prob=False, prior=prior_arg, parallel_traced=True)
+            if sample_observer is not None:
+                sample_observer(iteration, costs, tours, prior_arg)
             best_idx = int(costs.argmin().item())
             iteration_best = float(costs[best_idx].item())
             assert np.isfinite(iteration_best)

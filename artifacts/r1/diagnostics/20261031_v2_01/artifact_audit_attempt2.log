@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/GitRepository/DyNACO/r1/v2_describe.py", line 80, in <module>
+    main(sys.argv[1])
+    ~~~~^^^^^^^^^^^^^
+  File "/mnt/d/GitRepository/DyNACO/r1/v2_describe.py", line 16, in main
+    assert all(hashlib.sha256((V1/name).read_bytes()).hexdigest()==digest for name,digest in prior['v1_artifact_hashes'].items())
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/GitRepository/DyNACO/r1/v2_describe.py", line 16, in <genexpr>
+    assert all(hashlib.sha256((V1/name).read_bytes()).hexdigest()==digest for name,digest in prior['v1_artifact_hashes'].items())
+                              ~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/GitRepository/DyNACO/.r1-env/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/pathlib/_abc.py", line 625, in read_bytes
+    with self.open(mode='rb') as f:
+         ~~~~~~~~~^^^^^^^^^^^
+  File "/mnt/d/GitRepository/DyNACO/.r1-env/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/GitRepository/DyNACO/artifacts/r1/experiments/20261031_matched_v1/figures\\anytime_iterations.png'

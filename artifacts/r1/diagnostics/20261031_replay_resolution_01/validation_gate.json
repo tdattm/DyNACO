@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "default_baseline_tests": "21 passed",
+  "extended_tests": "26 passed",
+  "strict_forward_bytes_exact": true,
+  "strict_prefix_and_full_hold_control": true,
+  "cross_process_graph_exact": true,
+  "native_all_ant_cost_and_tour_hashes": true,
+  "configuration": "Opt-in strict CUDA; CUBLAS_WORKSPACE_CONFIG=:4096:8 before process startup; warn_only=False",
+  "recorded_guidance_fallback_required": false,
+  "pilot_authorized": "16 predeclared decisions only"
+}

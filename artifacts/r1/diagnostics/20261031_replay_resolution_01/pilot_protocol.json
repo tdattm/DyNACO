@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "sizes": [
+    500,
+    1000
+  ],
+  "instances_per_size": 2,
+  "dataset_seed": 20261101,
+  "solver_seeds": [
+    31415,
+    27182
+  ],
+  "probe_iterations": [
+    175,
+    725
+  ],
+  "horizons": [
+    25,
+    50,
+    100
+  ],
+  "resource_cap_seconds": 240,
+  "total_decisions": 16,
+  "arms": [
+    "HOLD",
+    "HOLD_CONTROL",
+    "REFRESH"
+  ],
+  "prehistory": "strict CUDA live inference fixed S100, no annealing, no injection; no refresh after probe except one intervention",
+  "measurement": "instrumented strict live inference; full replay reconstruction cost and neural execution separately recorded; not comparable to v1 default runtime",
+  "inference": "descriptive paired pilot; two independent instances per size, two correlated solver seeds; phase and prior age confounded at these two probe times; no significance or signal-predictiveness claim",
+  "continuation": "stop after this 16-decision pilot, no threshold tuning and no new scheduler"
+}

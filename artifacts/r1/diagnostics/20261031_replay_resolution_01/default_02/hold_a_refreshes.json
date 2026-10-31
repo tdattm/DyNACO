@@ -1,0 +1,78 @@
+[
+  {
+    "iteration": 0,
+    "ordinal": 1,
+    "model_eval": true,
+    "state_dict_sha256": "669a3b45018f5fb2f96860c313935c2d4c903c3fae64f32ccfccae48b0383ca4",
+    "coordinate_sha256": "b815c4196ce5fb9c09f5265e96c6e8dd75ab2f7edc94e7c717e07073e60f2e26",
+    "settings": {
+      "workspace": null,
+      "deterministic": false,
+      "warn_only": false,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "matmul_tf32": false,
+      "cudnn_tf32": true,
+      "matmul_precision": "highest",
+      "torch": "2.7.1+cu126",
+      "cuda": "12.6"
+    },
+    "hashes": {
+      "x": "c993196aee6c15dfb89f83c54b560ac9945fa982a3b200b1820d892c67a1bb99",
+      "edge_index": "dabaa5486faf6de9c54641466453b5447f04cd5e0000d818388819e153b0db63",
+      "edge_attr": "257450e4a16adf57b629235f809fe8c0b4e966f6f56d15cf413d73782760936b",
+      "pheromone": "43fadb0b5dac39ab41aa123c7c8b06c827943af7c578af493921eac0caeb70ad",
+      "source_tour": "2a666d11606dfc48acfb7434e584032e11ce46915768393a092ccfc7633c6050",
+      "prior": "ff7c7cb0b21b58d38cab921c38c29c803404660432d9732f674d46f4bfaf7e7d"
+    },
+    "prior_dtype": "torch.float32",
+    "prior_shape": [
+      3200
+    ],
+    "prior_stride": [
+      1
+    ],
+    "prior_layout": "torch.strided",
+    "prior_device": "cuda:0",
+    "state_dict_after_sha256": "669a3b45018f5fb2f96860c313935c2d4c903c3fae64f32ccfccae48b0383ca4",
+    "native_prior_sha256": "ff7c7cb0b21b58d38cab921c38c29c803404660432d9732f674d46f4bfaf7e7d"
+  },
+  {
+    "iteration": 100,
+    "ordinal": 2,
+    "model_eval": true,
+    "state_dict_sha256": "669a3b45018f5fb2f96860c313935c2d4c903c3fae64f32ccfccae48b0383ca4",
+    "coordinate_sha256": "b815c4196ce5fb9c09f5265e96c6e8dd75ab2f7edc94e7c717e07073e60f2e26",
+    "settings": {
+      "workspace": null,
+      "deterministic": false,
+      "warn_only": false,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "matmul_tf32": false,
+      "cudnn_tf32": true,
+      "matmul_precision": "highest",
+      "torch": "2.7.1+cu126",
+      "cuda": "12.6"
+    },
+    "hashes": {
+      "x": "c993196aee6c15dfb89f83c54b560ac9945fa982a3b200b1820d892c67a1bb99",
+      "edge_index": "dabaa5486faf6de9c54641466453b5447f04cd5e0000d818388819e153b0db63",
+      "edge_attr": "a0ec0b61429d5ea759a583e35246fddad323ccd4d39aeb6378d7f9e5b4446e72",
+      "pheromone": "002b12d6303fd36015e5206bc3a6e6ab35691efa03c569004767448dc18ba987",
+      "source_tour": "675ab8fa40bd96231e3fca033adf4451756bfeec216cd6cd9e6e7356b3627bac",
+      "prior": "5b4959affdc57b5efbde0265b31bbeb4ac970ece95455780e8799cb921c091ca"
+    },
+    "prior_dtype": "torch.float32",
+    "prior_shape": [
+      3200
+    ],
+    "prior_stride": [
+      1
+    ],
+    "prior_layout": "torch.strided",
+    "prior_device": "cuda:0",
+    "state_dict_after_sha256": "669a3b45018f5fb2f96860c313935c2d4c903c3fae64f32ccfccae48b0383ca4",
+    "native_prior_sha256": "5b4959affdc57b5efbde0265b31bbeb4ac970ece95455780e8799cb921c091ca"
+  }
+]

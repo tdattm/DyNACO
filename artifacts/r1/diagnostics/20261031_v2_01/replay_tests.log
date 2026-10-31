@@ -1,0 +1,47 @@
+.....................F.                                                  [100%]
+=================================== FAILURES ===================================
+________________ test_replay_intervention_and_negative_control _________________
+
+model = Net(
+  (emb_net): EmbNet(
+    (v_lin0): Linear(in_features=2, out_features=32, bias=True)
+    (e_lin0): Linear(in_feat...ar(in_features=32, out_features=32, bias=True)
+      (2): Linear(in_features=32, out_features=1, bias=True)
+    )
+  )
+)
+
+    def test_replay_intervention_and_negative_control(model):
+        coords=np.load(ROOT/'artifacts/r1/datasets/tsp100_seed20261031_v1.npy')[0]
+        before=weight_hash(model)
+        hold=branch(coords,model,31415,25,False)
+        control=branch(coords,model,31415,25,False)
+        refresh=branch(coords,model,31415,25,True)
+>       assert_prefix(hold,control,25); assert_prefix(refresh,hold,25)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_r1_v2_replay.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = {'config': {'total_iterations': 125, 'fixed_s': 100, 'seed': 31415, 'device': 'cuda:0', ...}, 'final_cost': 8.086633682250977, 'sampled_best': 8.086633682250977, 'initial_cost': 9.965886116027832, ...}
+b = {'config': {'total_iterations': 125, 'fixed_s': 100, 'seed': 31415, 'device': 'cuda:0', ...}, 'final_cost': 8.086633682250977, 'sampled_best': 8.086633682250977, 'initial_cost': 9.965886116027832, ...}
+t = 25
+
+    def assert_prefix(a,b,t):
+        assert a['trace'][:t]==b['trace'][:t], 'Prefix sampled-cost mismatch'
+        assert [r['best_so_far'] for r in a['iterations'][:t]]==[r['best_so_far'] for r in b['iterations'][:t]]
+        for key,value in a['branch_state'].items():
+>           if key!='boundary_elapsed_seconds': assert value==b['branch_state'][key], key
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           AssertionError: cached_prior_sha256
+
+r1/v2_replay.py:48: AssertionError
+=============================== warnings summary ===============================
+.r1-env/venv/lib/python3.13/site-packages/torch_geometric/llm/utils/backend_utils.py:26
+  /mnt/d/GitRepository/DyNACO/.r1-env/venv/lib/python3.13/site-packages/torch_geometric/llm/utils/backend_utils.py:26: DeprecationWarning: `torch_geometric.distributed` has been deprecated since 2.7.0 and will no longer be maintained. For distributed training, refer to our tutorials on distributed training at https://pytorch-geometric.readthedocs.io/en/latest/tutorial/distributed.html or cuGraph examples at https://github.com/rapidsai/cugraph-gnn/tree/main/python/cugraph-pyg/cugraph_pyg/examples
+    from torch_geometric.distributed import (
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_r1_v2_replay.py::test_replay_intervention_and_negative_control
+1 failed, 22 passed, 1 warning in 41.22s

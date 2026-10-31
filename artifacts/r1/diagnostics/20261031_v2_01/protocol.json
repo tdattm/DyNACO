@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "sizes": [
+    500,
+    1000
+  ],
+  "instances_per_size": 4,
+  "dataset_seed": 20261101,
+  "solver_seeds": [
+    31415,
+    27182,
+    16180
+  ],
+  "probe_iterations": [
+    125,
+    175,
+    425,
+    475,
+    725,
+    775
+  ],
+  "horizons": [
+    25,
+    50,
+    100
+  ],
+  "resource_cap_seconds": 900,
+  "prehistory": "fixed S100, constant guidance; freeze all subsequent refreshes in both arms after probe except intervention",
+  "arms": [
+    "REFRESH",
+    "HOLD",
+    "HOLD_CONTROL"
+  ],
+  "hypotheses": [
+    "Refresh benefit may differ with stagnation at the same size, phase and prior age",
+    "Repeated late refresh may have little benefit despite prolonged stagnation",
+    "Marginal benefit may be offset by one additional GNN execution"
+  ],
+  "signal": "stagnation >=50 iterations, significant improvement tolerance absolute 1e-6",
+  "gate": "Proceed only with technical replay validity, both state groups within at least three phase/age cells per size, positive within-cell high-minus-low stagnation benefit at horizons 50 and 100 in at least 3/4 independent instances in each size, and positive high-stagnation mean benefit. Otherwise stop as inconclusive/negative. No threshold tuning.",
+  "pilot": "four decisions: instance0 first solver seed, t175/t725 at both sizes; all retained as diagnostic exploration, not held-out validation",
+  "timing": "randomized arm order; HOLD_CONTROL is repeatability check, not independent instance; shared suffix timings at each horizon include initial intervention and frozen continuation"
+}

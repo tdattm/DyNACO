@@ -1,0 +1,17 @@
+{
+  "settings": {
+    "workspace": null,
+    "deterministic": false,
+    "warn_only": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "matmul_tf32": false,
+    "cudnn_tf32": true,
+    "matmul_precision": "highest",
+    "torch": "2.7.1+cu126",
+    "cuda": "12.6"
+  },
+  "checkpoint_sha256": "33f7da301e49f74d5b66de2a12c7bd95f247de8c217343c3410bb716a6f22358",
+  "status": "failed",
+  "error": "Traceback (most recent call last):\n  File \"/mnt/d/GitRepository/DyNACO/r1/replay_diagnose.py\", line 121, in main\n    arrays={key:compare(s[key],t[key]) for key in s}) for x,y,s,t in zip(a,b,aa,bb)]\n                ~~~~~~~^^^^^^^^^^^^^^^\n  File \"/mnt/d/GitRepository/DyNACO/r1/replay_diagnose.py\", line 30, in compare\n    delta=np.abs(x-y); denominator=np.maximum(np.maximum(np.abs(x),np.abs(y)),np.finfo(a.dtype).tiny)\n                                                                              ~~~~~~~~^^^^^^^^^\n  File \"/mnt/d/GitRepository/DyNACO/.r1-env/venv/lib/python3.13/site-packages/numpy/_core/getlimits.py\", line 216, in __new__\n    obj = object.__new__(cls)._init(dtype)\n  File \"/mnt/d/GitRepository/DyNACO/.r1-env/venv/lib/python3.13/site-packages/numpy/_core/getlimits.py\", line 226, in _init\n    _populate_finfo_constants(self, self.dtype)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\nValueError: data type dtype('int64') not compatible with finfo\n"
+}
