@@ -1,0 +1,122 @@
+{
+  "protocol": {
+    "schema_version": 3,
+    "controlled_v3": true,
+    "sizes": [
+      1000
+    ],
+    "instances_per_size": 4,
+    "dataset_seed": 20261201,
+    "solver_seeds": [
+      31415,
+      27182,
+      16180
+    ],
+    "probe_iterations": [
+      125,
+      175,
+      425,
+      475,
+      725,
+      775
+    ],
+    "horizons": [
+      25,
+      50,
+      100
+    ],
+    "reference_context_iterations": 1000,
+    "runtime_pilot_decisions": 6,
+    "runtime_projection_margin": 1.5,
+    "resource_cap_seconds": 900,
+    "allocated_vram_cap_bytes": 1073741824,
+    "prehistory": "fixed S100, strict CUDA live GNN, no annealing/injection; freeze all subsequent refreshes after probe except one REFRESH intervention",
+    "arms": [
+      "HOLD",
+      "HOLD_CONTROL",
+      "REFRESH"
+    ],
+    "arm_order_seed": 9237,
+    "primary_horizon": 100,
+    "secondary_horizons": [
+      25,
+      50
+    ],
+    "effect": "raw HOLD-minus-REFRESH tour length; percent=100*(HOLD-REFRESH)/HOLD; not optimality gap",
+    "tie_policy": "exact if raw=0, near if 0<abs(raw)<=1e-6, otherwise improvement/harm",
+    "signal": "stagnation at probe with absolute 1e-6 significant incumbent improvement",
+    "recent_improvement": "(incumbent(t-50)-incumbent(t))/50 raw length per iteration; also percent per iteration",
+    "prior_metrics": "mean abs, RMS, max abs, relative L2 divided by max(norm(old),1e-12), row-centered RMS; float64 analysis of immutable float32 actual priors",
+    "predictive_analysis": "Three separate descriptive linear least-squares models per horizon: age indicator; age+categorical phase; age+phase+log1p(stagnation). Leave one independent instance out; training-only scaling; target raw benefit, MSE in squared raw length; rank and condition diagnostics retained; no hypothesis-test p values. Recent rate and prior magnitude association descriptive only.",
+    "coverage_gate": {
+      "technical": "all 72 decisions exact and no corrupted/missing observations",
+      "independent_instances_minimum": 4,
+      "strata": "at least 4/6 age-phase groups have stagnation range >=25, >=3 distinct durations, and >=3 instances with within-instance across-seed variation",
+      "outcomes": "at least 18/72 non-ties at primary horizon and >=2 non-ties in at least 4/6 strata",
+      "predictive": "model3 LOIO MSE <=0.9*model2 overall, improves in >=3/4 held-out-instance folds, stagnation coefficient same sign in >=3/4 folds",
+      "interpretation": "These are predeclared exploratory screening rules, not significance thresholds. If any coverage prerequisite fails: INCONCLUSIVE, stop. No threshold tuning."
+    },
+    "expansion": "Only if all gates pass and projected remaining cost fits a separate 1200s cap: four more exploration instances dataset_seed=20261202, then four independent confirmation instances seed=20261203; freeze feature specification and coefficients before confirmation. No expansion otherwise.",
+    "limitations": "Prior age is not randomized and is tied to exact iteration offset. Phase/age controls remove coarse group means, not all exact-iteration or search-history confounding. Seeds, probe times and nested horizons are correlated."
+  },
+  "protocol_sha256": "a51460a627cb6f8337dfcfd5f90356b9f5c2ee44bdc41d09162a0eddb6596c08",
+  "settings": {
+    "workspace": ":4096:8",
+    "deterministic": true,
+    "warn_only": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "matmul_precision": "highest",
+    "torch": "2.7.1+cu126",
+    "cuda": "12.6"
+  },
+  "model_weights_sha256": "669a3b45018f5fb2f96860c313935c2d4c903c3fae64f32ccfccae48b0383ca4",
+  "checkpoint_sha256": "33f7da301e49f74d5b66de2a12c7bd95f247de8c217343c3410bb716a6f22358",
+  "datasets": [
+    {
+      "version": 1,
+      "n": 1000,
+      "count": 4,
+      "seed": 20261201,
+      "path": "artifacts/r1/diagnostics/20261031_controlled_v3_01/pilot/datasets/tsp1000_seed20261201_v1.npy",
+      "sha256": "77392fb6bf751be9f28df15d93ec2ab9b8241ba2d72748bc48cdb39df711850c",
+      "rng": "PCG64 SeedSequence([dataset_seed,n])",
+      "distribution": "Uniform [0,1)^2",
+      "dtype": "float32",
+      "reference_optimum": null,
+      "instance_ids": [
+        "tsp1000-20261201-v1-000",
+        "tsp1000-20261201-v1-001",
+        "tsp1000-20261201-v1-002",
+        "tsp1000-20261201-v1-003"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "r1/benchmark.py": "4f24c88e8df60311d1dc41a7a2fb90f31609242c8b7cf12a48c012784b858b4b",
+    "r1/datasets.py": "55fef4c223b0008865a54bd345051932408d815c706f5645572bc4a600995b2e",
+    "r1/engine.py": "87e57cdbf6916eb7eda7c88a933b226dae9b5920e77a7584e81abc6c9bef2e85",
+    "r1/metrics.py": "c8da71d67daa5e781af5b72efd6e2bde96d123202de6f43ce95144516cc80351",
+    "r1/replay_determinism.py": "9b16e5c517522b4647eafd034070a38f383b871a932b334565e29c74b910cab1",
+    "r1/replay_diagnose.py": "8e3abf3c35f0fe367f0610635cfd1cc0c180cbd31c982449be75c81915e255e2",
+    "r1/replay_pilot.py": "3ed20b6b9e602bccc9416053a9021ec6988c35c80f6385f8f2d78ff3cf1d758b",
+    "r1/report.py": "a4094ec72cd9af20008771308f42f0532622fcbfad88262b6f4147e002e6b7b2",
+    "r1/scheduler.py": "916a5e37e17534d73117b1d41aa012602658d0ef8771fa1c4461829c8d8c6f07",
+    "r1/v2_describe.py": "8db4ac5d07615597f7ab000b76752e96a58dfffc77b9d4e5e289b2d50ea67625",
+    "r1/v2_experiment.py": "8b136b4c9997e6bd1036bd1147a7b25dd37368388c613402b8ad9e6df113abe7",
+    "r1/v2_replay.py": "4ae47598ef54eab9ab672f0cbf03448f81746f99e3dadec765889f8b460c9908",
+    "r1/v2_retrospective.py": "833737efc9cf7ae5fbcc80412ee0a25264a0a6f221e7780d30ecbb6e6416a070",
+    "r1/__init__.py": "1b67f272f19b209d980b0a67c6e53a2a90a5700eb9f168e139e43938b1532d1a"
+  },
+  "backend": "unchanged MFACO_TSP C++ OpenMP",
+  "threads": 2,
+  "device": "cuda:0",
+  "ants": 100,
+  "k": 32,
+  "rho": 0.1,
+  "min_new_edges": 12,
+  "timing": "strict CUDA live inference with diagnostic hashes; full prefix replay and suffix diagnostic overhead included; not ordinary runtime",
+  "gpu_before": "Sat Oct 31 13:34:41 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 575.64.04              Driver Version: 577.00         CUDA Version: 12.9     |\n|-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3050 ...    On  |   00000000:01:00.0 Off |                  N/A |\n| N/A   54C    P0             15W /   35W |     257MiB /   4096MiB |     33%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n                                                                                         \n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A             270      C   /python3.13                           N/A      |\n+-----------------------------------------------------------------------------------------+\n"
+}

@@ -1,0 +1,7 @@
+{
+  "decisions": 6,
+  "observed_seconds": 30.006326794000003,
+  "projected_full_seconds_with_margin": 540.1138822920001,
+  "cap_seconds": 900,
+  "peak_observed_allocated_bytes": 127389696
+}

@@ -1,0 +1,23 @@
+{
+  "status": "INCONCLUSIVE",
+  "checks": {
+    "technical": true,
+    "four_independent_instances": true,
+    "adequate_within_stratum_stagnation_variation": true,
+    "meaningful_non_tied_coverage": true,
+    "predictive_increment": false
+  },
+  "passed_variation_strata": 4,
+  "non_tied_primary": 55,
+  "non_tied_strata": 6,
+  "model2_mse": 0.0003572826531818753,
+  "model3_mse": 0.00036278453593575715,
+  "improved_instance_folds": 0,
+  "stagnation_coefficients": [
+    -9.690950452548555e-05,
+    0.001213849347837944,
+    0.0018290373544651481,
+    0.0011608418531445653
+  ],
+  "interpretation": "Frozen exploratory screening, not significance. No expansion if any condition fails."
+}

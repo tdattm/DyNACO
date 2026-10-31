@@ -5,6 +5,7 @@ import random
 import subprocess
 import time
 import traceback
+import numpy as np
 import torch
 from net import Net
 from r1.datasets import ensure_dataset,sha256
@@ -13,6 +14,15 @@ from r1.replay_determinism import strict_cuda,settings
 from r1.replay_diagnose import CHECKPOINT,ROOT
 from r1.v2_replay import branch,assert_prefix,observations
 from r1.v2_retrospective import write_csv
+
+def prior_change_metrics(old,new):
+    a=old.astype(np.float64); b=new.astype(np.float64); delta=b-a
+    centered=delta-delta.mean(axis=1,keepdims=True)
+    return dict(prior_change_mean_absolute=float(np.abs(delta).mean()),
+        prior_change_rms=float(np.sqrt(np.mean(delta**2))),
+        prior_change_max_absolute=float(np.abs(delta).max()),
+        prior_change_relative_l2=float(np.linalg.norm(delta)/max(np.linalg.norm(a),1e-12)),
+        prior_change_centered_row_rms=float(np.sqrt(np.mean(centered**2))))
 
 def save(path,data):
     with Path(path).open('x') as f: json.dump(data,f,indent=2,allow_nan=False)
@@ -35,26 +45,51 @@ def main(directory):
         backend='unchanged MFACO_TSP C++ OpenMP',threads=2,device='cuda:0',ants=100,k=32,rho=.1,min_new_edges=12,
         timing='strict CUDA live inference with diagnostic hashes; full prefix replay and suffix diagnostic overhead included; not ordinary runtime',
         gpu_before=subprocess.check_output(['/usr/lib/wsl/lib/nvidia-smi'],text=True)))
-    rng=random.Random(9237); rows=[]; controls=[]
+    rng=random.Random(9237); rows=[]; controls=[]; decision_seconds=[]
     jobs=[(n,i,seed,t) for n in protocol['sizes'] for i in range(protocol['instances_per_size']) for seed in protocol['solver_seeds'] for t in protocol['probe_iterations']]
     try:
         for number,(n,i,seed,t) in enumerate(jobs):
             if time.perf_counter()-start>protocol['resource_cap_seconds']: raise RuntimeError('Pilot cap reached')
+            if decision_seconds and time.perf_counter()-start+1.5*max(decision_seconds)>protocol['resource_cap_seconds']:
+                raise RuntimeError('Insufficient cap remaining for conservative next-decision reserve')
+            decision_start=time.perf_counter()
             ident=f'n{n}_i{i}_seed{seed}_t{t}'; arms={}; order=['hold','hold_control','refresh']; rng.shuffle(order)
             for arm in order:
                 calls=[]; hook=model.register_forward_hook(lambda *args:calls.append(1))
-                try: result=branch(datasets[n][i],model,seed,t,arm=='refresh')
+                try: result=branch(datasets[n][i],model,seed,t,arm=='refresh',capture_priors=protocol.get('controlled_v3',False) and arm=='refresh')
                 finally: hook.remove()
                 assert len(calls)==result['gnn_calls'] and weight_hash(model)==original_weights
+                if 'intervention_priors' in result:
+                    pair=result.pop('intervention_priors')
+                    np.savez_compressed(target/'runs'/f'{ident}_prior_pair.npz',**pair)
+                    result['prior_change_metrics']=prior_change_metrics(pair['old'],pair['new'])
                 save(target/'runs'/f'{ident}_{arm}.json',result); arms[arm]=result
             a,b,c=arms['hold'],arms['hold_control'],arms['refresh']
             assert_prefix(a,b,t+100); assert_prefix(a,c,t)
             assert a['trace']==b['trace'] and a['tour']==b['tour'] and a['final_search_state_hashes']==b['final_search_state_hashes']
             observations_here=observations(c,a,t)
+            if protocol.get('controlled_v3',False):
+                before=a['iterations'][t-51]['best_so_far']; incumbent=a['branch_state']['incumbent']
+                for observation in observations_here:
+                    benefit=observation['refresh_benefit_raw']
+                    observation.update(recent_improvement_50_raw_per_iteration=(before-incumbent)/50,
+                        recent_improvement_50_percent_per_iteration=100*(before-incumbent)/before/50,
+                        outcome='exact_tie' if benefit==0 else 'near_tie' if abs(benefit)<=1e-6 else 'improvement' if benefit>0 else 'harm',
+                        phase_label='early' if t<300 else 'middle' if t<600 else 'late',
+                        hold_gnn_calls=a['gnn_calls'],refresh_gnn_calls=c['gnn_calls'],
+                        reference_context_iterations=1000,**c['prior_change_metrics'])
             rows.extend(dict(decision_id=ident,n=n,instance_id=f'tsp{n}-{protocol["dataset_seed"]}-v1-{i:03}',solver_seed=seed,**r) for r in observations_here)
             controls.append(dict(decision_id=ident,prefix_exact=True,hold_full_trajectory_exact=True,hold_final_state_exact=True,
                 hold_calls=a['gnn_calls'],refresh_calls=c['gnn_calls'],order=order))
             print(f'{number+1}/{len(jobs)} {ident}: raw benefits={[r["refresh_benefit_raw"] for r in observations_here]}',flush=True)
+            decision_seconds.append(time.perf_counter()-decision_start)
+            if number+1==protocol.get('runtime_pilot_decisions'):
+                estimate=sum(decision_seconds)/len(decision_seconds)*len(jobs)*protocol['runtime_projection_margin']
+                save(target/'runtime_pilot.json',dict(decisions=len(decision_seconds),observed_seconds=sum(decision_seconds),
+                    projected_full_seconds_with_margin=estimate,cap_seconds=protocol['resource_cap_seconds'],
+                    peak_observed_allocated_bytes=max(r['peak_gpu_bytes'] for r in arms.values())))
+                if estimate>protocol['resource_cap_seconds'] or max(r['peak_gpu_bytes'] for r in arms.values())>protocol['allocated_vram_cap_bytes']:
+                    raise RuntimeError('Runtime/VRAM pilot gate failed; no full pilot expansion')
     except Exception:
         save(target/'failure.json',dict(error=traceback.format_exc(),completed_decisions=len(controls))); raise
     finally:

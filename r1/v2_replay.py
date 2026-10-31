@@ -21,17 +21,22 @@ class ProbeSchedule:
         return None
     def observe(self,i,best): pass
 
-def branch(coords,model,seed,t,refresh,horizon=100):
+def branch(coords,model,seed,t,refresh,horizon=100,capture_priors=False):
     state={}; last=0; significant=float('inf'); solution_hashes=[]; guidance_hashes=[]; final_solver=None
+    prior_pair={}
     def sampled(i,costs,tours,prior):
         solution_hashes.append(digest(costs)+':'+digest(tours))
         guidance_hashes.append(digest(prior))
+        if capture_priors and i==t:
+            prior_pair['new']=np.ascontiguousarray(prior).copy()
     def observe(i,solver,prior,elapsed):
         nonlocal last, significant, final_solver
         final_solver=solver
         if solver.best_cost<significant-1e-6:
             significant=solver.best_cost; last=i
         if i==t:
+            if capture_priors:
+                prior_pair['old']=np.ascontiguousarray(prior.detach().cpu().numpy()).copy()
             state.update(iteration=i,incumbent=solver.best_cost,source_cost=solver.source_cost,
                 stagnation_iterations=i-last,prior_age_iterations=i%100,
                 pheromone_sha256=digest(solver.pheromone_sparse_np),
@@ -46,6 +51,8 @@ def branch(coords,model,seed,t,refresh,horizon=100):
     result['final_search_state_hashes']={name:digest(getattr(final_solver,name)) for name in ('pheromone_sparse_np','best_route','source_route','nn_list','backup_list')}
     result['branch_state']=state
     result['suffix_wall_seconds']=result['wall_seconds']-state['boundary_elapsed_seconds']
+    if capture_priors:
+        result['intervention_priors']=prior_pair
     return result
 
 def assert_prefix(a,b,t):

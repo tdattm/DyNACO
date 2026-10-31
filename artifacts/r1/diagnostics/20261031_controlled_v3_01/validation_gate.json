@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "existing_tests": 26,
+  "extended_tests": 28,
+  "strict_replay_and_negative_controls": "PASS",
+  "prior_capture_preserves_search": "PASS",
+  "extra_GNN_calls_from_capture": 0,
+  "net_checkpoint_native_changes": "none",
+  "runner": "reuses r1.replay_pilot and r1.v2_replay, opt-in controlled_v3 capture",
+  "protocol_frozen_before_outcomes": true
+}

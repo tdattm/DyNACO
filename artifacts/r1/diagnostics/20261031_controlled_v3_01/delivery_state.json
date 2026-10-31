@@ -1,0 +1,19 @@
+{
+  "branch": "feature/r1-event-triggered-guidance",
+  "head": "27cf8b9223e60dae4ca8d5821d92533d1ecc1bdc",
+  "status": [
+    " M r1/replay_pilot.py",
+    " M r1/v2_replay.py",
+    "?? artifacts/r1/diagnostics/20261031_controlled_v3_01/",
+    "?? artifacts/r1/reports/R1_CONTROLLED_DIAGNOSTIC_V3.md",
+    "?? artifacts/r1/reports/RESEARCH_HANDOFF_V3.md",
+    "?? tests/test_r1_v3_capture.py",
+    "?? tests/test_r1_v3_metrics.py"
+  ],
+  "pushed": false,
+  "merged": false,
+  "scientific_recommendation": "INCONCLUSIVE",
+  "expansion_performed": false,
+  "test_summary": "26 pre-change; 28 extended; 2 CPU analysis-contract checks: all pass",
+  "artifact_audit": "PASS"
+}

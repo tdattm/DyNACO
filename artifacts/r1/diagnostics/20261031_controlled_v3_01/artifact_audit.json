@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "decisions": 72,
+  "arm_runs": 216,
+  "horizon_observations": 216,
+  "total_native_iterations": 118800,
+  "actual_principal_GNN_calls": 1152,
+  "max_per_run_allocated_gpu_bytes": 127389696,
+  "historical_artifacts_unchanged": true,
+  "exact_prefixes": true,
+  "all_full_hold_negative_controls": true,
+  "source_and_dataset_hashes_match": true,
+  "protocol_sha256": "a51460a627cb6f8337dfcfd5f90356b9f5c2ee44bdc41d09162a0eddb6596c08"
+}

@@ -1,0 +1,154 @@
+{
+  "audit": {
+    "status": "PASS",
+    "decisions": 72,
+    "arm_runs": 216,
+    "horizon_observations": 216,
+    "total_native_iterations": 118800,
+    "actual_principal_GNN_calls": 1152,
+    "max_per_run_allocated_gpu_bytes": 127389696,
+    "historical_artifacts_unchanged": true,
+    "exact_prefixes": true,
+    "all_full_hold_negative_controls": true,
+    "source_and_dataset_hashes_match": true,
+    "protocol_sha256": "a51460a627cb6f8337dfcfd5f90356b9f5c2ee44bdc41d09162a0eddb6596c08"
+  },
+  "gate": {
+    "status": "INCONCLUSIVE",
+    "checks": {
+      "technical": true,
+      "four_independent_instances": true,
+      "adequate_within_stratum_stagnation_variation": true,
+      "meaningful_non_tied_coverage": true,
+      "predictive_increment": false
+    },
+    "passed_variation_strata": 4,
+    "non_tied_primary": 55,
+    "non_tied_strata": 6,
+    "model2_mse": 0.0003572826531818753,
+    "model3_mse": 0.00036278453593575715,
+    "improved_instance_folds": 0,
+    "stagnation_coefficients": [
+      -9.690950452548555e-05,
+      0.001213849347837944,
+      0.0018290373544651481,
+      0.0011608418531445653
+    ],
+    "interpretation": "Frozen exploratory screening, not significance. No expansion if any condition fails."
+  },
+  "outcomes": [
+    {
+      "horizon_iterations": 25,
+      "independent_instances": 4,
+      "paired_decisions": 72,
+      "mean_benefit_raw": 0.00366361935933431,
+      "median_benefit_raw": 0.0,
+      "mean_benefit_percent": 0.015730998991319373,
+      "improvements": 27,
+      "harms": 15,
+      "exact_ties": 30,
+      "near_ties": 0,
+      "mean_extra_gnn_seconds": 0.09288574831944452
+    },
+    {
+      "horizon_iterations": 50,
+      "independent_instances": 4,
+      "paired_decisions": 72,
+      "mean_benefit_raw": 0.00749508539835612,
+      "median_benefit_raw": 0.0,
+      "mean_benefit_percent": 0.0321623507285099,
+      "improvements": 33,
+      "harms": 13,
+      "exact_ties": 26,
+      "near_ties": 0,
+      "mean_extra_gnn_seconds": 0.09288574831944452
+    },
+    {
+      "horizon_iterations": 100,
+      "independent_instances": 4,
+      "paired_decisions": 72,
+      "mean_benefit_raw": 0.008368757035997178,
+      "median_benefit_raw": 0.0005512237548828125,
+      "mean_benefit_percent": 0.03589953530496849,
+      "improvements": 44,
+      "harms": 11,
+      "exact_ties": 17,
+      "near_ties": 0,
+      "mean_extra_gnn_seconds": 0.09288574831944452
+    }
+  ],
+  "models": [
+    {
+      "horizon_iterations": 25,
+      "model": 1,
+      "independent_test_instances": 4,
+      "mean_instance_mse_raw_length_squared": 0.00023296628184986054,
+      "minimum_rank": 2,
+      "maximum_condition": 1.0
+    },
+    {
+      "horizon_iterations": 25,
+      "model": 2,
+      "independent_test_instances": 4,
+      "mean_instance_mse_raw_length_squared": 0.0002112856000004898,
+      "minimum_rank": 4,
+      "maximum_condition": 1.7320508075688767
+    },
+    {
+      "horizon_iterations": 25,
+      "model": 3,
+      "independent_test_instances": 4,
+      "mean_instance_mse_raw_length_squared": 0.0002165464656080975,
+      "minimum_rank": 5,
+      "maximum_condition": 4.085180910823681
+    },
+    {
+      "horizon_iterations": 50,
+      "model": 1,
+      "independent_test_instances": 4,
+      "mean_instance_mse_raw_length_squared": 0.0003273089750956763,
+      "minimum_rank": 2,
+      "maximum_condition": 1.0
+    },
+    {
+      "horizon_iterations": 50,
+      "model": 2,
+      "independent_test_instances": 4,
+      "mean_instance_mse_raw_length_squared": 0.0002322135419590031,
+      "minimum_rank": 4,
+      "maximum_condition": 1.7320508075688767
+    },
+    {
+      "horizon_iterations": 50,
+      "model": 3,
+      "independent_test_instances": 4,
+      "mean_instance_mse_raw_length_squared": 0.00023474689899574417,
+      "minimum_rank": 5,
+      "maximum_condition": 4.085180910823681
+    },
+    {
+      "horizon_iterations": 100,
+      "model": 1,
+      "independent_test_instances": 4,
+      "mean_instance_mse_raw_length_squared": 0.0004571640268885707,
+      "minimum_rank": 2,
+      "maximum_condition": 1.0
+    },
+    {
+      "horizon_iterations": 100,
+      "model": 2,
+      "independent_test_instances": 4,
+      "mean_instance_mse_raw_length_squared": 0.0003572826531818753,
+      "minimum_rank": 4,
+      "maximum_condition": 1.7320508075688767
+    },
+    {
+      "horizon_iterations": 100,
+      "model": 3,
+      "independent_test_instances": 4,
+      "mean_instance_mse_raw_length_squared": 0.00036278453593575715,
+      "minimum_rank": 5,
+      "maximum_condition": 4.085180910823681
+    }
+  ]
+}
