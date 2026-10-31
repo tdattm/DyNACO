@@ -1,0 +1,5 @@
+# Research scripts remain executable by WSL after a Windows Git checkout.
+r3/** text eol=lf
+tests/test_r3_*.py text eol=lf
+# Preserve immutable measurement and provenance bytes, including saved SHA256s.
+artifacts/r3/** -text
