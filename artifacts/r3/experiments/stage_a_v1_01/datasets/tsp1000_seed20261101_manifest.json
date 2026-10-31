@@ -1,0 +1,36 @@
+{
+  "n": 1000,
+  "count": 8,
+  "seed": 20261101,
+  "bit_generator": "PCG64",
+  "seed_sequence": [
+    20261101,
+    1000
+  ],
+  "numpy_version": "2.5.4",
+  "generation": "Generator.random((count,n,2), dtype=float32)",
+  "distribution": "uniform [0,1)^2",
+  "dtype": "float32",
+  "sha256": "8ec4e091f5f749ce15dcd236e47e8919601d7112cd0c3bac3c458ae002527789",
+  "instance_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "coordinate_sha256": [
+    "a541f8d06013ab61da9e7bc724cf38519f6b2bd735a648978c116a22cbb2c6d2",
+    "91e9e80e6457cf19ef722712aae9126f86a94a1cecfceade610c85a148874340",
+    "139b3003c464693d09894e3cd79b00ec5aa357d4d182a84039d26af3f89b4d5f",
+    "3a8b9c60e96ce9279b99a5b75f7bfaf4f6e398c3d20dd756e133d940ec8e1af3",
+    "edd401b5a934b7f7e8bcf7c1eeffbad8f3cec4f58c7532246b7c4115c2a77b46",
+    "a58d7edc07f3bb2f8395e876e6aa05c1e56300a587fa7843a736cc36fb761453",
+    "9709b49e6d219befdfbc45c3e50ace4c493d8bd587f1a37c5a6de7c421e1b563",
+    "c12bd0db676d272722dd29f3fa7adaf0671b3d660030be1793abed12935b12f6"
+  ],
+  "reference_optimum": null
+}

@@ -1,0 +1,10 @@
+{
+  "stage": "principal preflight before output directory or dataset creation",
+  "error": "WSL Git reported production source changed because Windows global core.autocrlf=true was absent from Linux Git configuration",
+  "resolution_evidence": "All ten source SHA256 values exactly match repository_initial.json; Windows Git diff against exact baseline is empty; Linux Git with explicit read-only -c core.autocrlf=true also reports an empty source diff",
+  "action": "Pass -c core.autocrlf=true per read-only Git call; no repository/global configuration or production source changes",
+  "principal_runs_completed": 0,
+  "principal_data_generated": false,
+  "protocol_changed": false,
+  "failed_log": "artifacts/r3/manifests/principal_stage_a_v1_01.log"
+}

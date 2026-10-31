@@ -1,0 +1,533 @@
+{
+  "trace": {
+    "start_node": 470,
+    "curr_nodes": [
+      470,
+      911,
+      751,
+      547,
+      614,
+      140,
+      443,
+      830,
+      29,
+      452,
+      211,
+      391,
+      317,
+      719,
+      720,
+      339,
+      863,
+      58,
+      484,
+      134,
+      868,
+      241,
+      695,
+      526,
+      955,
+      880,
+      12,
+      609,
+      636,
+      951,
+      148,
+      658,
+      289,
+      753,
+      523,
+      676,
+      586,
+      681,
+      359,
+      702,
+      454,
+      879,
+      248,
+      377
+    ],
+    "chosen_nodes": [
+      911,
+      751,
+      547,
+      614,
+      140,
+      443,
+      830,
+      29,
+      452,
+      211,
+      391,
+      317,
+      719,
+      720,
+      339,
+      863,
+      58,
+      484,
+      134,
+      868,
+      241,
+      695,
+      526,
+      955,
+      880,
+      12,
+      609,
+      636,
+      951,
+      148,
+      658,
+      289,
+      753,
+      523,
+      676,
+      586,
+      681,
+      359,
+      702,
+      454,
+      879,
+      248,
+      377,
+      595
+    ],
+    "is_stochastic": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "is_new_edge": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ]
+  },
+  "steps": [
+    {
+      "current": 470,
+      "chosen": 911,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 470,
+      "route_changed": false
+    },
+    {
+      "current": 911,
+      "chosen": 751,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 911,
+      "route_changed": false
+    },
+    {
+      "current": 751,
+      "chosen": 547,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 751,
+      "route_changed": false
+    },
+    {
+      "current": 547,
+      "chosen": 614,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 547,
+      "route_changed": false
+    },
+    {
+      "current": 614,
+      "chosen": 140,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 614,
+      "route_changed": false
+    },
+    {
+      "current": 140,
+      "chosen": 443,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 377,
+      "route_changed": true
+    },
+    {
+      "current": 443,
+      "chosen": 830,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 377,
+      "route_changed": true
+    },
+    {
+      "current": 830,
+      "chosen": 29,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 377,
+      "route_changed": true
+    },
+    {
+      "current": 29,
+      "chosen": 452,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 377,
+      "route_changed": true
+    },
+    {
+      "current": 452,
+      "chosen": 211,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 377,
+      "route_changed": true
+    },
+    {
+      "current": 211,
+      "chosen": 391,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 377,
+      "route_changed": true
+    },
+    {
+      "current": 391,
+      "chosen": 317,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 377,
+      "route_changed": true
+    },
+    {
+      "current": 317,
+      "chosen": 719,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 377,
+      "route_changed": true
+    },
+    {
+      "current": 719,
+      "chosen": 720,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 377,
+      "route_changed": true
+    },
+    {
+      "current": 720,
+      "chosen": 339,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 377,
+      "route_changed": true
+    },
+    {
+      "current": 339,
+      "chosen": 863,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 111,
+      "route_changed": true
+    },
+    {
+      "current": 863,
+      "chosen": 58,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 111,
+      "route_changed": true
+    },
+    {
+      "current": 58,
+      "chosen": 484,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 111,
+      "route_changed": true
+    },
+    {
+      "current": 484,
+      "chosen": 134,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 111,
+      "route_changed": true
+    },
+    {
+      "current": 134,
+      "chosen": 868,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 111,
+      "route_changed": true
+    },
+    {
+      "current": 868,
+      "chosen": 241,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 111,
+      "route_changed": true
+    },
+    {
+      "current": 241,
+      "chosen": 695,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 427,
+      "route_changed": true
+    },
+    {
+      "current": 695,
+      "chosen": 526,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 880,
+      "route_changed": true
+    },
+    {
+      "current": 526,
+      "chosen": 955,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 880,
+      "route_changed": true
+    },
+    {
+      "current": 955,
+      "chosen": 880,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 12,
+      "route_changed": true
+    },
+    {
+      "current": 880,
+      "chosen": 12,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 609,
+      "route_changed": true
+    },
+    {
+      "current": 12,
+      "chosen": 609,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 951,
+      "route_changed": true
+    },
+    {
+      "current": 609,
+      "chosen": 636,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 148,
+      "route_changed": true
+    },
+    {
+      "current": 636,
+      "chosen": 951,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 148,
+      "route_changed": true
+    },
+    {
+      "current": 951,
+      "chosen": 148,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 658,
+      "route_changed": true
+    },
+    {
+      "current": 148,
+      "chosen": 658,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 111,
+      "route_changed": true
+    },
+    {
+      "current": 658,
+      "chosen": 289,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 523,
+      "route_changed": true
+    },
+    {
+      "current": 289,
+      "chosen": 753,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 454,
+      "route_changed": true
+    },
+    {
+      "current": 753,
+      "chosen": 523,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 454,
+      "route_changed": true
+    },
+    {
+      "current": 523,
+      "chosen": 676,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 523,
+      "route_changed": false
+    },
+    {
+      "current": 676,
+      "chosen": 586,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 676,
+      "route_changed": false
+    },
+    {
+      "current": 586,
+      "chosen": 681,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 586,
+      "route_changed": false
+    },
+    {
+      "current": 681,
+      "chosen": 359,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 681,
+      "route_changed": false
+    },
+    {
+      "current": 359,
+      "chosen": 702,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 359,
+      "route_changed": false
+    },
+    {
+      "current": 702,
+      "chosen": 454,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 702,
+      "route_changed": false
+    },
+    {
+      "current": 454,
+      "chosen": 879,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 479,
+      "route_changed": true
+    },
+    {
+      "current": 879,
+      "chosen": 248,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 479,
+      "route_changed": true
+    },
+    {
+      "current": 248,
+      "chosen": 377,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 479,
+      "route_changed": true
+    },
+    {
+      "current": 377,
+      "chosen": 595,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 123,
+      "route_changed": true
+    }
+  ],
+  "raw_exact_match": true,
+  "initial_checklist": [
+    470,
+    140,
+    443,
+    377,
+    339,
+    863,
+    111,
+    241,
+    695,
+    427,
+    526,
+    880,
+    955,
+    12,
+    609,
+    636,
+    148,
+    951,
+    658,
+    289,
+    523,
+    753,
+    454,
+    676,
+    879,
+    479,
+    595,
+    123
+  ],
+  "actual_dynamic_evaluations": null,
+  "actual_native_acceptances": null,
+  "reason": "native API exposes no evaluation/acceptance sequence; never infer from empty touched_list"
+}

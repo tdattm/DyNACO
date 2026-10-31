@@ -1,0 +1,229 @@
+{
+  "trace": {
+    "start_node": 516,
+    "curr_nodes": [
+      516,
+      937,
+      333,
+      138,
+      581,
+      523,
+      314,
+      307,
+      901,
+      551,
+      793,
+      561,
+      848,
+      329,
+      98,
+      449,
+      611
+    ],
+    "chosen_nodes": [
+      937,
+      333,
+      138,
+      581,
+      523,
+      314,
+      307,
+      901,
+      551,
+      793,
+      561,
+      848,
+      329,
+      98,
+      449,
+      611,
+      847
+    ],
+    "is_stochastic": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "is_new_edge": [
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "steps": [
+    {
+      "current": 516,
+      "chosen": 937,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 329,
+      "route_changed": true
+    },
+    {
+      "current": 937,
+      "chosen": 333,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 138,
+      "route_changed": true
+    },
+    {
+      "current": 333,
+      "chosen": 138,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 329,
+      "route_changed": true
+    },
+    {
+      "current": 138,
+      "chosen": 581,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 138,
+      "route_changed": false
+    },
+    {
+      "current": 581,
+      "chosen": 523,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 307,
+      "route_changed": true
+    },
+    {
+      "current": 523,
+      "chosen": 314,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 307,
+      "route_changed": true
+    },
+    {
+      "current": 314,
+      "chosen": 307,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 314,
+      "route_changed": false
+    },
+    {
+      "current": 307,
+      "chosen": 901,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 449,
+      "route_changed": true
+    },
+    {
+      "current": 901,
+      "chosen": 551,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 793,
+      "route_changed": true
+    },
+    {
+      "current": 551,
+      "chosen": 793,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 561,
+      "route_changed": true
+    },
+    {
+      "current": 793,
+      "chosen": 561,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 449,
+      "route_changed": true
+    },
+    {
+      "current": 561,
+      "chosen": 848,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 449,
+      "route_changed": true
+    },
+    {
+      "current": 848,
+      "chosen": 329,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 449,
+      "route_changed": true
+    },
+    {
+      "current": 329,
+      "chosen": 98,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 649,
+      "route_changed": true
+    },
+    {
+      "current": 98,
+      "chosen": 449,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 632,
+      "route_changed": true
+    },
+    {
+      "current": 449,
+      "chosen": 611,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 449,
+      "route_changed": false
+    },
+    {
+      "current": 611,
+      "chosen": 847,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 368,
+      "route_changed": true
+    }
+  ],
+  "raw_exact_match": true,
+  "initial_checklist": [
+    516,
+    937,
+    329,
+    333,
+    138,
+    581,
+    523,
+    307,
+    314,
+    901,
+    449,
+    551,
+    793,
+    561,
+    848,
+    98,
+    649,
+    632,
+    611,
+    847,
+    368
+  ],
+  "actual_dynamic_evaluations": null,
+  "actual_native_acceptances": null,
+  "reason": "native API exposes no evaluation/acceptance sequence; never infer from empty touched_list"
+}

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/GitRepository/DyNACO-r3/r3/principal.py", line 109, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/mnt/d/GitRepository/DyNACO-r3/r3/principal.py", line 23, in main
+    raise AssertionError('production source changed')
+AssertionError: production source changed

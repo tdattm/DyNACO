@@ -1,0 +1,62 @@
+{
+  "scope": "secondary descriptive pre-SRR ant0; not the primary frozen gate",
+  "gate_unchanged": "NO-GO",
+  "rows": [
+    {
+      "iteration_before_srr": 0,
+      "records": 16,
+      "records_with_off_k32_moves": 16,
+      "mean_full_robust_moves": 528.75,
+      "mean_off_k32_moves": 108.1875,
+      "mean_k32_membership_moves": 420.5625,
+      "mean_k32_all_node_potential_moves": 416.1875,
+      "mean_initial_checklist_membership_moves": 55.375,
+      "mean_initial_checklist_potential_moves": 49.3125,
+      "mean_geometry_incremental_gain_mass": 1.3577723362045147,
+      "mean_uniform_incremental_gain_mass": 0.47057981264020854,
+      "mean_random_incremental_gain_mass": 0.39707213222945364
+    },
+    {
+      "iteration_before_srr": 249,
+      "records": 16,
+      "records_with_off_k32_moves": 3,
+      "mean_full_robust_moves": 29.625,
+      "mean_off_k32_moves": 1.125,
+      "mean_k32_membership_moves": 28.5,
+      "mean_k32_all_node_potential_moves": 28.375,
+      "mean_initial_checklist_membership_moves": 24.75,
+      "mean_initial_checklist_potential_moves": 24,
+      "mean_geometry_incremental_gain_mass": 0.023424729709115258,
+      "mean_uniform_incremental_gain_mass": 0.013737518048153118,
+      "mean_random_incremental_gain_mass": 0.00916804686852933
+    },
+    {
+      "iteration_before_srr": 499,
+      "records": 16,
+      "records_with_off_k32_moves": 15,
+      "mean_full_robust_moves": 103.1875,
+      "mean_off_k32_moves": 15.5,
+      "mean_k32_membership_moves": 87.6875,
+      "mean_k32_all_node_potential_moves": 87.125,
+      "mean_initial_checklist_membership_moves": 69.0625,
+      "mean_initial_checklist_potential_moves": 63.5625,
+      "mean_geometry_incremental_gain_mass": 0.2180139348508423,
+      "mean_uniform_incremental_gain_mass": 0.09884779840791542,
+      "mean_random_incremental_gain_mass": 0.06325667958926372
+    },
+    {
+      "iteration_before_srr": 999,
+      "records": 16,
+      "records_with_off_k32_moves": 15,
+      "mean_full_robust_moves": 110.9375,
+      "mean_off_k32_moves": 23,
+      "mean_k32_membership_moves": 87.9375,
+      "mean_k32_all_node_potential_moves": 87.0625,
+      "mean_initial_checklist_membership_moves": 65.8125,
+      "mean_initial_checklist_potential_moves": 59.9375,
+      "mean_geometry_incremental_gain_mass": 0.2956684623163065,
+      "mean_uniform_incremental_gain_mass": 0.12279667199855167,
+      "mean_random_incremental_gain_mass": 0.09108358127759505
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "stage": "pre-principal local source/provenance commit attempt",
+  "commands": ["git add -- r3/common.py artifacts/r3/environment/principal_preflight_attempt1_failure.json artifacts/r3/manifests/principal_stage_a_v1_01.log", "git commit -m Match Windows line-ending contract in read-only WSL Git audits"],
+  "result": "Both commands failed because a concurrent read-only Linux Git diff held index.lock while refreshing index metadata",
+  "resolution": "Waited for the live Git process to finish; lock disappeared naturally; no deletion, reset, clean, stash, or history rewrite",
+  "effect": "Principal manifest correctly records uncommitted read-only Git compatibility fix plus its source hash and diff; no algorithm or frozen protocol change"
+}

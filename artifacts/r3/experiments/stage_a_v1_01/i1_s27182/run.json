@@ -1,0 +1,58 @@
+{
+  "instance_id": 1,
+  "execution_seed": 27182,
+  "native_seed": 1156282883728294138,
+  "timing": {
+    "search_wall_seconds": 2.611116590999984,
+    "neural_graph_forward_seconds": 0.9417452490000073,
+    "sample_update_sync_seconds": 1.3335758770000439,
+    "state_extraction_seconds": 0.05005089100001214,
+    "snapshot_callback_seconds": 0.16965484299987565
+  },
+  "final_best_cost": 23.381500244140625,
+  "final_source_cost": 23.497543334960938,
+  "peak_cuda_bytes": 127517696,
+  "config": {
+    "H": 10,
+    "mini_H": 100,
+    "disable_heuristic": false,
+    "no_local_search": false,
+    "rho": 0.1,
+    "device": "cuda:0",
+    "no_smooth_mmas": false,
+    "min_new_edges": 12,
+    "no_extend_ls": false,
+    "no_normalized_heuristic": false,
+    "L": 0,
+    "no_anneal": false,
+    "gamma": 1.0,
+    "min_gamma": 0.0,
+    "iter_log": true,
+    "iter_print": false,
+    "verify": false,
+    "timed": true
+  },
+  "trace_reconstruction": [
+    {
+      "iteration": 0,
+      "raw_exact_match": true,
+      "checklist_size": 25
+    },
+    {
+      "iteration": 249,
+      "raw_exact_match": true,
+      "checklist_size": 22
+    },
+    {
+      "iteration": 499,
+      "raw_exact_match": true,
+      "checklist_size": 31
+    },
+    {
+      "iteration": 999,
+      "raw_exact_match": true,
+      "checklist_size": 32
+    }
+  ],
+  "process_rss_high_water_bytes": 1384488960
+}

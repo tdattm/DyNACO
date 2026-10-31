@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "finalized_files_rehashed": 440,
+  "production_source_bytes_unchanged": true,
+  "dataset_regenerated_exact": true,
+  "checkpoint_hash_valid": true,
+  "protocol_hash_valid": true,
+  "frozen_tour_records_checked": 128,
+  "raw_records_checked": 64,
+  "independently_reapplied_moves": 5407,
+  "instance_gate_reaggregation_matches": true,
+  "decision": "NO-GO",
+  "notes": "No reserved confirmation data was generated or read."
+}

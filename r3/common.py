@@ -16,7 +16,8 @@ def git_command(*args):
     pointer=(ROOT/'.git').read_text().strip().removeprefix('gitdir: ')
     if str(ROOT).startswith('/mnt/') and len(pointer)>2 and pointer[1]==':':
         pointer='/mnt/'+pointer[0].lower()+pointer[2:]
-    return ['git','--git-dir='+pointer,'--work-tree='+str(ROOT),*args]
+    # Match the Windows checkout's autocrlf contract without changing Git config.
+    return ['git','-c','core.autocrlf=true','--git-dir='+pointer,'--work-tree='+str(ROOT),*args]
 def git(*args):return subprocess.check_output(git_command(*args),cwd=ROOT,text=True).strip()
 def strict_cuda():
     import torch

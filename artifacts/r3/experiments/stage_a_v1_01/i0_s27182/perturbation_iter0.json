@@ -1,0 +1,310 @@
+{
+  "trace": {
+    "start_node": 499,
+    "curr_nodes": [
+      499,
+      124,
+      616,
+      636,
+      590,
+      69,
+      200,
+      911,
+      451,
+      89,
+      62,
+      454,
+      367,
+      88,
+      298,
+      158,
+      888,
+      240,
+      329,
+      54,
+      259,
+      809,
+      841,
+      983
+    ],
+    "chosen_nodes": [
+      124,
+      616,
+      636,
+      590,
+      69,
+      200,
+      911,
+      451,
+      89,
+      62,
+      454,
+      367,
+      88,
+      298,
+      158,
+      888,
+      240,
+      329,
+      54,
+      259,
+      809,
+      841,
+      983,
+      828
+    ],
+    "is_stochastic": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "is_new_edge": [
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "steps": [
+    {
+      "current": 499,
+      "chosen": 124,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 499,
+      "route_changed": false
+    },
+    {
+      "current": 124,
+      "chosen": 616,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 356,
+      "route_changed": true
+    },
+    {
+      "current": 616,
+      "chosen": 636,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 398,
+      "route_changed": true
+    },
+    {
+      "current": 636,
+      "chosen": 590,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 472,
+      "route_changed": true
+    },
+    {
+      "current": 590,
+      "chosen": 69,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 472,
+      "route_changed": true
+    },
+    {
+      "current": 69,
+      "chosen": 200,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 54,
+      "route_changed": true
+    },
+    {
+      "current": 200,
+      "chosen": 911,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 54,
+      "route_changed": true
+    },
+    {
+      "current": 911,
+      "chosen": 451,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 54,
+      "route_changed": true
+    },
+    {
+      "current": 451,
+      "chosen": 89,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 54,
+      "route_changed": true
+    },
+    {
+      "current": 89,
+      "chosen": 62,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 54,
+      "route_changed": true
+    },
+    {
+      "current": 62,
+      "chosen": 454,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 88,
+      "route_changed": true
+    },
+    {
+      "current": 454,
+      "chosen": 367,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 298,
+      "route_changed": true
+    },
+    {
+      "current": 367,
+      "chosen": 88,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 298,
+      "route_changed": true
+    },
+    {
+      "current": 88,
+      "chosen": 298,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 158,
+      "route_changed": true
+    },
+    {
+      "current": 298,
+      "chosen": 158,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 888,
+      "route_changed": true
+    },
+    {
+      "current": 158,
+      "chosen": 888,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 983,
+      "route_changed": true
+    },
+    {
+      "current": 888,
+      "chosen": 240,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 54,
+      "route_changed": true
+    },
+    {
+      "current": 240,
+      "chosen": 329,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 443,
+      "route_changed": true
+    },
+    {
+      "current": 329,
+      "chosen": 54,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 983,
+      "route_changed": true
+    },
+    {
+      "current": 54,
+      "chosen": 259,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 472,
+      "route_changed": true
+    },
+    {
+      "current": 259,
+      "chosen": 809,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 472,
+      "route_changed": true
+    },
+    {
+      "current": 809,
+      "chosen": 841,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 472,
+      "route_changed": true
+    },
+    {
+      "current": 841,
+      "chosen": 983,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 472,
+      "route_changed": true
+    },
+    {
+      "current": 983,
+      "chosen": 828,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 254,
+      "route_changed": true
+    }
+  ],
+  "raw_exact_match": true,
+  "initial_checklist": [
+    499,
+    124,
+    616,
+    356,
+    636,
+    398,
+    590,
+    472,
+    69,
+    200,
+    54,
+    62,
+    454,
+    88,
+    367,
+    298,
+    158,
+    888,
+    240,
+    329,
+    443,
+    983,
+    259,
+    828,
+    254
+  ],
+  "actual_dynamic_evaluations": null,
+  "actual_native_acceptances": null,
+  "reason": "native API exposes no evaluation/acceptance sequence; never infer from empty touched_list"
+}

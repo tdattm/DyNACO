@@ -1,0 +1,17 @@
+completed instance=0 seed=31415 best=23.44545174 principal_elapsed=7.26s
+completed instance=0 seed=27182 best=23.42153931 principal_elapsed=14.09s
+completed instance=1 seed=31415 best=23.25493813 principal_elapsed=21.04s
+completed instance=1 seed=27182 best=23.38150024 principal_elapsed=27.52s
+completed instance=2 seed=31415 best=23.33491135 principal_elapsed=33.94s
+completed instance=2 seed=27182 best=23.33144760 principal_elapsed=40.11s
+completed instance=3 seed=31415 best=23.38352203 principal_elapsed=46.82s
+completed instance=3 seed=27182 best=23.38593674 principal_elapsed=52.93s
+completed instance=4 seed=31415 best=23.33738899 principal_elapsed=59.89s
+completed instance=4 seed=27182 best=23.39614868 principal_elapsed=66.29s
+completed instance=5 seed=31415 best=22.99818420 principal_elapsed=72.78s
+completed instance=5 seed=27182 best=23.07037735 principal_elapsed=79.16s
+completed instance=6 seed=31415 best=23.20529556 principal_elapsed=86.00s
+completed instance=6 seed=27182 best=23.14046288 principal_elapsed=92.40s
+completed instance=7 seed=31415 best=23.30621147 principal_elapsed=98.80s
+completed instance=7 seed=27182 best=23.34509659 principal_elapsed=105.10s
+{"decision": "NO-GO", "conditions": {"G0": true, "G1": false, "G2": false, "G3": false, "G4": true}, "counts": {"G1": 0, "G2": 0, "G3": 0}}

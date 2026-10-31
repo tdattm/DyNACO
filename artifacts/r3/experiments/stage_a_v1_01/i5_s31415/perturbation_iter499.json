@@ -1,0 +1,459 @@
+{
+  "trace": {
+    "start_node": 693,
+    "curr_nodes": [
+      693,
+      45,
+      153,
+      689,
+      73,
+      366,
+      296,
+      77,
+      282,
+      494,
+      271,
+      551,
+      207,
+      868,
+      326,
+      738,
+      60,
+      196,
+      309,
+      425,
+      686,
+      610,
+      975,
+      132,
+      485,
+      85,
+      681,
+      553,
+      685,
+      513,
+      743,
+      818,
+      782,
+      764,
+      736,
+      585,
+      630
+    ],
+    "chosen_nodes": [
+      45,
+      153,
+      689,
+      73,
+      366,
+      296,
+      77,
+      282,
+      494,
+      271,
+      551,
+      207,
+      868,
+      326,
+      738,
+      60,
+      196,
+      309,
+      425,
+      686,
+      610,
+      975,
+      132,
+      485,
+      85,
+      681,
+      553,
+      685,
+      513,
+      743,
+      818,
+      782,
+      764,
+      736,
+      585,
+      630,
+      31
+    ],
+    "is_stochastic": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "is_new_edge": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  "steps": [
+    {
+      "current": 693,
+      "chosen": 45,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 153,
+      "route_changed": true
+    },
+    {
+      "current": 45,
+      "chosen": 153,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 689,
+      "route_changed": true
+    },
+    {
+      "current": 153,
+      "chosen": 689,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 73,
+      "route_changed": true
+    },
+    {
+      "current": 689,
+      "chosen": 73,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 636,
+      "route_changed": true
+    },
+    {
+      "current": 73,
+      "chosen": 366,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 850,
+      "route_changed": true
+    },
+    {
+      "current": 366,
+      "chosen": 296,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 850,
+      "route_changed": true
+    },
+    {
+      "current": 296,
+      "chosen": 77,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 282,
+      "route_changed": true
+    },
+    {
+      "current": 77,
+      "chosen": 282,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 494,
+      "route_changed": true
+    },
+    {
+      "current": 282,
+      "chosen": 494,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 271,
+      "route_changed": true
+    },
+    {
+      "current": 494,
+      "chosen": 271,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 551,
+      "route_changed": true
+    },
+    {
+      "current": 271,
+      "chosen": 551,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 850,
+      "route_changed": true
+    },
+    {
+      "current": 551,
+      "chosen": 207,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 868,
+      "route_changed": true
+    },
+    {
+      "current": 207,
+      "chosen": 868,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 326,
+      "route_changed": true
+    },
+    {
+      "current": 868,
+      "chosen": 326,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 738,
+      "route_changed": true
+    },
+    {
+      "current": 326,
+      "chosen": 738,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 60,
+      "route_changed": true
+    },
+    {
+      "current": 738,
+      "chosen": 60,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 196,
+      "route_changed": true
+    },
+    {
+      "current": 60,
+      "chosen": 196,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 850,
+      "route_changed": true
+    },
+    {
+      "current": 196,
+      "chosen": 309,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 553,
+      "route_changed": true
+    },
+    {
+      "current": 309,
+      "chosen": 425,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 686,
+      "route_changed": true
+    },
+    {
+      "current": 425,
+      "chosen": 686,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 460,
+      "route_changed": true
+    },
+    {
+      "current": 686,
+      "chosen": 610,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 975,
+      "route_changed": true
+    },
+    {
+      "current": 610,
+      "chosen": 975,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 132,
+      "route_changed": true
+    },
+    {
+      "current": 975,
+      "chosen": 132,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 485,
+      "route_changed": true
+    },
+    {
+      "current": 132,
+      "chosen": 485,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 38,
+      "route_changed": true
+    },
+    {
+      "current": 485,
+      "chosen": 85,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 681,
+      "route_changed": true
+    },
+    {
+      "current": 85,
+      "chosen": 681,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 38,
+      "route_changed": true
+    },
+    {
+      "current": 681,
+      "chosen": 553,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 685,
+      "route_changed": true
+    },
+    {
+      "current": 553,
+      "chosen": 685,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 513,
+      "route_changed": true
+    },
+    {
+      "current": 685,
+      "chosen": 513,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 743,
+      "route_changed": true
+    },
+    {
+      "current": 513,
+      "chosen": 743,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 38,
+      "route_changed": true
+    },
+    {
+      "current": 743,
+      "chosen": 818,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 782,
+      "route_changed": true
+    },
+    {
+      "current": 818,
+      "chosen": 782,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 38,
+      "route_changed": true
+    },
+    {
+      "current": 782,
+      "chosen": 764,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 736,
+      "route_changed": true
+    },
+    {
+      "current": 764,
+      "chosen": 736,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 585,
+      "route_changed": true
+    },
+    {
+      "current": 736,
+      "chosen": 585,
+      "is_new_source_edge": false,
+      "chosen_predecessor": 735,
+      "route_changed": true
+    },
+    {
+      "current": 585,
+      "chosen": 630,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 38,
+      "route_changed": true
+    },
+    {
+      "current": 630,
+      "chosen": 31,
+      "is_new_source_edge": true,
+      "chosen_predecessor": 735,
+      "route_changed": true
+    }
+  ],
+  "raw_exact_match": true,
+  "initial_checklist": [
+    693,
+    73,
+    366,
+    850,
+    296,
+    77,
+    282,
+    551,
+    207,
+    868,
+    196,
+    309,
+    553,
+    425,
+    686,
+    610,
+    975,
+    485,
+    85,
+    681,
+    685,
+    743,
+    818,
+    782,
+    764,
+    736,
+    585,
+    630,
+    38,
+    31,
+    735
+  ],
+  "actual_dynamic_evaluations": null,
+  "actual_native_acceptances": null,
+  "reason": "native API exposes no evaluation/acceptance sequence; never infer from empty touched_list"
+}

@@ -1,0 +1,183 @@
+{
+  "decision": "NO-GO",
+  "conditions": {
+    "G0": true,
+    "G1": false,
+    "G2": false,
+    "G3": false,
+    "G4": true
+  },
+  "per_instance": [
+    {
+      "instance_id": 0,
+      "geometry_gain": 0.0,
+      "uniform_gain": 0.0,
+      "random_gain": 0.0,
+      "missed_count": 0,
+      "verified_best_relative_gain": 0.0,
+      "k32_robust_moves": 11.75,
+      "full_robust_moves": 11.75,
+      "ratio_vs_uniform": null,
+      "ratio_vs_random": null,
+      "G1": false,
+      "G2": false,
+      "G3": false
+    },
+    {
+      "instance_id": 1,
+      "geometry_gain": 0.0,
+      "uniform_gain": 0.0,
+      "random_gain": 0.0,
+      "missed_count": 0,
+      "verified_best_relative_gain": 0.0,
+      "k32_robust_moves": 6,
+      "full_robust_moves": 6,
+      "ratio_vs_uniform": null,
+      "ratio_vs_random": null,
+      "G1": false,
+      "G2": false,
+      "G3": false
+    },
+    {
+      "instance_id": 2,
+      "geometry_gain": 0.0,
+      "uniform_gain": 0.0,
+      "random_gain": 0.0,
+      "missed_count": 0,
+      "verified_best_relative_gain": 0.0,
+      "k32_robust_moves": 6,
+      "full_robust_moves": 6,
+      "ratio_vs_uniform": null,
+      "ratio_vs_random": null,
+      "G1": false,
+      "G2": false,
+      "G3": false
+    },
+    {
+      "instance_id": 3,
+      "geometry_gain": 0.0,
+      "uniform_gain": 0.0,
+      "random_gain": 0.0,
+      "missed_count": 0,
+      "verified_best_relative_gain": 0.0,
+      "k32_robust_moves": 8.25,
+      "full_robust_moves": 8.25,
+      "ratio_vs_uniform": null,
+      "ratio_vs_random": null,
+      "G1": false,
+      "G2": false,
+      "G3": false
+    },
+    {
+      "instance_id": 4,
+      "geometry_gain": 0.0,
+      "uniform_gain": 0.0,
+      "random_gain": 0.0,
+      "missed_count": 0,
+      "verified_best_relative_gain": 0.0,
+      "k32_robust_moves": 10.5,
+      "full_robust_moves": 10.5,
+      "ratio_vs_uniform": null,
+      "ratio_vs_random": null,
+      "G1": false,
+      "G2": false,
+      "G3": false
+    },
+    {
+      "instance_id": 5,
+      "geometry_gain": 0.0,
+      "uniform_gain": 0.0,
+      "random_gain": 0.0,
+      "missed_count": 0,
+      "verified_best_relative_gain": 0.0,
+      "k32_robust_moves": 5.25,
+      "full_robust_moves": 5.25,
+      "ratio_vs_uniform": null,
+      "ratio_vs_random": null,
+      "G1": false,
+      "G2": false,
+      "G3": false
+    },
+    {
+      "instance_id": 6,
+      "geometry_gain": 0.0,
+      "uniform_gain": 0.0,
+      "random_gain": 0.0,
+      "missed_count": 0,
+      "verified_best_relative_gain": 0.0,
+      "k32_robust_moves": 8.5,
+      "full_robust_moves": 8.5,
+      "ratio_vs_uniform": null,
+      "ratio_vs_random": null,
+      "G1": false,
+      "G2": false,
+      "G3": false
+    },
+    {
+      "instance_id": 7,
+      "geometry_gain": 0.0,
+      "uniform_gain": 0.0,
+      "random_gain": 0.0,
+      "missed_count": 0,
+      "verified_best_relative_gain": 0.0,
+      "k32_robust_moves": 8.5,
+      "full_robust_moves": 8.5,
+      "ratio_vs_uniform": null,
+      "ratio_vs_random": null,
+      "G1": false,
+      "G2": false,
+      "G3": false
+    }
+  ],
+  "median_ratios": {
+    "ratio_vs_uniform": null,
+    "ratio_vs_random": null
+  },
+  "passing_instance_counts": {
+    "G1": 0,
+    "G2": 0,
+    "G3": 0
+  },
+  "stage_b_authorized": false,
+  "protocol_sha256": "1f9d4cc3e66c8bc22a4f792594c1adc3cbd1a906e34d39fd4e784d1e79bc84cc",
+  "primary_tour": "source_route",
+  "phases": [
+    500,
+    1000
+  ],
+  "uncertainty": {
+    "uniform": {
+      "mean_paired_gain_mass_difference": 0.0,
+      "median_paired_gain_mass_difference": 0.0,
+      "bootstrap_95_percentile_interval": [
+        0.0,
+        0.0
+      ],
+      "n_instances": 8
+    },
+    "random": {
+      "mean_paired_gain_mass_difference": 0.0,
+      "median_paired_gain_mass_difference": 0.0,
+      "bootstrap_95_percentile_interval": [
+        0.0,
+        0.0
+      ],
+      "n_instances": 8
+    }
+  },
+  "technical_evidence": {
+    "original_solver_unchanged": true,
+    "baseline_full1000_exact": true,
+    "fast_parallel_trace_regression": true,
+    "native_candidate_rows_audited": 8000,
+    "raw_reconstructions_exact": 64,
+    "full_pair_count": 498500,
+    "diagnostics": 192,
+    "actual_native_srr_evaluation_observability": "unavailable; no claims rely on it"
+  },
+  "resources": {
+    "principal_wall_seconds": 106.21212126699999,
+    "rss_high_water_bytes": 1432006656,
+    "peak_torch_cuda_allocated_bytes": 127517696
+  }
+}
