@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "A": {
+    "status": "PASS",
+    "evidence": "environment/environment_manifest.json; environment/build_attempt2.log"
+  },
+  "B": {
+    "status": "PASS",
+    "evidence": "baseline/baseline_validation.json; baseline_gates_attempt1.log"
+  },
+  "C": {
+    "tests": 2,
+    "evidence": "gate_c_tests.log",
+    "status": "PASS"
+  },
+  "D": {
+    "status": "PASS",
+    "prior_failure": "gate_d_tests_attempt1.log; CPU/GPU elementwise tolerance investigated against float64 in environment/device_precision.json",
+    "passed": 21,
+    "evidence": "gate_d_tests_attempt2.log",
+    "failed": 0,
+    "skipped": 0
+  }
+}

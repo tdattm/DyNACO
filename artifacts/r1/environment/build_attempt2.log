@@ -1,0 +1,13 @@
+x86_64-linux-gnu-g++-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+OpenMP=201511 threads=2
+running build_ext
+building 'faco_opt' extension
+creating ../.r1-env/build
+/mnt/d/GitRepository/DyNACO/.r1-env/sysroot/usr/bin/x86_64-linux-gnu-g++-13 --sysroot=/mnt/d/GitRepository/DyNACO/.r1-env/sysroot -fPIC -I/mnt/d/GitRepository/DyNACO/.r1-env/venv/lib/python3.13/site-packages/pybind11/include -I. -I/mnt/d/GitRepository/DyNACO/.r1-env/venv/include -I/mnt/d/GitRepository/DyNACO/.r1-env/python/cpython-3.13.18-linux-x86_64-gnu/include/python3.13 -c binding.cpp -o ../.r1-env/build/binding.o -O3 -std=c++17 -fopenmp
+/mnt/d/GitRepository/DyNACO/.r1-env/sysroot/usr/bin/x86_64-linux-gnu-g++-13 --sysroot=/mnt/d/GitRepository/DyNACO/.r1-env/sysroot -fPIC -I/mnt/d/GitRepository/DyNACO/.r1-env/venv/lib/python3.13/site-packages/pybind11/include -I. -I/mnt/d/GitRepository/DyNACO/.r1-env/venv/include -I/mnt/d/GitRepository/DyNACO/.r1-env/python/cpython-3.13.18-linux-x86_64-gnu/include/python3.13 -c mfaco_train.cpp -o ../.r1-env/build/mfaco_train.o -O3 -std=c++17 -fopenmp
+creating ../.r1-env/native
+/mnt/d/GitRepository/DyNACO/.r1-env/sysroot/usr/bin/x86_64-linux-gnu-g++-13 --sysroot=/mnt/d/GitRepository/DyNACO/.r1-env/sysroot -pthread -shared -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--build-id=sha1 -Wl,--exclude-libs,ALL --sysroot=/mnt/d/GitRepository/DyNACO/.r1-env/sysroot -L/mnt/d/GitRepository/DyNACO/.r1-env/sysroot/usr/lib/x86_64-linux-gnu --sysroot=/mnt/d/GitRepository/DyNACO/.r1-env/sysroot ../.r1-env/build/binding.o ../.r1-env/build/mfaco_train.o -L/mnt/d/GitRepository/DyNACO/.r1-env/python/cpython-3.13.18-linux-x86_64-gnu/lib -o ../.r1-env/native/faco_opt.cpython-313-x86_64-linux-gnu.so -fopenmp

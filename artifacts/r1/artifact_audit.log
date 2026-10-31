@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "runs": 80,
+  "iterations": 80000,
+  "refresh_events": 1612,
+  "failed_runs": 0,
+  "source_hashes_match": {
+    "r1/__init__.py": true,
+    "r1/benchmark.py": true,
+    "r1/datasets.py": true,
+    "r1/engine.py": true,
+    "r1/metrics.py": true,
+    "r1/report.py": true,
+    "r1/scheduler.py": true
+  },
+  "principal_repeats_exact": true,
+  "figures": [
+    "anytime_iterations.png",
+    "anytime_wall_time.png",
+    "instance_seed_variability.png",
+    "quality_vs_gnn_calls.png",
+    "quality_vs_wall_seconds.png",
+    "refresh_timeline.png"
+  ]
+}

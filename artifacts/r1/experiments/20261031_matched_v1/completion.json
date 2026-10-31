@@ -1,0 +1,6 @@
+{
+  "search_phase_seconds": 131.52436114600005,
+  "total_after_import_seconds": 137.47360601100013,
+  "gpu_after": "name, memory.used [MiB], temperature.gpu, power.draw [W], utilization.gpu [%]\nNVIDIA GeForce RTX 3050 Laptop GPU, 135 MiB, 69, 17.46 W, 26 %",
+  "weight_identity": true
+}

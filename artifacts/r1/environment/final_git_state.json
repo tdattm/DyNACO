@@ -1,0 +1,13 @@
+{
+  "base_sha": "cd16e2a68fd035f94a8916d41463904f31483d7f",
+  "current_head": "cd16e2a68fd035f94a8916d41463904f31483d7f",
+  "branch": "feature/r1-event-triggered-guidance",
+  "status": [
+    " M .gitignore",
+    "?? artifacts/",
+    "?? r1/",
+    "?? tests/"
+  ],
+  "local_commits_since_base": [],
+  "original_sources_unchanged": true
+}

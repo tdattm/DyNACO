@@ -1,0 +1,16 @@
+[
+  {
+    "run_id": "n1000_i0_seed1234_fixed_s100",
+    "exact_trace": true,
+    "exact_tour": true,
+    "exact_refresh_events": true,
+    "max_trace_difference": 0.0
+  },
+  {
+    "run_id": "n1000_i0_seed1234_event_stagnation",
+    "exact_trace": true,
+    "exact_tour": true,
+    "exact_refresh_events": true,
+    "max_trace_difference": 0.0
+  }
+]

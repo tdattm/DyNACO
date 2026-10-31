@@ -1,0 +1,12 @@
+{
+  "edge_index_identical": true,
+  "coordinates_identical": true,
+  "max_feature_difference": 3.5762786865234375e-07,
+  "reference_max_absolute": 73.62386017271317,
+  "max_cpu_gpu_absolute": 6.4849853515625e-05,
+  "cpu_vs_float64_max_absolute": 6.313659184797871e-05,
+  "gpu_vs_float64_max_absolute": 5.14279705434717e-05,
+  "normalized_cpu_gpu_max": 8.808265761217626e-07,
+  "tolerance_policy": "max absolute error / max(1, float64 output infinity norm) <= 16*float32 epsilon; elementwise relative error unstable near zero logits",
+  "normalized_tolerance": 1.9073486328125e-06
+}

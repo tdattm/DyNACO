@@ -19,3 +19,6 @@ data
 tmp_models
 *.pdf
 csv
+
+# Isolated Linux tools, Python runtime and extracted OpenMP runtime for R1.
+.r1-env/

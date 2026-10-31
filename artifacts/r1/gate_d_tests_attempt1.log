@@ -1,0 +1,49 @@
+.....F.............                                                      [100%]
+=================================== FAILURES ===================================
+_______________________ test_cpu_gpu_device_consistency ________________________
+
+model = Net(
+  (emb_net): EmbNet(
+    (v_lin0): Linear(in_features=2, out_features=32, bias=True)
+    (e_lin0): Linear(in_feat...ar(in_features=32, out_features=32, bias=True)
+      (2): Linear(in_features=32, out_features=1, bias=True)
+    )
+  )
+)
+
+    def test_cpu_gpu_device_consistency(model):
+        import utils
+        coords = np.load(ROOT / 'artifacts/r1/datasets/tsp100_seed20261031_v1.npy')[0]
+        # Compare features/output numerically; stochastic solver traces need not match across devices.
+        outputs = []
+        for device in ('cpu', 'cuda:0'):
+            solver = faco.MFACO_TSP(coords, n_ants=100, device=device)
+            with torch.no_grad():
+                graph = utils.build_pyg_data_tsp(solver, coords, device)
+                outputs.append(model.to(device)(graph).cpu().numpy())
+            result = run(coords, model, RunConfig(total_iterations=10, fixed_s=5, device=device))
+            assert np.isfinite(result['final_cost']) and result['gnn_calls'] == 2
+>       np.testing.assert_allclose(outputs[0], outputs[1], rtol=2e-5, atol=2e-5)
+E       AssertionError: 
+E       Not equal to tolerance rtol=2e-05, atol=2e-05
+E       
+E       Mismatched elements: 1 / 3200 (0.0312%)
+E       Mismatch at index:
+E        [2751]: -0.03658253699541092 (ACTUAL), -0.03660399466753006 (DESIRED)
+E       Max absolute difference among violations: 2.1457672e-05
+E       Max relative difference among violations: 0.00058621
+E        ACTUAL: array([62.389122, 48.054436, 42.927505, ..., 57.295532, 32.619495,
+E              16.82856 ], shape=(3200,), dtype=float32)
+E        DESIRED: array([62.389103, 48.05442 , 42.927475, ..., 57.295536, 32.6195  ,
+E              16.828579], shape=(3200,), dtype=float32)
+
+tests/test_r1_integration.py:61: AssertionError
+=============================== warnings summary ===============================
+.r1-env/venv/lib/python3.13/site-packages/torch_geometric/llm/utils/backend_utils.py:26
+  /mnt/d/GitRepository/DyNACO/.r1-env/venv/lib/python3.13/site-packages/torch_geometric/llm/utils/backend_utils.py:26: DeprecationWarning: `torch_geometric.distributed` has been deprecated since 2.7.0 and will no longer be maintained. For distributed training, refer to our tutorials on distributed training at https://pytorch-geometric.readthedocs.io/en/latest/tutorial/distributed.html or cuGraph examples at https://github.com/rapidsai/cugraph-gnn/tree/main/python/cugraph-pyg/cugraph_pyg/examples
+    from torch_geometric.distributed import (
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_r1_integration.py::test_cpu_gpu_device_consistency - Assert...
+1 failed, 18 passed, 1 warning in 46.57s

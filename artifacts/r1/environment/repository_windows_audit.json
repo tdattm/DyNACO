@@ -1,0 +1,74 @@
+{
+  "reference": "cd16e2a68fd035f94a8916d41463904f31483d7f",
+  "initial_branch": "final",
+  "initial_status": "clean",
+  "current_branch": "feature/r1-event-triggered-guidance",
+  "current_head": "cd16e2a68fd035f94a8916d41463904f31483d7f",
+  "current_status": [
+    " M .gitignore",
+    "?? artifacts/"
+  ],
+  "branches": [
+    "* feature/r1-event-triggered-guidance cd16e2a README",
+    "  final                               cd16e2a [origin/final] README",
+    "  remotes/origin/HEAD                 -> origin/final",
+    "  remotes/origin/final                cd16e2a README"
+  ],
+  "remotes": [
+    "origin\thttps://github.com/tdattm/DyNACO.git (fetch)",
+    "origin\thttps://github.com/tdattm/DyNACO.git (push)"
+  ],
+  "last_commit": [
+    "commit cd16e2a68fd035f94a8916d41463904f31483d7f",
+    "Author:     shoraaa <shoraaa@protonmail.com>",
+    "AuthorDate: Tue Aug 18 16:42:20 2026 +0700",
+    "Commit:     GitHub <noreply@github.com>",
+    "CommitDate: Tue Aug 18 16:42:20 2026 +0700",
+    "",
+    "    README"
+  ],
+  "windows": {
+    "Caption": "Microsoft Windows 11 Home Single Language",
+    "Version": "10.0.26300",
+    "BuildNumber": "26300",
+    "TotalVisibleMemorySize": 16551224,
+    "FreePhysicalMemory": 5387004
+  },
+  "cpu": {
+    "Name": "11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz",
+    "NumberOfCores": 4,
+    "NumberOfLogicalProcessors": 8
+  },
+  "windows_python": [
+    " -V:3.13 *        C:\\Users\\TIEN DAT\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    " -V:3.12          C:\\Users\\TIEN DAT\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    " -V:3.11          C:\\Users\\TIEN DAT\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    " -V:3.10          C:\\Users\\TIEN DAT\\AppData\\Local\\Programs\\Python\\Python310\\python.exe"
+  ],
+  "wsl_version": [
+    "WSL version: 2.4.13.0",
+    "",
+    "Kernel version: 5.15.167.4-1",
+    "",
+    "WSLg version: 1.0.65",
+    "",
+    "MSRDC version: 1.2.5716",
+    "",
+    "Direct3D version: 1.611.1-81528511",
+    "",
+    "DXCore version: 10.0.26100.1-240331-1435.ge-release",
+    "",
+    "Windows version: 10.0.26300.9711",
+    "",
+    ""
+  ],
+  "wsl_distributions": [
+    "  NAME              STATE           VERSION",
+    "",
+    "* Ubuntu            Running         2",
+    "",
+    "  docker-desktop    Stopped         2",
+    "",
+    ""
+  ]
+}

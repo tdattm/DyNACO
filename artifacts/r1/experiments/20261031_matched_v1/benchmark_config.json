@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "base_commit": "cd16e2a68fd035f94a8916d41463904f31483d7f",
+  "current_commit": "cd16e2a68fd035f94a8916d41463904f31483d7f",
+  "arguments": {
+    "output": "artifacts/r1/experiments/20261031_matched_v1",
+    "sizes": [
+      100,
+      200,
+      500,
+      1000
+    ],
+    "instances": 2,
+    "seeds": [
+      1234,
+      5678
+    ],
+    "iterations": 1000,
+    "max_search_seconds": 600.0,
+    "device": "cuda:0"
+  },
+  "checkpoint": "/mnt/d/GitRepository/DyNACO/checkpoints/tsp_n1000_k32_ants100_H10_miniH100_rho0.1_mne12_ppo_lr5e-06_best.pt",
+  "checkpoint_sha256": "33f7da301e49f74d5b66de2a12c7bd95f247de8c217343c3410bb716a6f22358",
+  "checkpoint_metadata": {
+    "epoch": 5,
+    "val_cost": "23.165611",
+    "val_gap": "0.4673191",
+    "config": {
+      "problem": "tsp",
+      "n_node": 1000,
+      "k_sparse": 32,
+      "algo": "ppo",
+      "alg": "faco",
+      "ppo_epochs": 4,
+      "ppo_clip": 0.1,
+      "no_adv_norm": false,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "n_ants": 100,
+      "steps_per_epoch": 32,
+      "epochs": 10,
+      "lr": 5e-06,
+      "ppo_lr": 5e-06,
+      "reinforce_lr": 0.0001,
+      "seed": 1234,
+      "device": "cuda:0",
+      "rho": 0.1,
+      "min_new_edges": 12,
+      "H": 10,
+      "mini_H": 100,
+      "disable_heuristic": false,
+      "no_local_search": false,
+      "no_smooth_mmas": false,
+      "no_extend_ls": false,
+      "no_normalized_heuristic": false,
+      "grad_checkpoint": false,
+      "nls": false,
+      "nls_beta": 0.5,
+      "T_nls": 10,
+      "no_logit_net": false,
+      "no_wandb": false,
+      "wandb_project": "lga",
+      "wandb_entity": null,
+      "save_dir": "pretrained",
+      "no_dynamic_feats": false,
+      "baseline": "lkh",
+      "baseline_runs": 1,
+      "baseline_time_limit": 300.0,
+      "val_dataset": null,
+      "val_size": 16,
+      "generate_val": false,
+      "save_generated": null,
+      "warmup": true,
+      "train_warmup": false,
+      "warmup_ratio": 0.5,
+      "train_anneal": false,
+      "no_anneal": false,
+      "gamma": 1.0,
+      "min_gamma": 0.0,
+      "L": 0,
+      "run_name": null,
+      "threads": 10,
+      "simple_train": false,
+      "train_deepaco": false,
+      "val_H": null,
+      "val_mini_H": null,
+      "no_baseline": true,
+      "extend_ls": true
+    }
+  },
+  "weights_sha256": "669a3b45018f5fb2f96860c313935c2d4c903c3fae64f32ccfccae48b0383ca4",
+  "environment_manifest": "../../environment/environment_manifest.json",
+  "source_sha256": {
+    "r1/__init__.py": "1b67f272f19b209d980b0a67c6e53a2a90a5700eb9f168e139e43938b1532d1a",
+    "r1/benchmark.py": "4f24c88e8df60311d1dc41a7a2fb90f31609242c8b7cf12a48c012784b858b4b",
+    "r1/datasets.py": "55fef4c223b0008865a54bd345051932408d815c706f5645572bc4a600995b2e",
+    "r1/engine.py": "20ce04bfffc7db4547a14f7ad0c10edce31e576a6f053924e6a27e9e3550c0d8",
+    "r1/metrics.py": "c8da71d67daa5e781af5b72efd6e2bde96d123202de6f43ce95144516cc80351",
+    "r1/report.py": "a4094ec72cd9af20008771308f42f0532622fcbfad88262b6f4147e002e6b7b2",
+    "r1/scheduler.py": "916a5e37e17534d73117b1d41aa012602658d0ef8771fa1c4461829c8d8c6f07"
+  },
+  "device": "cuda:0",
+  "threads": 2,
+  "ants": 100,
+  "k": 32,
+  "rho": 0.1,
+  "min_new_edges": 12,
+  "annealing": "no_anneal",
+  "phased_injection": false,
+  "scheduler": {
+    "min_interval": 25,
+    "max_interval": 200,
+    "stagnation_threshold": 50,
+    "improvement_tolerance": 1e-06
+  },
+  "methods": [
+    [
+      "fixed_s25",
+      "fixed_s",
+      25
+    ],
+    [
+      "fixed_s50",
+      "fixed_s",
+      50
+    ],
+    [
+      "fixed_s100",
+      "fixed_s",
+      100
+    ],
+    [
+      "fixed_s200",
+      "fixed_s",
+      200
+    ],
+    [
+      "event_stagnation",
+      "event_stagnation",
+      100
+    ]
+  ],
+  "dataset_seed": 20261031,
+  "solver_seeds": [
+    1234,
+    5678
+  ],
+  "method_order": "random.Random(314159), shuffled separately within each matched size/instance/seed block",
+  "time_budget_protocol": "best-so-far at predefined .1,.25,.5,1,2,5 seconds only when every run at that N reaches the budget; search time excludes setup/warmup",
+  "timing": "synchronized perf_counter; graph includes internal H2D, transfer is guidance D2H per iteration; native sample/update includes wrapper synchronization; decision includes observe; residual includes synchronization/logging/checks",
+  "gpu_before": "name, memory.used [MiB], temperature.gpu, power.draw [W], utilization.gpu [%]\nNVIDIA GeForce RTX 3050 Laptop GPU, 69 MiB, 63, 12.69 W, 0 %"
+}
