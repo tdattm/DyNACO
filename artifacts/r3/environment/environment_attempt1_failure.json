@@ -1,0 +1,6 @@
+{
+  "stage": "environment inventory; before principal collection",
+  "error": "Linux Git could not resolve a Windows-created worktree .git pointer (D:/GitRepository/DyNACO/.git/worktrees/DyNACO-r3)",
+  "effect": "Inventory command failed after successful checkpoint/model loading; no principal dataset generated, no solver or scientific protocol changed",
+  "resolution": "Use explicit --git-dir with WSL-translated path and --work-tree in read-only research Git calls; preserve the existing .git pointer and original checkout metadata"
+}

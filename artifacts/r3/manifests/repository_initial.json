@@ -1,0 +1,179 @@
+{
+  "base_sha": "cd16e2a68fd035f94a8916d41463904f31483d7f",
+  "r1_inspected_sha": "41d9a15b5f311d85118592550c7bdeaf71b3fb9e",
+  "repository": [
+    {
+      "command": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "returncode": 0,
+      "stdout": "?? r3/\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "returncode": 0,
+      "stdout": "feature/r3-budget-aware-candidate-graph\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "cd16e2a68fd035f94a8916d41463904f31483d7f\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "-avv"
+      ],
+      "returncode": 0,
+      "stdout": "  feature/r1-event-triggered-guidance                41d9a15 [origin/feature/r1-event-triggered-guidance] Add controlled R1 refresh-value diagnostics for round 3\n* feature/r3-budget-aware-candidate-graph            cd16e2a README\n+ final                                              cd16e2a (D:/GitRepository/DyNACO) [origin/final] README\n  remotes/origin/HEAD                                -> origin/final\n  remotes/origin/feature/r1-event-triggered-guidance 41d9a15 Add controlled R1 refresh-value diagnostics for round 3\n  remotes/origin/final                               cd16e2a README\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "remote",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "origin\thttps://github.com/tdattm/DyNACO.git (fetch)\norigin\thttps://github.com/tdattm/DyNACO.git (push)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "worktree",
+        "list"
+      ],
+      "returncode": 0,
+      "stdout": "D:/GitRepository/DyNACO     cd16e2a [final]\nD:/GitRepository/DyNACO-r3  cd16e2a [feature/r3-budget-aware-candidate-graph]\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "--no-patch",
+        "--format=fuller",
+        "cd16e2a68fd035f94a8916d41463904f31483d7f"
+      ],
+      "returncode": 0,
+      "stdout": "commit cd16e2a68fd035f94a8916d41463904f31483d7f\nAuthor:     shoraaa <shoraaa@protonmail.com>\nAuthorDate: Tue Aug 18 16:42:20 2026 +0700\nCommit:     GitHub <noreply@github.com>\nCommitDate: Tue Aug 18 16:42:20 2026 +0700\n\n    README\n",
+      "stderr": ""
+    }
+  ],
+  "original_checkout": [
+    {
+      "command": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "returncode": 0,
+      "stdout": "?? .r1-env/\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "returncode": 0,
+      "stdout": "final\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "cd16e2a68fd035f94a8916d41463904f31483d7f\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "-avv"
+      ],
+      "returncode": 0,
+      "stdout": "  feature/r1-event-triggered-guidance                41d9a15 [origin/feature/r1-event-triggered-guidance] Add controlled R1 refresh-value diagnostics for round 3\n+ feature/r3-budget-aware-candidate-graph            cd16e2a (D:/GitRepository/DyNACO-r3) README\n* final                                              cd16e2a [origin/final] README\n  remotes/origin/HEAD                                -> origin/final\n  remotes/origin/feature/r1-event-triggered-guidance 41d9a15 Add controlled R1 refresh-value diagnostics for round 3\n  remotes/origin/final                               cd16e2a README\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "remote",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "origin\thttps://github.com/tdattm/DyNACO.git (fetch)\norigin\thttps://github.com/tdattm/DyNACO.git (push)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "worktree",
+        "list"
+      ],
+      "returncode": 0,
+      "stdout": "D:/GitRepository/DyNACO     cd16e2a [final]\nD:/GitRepository/DyNACO-r3  cd16e2a [feature/r3-budget-aware-candidate-graph]\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "--no-patch",
+        "--format=fuller",
+        "cd16e2a68fd035f94a8916d41463904f31483d7f"
+      ],
+      "returncode": 0,
+      "stdout": "commit cd16e2a68fd035f94a8916d41463904f31483d7f\nAuthor:     shoraaa <shoraaa@protonmail.com>\nAuthorDate: Tue Aug 18 16:42:20 2026 +0700\nCommit:     GitHub <noreply@github.com>\nCommitDate: Tue Aug 18 16:42:20 2026 +0700\n\n    README\n",
+      "stderr": ""
+    }
+  ],
+  "safety": {
+    "original_untracked": [
+      ".r1-env/"
+    ],
+    "original_ignored": [
+      "artifacts/",
+      "r1/",
+      "tests/",
+      "output/",
+      ".pytest_cache/",
+      "__pycache__/"
+    ],
+    "safe_action": "Separate new worktree; no switch, reset, stash, clean, or R1 writes.",
+    "initial_before_worktree": "final at exact BASE, porcelain ?? .r1-env/ only; no tracked changes"
+  },
+  "source_hashes": {
+    "faco.py": "64fe4597d51ca23444e33f6ce46e7350d6e5d9409051773d5374d9d32d59e9c0",
+    "utils.py": "90e43fa1c671bf4ef0d512c39cc8e8d36d8ebb68a91af39cd1ebc7613521e739",
+    "net.py": "56272201f839baabebb4b27d4ee996845ac512f8d3e15b9d253cbf9950703094",
+    "test.py": "84e3ed82aeb292f5f9dec592612de926ee3430a05ad5295a7bb95e42db9d9c64",
+    "experiment.py": "e393e2fdfe719d01d33157f6e0d7aaafdeb836e8ec299fae00259306937657bf",
+    "src/mfaco_train.cpp": "f0a5511da679c407f30df2e25da86757139006ec331df0b87d44c7b4bb2650d4",
+    "src/mfaco_train.h": "fb8bd4c35cc4995922420e2de68e44213ec1575eec61785164ea97195ad3c36e",
+    "src/binding.cpp": "8036842f0e0e68dd4c5802bcc1c9e2476d2878d612639e8b6e79c1f2f5c88576",
+    "src/kd_tree.h": "aaede77216a4422faf92d8b344e831501d5dd05ae775ce37aced67c3639800b9",
+    "src/setup.py": "014203723d6c85edf85a2ad592305a1eccc34d5eb7494ef5dcb575c4407d9137"
+  }
+}

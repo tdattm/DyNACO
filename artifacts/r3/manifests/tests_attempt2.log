@@ -1,0 +1,58 @@
+.F..................                                                     [100%]
+=================================== FAILURES ===================================
+________________________ test_native_ties_are_preserved ________________________
+
+    def test_native_ties_are_preserved():
+        x=np.array([[0,0],[0,0],[1,0],[-1,0],[0,1],[0,-1]]*12,dtype=np.float32)
+        owners={k:solver(x,n_ants=1,k=k) for k in (32,40,48,64)}
+        lists={k:a.nn_list.copy() for k,a in owners.items()}
+>       assert audit_candidates(x,lists)['rows_checked']==72
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_r3_candidates.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+coords = array([[ 0.,  0.],
+       [ 0.,  0.],
+       [ 1.,  0.],
+       [-1.,  0.],
+       [ 0.,  1.],
+       [ 0., -1.],
+    ....,  0.],
+       [ 0.,  0.],
+       [ 1.,  0.],
+       [-1.,  0.],
+       [ 0.,  1.],
+       [ 0., -1.]], dtype=float32)
+native_lists = {32: array([[19, 31, 30, ..., 28, 40, 22],
+       [12, 18,  7, ..., 64, 70,  4],
+       [14, 32,  8, ..., 66, 48, 49],...38, 62, 44],
+       [64, 58,  4, ..., 23, 71, 11],
+       [59, 53, 47, ..., 34, 40, 46]], shape=(72, 64), dtype=int32)}
+
+    def audit_candidates(coords,native_lists):
+        start=time.perf_counter();x=np.asarray(coords,dtype=np.float64);n=len(x)
+        # Only O(N) reference distance storage per row, never retain an NxN matrix.
+        ties=0
+        for u in range(n):
+            distances=np.linalg.norm(x-x[u],axis=1);distances[u]=np.inf
+            reference=np.argsort(distances,kind='stable')[:64]
+            actual=native_lists[64][u]
+            if not np.array_equal(reference,actual):
+                if not np.array_equal(distances[reference],distances[actual]):raise AssertionError(f'Native ranking discrepancy row {u}')
+                ties+=1 # native KD traversal, not node index, resolves exact ties.
+            for k in (32,40,48):
+>               if not np.array_equal(native_lists[k][u],actual[:k]):raise AssertionError('native K prefix mismatch')
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               AssertionError: native K prefix mismatch
+
+r3/diagnostics.py:47: AssertionError
+=============================== warnings summary ===============================
+../DyNACO/.r1-env/venv/lib/python3.13/site-packages/torch_geometric/llm/utils/backend_utils.py:26
+  /mnt/d/GitRepository/DyNACO/.r1-env/venv/lib/python3.13/site-packages/torch_geometric/llm/utils/backend_utils.py:26: DeprecationWarning: `torch_geometric.distributed` has been deprecated since 2.7.0 and will no longer be maintained. For distributed training, refer to our tutorials on distributed training at https://pytorch-geometric.readthedocs.io/en/latest/tutorial/distributed.html or cuGraph examples at https://github.com/rapidsai/cugraph-gnn/tree/main/python/cugraph-pyg/cugraph_pyg/examples
+    from torch_geometric.distributed import (
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_r3_candidates.py::test_native_ties_are_preserved - Assertio...
+1 failed, 19 passed, 1 warning in 32.94s

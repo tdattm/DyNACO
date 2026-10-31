@@ -1,0 +1,44 @@
+{
+  "records": [
+    {
+      "n": 100,
+      "wall_seconds": 0.04233754899999553,
+      "scanner_seconds": 0.0008082909999984622,
+      "enumeration_seconds": 0.000347973,
+      "classification_seconds": 1.608e-06,
+      "gain_verification_seconds": 0.00032128800000919,
+      "rss_high_water_bytes": 754937856
+    },
+    {
+      "n": 200,
+      "wall_seconds": 0.13633031199999834,
+      "scanner_seconds": 0.002033237999995663,
+      "enumeration_seconds": 0.0013594680000000002,
+      "classification_seconds": 2.8719999999999998e-06,
+      "gain_verification_seconds": 0.000373909999993316,
+      "rss_high_water_bytes": 756940800
+    },
+    {
+      "n": 500,
+      "wall_seconds": 0.10685664300000042,
+      "scanner_seconds": 0.010022996000003559,
+      "enumeration_seconds": 0.008165701,
+      "classification_seconds": 2.4931e-05,
+      "gain_verification_seconds": 0.0010710709999983692,
+      "rss_high_water_bytes": 760725504
+    },
+    {
+      "n": 1000,
+      "wall_seconds": 0.29223015699999166,
+      "scanner_seconds": 0.06085179500000493,
+      "enumeration_seconds": 0.056227721999999994,
+      "classification_seconds": 0.000119722,
+      "gain_verification_seconds": 0.0020503289999993513,
+      "rss_high_water_bytes": 772345856
+    }
+  ],
+  "estimated_principal_seconds": 173.75303023999732,
+  "estimate_method": "2x 192 complete snapshot diagnoses +2x16 complete trajectories",
+  "resource_precheck": "PASS",
+  "principal_data_inspected": false
+}

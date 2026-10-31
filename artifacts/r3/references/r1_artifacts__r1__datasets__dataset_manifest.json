@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "datasets": [
+    {
+      "n": 100,
+      "instances": 2,
+      "path": "artifacts/r1/datasets/tsp100_seed20261031_v1.npy",
+      "sha256": "c65f243577a76279c3aed6e5f538d5b5dacbe1f1ebcb2ead8b984a4c84e3b2f0",
+      "dtype": "float32",
+      "distribution": "uniform [0,1)^2",
+      "rng": "numpy PCG64 SeedSequence([20261031,n])",
+      "version": 1,
+      "instance_ids": [
+        "tsp100-20261031-v1-000",
+        "tsp100-20261031-v1-001"
+      ],
+      "reference_optimum": null
+    },
+    {
+      "n": 200,
+      "instances": 2,
+      "path": "artifacts/r1/datasets/tsp200_seed20261031_v1.npy",
+      "sha256": "715eb2ba29a93e192196d1afe2c1024d26b1a36c51933967244c63172341f3c5",
+      "dtype": "float32",
+      "distribution": "uniform [0,1)^2",
+      "rng": "numpy PCG64 SeedSequence([20261031,n])",
+      "version": 1,
+      "instance_ids": [
+        "tsp200-20261031-v1-000",
+        "tsp200-20261031-v1-001"
+      ],
+      "reference_optimum": null
+    },
+    {
+      "n": 500,
+      "instances": 2,
+      "path": "artifacts/r1/datasets/tsp500_seed20261031_v1.npy",
+      "sha256": "0e2edf6d638f3dbf5992668bc056eaea48b09628e7e2fbecbf3a2ef10ec69096",
+      "dtype": "float32",
+      "distribution": "uniform [0,1)^2",
+      "rng": "numpy PCG64 SeedSequence([20261031,n])",
+      "version": 1,
+      "instance_ids": [
+        "tsp500-20261031-v1-000",
+        "tsp500-20261031-v1-001"
+      ],
+      "reference_optimum": null
+    },
+    {
+      "n": 1000,
+      "instances": 2,
+      "path": "artifacts/r1/datasets/tsp1000_seed20261031_v1.npy",
+      "sha256": "1f6511527464138a3669834f67299c048082a2ff1b78d03c369586ca80ee2be2",
+      "dtype": "float32",
+      "distribution": "uniform [0,1)^2",
+      "rng": "numpy PCG64 SeedSequence([20261031,n])",
+      "version": 1,
+      "instance_ids": [
+        "tsp1000-20261031-v1-000",
+        "tsp1000-20261031-v1-001"
+      ],
+      "reference_optimum": null
+    }
+  ]
+}

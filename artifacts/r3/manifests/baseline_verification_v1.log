@@ -1,0 +1,5 @@
+baseline smoke N=100 PASS wall=2.059s
+baseline smoke N=200 PASS wall=0.074s
+baseline smoke N=500 PASS wall=0.114s
+baseline smoke N=1000 PASS wall=0.197s
+Full 1000-iteration original regression + repeat PASS

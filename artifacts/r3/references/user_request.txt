@@ -1,0 +1,948 @@
+# Codex Research Task — DyNACO R3: Budget-Aware Adaptive Candidate Graph
+
+## ROLE AND RESEARCH OBJECTIVE
+
+You are acting as a senior research software engineer, repository analyst, experimental designer, and scientific reviewer.
+
+Your task is to investigate whether fixed KNN candidate graphs are a meaningful bottleneck in DyNACO and whether budget-aware selective candidate expansion deserves further investment.
+
+This is a hypothesis-testing research task, not a feature-completion task.
+
+Your highest priority is correctness, reproducibility, and scientific validity.
+
+**Do not implement an adaptive graph merely to complete the requested workflow. If Stage A fails its frozen scientific GO/NO-GO gate, stop and report the negative or inconclusive result.**
+
+Work autonomously through the safe steps. Do not request confirmation between routine operations. Stop on any scientific, integrity, or repository-safety blocker.
+
+## 1. RESEARCH CONTEXT
+
+Working repository:
+
+https://github.com/tdattm/DyNACO
+
+Upstream:
+
+https://github.com/shoraaa/DyNACO
+
+Exact original baseline commit:
+
+`cd16e2a68fd035f94a8916d41463904f31483d7f`
+
+Target branch:
+
+`feature/r3-budget-aware-candidate-graph`
+
+Existing R1 branch:
+
+`feature/r1-event-triggered-guidance`
+
+Reported R1 HEAD:
+
+`41d9a15b5f311d85118592550c7bdeaf71b3fb9e`
+
+R1 is not the base for R3.
+
+Do not incorporate the R1 event scheduler or other R1 algorithmic modifications.
+
+R1 produced useful environment, testing, dataset, and reproducibility utilities. Reuse only audited, algorithm-independent components when beneficial.
+
+Relevant sources:
+
+- Original DyNACO KDD 2026 paper.
+- Research proposal `De_xuat_nghien_cuu_mo_rong_DyNACO_R1_R3.pdf`.
+- Original baseline code and documentation.
+- Existing R1 experimental infrastructure, when verified independently.
+
+The proposal contains unverified hypotheses, not experimental evidence.
+
+The R3 hypothesis is:
+
+If important improving 2-opt moves are omitted by fixed K=32 KNN, and the omitted opportunities are nonuniformly concentrated across nodes or search states, selective candidate expansion under a fixed edge/computational budget may offer a better quality–compute trade-off than uniform K expansion.
+
+The initial task is to test the premise, not assume it.
+
+## 2. REPOSITORY SAFETY AND BRANCH SETUP
+
+Before any modification, run and record:
+
+- `git status --porcelain=v1`
+- `git branch --show-current`
+- `git rev-parse HEAD`
+- `git branch -avv`
+- `git remote -v`
+- `git worktree list`
+- `git show --no-patch --format=fuller cd16e2a68fd035f94a8916d41463904f31483d7f`
+
+Verify that the baseline commit exists locally.
+
+Verify the current checkout is clean and identify any untracked or ignored research artifacts that could be affected.
+
+Do not stash, clean, reset, delete, overwrite, merge, or force-push.
+
+Do not switch away from a dirty working tree.
+
+If safe, create an isolated R3 worktree/branch directly at the exact original baseline SHA. Do not branch from R1 or copy the entire R1 tree.
+
+If the target branch already exists, inspect it and verify ancestry before proceeding. Never overwrite it automatically.
+
+Never modify or delete existing R1 branches, data, reports, scripts, artifacts, or commits.
+
+Do not push automatically.
+
+Record the base SHA, working HEAD, branch, remotes, and initial status in an R3 repository manifest.
+
+## 3. FIRST: RE-AUDIT THE ACTUAL LOCAL CODE
+
+GitHub inspection identified the following baseline implementation details, but verify them locally before relying on them:
+
+- `MAX_CAND_LIST_SIZE = 64` in `src/mfaco_train.h`.
+- `MFACO_TSP::build_nn_lists()` in `src/mfaco_train.cpp` constructs the primary KNN and backup lists.
+- `nn_list` is shaped `(N,K)` and is row-major.
+- `backup_list` is a separate fallback list and is not automatically part of neural-guided candidate sampling or SRR 2-opt.
+- `pheromone_sparse` and `heuristic_sparse` are indexed by `u*K+j`.
+- `MFACO_TSP::select_next_node()` samples from the primary candidate list and falls back to backup/global nearest candidates when necessary.
+- `MFACO_TSP::two_opt_nn()` scans `nn_list` with distance-based early-break pruning.
+- `two_opt_nn()` uses a checklist and optionally extends it.
+- `load_snapshot()` accepts source/best tours, sparse pheromone, candidate arrays, and tau bounds, but does not expose complete RNG state.
+- `faco.py` maintains cached Torch tensors for neighbor indices, heuristic, and pheromone.
+- `utils.py::build_pyg_data_tsp()` constructs the GNN graph from `aco.nn_torch` and sparse dynamic edge features.
+- `net.py` applies the GNN to edge embeddings, producing one scalar output per input edge.
+- `binding.cpp` currently returns an empty `touched_list` rather than the actual SRR checklist.
+
+Inspect all relevant code paths directly, including:
+
+`faco.py`, `src/mfaco_train.cpp`, `src/mfaco_train.h`, `src/binding.cpp`, `src/kd_tree.h`, `net.py`, `utils.py`, `test.py`, `experiment.py`, and relevant initialization/build scripts.
+
+Produce a source audit with precise file/line references.
+
+Specifically verify:
+
+1. Directed versus undirected candidate-list semantics.
+2. Candidate sorting and tie-breaking assumptions.
+3. Exact candidate generation for K=32, K=40, K=48, and K=64.
+4. Whether backup neighbors are always the subsequent distance-ranked candidates.
+5. Which operations use backup neighbors.
+6. Exactly which candidate edges can influence pheromone updates.
+7. Neural prior alignment and feature-normalization dependencies on K.
+8. Two-opt gain formulas and both scan orientations.
+9. Early-break pruning assumptions.
+10. Checklist initialization, extension, revisiting, and convergence behavior.
+11. Whether initial and updated source tours are necessarily KNN-2-opt optimal.
+12. Public and private APIs available for tour/state capture.
+13. Whether `load_snapshot()` preserves all required state and what it does not preserve.
+14. Whether K32 pretrained checkpoints can run with K64 inputs at the tensor level.
+15. Which default CLI arguments differ from C++ and Python constructor defaults.
+
+Do not silently resolve a paper-versus-code inconsistency in favor of the paper.
+
+In particular, investigate whether checklist de-duplication prevents reactivating a previously processed node after an accepted 2-opt move. Treat this as a testable implementation property, not as a pre-established bug.
+
+Also inspect how `normalized_heuristic` interacts with `load_snapshot()` and cached Torch heuristic tensors.
+
+Document any mismatch between paper claims and actual implementation.
+
+## 4. ENVIRONMENT AND BASELINE VERIFICATION
+
+Target hardware:
+
+- Intel Core i5-11320H
+- 16 GB system RAM
+- NVIDIA RTX 3050 Laptop GPU
+- 4 GB VRAM
+- Windows + WSL2 Ubuntu
+
+Prior R1 work established a working CUDA/PyTorch and C++/OpenMP environment.
+
+Inspect, without modifying, the relevant R1 files from the existing branch:
+
+- `r1/README.md`
+- `r1/datasets.py`
+- `artifacts/r1/environment/`
+- `artifacts/r1/baseline/`
+- `artifacts/r1/reports/`
+
+Use `git show` or other read-only Git commands if R1 files are absent from the R3 checkout.
+
+Audit any utility before copying or reusing it.
+
+The baseline model should use the existing TSP-1K K32 pretrained checkpoint if available and verifiable.
+
+Do not retrain the GNN.
+
+Verify:
+
+- Python and library versions
+- CUDA availability
+- PyTorch device selection
+- Native backend import
+- Native extension source/build identity
+- OpenMP availability
+- Checkpoint loading
+- Checkpoint source and SHA256
+- Baseline seed behavior
+- Output tour validity
+- Baseline end-to-end inference
+
+Use an isolated build/environment where practical.
+
+Do not edit global GPU, system, or driver settings.
+
+Use reasonable CPU thread counts for the laptop. Avoid concurrent CPU-heavy benchmarks and parallel GPU workloads that interfere with timing.
+
+For baseline verification, start with:
+
+- TSP-100
+- TSP-200
+- TSP-500
+- TSP-1K
+
+Start with reduced iteration budgets for smoke tests, then verify a full 1,000-iteration run.
+
+Use explicit config instead of implicit defaults.
+
+Target TSP-1K configuration:
+
+- K=32
+- 100 ants
+- H=10
+- mini_H=100
+- total ACO iterations=1000
+- min_new_edges=12
+- rho=0.1
+- original smooth pheromone behavior
+- original SRR settings
+- frozen checkpoint
+- original neural warmup/annealing settings, if enabled by the selected baseline reference
+
+Verify every setting against the local code and existing R1 baseline evidence.
+
+Do not claim a numerical reproduction of the paper without matching the datasets, checkpoint, methodology, hardware accounting, and reference definitions.
+
+Distinguish:
+
+- Original paper results
+- Previously recorded R1 baseline evidence
+- New R3 baseline verification
+- New R3 diagnostic observations
+
+Persist baseline configuration, validity results, objective values, runtime, seeds, source SHA, and checkpoint hashes.
+
+## 5. STAGE A — INDEPENDENT 2-OPT DIAGNOSTIC
+
+Stage A must preserve original solver behavior.
+
+Prefer a standalone C++ diagnostic module invoked from Python instead of changing the production C++ solver.
+
+Implement an independent tour/move checker.
+
+### 5.1 Correct 2-opt reference
+
+Given a valid cyclic TSP tour, enumerate all distinct valid pairs of nonadjacent tour edges.
+
+Exclude:
+
+- Identical edges
+- Adjacent edges
+- Wraparound-adjacent edges
+- Invalid endpoint combinations
+- Moves that do not form a single valid Hamiltonian cycle
+
+For removed edges `(a,b)` and `(c,d)`, evaluate:
+
+`gain = dist(a,b) + dist(c,d) - dist(a,c) - dist(b,d)`
+
+Match the solver's exact tour distance convention, but compute an independent float64 reference.
+
+Do not use rounded TSPLIB EUC_2D edge costs for synthetic Euclidean instances unless the original solver does so.
+
+Use coordinate values actually provided to the native solver.
+
+Validate gain by applying selected moves to copied tours, recomputing total length independently, and comparing observed decrease with calculated gain.
+
+Include deliberately constructed small examples with known optimal moves, no improving moves, collinear points, duplicated/near-duplicated coordinates, and numerically marginal moves.
+
+A move is considered a robust improvement only if:
+
+`gain > max(1e-8, 1e-6 * current_tour_length)`
+
+Also preserve the raw signed gain before thresholding.
+
+Do not silently classify near-zero numerical improvements as genuine improvements.
+
+### 5.2 Candidate graph coverage
+
+On the same frozen tour, construct or load:
+
+- Original K32 candidates
+- K40 candidates
+- K48 candidates
+- K64 candidates
+- Full 2-opt reference
+
+Validate candidate identities and ranking against the native backend.
+
+If an independently constructed list differs, investigate and report the discrepancy. Use the native K32 list as authoritative for baseline-matching diagnostic.
+
+Define candidate eligibility using the actual source-code semantics, including candidate direction, both scan orientations, and edge ordering.
+
+Deduplicate 2-opt moves by canonical tour-edge pair.
+
+Do not incorrectly count the same move multiple times merely because multiple anchors can generate it.
+
+For each snapshot, calculate:
+
+- Number of valid full 2-opt moves
+- Number of improving full 2-opt moves
+- K32-eligible improving moves
+- K40-eligible improving moves
+- K48-eligible improving moves
+- K64-eligible improving moves
+- Newly covered moves for each K increment
+- Missed move count
+- Missed count rate
+- Gain-weighted coverage
+- Largest missed gain
+- Gain distribution of missed moves
+- Node-level missed gain concentration
+- Distances/ranks of newly useful candidate edges
+
+Always distinguish the candidate-membership-only definition from the exact `two_opt_nn` scanning/pruning definition.
+
+### 5.3 SRR versus graph limitation
+
+Implement independent classification for:
+
+- Candidate edge unavailable
+- Candidate edge available but no eligible checklist anchor
+- Candidate available but pruned
+- Candidate available and potentially evaluated
+- Candidate available and evaluated but not selected
+- Move actually accepted by the native SRR
+
+A move may have more than one representation or anchor.
+
+Preserve independent boolean eligibility fields; do not rely solely on mutually exclusive labels.
+
+Use all-node checklist analysis as a scope-independent reference.
+
+Attempt to reconstruct the actual checklist and perturbation trajectory using native traces and pre-SRR tours.
+
+The reconstruction must model the actual relocation order and source-tour edge semantics.
+
+Verify reconstructed raw tours exactly against native raw tours before trusting reconstructed checklist membership.
+
+If checklist reconstruction fails, mark exact checklist coverage unavailable.
+
+Do not invent or infer an actual checklist from an empty `touched_list`.
+
+If genuinely required, consider a small, disabled-by-default, passive instrumentation hook only after documenting why existing interfaces are insufficient.
+
+Any native instrumentation must have regression tests showing no change to route selection, RNG behavior, objective values, pheromone, and solver state when the hook is disabled.
+
+Do not treat a full all-node scan as equivalent to the real scope-restricted solver.
+
+### 5.4 Gain recovery on copied tours
+
+For selected missed moves:
+
+1. Copy the frozen tour.
+2. Apply the proposed 2-opt reversal.
+3. Revalidate permutation and cyclic tour structure.
+4. Recompute length in float64.
+5. Verify realized one-step improvement.
+6. Record the additional cost of evaluating/applying the move.
+
+This is an oracle feasibility diagnostic.
+
+Never describe a one-step oracle improvement as a gain actually achieved by DyNACO.
+
+Do not sum independent single-move gains and present the sum as achievable tour improvement.
+
+If running a sequential independent 2-opt repair, explicitly label it as an alternative postprocessor with a changed move budget, not as unchanged DyNACO.
+
+### 5.5 Efficiency
+
+Implement the full 2-opt scan in C++17 or equivalent compiled code.
+
+The reference loop should use O(N²) time without requiring O(N²) persistent memory.
+
+Use streaming aggregations, histograms, bounded top-gain storage, and small sampled detailed records.
+
+Do not materialize all pairwise moves for TSP-5K or larger.
+
+Avoid per-pair Python calls.
+
+Record time separately for:
+
+- State extraction
+- KNN verification/construction
+- Full 2-opt enumeration
+- Classification
+- Gain verification
+- Report generation
+
+Pilot the scanner on TSP-100/200/500 before TSP-1K.
+
+Stop or reduce snapshot count according to the predeclared resource budget if performance is excessive.
+
+Do not silently exceed resource limits to obtain more favorable evidence.
+
+## 6. FROZEN DATASET AND EXPERIMENT PROTOCOL
+
+Before running principal experiments, create:
+
+`r3/protocols/stage_a_v1.json`
+
+This must contain all protocol-defining values and selection rules.
+
+Save its SHA256 before the principal experiment.
+
+Any later correction must use a new protocol version and an explicit reason.
+
+Do not retrospectively alter thresholds.
+
+### Pilot datasets
+
+Use the existing audited R1 TSP-100/200/500 datasets where convenient.
+
+Revalidate coordinate hashes.
+
+Pilot data must not determine the principal GO/NO-GO thresholds.
+
+### Main Stage A datasets
+
+Generate 8 independent uniform TSP-1K instances using:
+
+- NumPy PCG64
+- Dataset seed 20261101
+- Size-specific `SeedSequence([20261101, 1000])`
+- float32 coordinates
+- Distribution uniform `[0,1)^2`
+- Instance IDs 0 through 7
+
+Use 2 solver execution seeds:
+
+- 31415
+- 27182
+
+Save the generated `.npy` data, dataset manifest, SHA256 values, and generator metadata.
+
+Preserve instance identity during aggregation.
+
+### Reference search trajectory
+
+Use the verified DyNACO K32 configuration.
+
+Capture states after completed iterations:
+
+- 0
+- 250
+- 500
+- 1000
+
+Persist the tour, candidate lists, relevant state, configurations, and iteration index at each checkpoint.
+
+Include raw sampled/pre-SRR tours and trace records only for a bounded, reproducible diagnostic sample when required.
+
+State capture should not alter solver transitions or consume additional solver RNG draws.
+
+Validate that instrumented baseline outputs match the uninstrumented reference under the same execution contract.
+
+Do not assume different `require_prob` or parallel-trace modes have identical stochastic behavior until verified.
+
+Aggregate statistics first per execution seed and then per independent instance.
+
+The primary statistical unit is the TSP instance, not the 2-opt move, ant, or individual snapshot.
+
+### Confirmation dataset reservation
+
+Reserve a separate future confirmation set:
+
+- Dataset seed 20261104
+- 8 independent uniform TSP-1K instances
+
+Do not inspect confirmation results while designing the selector.
+
+Do not use confirmation results to retune Stage A gates.
+
+## 7. PREDECLARED SELECTIVE EXPANSION SCREEN
+
+The purpose is to test whether nonuniform allocation has potential before implementing a modified solver.
+
+Use the same frozen tour and candidate universe for every comparison.
+
+Base graph: K32.
+
+Candidate pool: neighbors ranked 33 through 64, following the verified native neighbor-ranking convention.
+
+Additional directed-edge budget:
+
+`B = 8 * N`
+
+For TSP-1K, this is 8,000 additional directed candidate slots.
+
+Keep distinct directed slots separate from unique undirected-edge counts.
+
+Report both quantities.
+
+Compare the following offline graph policies:
+
+### A. Uniform K40
+
+Every node receives eight additional nearest candidates, ranks 33–40.
+
+Total extra directed slots: `8N`.
+
+### B. Random concentrated expansion
+
+Randomly choose 25% of nodes.
+
+Each chosen node receives 32 extra nearest candidates, ranks 33–64.
+
+Use 10 independently seeded random allocations per frozen snapshot, without altering baseline RNG state.
+
+Total extra directed slots: `8N`.
+
+Report both individual random results and the mean random-control performance.
+
+### C. Predefined geometry/tour-excess selector
+
+For each node `u`, calculate:
+
+`score(u) = max(d(u,pred(u)), d(u,succ(u))) / mean_distance_to_K32_neighbors(u)`
+
+Use a stable epsilon to avoid division by zero.
+
+Select the 25% of nodes with the largest scores, with deterministic node-index tie-breaking.
+
+Allocate 32 extra nearest candidates to each selected node, ranks 33–64.
+
+Total extra directed slots: `8N`.
+
+This selector is deterministic and does not use oracle 2-opt gain.
+
+Do not alter its scoring rule after inspecting principal results.
+
+### D. Full K64 reference
+
+All nodes receive 32 extra candidates.
+
+Total extra directed slots: `32N`.
+
+This is a higher-budget upper comparison, not an equal-budget control.
+
+### E. Oracle diagnostic only
+
+Optionally calculate the best allocation using observed improving-move gains under a fixed budget, solely to characterize headroom.
+
+An oracle-derived selection is not a deployable heuristic.
+
+It must not be used to make the heuristic selector pass the GO gate.
+
+### Offline selector metrics
+
+Evaluate all-node, candidate/pruning-aware improving-move coverage on exactly the same frozen tours.
+
+Measure:
+
+- Incremental improving moves covered beyond K32
+- Incremental gain mass beyond K32
+- Gain-weighted coverage
+- Maximum newly recoverable one-step gain
+- Per-node edge allocation
+- Directed slot budget
+- Unique undirected edge counts
+- Duplicate/self-loop/invalid-edge checks
+- Diagnostic calculation time
+
+The comparison must not imply a realized solver improvement.
+
+## 8. SCIENTIFIC GO/NO-GO — MANDATORY GATE
+
+Freeze these conditions before principal data collection.
+
+The gate applies to the 8 independent TSP-1K instances.
+
+For phase-dependent checks, use snapshots at iterations 500 and 1000, aggregating their results across the two solver seeds within each instance.
+
+### G0: Technical validity
+
+All correctness, source integrity, baseline regression, data audit, tour validity, gain validation, and required metric-definition tests pass.
+
+Any unresolved measurement inconsistency is a blocker.
+
+### G1: Off-graph opportunities
+
+At least 6 of the 8 independent instances exhibit robust improving moves outside K32 in middle/late search.
+
+The numerical threshold for a robust improving move is:
+
+`gain > max(1e-8, 1e-6 * tour_length)`
+
+### G2: Material improvement potential
+
+At least 6 of the 8 instances exhibit a verified best missed one-step improvement of at least:
+
+`1e-4 * tour_length`
+
+This improvement must be recomputed after applying a valid move to a copied tour.
+
+### G3: Selective allocation advantage
+
+Using the equal-budget `B=8N` comparison:
+
+The predefined geometry/tour-excess selector must produce at least 1.10 times the incremental gain mass of both:
+
+- Uniform K40
+- Mean random concentrated expansion
+
+on at least 6 of the 8 independent instances.
+
+The median instance-level improvement ratio must also be at least 1.10 against each comparator.
+
+Handle zero denominators explicitly. Do not replace zero denominators with arbitrary constants to manufacture passing ratios.
+
+If the ratio is undefined, preserve it as undefined and evaluate conservatively.
+
+Do not optimize a selector on the principal dataset after seeing results.
+
+### G4: Resource feasibility
+
+The diagnostic must finish within declared machine-resource limits and have valid timing/memory measurements.
+
+Pilot the cost before launching the full experiment.
+
+Use a default Stage A wall-clock cap of 90 minutes for the complete principal diagnostic, excluding separately reported initial environment/build work.
+
+If the laptop cannot complete the frozen protocol within the cap, report RESOURCE-INCONCLUSIVE rather than silently changing the experimental population.
+
+### Final gate rule
+
+GO only if G0–G4 pass.
+
+Otherwise:
+
+- Scientific evidence contradicts a condition: NO-GO.
+- Measurement is invalid/incomplete: INCONCLUSIVE.
+- Resource limitations prevent a valid conclusion: RESOURCE-INCONCLUSIVE.
+
+All three non-GO outcomes stop automatic development before Stage B.
+
+Do not change thresholds, dataset composition, phase boundaries, or selector definitions after data inspection.
+
+Generate a machine-readable gate report, including every condition, exact measured quantity, per-instance evidence, and a clear final decision.
+
+## 9. CONDITIONAL STAGE B — MINIMAL R3 PoC
+
+Execute this section only if Stage A produces an audited GO decision.
+
+Do not execute merely because the diagnostic found at least one positive missed move.
+
+Prefer the smallest possible implementation.
+
+First attempt to determine whether local-search candidate expansion can be isolated from the primary K32 neural/sampling graph.
+
+Preferred concept:
+
+`K32 neural/sampling graph + independent expanded local-search candidate view`
+
+Maintain unchanged:
+
+- K32 neural input graph
+- K32 neural prior indexing
+- K32 primary sampling probabilities
+- Original pheromone indexing and updates
+- Original pretrained checkpoint
+- Original guidance schedule
+- Original ACO iteration count
+- Original RNG initialization rules
+
+Only allow the SRR local-search candidate scan to access additional candidates.
+
+Do not modify the primary `nn_list` in place.
+
+If necessary, add an explicitly separate LS candidate structure and a disabled-by-default flag.
+
+Ensure that the baseline path remains byte-for-byte or behaviorally identical when the feature is disabled.
+
+Maintain all neighbor-ordering and pruning invariants.
+
+If selective candidate ordering is incompatible with early-break pruning, redesign only the auxiliary LS scan with a verified safe order; do not alter the baseline scan.
+
+If the modification cannot be made safely within the existing architecture, stop and report an engineering blocker.
+
+### Required tests
+
+Test:
+
+- Invalid indices
+- Self-loops
+- Duplicate neighbors
+- Candidate ordering
+- Pruning correctness
+- Boundary K values
+- Candidate direction semantics
+- Cyclic 2-opt correctness
+- Tour permutation validity
+- New tour length versus gain
+- No unnecessary RNG consumption
+- No modification to neural prior mappings
+- No modification to sparse pheromone/heuristic mappings
+- K32 disabled-feature regression against exact original baseline
+- Determinism under matched environment and seeds
+
+Never introduce a learned edge allocator, reinforcement-learning controller, additional GNN, or retraining as part of the initial PoC.
+
+If the minimal extension passes regression tests, benchmark only the following PoC controls:
+
+1. Original K32 baseline.
+2. Original K40/K64 as separate solver-level references only when checkpoint/solver compatibility is verified and limitations are explicitly documented.
+3. K32 plus uniform LS-only expansion.
+4. K32 plus random concentrated LS-only expansion.
+5. K32 plus predefined geometry/tour-excess LS-only expansion.
+
+Use exactly the same instances, execution seeds, checkpoint, total iterations, and baseline options.
+
+For LS-only variants, maintain the same extra directed-slot budget.
+
+Measure objective, anytime trajectory, actual runtime, diagnostic overhead, edge budget, additional LS evaluations, and memory.
+
+Do not claim end-to-end R3 superiority merely from improved one-step gain coverage.
+
+A real solver rollout and equal-budget controls are required.
+
+If Stage B produces promising but weak results, stop at a provisional PoC result and recommend independent confirmation. Do not automatically extend to large-scale or retrain.
+
+## 10. CONDITIONAL STAGE C — CONTROLLED CONFIRMATION
+
+Proceed only if Stage B is technically correct and shows a credible quality–compute signal under fair controls.
+
+Use the reserved independent confirmation dataset.
+
+Keep all design choices and gate criteria frozen.
+
+Compare paired results at the instance level.
+
+Report:
+
+- Final tour length
+- Gap when a valid reference is available
+- Anytime best-cost trajectory
+- Time-to-quality
+- Candidate coverage
+- Verified recovered one-step gain
+- Actual solver improvement
+- Extra edge budget
+- Native solver time
+- Neural forward time
+- Total wall-clock time
+- Memory usage
+- Instance-level and seed-level variability
+
+Separate the budget axes:
+
+- ACO iterations
+- Number of ants
+- Extra directed candidate slots
+- Neural calls
+- Local-search evaluations
+- Wall-clock time
+
+Use both fixed-iteration and, if properly implemented, fixed-wall-clock comparisons.
+
+Do not equate these different budgets.
+
+Use paired instance-level summaries and uncertainty estimates. Do not treat 2-opt moves or multiple snapshots of the same instance as independent statistical samples.
+
+Do not scale automatically to TSP-5K or 10K if the small-scale signal disappears or the resource overhead is excessive.
+
+## 11. EXPECTED DIRECTORY STRUCTURE
+
+Adapt naming to existing repository conventions when appropriate, but keep R3 independent of R1.
+
+Suggested structure:
+
+```text
+r3/
+  README.md
+  protocol.py
+  datasets.py
+  state_capture.py
+  diagnostics.py
+  selectors.py
+  analysis.py
+  gate.py
+  protocols/
+    stage_a_v1.json
+  native/
+    two_opt_diagnostic.cpp
+    build instructions
+
+tests/
+  test_r3_two_opt.py
+  test_r3_candidates.py
+  test_r3_state_capture.py
+  test_r3_reproducibility.py
+  test_r3_gate.py
+  test_r3_regression.py
+
+artifacts/r3/
+  environment/
+  baseline/
+  datasets/
+  pilots/
+  diagnostics/
+  experiments/
+  manifests/
+  reports/
+```
+
+Every experiment output directory must be unique and immutable once finalized.
+
+Never overwrite earlier results.
+
+Use raw CSV/JSON/NPY as appropriate.
+
+Do not use only plots or notebook output as the primary record.
+
+## 12. EXPERIMENT INTEGRITY AND PROVENANCE
+
+Persist:
+
+- Exact baseline SHA
+- R3 working commit SHA
+- Git diff/status
+- Source tree hash
+- Native source/build hashes
+- Checkpoint SHA256
+- Dataset SHA256
+- Protocol SHA256
+- Python/package versions
+- Compiler and OpenMP settings
+- CUDA/PyTorch details
+- CPU/GPU identification
+- Thread counts
+- Every relevant seed
+- Full resolved configuration
+- Timing scope and synchronization method
+- Raw per-instance/per-seed measurements
+- Failed runs and error logs
+- Numerical validation records
+- Tests and execution logs
+- Gate decisions
+
+Preserve negative outcomes and near-zero numerical effects.
+
+Do not remove failed experiments from summaries without an explicit predeclared exclusion rule and complete provenance.
+
+If existing R1 datasets or utilities are reused, record the source branch/file/commit and demonstrate that no R1 algorithmic behavior was inherited.
+
+Do not compare R1 strict replay timing with an R3 non-strict runtime as if they were equivalent.
+
+## 13. SCIENTIFIC REPORTING
+
+Write:
+
+`artifacts/r3/reports/R3_STAGE_A_REPORT.md`
+
+and, if Stage B was authorized:
+
+`artifacts/r3/reports/R3_MINIMAL_POC_REPORT.md`
+
+The Stage A report must contain:
+
+1. Research question and frozen hypothesis.
+2. Baseline source and reproduction status.
+3. Verified implementation details.
+4. Candidate graph and SRR limitations.
+5. Data and seeds.
+6. Exact diagnostic metric definitions.
+7. Numerical correctness checks.
+8. Fixed-K candidate coverage.
+9. Candidate miss-rate and missed gain magnitude.
+10. Checklist/SRR/pruning separation.
+11. Node concentration and phase dependence.
+12. Equal-edge-budget selector comparison.
+13. Runtime and memory.
+14. Negative findings and limitations.
+15. Complete GO/NO-GO decision and justification.
+
+Clearly distinguish paper evidence from new experiments.
+
+Do not use language such as "significant improvement" unless the evidence supports the corresponding statistical claim.
+
+Explain why any observed improvement might be due to expanded local search rather than improved neural guidance.
+
+If no beneficial selective expansion signal is found, report that conclusion directly.
+
+## 14. R3 RESEARCH HANDOFF SUMMARY
+
+At the end of this execution, create:
+
+`artifacts/r3/reports/RESEARCH_HANDOFF.md`
+
+Include:
+
+1. Branch and commit SHA.
+2. Work completed.
+3. Baseline verification and tests.
+4. Experimental configuration.
+5. Real results and uncertainty.
+6. Hypotheses supported/not supported.
+7. Exact scientific GO/NO-GO decision.
+8. Remaining blockers and risks.
+9. Recommended next action for the main DyNACO coordination thread.
+
+Also provide a concise final terminal summary containing:
+
+- Git branch/HEAD
+- Tests passed/failed
+- Protocol hash
+- Dataset and checkpoint hashes
+- Completed experiments
+- GO/NO-GO
+- Research report locations
+- Whether Stage B was executed
+- Any uncommitted changes
+
+You may commit completed R3 work locally using meaningful commit messages.
+
+Do not push, merge, reset, or modify R1 history.
+
+## 15. ACCEPTANCE CRITERIA AND BLOCKER POLICY
+
+Successful Stage A does not require the R3 hypothesis to be true.
+
+It requires a reliable answer to the scientific question.
+
+Acceptance criteria:
+
+- The original solver behavior is preserved.
+- A working independent 2-opt diagnostic exists.
+- Gain computation is independently verified.
+- Candidate membership and pruning semantics match the original C++ implementation.
+- Candidate miss-rate and gain metrics are calculated on genuine solver states.
+- SRR/checklist limitations are not hidden or misclassified.
+- Equal-edge-budget offline controls are implemented without oracle leakage.
+- Experimental runs and hashes are reproducible.
+- Principal measurements are completed or transparently marked incomplete.
+- A frozen GO/NO-GO report is generated.
+- Negative results are retained.
+- No R1 history/artifacts are modified.
+
+Stop immediately before Stage B if:
+
+- Baseline verification fails.
+- The local source differs unexpectedly from the recorded baseline.
+- Native backend state or measurements cannot be validated.
+- Gain verification fails.
+- Candidate lists do not meet their assumed semantics.
+- Checklist/replay ambiguity invalidates essential claims.
+- Any required GO criterion fails.
+- Data collection is incomplete.
+- Runtime or memory budgets are exceeded.
+- A code change would require unsafe candidate-index modifications.
+
+Do not fix a failed scientific gate by changing its thresholds, increasing the sample size after viewing results, adding a learned model, or performing an unregistered search for a more favorable selector.
+
+**Begin now with local repository verification, create an independent R3 branch from the original baseline if safe, audit the implementation, establish the baseline, freeze the protocol, and execute Stage A. Proceed beyond Stage A only when the audited frozen GO/NO-GO gate explicitly authorizes it.**
