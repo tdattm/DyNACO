@@ -1,0 +1,99 @@
+paired saved ant0 i=0 seed=31415 iter=0
+paired saved ant0 i=0 seed=31415 iter=249
+paired saved ant0 i=0 seed=31415 iter=499
+paired saved ant0 i=0 seed=31415 iter=999
+paired saved ant0 i=0 seed=27182 iter=0
+paired saved ant0 i=0 seed=27182 iter=249
+paired saved ant0 i=0 seed=27182 iter=499
+paired saved ant0 i=0 seed=27182 iter=999
+paired saved ant0 i=1 seed=31415 iter=0
+paired saved ant0 i=1 seed=31415 iter=249
+paired saved ant0 i=1 seed=31415 iter=499
+paired saved ant0 i=1 seed=31415 iter=999
+paired saved ant0 i=1 seed=27182 iter=0
+paired saved ant0 i=1 seed=27182 iter=249
+paired saved ant0 i=1 seed=27182 iter=499
+paired saved ant0 i=1 seed=27182 iter=999
+paired saved ant0 i=2 seed=31415 iter=0
+paired saved ant0 i=2 seed=31415 iter=249
+paired saved ant0 i=2 seed=31415 iter=499
+paired saved ant0 i=2 seed=31415 iter=999
+paired saved ant0 i=2 seed=27182 iter=0
+paired saved ant0 i=2 seed=27182 iter=249
+paired saved ant0 i=2 seed=27182 iter=499
+paired saved ant0 i=2 seed=27182 iter=999
+paired saved ant0 i=3 seed=31415 iter=0
+paired saved ant0 i=3 seed=31415 iter=249
+paired saved ant0 i=3 seed=31415 iter=499
+paired saved ant0 i=3 seed=31415 iter=999
+paired saved ant0 i=3 seed=27182 iter=0
+paired saved ant0 i=3 seed=27182 iter=249
+paired saved ant0 i=3 seed=27182 iter=499
+paired saved ant0 i=3 seed=27182 iter=999
+paired saved ant0 i=4 seed=31415 iter=0
+paired saved ant0 i=4 seed=31415 iter=249
+paired saved ant0 i=4 seed=31415 iter=499
+paired saved ant0 i=4 seed=31415 iter=999
+paired saved ant0 i=4 seed=27182 iter=0
+paired saved ant0 i=4 seed=27182 iter=249
+paired saved ant0 i=4 seed=27182 iter=499
+paired saved ant0 i=4 seed=27182 iter=999
+paired saved ant0 i=5 seed=31415 iter=0
+paired saved ant0 i=5 seed=31415 iter=249
+paired saved ant0 i=5 seed=31415 iter=499
+paired saved ant0 i=5 seed=31415 iter=999
+paired saved ant0 i=5 seed=27182 iter=0
+paired saved ant0 i=5 seed=27182 iter=249
+paired saved ant0 i=5 seed=27182 iter=499
+paired saved ant0 i=5 seed=27182 iter=999
+paired saved ant0 i=6 seed=31415 iter=0
+paired saved ant0 i=6 seed=31415 iter=249
+paired saved ant0 i=6 seed=31415 iter=499
+paired saved ant0 i=6 seed=31415 iter=999
+paired saved ant0 i=6 seed=27182 iter=0
+paired saved ant0 i=6 seed=27182 iter=249
+paired saved ant0 i=6 seed=27182 iter=499
+paired saved ant0 i=6 seed=27182 iter=999
+paired saved ant0 i=7 seed=31415 iter=0
+paired saved ant0 i=7 seed=31415 iter=249
+paired saved ant0 i=7 seed=31415 iter=499
+paired saved ant0 i=7 seed=31415 iter=999
+paired saved ant0 i=7 seed=27182 iter=0
+paired saved ant0 i=7 seed=27182 iter=249
+paired saved ant0 i=7 seed=27182 iter=499
+paired saved ant0 i=7 seed=27182 iter=999
+{
+  "phase": [
+    {
+      "phase": "initial",
+      "pairs": 16,
+      "mean_raw_length": 29.11776706327886,
+      "mean_refined_length": 27.985074029961083,
+      "mean_paired_length_reduction": 1.1326930333177774,
+      "median_paired_length_reduction": 1.0480003291189366,
+      "mean_raw_off_graph": 108.1875,
+      "mean_refined_off_graph": 70.3125,
+      "mean_refined_k32_residual": 337.8125,
+      "mean_raw_no_initial_anchor": 365.1875,
+      "mean_raw_pruned": 6.0625
+    },
+    {
+      "phase": "early",
+      "pairs": 16,
+      "mean_raw_length": 23.703292381384607,
+      "mean_refined_length": 23.4164032589075,
+      "mean_paired_length_reduction": 0.2868891224771055,
+      "median_paired_length_reduction": 0.2818443898354861,
+      "mean_raw_off_graph": 1.125,
+      "mean_refined_off_graph": 0.0,
+      "mean_refined_k32_residual": 5.8125,
+      "mean_raw_no_initial_anchor": 3.75,
+      "mean_raw_pruned": 0.75
+    },
+    {
+      "phase": "middle",
+      "pairs": 16,
+      "mean_raw_length": 24.63782356505165,
+      "mean_refined_length": 23.635966524364658,
+      "mean_paired_length_reduction": 1.0018570406869909,
+      "median_paired_length_reduction": 1.0381996033911722,

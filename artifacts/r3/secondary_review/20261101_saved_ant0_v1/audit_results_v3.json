@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "historical_gate": "NO-GO",
+  "historical_gate_unchanged": true,
+  "original_input_files_rehashed": 319,
+  "paired_groups": 64,
+  "policy_rows": 1920,
+  "count_and_gain_decompositions_checked": 1920,
+  "phase_summaries_recomputed": 4,
+  "instance_summaries_recomputed": 8,
+  "secondary_source_sha256": "c0921d7eb38eba633e196ac303e19f1a0fab40e6987d3ce31a239649a54662ac",
+  "audit_source_sha256": "1a9911b73b192d1199444816c87f107c0369dd0ba83d1f2c686da48d196eaded",
+  "output_sha256": {
+    "HANDOFF_SUPPLEMENT.md": "c8ac38734ea991dfe16ce6f20e4d6200eaeec7611fe065f1a3c23004e1a42852",
+    "input_manifest.json": "d91e1a50289abea1abdea46b901a61e229ae85ea7884b74f22253d30736cf046",
+    "paired_policy_metrics.csv": "1cdd985311286e565733d232612610a91c5a1b5adbdd75eb049b262a6b6dec45",
+    "R3_SECONDARY_EVIDENCE_REVIEW.md": "e098e039f05bb2ff2c216a83a1cb0f917e7ef1ef4491f51c2d22bbe7503cf1c6",
+    "summary.json": "e239a50faeb0e3e57a92ca553785942888ef727303bcbc93251e0b908136fe3a"
+  }
+}

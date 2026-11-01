@@ -1,0 +1,306 @@
+{
+  "phase": [
+    {
+      "phase": "initial",
+      "pairs": 16,
+      "mean_raw_length": 29.11776706327886,
+      "mean_refined_length": 27.985074029961083,
+      "mean_paired_length_reduction": 1.1326930333177774,
+      "median_paired_length_reduction": 1.0480003291189366,
+      "mean_raw_off_graph": 108.1875,
+      "mean_refined_off_graph": 70.3125,
+      "mean_refined_k32_residual": 337.8125,
+      "mean_raw_no_initial_anchor": 365.1875,
+      "mean_raw_pruned": 6.0625
+    },
+    {
+      "phase": "early",
+      "pairs": 16,
+      "mean_raw_length": 23.703292381384607,
+      "mean_refined_length": 23.4164032589075,
+      "mean_paired_length_reduction": 0.2868891224771055,
+      "median_paired_length_reduction": 0.2818443898354861,
+      "mean_raw_off_graph": 1.125,
+      "mean_refined_off_graph": 0.0,
+      "mean_refined_k32_residual": 5.8125,
+      "mean_raw_no_initial_anchor": 3.75,
+      "mean_raw_pruned": 0.75
+    },
+    {
+      "phase": "middle",
+      "pairs": 16,
+      "mean_raw_length": 24.63782356505165,
+      "mean_refined_length": 23.635966524364658,
+      "mean_paired_length_reduction": 1.0018570406869909,
+      "median_paired_length_reduction": 1.0381996033911722,
+      "mean_raw_off_graph": 15.5,
+      "mean_refined_off_graph": 2.25,
+      "mean_refined_k32_residual": 14.8125,
+      "mean_raw_no_initial_anchor": 18.625,
+      "mean_raw_pruned": 5.5
+    },
+    {
+      "phase": "late",
+      "pairs": 16,
+      "mean_raw_length": 24.741333346523,
+      "mean_refined_length": 23.66436406355439,
+      "mean_paired_length_reduction": 1.0769692829686088,
+      "median_paired_length_reduction": 1.1021502758092758,
+      "mean_raw_off_graph": 23.0,
+      "mean_refined_off_graph": 0.375,
+      "mean_refined_k32_residual": 14.125,
+      "mean_raw_no_initial_anchor": 22.125,
+      "mean_raw_pruned": 5.875
+    }
+  ],
+  "per_instance": [
+    {
+      "instance": 0,
+      "length_reduction": 1.064990878981356,
+      "relative_reduction": 0.042738392162182434,
+      "raw_off_graph": 25.75,
+      "refined_off_graph": 0.0,
+      "raw_off_graph_gain": 0.8055500085973984,
+      "refined_off_graph_gain": 0.0,
+      "raw_k32_residual": 89.0,
+      "refined_k32_residual": 13.5,
+      "raw_no_initial_anchor": 22.5,
+      "raw_pruned": 7.75,
+      "raw_initial_potential": 58.75,
+      "refined_initial_potential": 1.5
+    },
+    {
+      "instance": 1,
+      "length_reduction": 1.0773101311519735,
+      "relative_reduction": 0.04363844988875608,
+      "raw_off_graph": 29.5,
+      "refined_off_graph": 0.25,
+      "raw_off_graph_gain": 0.6906870099916302,
+      "refined_off_graph_gain": 0.0029286799235046235,
+      "raw_k32_residual": 86.25,
+      "refined_k32_residual": 14.0,
+      "raw_no_initial_anchor": 17.5,
+      "raw_pruned": 6.5,
+      "raw_initial_potential": 62.25,
+      "refined_initial_potential": 5.0
+    },
+    {
+      "instance": 2,
+      "length_reduction": 0.8165789870414333,
+      "relative_reduction": 0.0332802573107056,
+      "raw_off_graph": 7.0,
+      "refined_off_graph": 0.0,
+      "raw_off_graph_gain": 0.22083545892682915,
+      "refined_off_graph_gain": 0.0,
+      "raw_k32_residual": 77.25,
+      "refined_k32_residual": 11.25,
+      "raw_no_initial_anchor": 16.5,
+      "raw_pruned": 3.5,
+      "raw_initial_potential": 57.25,
+      "refined_initial_potential": 5.25
+    },
+    {
+      "instance": 3,
+      "length_reduction": 1.0020353880070898,
+      "relative_reduction": 0.04012582585765627,
+      "raw_off_graph": 24.75,
+      "refined_off_graph": 9.0,
+      "raw_off_graph_gain": 0.6568787628899071,
+      "refined_off_graph_gain": 0.1399350971537883,
+      "raw_k32_residual": 89.0,
+      "refined_k32_residual": 21.0,
+      "raw_no_initial_anchor": 22.25,
+      "raw_pruned": 6.25,
+      "raw_initial_potential": 60.5,
+      "refined_initial_potential": 3.5
+    },
+    {
+      "instance": 4,
+      "length_reduction": 1.0343542976232794,
+      "relative_reduction": 0.041714860250282704,
+      "raw_off_graph": 17.5,
+      "refined_off_graph": 0.0,
+      "raw_off_graph_gain": 0.5627393506363676,
+      "refined_off_graph_gain": 0.0,
+      "raw_k32_residual": 88.0,
+      "refined_k32_residual": 17.5,
+      "raw_no_initial_anchor": 26.0,
+      "raw_pruned": 3.75,
+      "raw_initial_potential": 58.25,
+      "refined_initial_potential": 5.75
+    },
+    {
+      "instance": 5,
+      "length_reduction": 1.0864695799284716,
+      "relative_reduction": 0.0445198782057525,
+      "raw_off_graph": 7.75,
+      "refined_off_graph": 0.0,
+      "raw_off_graph_gain": 0.19280740147366582,
+      "refined_off_graph_gain": 0.0,
+      "raw_k32_residual": 94.75,
+      "refined_k32_residual": 7.5,
+      "raw_no_initial_anchor": 16.0,
+      "raw_pruned": 6.25,
+      "raw_initial_potential": 72.5,
+      "refined_initial_potential": 2.5
+    },
+    {
+      "instance": 6,
+      "length_reduction": 1.120616875578846,
+      "relative_reduction": 0.04526600611261253,
+      "raw_off_graph": 28.25,
+      "refined_off_graph": 1.25,
+      "raw_off_graph_gain": 0.7497836560085814,
+      "refined_off_graph_gain": 0.032445572819743015,
+      "raw_k32_residual": 83.75,
+      "refined_k32_residual": 19.25,
+      "raw_no_initial_anchor": 22.0,
+      "raw_pruned": 6.5,
+      "raw_initial_potential": 55.25,
+      "refined_initial_potential": 4.75
+    },
+    {
+      "instance": 7,
+      "length_reduction": 1.1129491563099494,
+      "relative_reduction": 0.0449066774125005,
+      "raw_off_graph": 13.5,
+      "refined_off_graph": 0.0,
+      "raw_off_graph_gain": 0.24638278350090215,
+      "refined_off_graph_gain": 0.0,
+      "raw_k32_residual": 94.5,
+      "refined_k32_residual": 11.75,
+      "raw_no_initial_anchor": 20.25,
+      "raw_pruned": 5.0,
+      "raw_initial_potential": 69.25,
+      "refined_initial_potential": 3.25
+    }
+  ],
+  "checklist_policy_per_instance": [
+    {
+      "instance": 0,
+      "raw_geometry_incremental_gain": 0.241881423767631,
+      "raw_uniform_incremental_gain": 0.1428339290003801,
+      "raw_random_mean_incremental_gain": 0.0815632246058079,
+      "refined_geometry_incremental_gain": 0.0,
+      "refined_uniform_incremental_gain": 0.0,
+      "refined_random_mean_incremental_gain": 0.0
+    },
+    {
+      "instance": 1,
+      "raw_geometry_incremental_gain": 0.1420629899352902,
+      "raw_uniform_incremental_gain": 0.05016405809781482,
+      "raw_random_mean_incremental_gain": 0.026571754794411467,
+      "refined_geometry_incremental_gain": 0.0,
+      "refined_uniform_incremental_gain": 0.0,
+      "refined_random_mean_incremental_gain": 0.0
+    },
+    {
+      "instance": 2,
+      "raw_geometry_incremental_gain": 0.2038701618083305,
+      "raw_uniform_incremental_gain": 0.06824400814418835,
+      "raw_random_mean_incremental_gain": 0.05605780316957248,
+      "refined_geometry_incremental_gain": 0.0,
+      "refined_uniform_incremental_gain": 0.0,
+      "refined_random_mean_incremental_gain": 0.0
+    },
+    {
+      "instance": 3,
+      "raw_geometry_incremental_gain": 0.25967123500290795,
+      "raw_uniform_incremental_gain": 0.20890061802185705,
+      "raw_random_mean_incremental_gain": 0.048104657611217454,
+      "refined_geometry_incremental_gain": 0.0,
+      "refined_uniform_incremental_gain": 0.0,
+      "refined_random_mean_incremental_gain": 0.0
+    },
+    {
+      "instance": 4,
+      "raw_geometry_incremental_gain": 0.1758119220604818,
+      "raw_uniform_incremental_gain": 0.02240886249762114,
+      "raw_random_mean_incremental_gain": 0.03205432625923675,
+      "refined_geometry_incremental_gain": 0.0,
+      "refined_uniform_incremental_gain": 0.0,
+      "refined_random_mean_incremental_gain": 0.0
+    },
+    {
+      "instance": 5,
+      "raw_geometry_incremental_gain": 0.2162108115222075,
+      "raw_uniform_incremental_gain": 0.10365745379669394,
+      "raw_random_mean_incremental_gain": 0.06068955802730666,
+      "refined_geometry_incremental_gain": 0.0,
+      "refined_uniform_incremental_gain": 0.0,
+      "refined_random_mean_incremental_gain": 0.0
+    },
+    {
+      "instance": 6,
+      "raw_geometry_incremental_gain": 0.24383186107144728,
+      "raw_uniform_incremental_gain": 0.08526616012791721,
+      "raw_random_mean_incremental_gain": 0.04795603670919012,
+      "refined_geometry_incremental_gain": 0.012045659957974601,
+      "refined_uniform_incremental_gain": 0.007813967818793949,
+      "refined_random_mean_incremental_gain": 0.0036136979873923804
+    },
+    {
+      "instance": 7,
+      "raw_geometry_incremental_gain": 0.21904081313708607,
+      "raw_uniform_incremental_gain": 0.08087269085627141,
+      "raw_random_mean_incremental_gain": 0.06212314999182598,
+      "refined_geometry_incremental_gain": 0.0,
+      "refined_uniform_incremental_gain": 0.0,
+      "refined_random_mean_incremental_gain": 0.0
+    }
+  ],
+  "descriptive_uncertainty": {
+    "length_reduction": {
+      "mean": 1.0394131618277997,
+      "median": 1.0711505050666648,
+      "range": [
+        0.8165789870414333,
+        1.120616875578846
+      ],
+      "bootstrap_95_percentile_interval": [
+        0.9661321951284163,
+        1.0909515302337818
+      ],
+      "primary_unit": "instance",
+      "n": 8
+    },
+    "refined_off_graph": {
+      "mean": 1.3125,
+      "median": 0.0,
+      "range": [
+        0.0,
+        9.0
+      ],
+      "bootstrap_95_percentile_interval": [
+        0.03125,
+        3.5625
+      ],
+      "primary_unit": "instance",
+      "n": 8
+    },
+    "refined_k32_residual": {
+      "mean": 14.46875,
+      "median": 13.75,
+      "range": [
+        7.5,
+        21.0
+      ],
+      "bootstrap_95_percentile_interval": [
+        11.59375,
+        17.4375
+      ],
+      "primary_unit": "instance",
+      "n": 8
+    }
+  },
+  "secondary_decision": "INCONCLUSIVE",
+  "stage_b_authorized": false,
+  "historical_gate": "NO-GO",
+  "historical_gate_unchanged": true,
+  "historical_report_unchanged": true,
+  "raw_reconstructions_verified": 64,
+  "compiled_scans_verified": 1920,
+  "stage_a_files_rehashed": 440,
+  "input_files_hashed": 319,
+  "elapsed_seconds": 19.289160494
+}
