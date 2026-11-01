@@ -199,6 +199,16 @@ struct SampleResult {
 
 class MFACO_TSP {
 public:
+  // R3 final: independent SRR access. Construction/pheromone dimensions stay k.
+  struct LSCounts {
+    uint64_t calls = 0, candidates = 0, expanded_candidates = 0;
+    uint64_t gains = 0, expanded_gains = 0, accepted = 0, expanded_accepted = 0;
+  };
+  void set_ls_widths(const std::vector<int32_t> &widths);
+  void enable_ls_counts(bool enabled);
+  LSCounts get_ls_counts() const;
+  const std::vector<int32_t> &ls_candidates() const { return ls_candidates_; }
+  const std::vector<int32_t> &ls_widths() const { return ls_widths_; }
   // Configuration
   int32_t n; // number of nodes
   int32_t n_ants;
@@ -326,6 +336,13 @@ public:
   }
 
 private:
+  std::vector<int32_t> ls_candidates_, ls_widths_;
+  bool ls_expanded_ = false, ls_counted_ = false;
+  std::vector<LSCounts> ls_counts_;
+  template <bool Expanded, bool Counted>
+  float two_opt_nn_impl(std::vector<int32_t> &route,
+                        std::vector<int32_t> &positions,
+                        std::vector<int32_t> &checklist);
   // ========================================================================
   // Internal methods
   // ========================================================================

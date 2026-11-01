@@ -959,6 +959,56 @@ float MFACO_TSP::relocate_node(int32_t target, int32_t node,
 float MFACO_TSP::two_opt_nn(std::vector<int32_t> &route,
                             std::vector<int32_t> &positions,
                             std::vector<int32_t> &checklist) {
+  if (ls_expanded_) {
+    if (ls_counted_) return two_opt_nn_impl<true, true>(route, positions, checklist);
+    return two_opt_nn_impl<true, false>(route, positions, checklist);
+  }
+  if (ls_counted_) return two_opt_nn_impl<false, true>(route, positions, checklist);
+  return two_opt_nn_impl<false, false>(route, positions, checklist);
+}
+
+void MFACO_TSP::set_ls_widths(const std::vector<int32_t> &widths) {
+  if (widths.size() != static_cast<size_t>(n))
+    throw std::invalid_argument("one SRR width per node required");
+  bool expanded = false;
+  for (auto w : widths) {
+    if (w != k && !(k == 32 && bl == 32 && (w == 40 || w == 64)))
+      throw std::invalid_argument("SRR widths must be k, or 40/64 with K32+backup32");
+    expanded |= w != k;
+  }
+  // Copy exactly the native query order; never run another nearest-neighbor query.
+  if (expanded && ls_candidates_.empty()) {
+    ls_candidates_.resize(static_cast<size_t>(n) * 64);
+    for (int32_t u = 0; u < n; ++u) {
+      std::copy_n(nn_list.data() + u * k, 32, ls_candidates_.data() + u * 64);
+      std::copy_n(backup_list.data() + u * bl, 32, ls_candidates_.data() + u * 64 + 32);
+    }
+  }
+  ls_widths_ = widths;
+  ls_expanded_ = expanded;
+}
+
+void MFACO_TSP::enable_ls_counts(bool enabled) {
+  ls_counted_ = enabled;
+  ls_counts_.assign(static_cast<size_t>(omp_get_max_threads()), LSCounts{});
+}
+
+MFACO_TSP::LSCounts MFACO_TSP::get_ls_counts() const {
+  LSCounts sum;
+  for (const auto &c : ls_counts_) {
+    sum.calls += c.calls; sum.candidates += c.candidates;
+    sum.expanded_candidates += c.expanded_candidates;
+    sum.gains += c.gains; sum.expanded_gains += c.expanded_gains;
+    sum.accepted += c.accepted; sum.expanded_accepted += c.expanded_accepted;
+  }
+  return sum;
+}
+
+template <bool Expanded, bool Counted>
+float MFACO_TSP::two_opt_nn_impl(std::vector<int32_t> &route,
+                                std::vector<int32_t> &positions,
+                                std::vector<int32_t> &checklist) {
+  LSCounts counts;
   int32_t changes_count = 0;
   float total_change = 0.0f;
   size_t checklist_pos = 0;
@@ -967,6 +1017,10 @@ float MFACO_TSP::two_opt_nn(std::vector<int32_t> &route,
     int32_t a = checklist[checklist_pos++];
     if (a < 0 || a >= n)
       continue;
+
+    const int32_t width = Expanded ? ls_widths_[a] : k;
+    const int32_t *row = Expanded ? ls_candidates_.data() + a * 64 : nn_list.data() + a * k;
+    int32_t best_rank = -1;
 
     int32_t a_next = get_succ(a, route, positions);
     int32_t a_prev = get_pred(a, route, positions);
@@ -978,13 +1032,16 @@ float MFACO_TSP::two_opt_nn(std::vector<int32_t> &route,
     int32_t best_move[4] = {-1, -1, -1, -1};
 
     // Check moves with a -> a_next edge
-    for (int32_t j = 0; j < k; ++j) {
-      int32_t b = nn_list[a * k + j];
+    for (int32_t j = 0; j < width; ++j) {
+      int32_t b = row[j];
       if (b < 0 || b >= n)
         break;
 
+      if constexpr (Counted) { ++counts.candidates; counts.expanded_candidates += j >= 32; }
+
       float dist_ab = dist(a, b);
       if (dist_a_to_next > dist_ab) {
+        if constexpr (Counted) { ++counts.gains; counts.expanded_gains += j >= 32; }
         int32_t b_next = get_succ(b, route, positions);
         float diff =
             dist_a_to_next + dist(b, b_next) - dist_ab - dist(a_next, b_next);
@@ -994,6 +1051,7 @@ float MFACO_TSP::two_opt_nn(std::vector<int32_t> &route,
           best_move[2] = a;
           best_move[3] = b;
           max_diff = diff;
+          if constexpr (Counted) best_rank = j;
         }
       } else {
         break;
@@ -1001,13 +1059,16 @@ float MFACO_TSP::two_opt_nn(std::vector<int32_t> &route,
     }
 
     // Check moves with a_prev -> a edge
-    for (int32_t j = 0; j < k; ++j) {
-      int32_t b = nn_list[a * k + j];
+    for (int32_t j = 0; j < width; ++j) {
+      int32_t b = row[j];
       if (b < 0 || b >= n)
         break;
 
+      if constexpr (Counted) { ++counts.candidates; counts.expanded_candidates += j >= 32; }
+
       float dist_ab = dist(a, b);
       if (dist_a_to_prev > dist_ab) {
+        if constexpr (Counted) { ++counts.gains; counts.expanded_gains += j >= 32; }
         int32_t b_prev = get_pred(b, route, positions);
         float diff =
             dist_a_to_prev + dist(b_prev, b) - dist_ab - dist(a_prev, b_prev);
@@ -1017,6 +1078,7 @@ float MFACO_TSP::two_opt_nn(std::vector<int32_t> &route,
           best_move[2] = a_prev;
           best_move[3] = b_prev;
           max_diff = diff;
+          if constexpr (Counted) best_rank = j;
         }
       } else {
         break;
@@ -1024,6 +1086,7 @@ float MFACO_TSP::two_opt_nn(std::vector<int32_t> &route,
     }
 
     if (max_diff > 0) {
+      if constexpr (Counted) { ++counts.accepted; counts.expanded_accepted += best_rank >= 32; }
       flip_route_section(best_move[0], best_move[1], route, positions);
       ++changes_count;
       total_change -= max_diff;
@@ -1041,6 +1104,14 @@ float MFACO_TSP::two_opt_nn(std::vector<int32_t> &route,
     }
   }
 
+  if constexpr (Counted) {
+    // Each OpenMP thread writes its own slot, once per SRR call. No RNG/callbacks.
+    auto &c = ls_counts_[static_cast<size_t>(omp_get_thread_num())];
+    ++c.calls; c.candidates += counts.candidates;
+    c.expanded_candidates += counts.expanded_candidates;
+    c.gains += counts.gains; c.expanded_gains += counts.expanded_gains;
+    c.accepted += counts.accepted; c.expanded_accepted += counts.expanded_accepted;
+  }
   return total_change;
 }
 

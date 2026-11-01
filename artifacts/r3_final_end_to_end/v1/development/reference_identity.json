@@ -1,0 +1,6 @@
+{
+  "binary": "/mnt/d/GitRepository/DyNACO-r3/.r3-build/native/faco_opt.cpython-313-x86_64-linux-gnu.so",
+  "binary_sha256": "8e1e67b69343956e4b1ce5f1ff667fd052b74132a7522d36346afc73fe926955",
+  "coordinates_sha256": "1f6511527464138a3669834f67299c048082a2ff1b78d03c369586ca80ee2be2",
+  "iterations": 1000
+}

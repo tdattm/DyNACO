@@ -1,0 +1,2 @@
+PASS final binary: exact1000, native buffer prefixes, isolation, tie-break and decision checks
+PASS exact native expanded SRR replay and independent per-move float64 diagnostics

@@ -1,0 +1,1107 @@
+# DyNACO — R3 FINAL END-TO-END RESEARCH EXPERIMENT
+
+## Autonomous Implementation, Benchmarking, Statistical Analysis, and Final GO/NO-GO Decision
+
+**Repository:** https://github.com/tdattm/DyNACO
+
+**Primary R3 reference branch:** `feature/r3-budget-aware-candidate-graph`
+
+**Reference commit:** `e3eae0055e61789e75a445d61dfa75238ec7ef27`
+
+**New branch:** `codex/r3-final-end-to-end`
+
+**Target environment:** Windows 11 / WSL2 Ubuntu, NVIDIA RTX 3050 Laptop GPU (4 GiB VRAM), existing repository toolchain.
+
+---
+
+# 0. MISSION — READ THIS FIRST
+
+You are being assigned ONE complete, autonomous research task.
+
+Your mission is to answer this question:
+
+**Does an adaptive allocation of local-search candidate edges improve end-to-end DyNACO solution quality compared with the original fixed-K32 baseline and a uniform equal-edge-budget control?**
+
+You must implement the proposed approach, validate its correctness, run the complete experiment, analyze the results, and produce a final research decision.
+
+This is NOT another exploratory infrastructure task.
+
+This is NOT a request for a proposal, partial implementation, readiness report, protocol review, or intermediate handoff.
+
+The user explicitly authorizes you to carry out the entire experiment within the scope of this instruction, including:
+
+- Creating an isolated Git worktree and research branch.
+- Modifying experimental C++/Python code.
+- Building and testing the native extension.
+- Generating the specified independent benchmark dataset.
+- Running development tests.
+- Running the full principal benchmark.
+- Analyzing the resulting data.
+- Generating figures and reports.
+- Committing the completed research deliverables.
+- Pushing the completed research branch if Git authentication permits it.
+
+**Do not ask the user for human-in-the-loop approval between these operations.**
+
+Do not stop at statuses such as:
+
+- READY FOR REVIEW
+- READY FOR IMPLEMENTATION
+- READY FOR PRINCIPAL
+- PROTOCOL FREEZE READY
+- AWAITING AUTHORIZATION
+- NEXT STEP RECOMMENDED
+
+Those are intermediate engineering states, not deliverables.
+
+The required outcome is a completed research report and a final decision.
+
+You have permission to take as much execution time as necessary within the machine's available resources.
+
+Do not artificially impose the previous M2 45-minute aggregate cap on this new experiment.
+
+Work autonomously through ordinary engineering failures.
+
+Do not fabricate data, silently change scientific criteria after seeing principal results, or misrepresent incomplete experiments.
+
+If a nonrecoverable technical limitation prevents scientific completion, still deliver a final **NO-GO FOR FURTHER R3 INVESTMENT IN THIS ATTEMPT**, explicitly distinguished from a scientifically established algorithmic NO-GO.
+
+A valid, complete principal study must receive a scientific GO or NO-GO according to the prespecified criteria.
+
+---
+
+# 1. RESEARCH BACKGROUND AND EXISTING EVIDENCE
+
+Read the existing R3 research artifacts first.
+
+In particular, inspect:
+
+- `r3/README.md`
+- `r3/protocols/stage_a_v1.json`
+- `r3/selectors.py`
+- `r3/analysis.py`
+- `r3/gate.py`
+- `artifacts/r3/experiments/stage_a_v1_01/gate.json`
+- `artifacts/r3/reports/R3_STAGE_A_REPORT.md`
+- `src/mfaco_train.cpp`
+- `src/mfaco_train.h`
+- `src/binding.cpp`
+- `faco.py`
+- `utils.py`
+- `net.py`
+
+Existing R3 Stage A concluded:
+
+- G0 technical validation: PASS.
+- G1: 0/8 instances passed.
+- G2: 0/8 instances passed.
+- G3: 0/8 instances passed.
+- G4 resource validation: PASS.
+- Final historical decision: STAGE A NO-GO.
+
+That result must remain unchanged.
+
+Stage A was predominantly an offline candidate-coverage and pruning analysis. It did not establish the actual performance of a fully integrated adaptive local-search policy.
+
+This new study is an explicitly user-authorized, separately registered FINAL end-to-end experiment.
+
+It does not retroactively turn Stage A into GO, and it does not claim to have satisfied the old Stage B authorization gate.
+
+Previous M1/M2 two-pass SRR evidence is also historical and separate.
+
+Do not combine two-pass SRR with adaptive candidate allocation in this study.
+
+Use **exactly one original SRR pass** in every arm.
+
+The purpose is to isolate adaptive candidate allocation, not SRR scheduling.
+
+---
+
+# 2. SCIENTIFIC HYPOTHESIS
+
+## Main hypothesis
+
+Adaptive allocation of a fixed number of additional local-search candidate slots can yield better TSP tours than:
+
+1. Original fixed K32 local search.
+2. Uniform fixed K40 local search with the same total number of candidate slots.
+
+The comparison is under equal wall-clock search budgets.
+
+## Why the K40 control is mandatory
+
+Comparing Adaptive K32/K64 only against K32 is insufficient.
+
+An improvement could arise merely because the adaptive method evaluates more candidate edges.
+
+The K40 control tests whether **where we allocate the extra edges** matters beyond the simple act of adding the same number of candidate slots uniformly.
+
+Use three arms:
+
+### ARM A — ORIGINAL K32
+
+- Exactly 32 nearest-neighbor candidates per node for native SRR.
+- Original sampling graph K32.
+- Original GNN input and checkpoint.
+- Original pheromone semantics.
+- Original ACO behavior.
+- Exactly one original SRR call.
+- No adaptive allocation.
+
+Total directed SRR candidate slots:
+
+`1000 × 32 = 32000`
+
+### ARM B — UNIFORM K40
+
+- Exactly 40 nearest-neighbor candidates per node for native SRR.
+- Use ranks 1–40 from the native nearest-neighbor ordering.
+- Original sampling graph remains K32.
+- Original GNN input remains K32.
+- Original pheromone dimensions remain K32.
+- Exactly one SRR call.
+
+Total directed SRR candidate slots:
+
+`1000 × 40 = 40000`
+
+### ARM C — ADAPTIVE K32/K64
+
+- 750 nodes receive 32 native SRR candidates.
+- 250 nodes receive 64 native SRR candidates.
+- Nodes are selected using a deterministic state-dependent allocation score.
+- Original sampling graph remains K32.
+- Original GNN input remains K32.
+- Original pheromone dimensions remain K32.
+- Exactly one SRR call.
+
+Total directed SRR candidate slots:
+
+`750 × 32 + 250 × 64 = 40000`
+
+Thus ARM B and ARM C have exactly the same directed-slot budget.
+
+Also report unique undirected edge counts, but do not confuse them with directed candidate slots.
+
+---
+
+# 3. EXACT ADAPTIVE ALLOCATION POLICY
+
+Use a deterministic geometry-and-tour-excess policy based on the original R3 Stage A selector idea.
+
+Do not introduce a learned allocator, reinforcement learning, GNN retraining, oracle-guided allocation, or parameter search.
+
+For each node u, from the currently available global-best tour at the beginning of an allocation epoch, compute:
+
+- Its predecessor pred(u).
+- Its successor succ(u).
+- The Euclidean distance to its predecessor.
+- The Euclidean distance to its successor.
+- The mean Euclidean distance to its original K32 nearest neighbors.
+
+Define:
+
+`excess(u) = max(dist(u, pred(u)), dist(u, succ(u)))`
+
+`local_scale(u) = max(mean_distance_to_K32_neighbors(u), 1e-12)`
+
+`score(u) = excess(u) / local_scale(u)`
+
+Sort nodes by descending score.
+
+Break exact score ties by ascending node index.
+
+Select exactly the top 250 nodes.
+
+These nodes receive K64 SRR candidate access.
+
+All other nodes receive K32 SRR candidate access.
+
+Do not use the principal optimal tour, independently computed oracle moves, future trajectories or benchmark outcomes when selecting nodes.
+
+### Update schedule
+
+Recompute the allocation before iterations:
+
+`0, 100, 200, 300, ...`
+
+That means once every 100 ACO iterations.
+
+Use the current native global-best tour available before the next iteration starts.
+
+At iteration zero, use the initialized native global-best tour.
+
+Do not alter the original solver's RNG state during allocation.
+
+Do not select nodes using any information from a future iteration.
+
+Use the same allocation schedule and deterministic computation for every principal run.
+
+If there is any mismatch between the original Stage A geometry scoring implementation and this specification, document it before principal execution and treat the formulas above as authoritative for this NEW study.
+
+Do not tune the policy based on principal results.
+
+---
+
+# 4. NATIVE C++ IMPLEMENTATION — STRICT SCOPE
+
+The most important technical requirement is to separate local-search candidate access from the original K32 construction graph.
+
+In the original code, `MFACO_TSP::two_opt_nn()` loops over `nn_list[a * k + j]` using the fixed construction value `k`.
+
+You must NOT simply change the constructor's `cand_list_size` from 32 to 40 or 64.
+
+Doing so would change:
+
+- Sampling candidate dimensions.
+- GNN input dimensions.
+- Sparse pheromone dimensions.
+- Heuristic construction.
+- Possibly sampling distributions and neural-guidance behavior.
+
+That would invalidate the intended comparison.
+
+Instead, implement a separate local-search candidate mechanism.
+
+### Required design
+
+Retain:
+
+- Original `nn_list`: N × 32.
+- Original `backup_list`: N × 32.
+- Original GNN graph.
+- Original sampling path.
+- Original pheromone updates.
+- Original heuristic semantics.
+
+Create a separate read-only local-search candidate accessor or buffer using the existing native ordered K32 + backup32 prefix.
+
+For each node u:
+
+- Width 32: original ranks 1–32.
+- Width 40: original ranks 1–40.
+- Width 64: original ranks 1–64.
+
+Keep the native neighbor ordering unchanged.
+
+Do not recompute or re-sort neighbors differently for the adaptive arms.
+
+Validate candidate-prefix equality with the original native K32 and backup lists.
+
+Replace only the local-search candidate enumeration inside `MFACO_TSP::two_opt_nn()` with an arm-specific per-node width.
+
+Preserve:
+
+- Both scan orientations.
+- Float32 distance and gain semantics.
+- Strict comparison behavior.
+- Original early-break semantics.
+- Original `max_diff > 0` acceptance.
+- Existing route reversal implementation.
+- Checklist extension behavior.
+- Original move ordering.
+- Original 2-opt tie behavior.
+- Original no-op numerical behavior.
+- Existing RNG behavior.
+
+Do not introduce an additional SRR pass.
+
+Do not add a different 2-opt implementation.
+
+Do not silently fix the historical float32 no-op issue.
+
+For ARM A, the original K32 path must reproduce historical baseline behavior exactly.
+
+Prefer an implementation that incurs no extra overhead in the original K32 path beyond unavoidable dispatch.
+
+Expose a small Python/pybind11 API to configure local-search width policy before the corresponding iteration.
+
+The setter must not draw RNG, update pheromone or modify tour state.
+
+Ensure thread safety under the existing OpenMP sampling implementation.
+
+Do not introduce Python callbacks into parallel native ant loops.
+
+---
+
+# 5. ORIGINAL SOLVER AND NEURAL GUIDANCE CONTRACT
+
+Use the original R3/DyNACO inference configuration, including:
+
+- TSP1K.
+- 100 ants.
+- Sampling K32.
+- Backup list size 32.
+- `min_new_edges = 12`.
+- `rho = 0.1`.
+- `alpha = 1.0`.
+- `p_best = 0.05`.
+- Smooth MMAS enabled.
+- Checklist extension enabled.
+- Normalized heuristic enabled.
+- NLS disabled.
+- `fixed_steps = 0`.
+- Original dynamic graph features.
+- Frozen pretrained checkpoint.
+- Original neural prior annealing.
+- Original source/best route and pheromone update semantics.
+- Two CPU/OpenMP threads unless required by the existing deterministic environment.
+
+Inspect the original `utils.infer_instance` implementation and existing R3 exact regression evidence.
+
+Preserve the original solver construction and native-seed derivation contract.
+
+Each arm must start from equivalent paired initialization under the same execution seed.
+
+Do not reuse the evolving solver state from one arm to initialize another arm.
+
+Do not introduce any hidden extra local-search iteration or neural forward pass in the treatment.
+
+All three arms must use the same checkpoint.
+
+No model training or fine-tuning.
+
+---
+
+# 6. ISOLATED RESEARCH ENVIRONMENT
+
+Create a new isolated worktree from the reviewed R3 reference branch.
+
+Work on:
+
+`codex/r3-final-end-to-end`
+
+Do not modify, reset or overwrite:
+
+- Existing R3 Stage A reports.
+- Existing M0/M1/M2 reports.
+- Existing confirmation datasets.
+- Existing S1/S2/S2F evidence.
+- Original baseline branches.
+- Previous registration records.
+
+Use a new versioned output directory, for example:
+
+`artifacts/r3_final_end_to_end/v1/`
+
+Keep source code and evidence together in the new branch.
+
+Reuse existing compiler, Python environment, GPU configuration, native build scripts and checkpoint when compatible.
+
+Avoid reconstructing the entire environment unnecessarily.
+
+If a dependency or build problem occurs, diagnose and fix it autonomously.
+
+No human approval is needed to correct ordinary build or test failures within this task.
+
+---
+
+# 7. PRE-PRINCIPAL CORRECTNESS TESTS
+
+Perform a focused correctness suite before generating principal data.
+
+Do not create a large new research infrastructure project.
+
+Minimum required checks:
+
+### 7.1 Original baseline equivalence
+
+Run the original K32 implementation and the new ARM A implementation on previously existing development instances.
+
+Verify, where deterministic comparison applies:
+
+- Ant route arrays.
+- Ant costs.
+- Source route.
+- Global-best route.
+- Sparse pheromone arrays.
+- Native seed.
+- RNG-derived sampling behavior.
+- Existing inference trajectories.
+
+At minimum, validate a full 1000-iteration development trajectory for ARM A.
+
+Require exact equality for deterministic solver-state arrays where supported.
+
+If original source behavior is changed accidentally, fix the implementation before continuing.
+
+### 7.2 Candidate integrity
+
+For K40 and K64 access:
+
+- Every neighbor index is valid.
+- No self-neighbor is introduced.
+- Candidate prefixes match native nearest-neighbor ordering.
+- K32 rows are identical across all three arms.
+- K40 contains exactly the first 40 ranked candidates.
+- K64 contains exactly the first 64 ranked candidates.
+- Every ARM C allocation has exactly 250 nodes at width 64.
+- The directed slot counts are exactly 32000 / 40000 / 40000.
+
+Test both normal and parallel-traced sampling paths.
+
+### 7.3 Local-search correctness
+
+Use small deterministic TSP cases and existing saved states.
+
+Check:
+
+- Every returned route is a valid permutation.
+- Recomputed float64 tour lengths are finite.
+- Native solver outputs remain internally consistent.
+- Source and global-best routes remain valid.
+- No unintended second SRR pass exists.
+- No RNG consumption occurs when configuring local-search widths.
+- Original checklist extension and 2-opt move ordering remain unchanged.
+
+Record any numerical no-op observations without changing native acceptance semantics.
+
+### 7.4 Resource feasibility
+
+Run a small development benchmark on the intended target machine.
+
+Verify all three arms can complete the intended workload without excessive RSS or CUDA allocation.
+
+Measure approximate runtime and output volume.
+
+Fix engineering problems before principal execution.
+
+Do not optimize the scientific decision rule based on development quality outcomes.
+
+Do not keep expanding the test program after these gates pass.
+
+---
+
+# 8. PRINCIPAL DATASET — INDEPENDENT AND REPRODUCIBLE
+
+After development correctness succeeds, generate exactly one new independent principal dataset.
+
+Do not reuse the Stage A principal dataset.
+
+Do not inspect or generate the historically reserved Stage A confirmation set.
+
+Use:
+
+```python
+rng = np.random.Generator(
+    np.random.PCG64(202612070301)
+)
+
+coords = rng.random(
+    (16, 1000, 2),
+    dtype=np.float32
+)
+```
+
+Preserve the exact one-call generation and array order.
+
+Store the resulting C-contiguous float32 array as `.npy`.
+
+Record:
+
+- Dataset SHA256.
+- NumPy version.
+- Generator specification.
+- Shape and dtype.
+- Creation timestamp.
+- Per-instance coordinate hashes.
+- Executed source commit.
+- Executable native binary SHA256.
+- Neural checkpoint SHA256.
+- Python/PyTorch/CUDA versions.
+- Hardware identity.
+
+Seal the dataset before the first principal solver run.
+
+Do not regenerate it in response to unfavorable outcomes.
+
+---
+
+# 9. FULL PRINCIPAL EXPERIMENT
+
+Run:
+
+- 16 independent TSP1K instances.
+- 2 execution seeds per instance: `31415`, `27182`.
+- 3 arms: A, B, C.
+- 2 computational budget modes.
+
+Total:
+
+`16 × 2 × 3 × 2 = 192 principal runs`
+
+Every planned identity must be represented in the final manifest.
+
+### Deterministic scheduling
+
+Execute budget modes in the order:
+
+1. Equal iterations.
+2. Equal wall time.
+
+Within each mode, use ascending instance index and the listed seed order.
+
+Rotate arm execution order deterministically to reduce systematic warmup or scheduling bias.
+
+For the pair index `p = 2 * instance_index + seed_index`, use:
+
+- `p % 3 == 0`: A, B, C.
+- `p % 3 == 1`: B, C, A.
+- `p % 3 == 2`: C, A, B.
+
+Do not reorder arms based on results.
+
+### Budget mode 1 — EQUAL ITERATIONS
+
+Exactly:
+
+`1000 completed ACO iterations per run`
+
+All three algorithms receive the same iteration count.
+
+Measure:
+
+- Final global-best tour length.
+- Actual elapsed search time.
+- Native local-search calls.
+- Candidate evaluation counts.
+- Memory usage.
+- Global-best improvement trajectory.
+
+This mode reveals the effect of the candidate policies when iteration count is matched.
+
+It does not establish equal-compute superiority by itself.
+
+### Budget mode 2 — EQUAL WALL TIME
+
+Exactly:
+
+`8.0 seconds of search time per run`
+
+Use the same timing boundaries for all arms.
+
+The search clock must include:
+
+- Adaptive policy score computation.
+- Candidate allocation updates.
+- Graph construction and neural inference.
+- CPU/GPU transfers.
+- ACO sampling.
+- Native local search.
+- Pheromone updates.
+- Required CUDA synchronization.
+- Lightweight online instrumentation.
+- Checkpoint recording overhead charged to execution.
+
+Exclude compilation, model import and initial checkpoint loading equally.
+
+Report setup and warmup separately.
+
+Use monotonic/performance-counter timing.
+
+Synchronize CUDA before recording completed iteration timestamps.
+
+Before starting an iteration, check the budget.
+
+If an iteration starts before the deadline but finishes after it, retain it as an overshoot record.
+
+**Never credit an over-budget improvement to the 8.0-second primary metric.**
+
+The primary result is the global-best tour from the last completed update with timestamp <= 8.0 seconds.
+
+Preserve the initial valid global-best state and all completed-update timestamps.
+
+If no valid completed update exists, handle that as a technical failure, never as a zero-quality result.
+
+Collect secondary anytime metrics at:
+
+`0, 1, 2, 4, 6, 8 seconds`
+
+Do not change the 8.0-second budget after viewing principal outcomes.
+
+---
+
+# 10. TIMING FAIRNESS AND INSTRUMENTATION
+
+Performance fairness is essential.
+
+Use the same instrumentation strategy across all three arms.
+
+Avoid expensive per-move Python callbacks.
+
+Keep diagnostic route copying and exhaustive oracle scans outside the principal timed loop.
+
+The adaptive allocation cost must be charged to ARM C.
+
+Do not subtract it afterward.
+
+Similarly, ARM B must pay for its additional native SRR candidate evaluations.
+
+Distinguish:
+
+- Search time.
+- Setup time.
+- Warmup time.
+- Serialization time.
+- Total run time.
+
+Warm up each implementation using existing development-only coordinates before beginning principal timing.
+
+Do not use principal instances for unreported tuning or warmup.
+
+Report actual completed iterations in equal-wall-time mode.
+
+Use paired comparisons rather than treating every seed, iteration or move as an independent observation.
+
+If the operating system or GPU is visibly under external contention, preserve evidence and handle technical interruptions using the predefined failure policy, not selective removal based on observed tour quality.
+
+---
+
+# 11. RUN EXECUTION, FAULT RECOVERY, AND RESOURCE SAFETY
+
+The user does not require the experiment to finish within a fixed short wall-clock duration.
+
+Therefore, prioritize correct completion over an arbitrary aggregate deadline.
+
+However, do not allow uncontrolled disk growth, runaway native processes or irreversible data loss.
+
+Use a minimal, reliable process supervisor.
+
+You may reuse already validated safety utilities where appropriate, but do not rebuild the entire M2 approval infrastructure.
+
+The user instruction in this prompt is the authorization for this separate R3 final study.
+
+Do not require S2F/M2 registration approvals designed for the different M2 experiment.
+
+Required safeguards:
+
+- One principal GPU workload at a time.
+- No competing solver workers.
+- Explicit per-run identity.
+- Output written to new directories.
+- Atomic completion manifests.
+- Preserved standard output and error logs.
+- Bounded memory.
+- Disk free-space monitoring.
+- Process cleanup after failures.
+- No silent reuse of corrupted outputs.
+- No unbounded automatic retry loop.
+
+A practical minimum disk reserve may be used, with documented reasoning and measured output growth.
+
+Do not impose the obsolete 166.46 GB theoretical M2 admission bound on this new study.
+
+Do not delete unrelated user files.
+
+Do not run destructive storage tests.
+
+### Autonomous recovery
+
+You are expected to fix:
+
+- Build failures.
+- Import errors.
+- Incorrect paths.
+- Native binding mistakes.
+- Test fixture failures.
+- Serialization bugs.
+- Ordinary resource configuration problems.
+
+Perform those fixes during the same task without asking the user to continue.
+
+If a fix changes scientific behavior, complete it BEFORE principal data collection and freeze the updated implementation.
+
+Once principal data collection begins:
+
+- Do not tune the adaptive policy.
+- Do not change the dataset.
+- Do not change seeds.
+- Do not change budgets.
+- Do not change decision thresholds.
+- Do not selectively exclude poor-performing runs.
+- Do not replace an instance with an easier one.
+
+For transient infrastructure failures, use only a prospectively documented, bounded recovery procedure that is independent of observed solution quality.
+
+Preserve every failed attempt and its provenance.
+
+If a failure makes a scientifically defensible full-grid comparison impossible, do not manufacture missing results.
+
+Conclude the project with a documented NO-GO investment decision and distinguish that from statistical evidence against the algorithm.
+
+The task must still produce its final report.
+
+---
+
+# 12. PRIMARY OUTCOMES
+
+For every run, calculate tour length independently in NumPy float64 using the original float32 coordinates converted to float64.
+
+For a valid cyclic permutation:
+
+`L = sum(distance(tour[i], tour[(i+1) % N]))`
+
+Use this independent value as the official quality outcome.
+
+For a matched instance/seed/mode, calculate:
+
+### Adaptive versus baseline
+
+`gain_C_A = (L_A - L_C) / L_A`
+
+### Adaptive versus equal-slot control
+
+`gain_C_B = (L_B - L_C) / L_B`
+
+Positive gain means adaptive allocation is better.
+
+Negative gain means adaptive allocation is worse.
+
+Aggregate first over the two solver seeds for each independent instance.
+
+That gives 16 independent instance-level gain values for each comparison and budget mode.
+
+Do not treat the 32 instance-seed pairs as 32 independent problem instances.
+
+Do not treat candidate moves or ACO iterations as independent statistical replicates.
+
+---
+
+# 13. PREDEFINED SCIENTIFIC GO / NO-GO RULE
+
+The primary decision is based on **EQUAL WALL TIME**, because computational efficiency matters.
+
+ARM C must outperform BOTH ARM A and ARM B.
+
+For each of these two paired comparisons, require all conditions:
+
+1. Median instance-level relative improvement >= 0.001 (0.1%).
+
+2. At least 12 of 16 independent instances have positive mean improvement across the two seeds.
+
+3. The lower bound of a 95% percentile bootstrap confidence interval for the mean instance-level improvement is greater than zero.
+
+Bootstrap specification:
+
+- Independent resampling unit: TSP instance.
+- Sample size: 16 instances with replacement.
+- Number of bootstrap samples: 10000.
+- RNG: NumPy Generator(PCG64(202612070302)).
+- Reuse the same 10000 resampling index arrays for both comparisons.
+- Report the exact two-sided percentile interval.
+- No seed-level or iteration-level bootstrap.
+
+### Scientific decision
+
+**R3 FINAL SCIENTIFIC GO**
+
+Only if both adaptive-vs-K32 and adaptive-vs-K40 satisfy all three primary conditions on the complete valid equal-wall-time dataset.
+
+Otherwise:
+
+**R3 FINAL SCIENTIFIC NO-GO**
+
+Provided the full required grid is valid.
+
+The equal-iteration experiment is a mandatory secondary analysis.
+
+It must be reported completely, including any contradictions with equal-wall-time findings.
+
+Do not change the primary decision after examining equal-iteration outcomes.
+
+These GO thresholds constitute a prespecified practical screening rule, not a calibrated universal hypothesis test.
+
+Explain statistical limitations, correlated comparison criteria and the small number of independent instances.
+
+Never claim a rigorous familywise error rate or generalization across arbitrary TSP distributions without supporting evidence.
+
+---
+
+# 14. ADDITIONAL SCIENTIFIC ANALYSIS
+
+Beyond the binary decision, explain WHY the algorithm did or did not work.
+
+Analyze:
+
+### Solution quality
+
+- Mean and median tour length.
+- Per-instance adaptive improvements.
+- Fraction of positive, negative and tied instances.
+- Confidence intervals.
+- Worst-case degradation.
+- Best-case improvement.
+- Results under both budget modes.
+
+### Search efficiency
+
+- Completed ACO iterations.
+- Local-search candidate evaluations.
+- Total native SRR calls.
+- Runtime per iteration.
+- Improvement per unit time.
+- Relative overhead of K40 and adaptive allocation.
+
+### Adaptive behavior
+
+- Which nodes receive expanded candidate lists.
+- Frequency and magnitude of allocation changes.
+- Distribution of allocation scores.
+- Unique undirected edge counts.
+- How often K33–K64 candidates are actually evaluated.
+- Whether additional candidates lead to actual robust tour improvements.
+- Whether improvements exceed the cost of additional evaluation.
+
+Distinguish accepted native float32 moves from independently verified float64 tour improvement.
+
+Do not equate numerical no-op events with genuine tour improvements.
+
+Keep detailed diagnostics separate from timed principal execution unless lightweight counters are used equally.
+
+### Relationship to previous research
+
+Compare conclusions with:
+
+- R3 Stage A NO-GO.
+- Existing M1 v2 additional-SRR exploratory signal.
+- Historical numerical no-op findings.
+
+Do not merge these into one statistical experiment.
+
+Explain whether the new result strengthens, weakens or leaves unchanged the earlier R3 interpretation.
+
+If adaptive local-search candidate allocation fails, discuss whether the evidence is more consistent with:
+
+- Insufficient missed improving moves outside K32.
+- Poor node allocation.
+- Extra computational overhead.
+- Original SRR checklist/pruning behavior.
+- Candidate expansion not improving global-best tours.
+- Lack of statistical power.
+
+Separate demonstrated evidence from speculation.
+
+---
+
+# 15. FIGURES AND TABLES
+
+Generate publication-quality plots, including:
+
+1. Equal-wall-time final tour length by algorithm.
+2. Paired instance-level gain of adaptive versus K32.
+3. Paired instance-level gain of adaptive versus K40.
+4. Anytime global-best quality versus wall time.
+5. Equal-iteration quality versus runtime.
+6. Completed iterations per 8-second budget.
+7. Native candidate evaluation counts by arm.
+8. Distribution of allocation widths and allocation changes.
+
+Use consistent axis scales and clearly labeled units.
+
+Do not truncate plots in ways that exaggerate tiny differences.
+
+Do not omit negative results.
+
+Include individual instance results, not only aggregate averages.
+
+All figures must be reproducible from archived raw data.
+
+---
+
+# 16. DELIVERABLES
+
+Create:
+
+`artifacts/r3_final_end_to_end/v1/`
+
+Required structure:
+
+```text
+artifacts/r3_final_end_to_end/v1/
+├── FINAL_RESEARCH_REPORT.md
+├── EXECUTIVE_DECISION.md
+├── SCIENTIFIC_PROTOCOL.md
+├── scientific_protocol.sha256
+├── implementation_manifest.json
+├── environment_manifest.json
+├── dataset_manifest.json
+├── execution_manifest.json
+├── test_results.json
+├── raw_results/
+├── analysis/
+│   ├── per_run_results.csv
+│   ├── per_instance_results.csv
+│   ├── aggregate_results.json
+│   ├── statistical_tests.json
+│   └── decision.json
+├── figures/
+├── reproducibility/
+│   ├── commands.md
+│   ├── source_hashes.json
+│   └── execution_log.md
+└── HANDOFF.md
+```
+
+Use exact filenames if practical. Additional well-organized evidence files are allowed.
+
+Large intermediate binary files may be compressed or stored using Git LFS where already available.
+
+Do not push enormous raw logs that are not required for reproducibility.
+
+Do not replace reproducibility evidence with a textual claim.
+
+The final report should be readable by an academic research supervisor.
+
+Write the main report in Vietnamese, using technical English terms where appropriate.
+
+Include:
+
+- Research question.
+- Mathematical formulation.
+- Implementation details.
+- Experimental controls.
+- Dataset provenance.
+- Technical validation.
+- Complete benchmark results.
+- Statistical analysis.
+- Limitations.
+- Relationship with Stage A and M1/M2.
+- Final conclusion.
+- Recommended future research direction.
+
+The report must state exactly what has been proven, what is supported empirically and what remains uncertain.
+
+---
+
+# 17. FINAL DECISION REQUIREMENT
+
+The final response must contain a prominent decision:
+
+**R3 FINAL DECISION: GO**
+
+or
+
+**R3 FINAL DECISION: NO-GO**
+
+These are project investment decisions.
+
+If all required principal experiments are completed and valid, also provide:
+
+**SCIENTIFIC CONCLUSION: GO**
+
+or
+
+**SCIENTIFIC CONCLUSION: NO-GO**
+
+according to the frozen primary criteria.
+
+If a genuinely unrecoverable technical failure prevents a valid scientific comparison, use:
+
+**R3 FINAL DECISION: NO-GO FOR FURTHER INVESTMENT IN THIS ATTEMPT**
+
+**SCIENTIFIC CONCLUSION: NOT ESTABLISHED**
+
+Explain the exact limitation and preserve the attempted evidence.
+
+Never substitute a technical failure for experimental evidence of algorithmic inferiority.
+
+Do not stop with a readiness report.
+
+Do not describe a scientifically incomplete experiment as a completed 192-run study.
+
+Do not end by asking the user to authorize another task.
+
+---
+
+# 18. AUTONOMY AND EXECUTION POLICY
+
+You are authorized to carry out the entire scoped task now.
+
+Do not request confirmation to:
+
+- Implement the algorithm.
+- Build native extensions.
+- Run tests.
+- Generate the fixed principal dataset.
+- Execute the benchmark.
+- Produce the report.
+- Commit the results.
+- Push the dedicated research branch if available.
+
+Do not call external paid services or purchase additional computing resources.
+
+Do not change unrelated repositories or erase existing artifacts.
+
+Preserve source control provenance.
+
+Once the implementation passes the minimum correctness gates, proceed directly to the full experiment.
+
+Do not create repeated review-and-approval stages.
+
+Do not introduce unrelated features.
+
+Do not broaden this work into M2 two-pass SRR, GNN retraining, learned allocation, or R3 Stage A reconstruction.
+
+If you discover an implementation problem, solve it within this task.
+
+If you discover a scientific ambiguity before principal execution, choose the interpretation that preserves the explicitly specified experiment, document it, and freeze the choice before accessing principal outcomes.
+
+Never resolve ambiguities by choosing the option that produces better principal results.
+
+---
+
+# 19. REQUIRED FINAL CHAT RESPONSE
+
+When the entire task has finished, respond to the user in Vietnamese using this structure:
+
+## R3 FINAL DECISION: GO / NO-GO
+
+### 1. Experiment completion
+
+- Number of valid runs out of 192.
+- Branch and commit SHA.
+- Dataset SHA256.
+- Scientific protocol SHA256.
+- Environment and GPU.
+
+### 2. Main results
+
+Provide a table comparing:
+
+- K32.
+- K40.
+- Adaptive K32/K64.
+
+For both computational budgets.
+
+Include relative improvements and uncertainty.
+
+### 3. GO/NO-GO criteria
+
+Show whether each predefined condition passed or failed.
+
+### 4. Interpretation
+
+Explain why R3 succeeded or failed using actual evidence.
+
+### 5. Recommendation
+
+State clearly whether the user should continue developing adaptive local-search candidate graphs.
+
+If NO-GO, explain the strongest remaining research alternative, including whether the existing SRR scheduling results are a better next direction.
+
+### 6. Deliverables
+
+Provide links to the final report, artifacts and Git commit.
+
+Do not finish your response with:
+
+"Ready for next phase."
+
+"Awaiting user approval."
+
+"Please confirm before benchmark."
+
+The purpose of this assignment is to FINISH the investigation and DELIVER the decision.
+
+**Begin the autonomous implementation and end-to-end experiment now.**

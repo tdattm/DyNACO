@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "native_binary_sha256": "25c6a788672ba240eddef8abe068a66f66f876b6004d26b38e679b94c286ef36",
+  "full1000_exact": true,
+  "native_candidate_prefixes_exact": true,
+  "construction_dimensions_unchanged": true,
+  "invalid_setter_atomic": true,
+  "exact_tie_break": true,
+  "decision_boundary_checks": true,
+  "utc": "2026-11-01T08:54:30.283983+00:00"
+}

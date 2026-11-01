@@ -7,6 +7,7 @@
 
 #include "mfaco_train.h"
 #include <omp.h>
+#include <mutex>
 #include <pybind11/numpy.h>
 #include <pybind11/pybind11.h>
 #include <pybind11/stl.h>
@@ -125,6 +126,32 @@ public:
 class PyMFACO_TSP {
 public:
   std::unique_ptr<MFACO_TSP> solver;
+  std::mutex ls_mutex;
+
+  void set_ls_widths(const std::vector<int32_t> &widths) {
+    std::lock_guard<std::mutex> lock(ls_mutex);
+    solver->set_ls_widths(widths);
+  }
+  void enable_ls_counts(bool enabled) {
+    std::lock_guard<std::mutex> lock(ls_mutex);
+    solver->enable_ls_counts(enabled);
+  }
+  py::dict get_ls_state() {
+    std::lock_guard<std::mutex> lock(ls_mutex);
+    py::dict d;
+    d["widths"] = solver->ls_widths();
+    d["candidates"] = solver->ls_candidates();
+    return d;
+  }
+  py::dict get_ls_counts() {
+    std::lock_guard<std::mutex> lock(ls_mutex);
+    auto c = solver->get_ls_counts(); py::dict d;
+    d["calls"] = c.calls; d["candidates"] = c.candidates;
+    d["expanded_candidates"] = c.expanded_candidates;
+    d["gains"] = c.gains; d["expanded_gains"] = c.expanded_gains;
+    d["accepted"] = c.accepted; d["expanded_accepted"] = c.expanded_accepted;
+    return d;
+  }
 
   PyMFACO_TSP(
       py::array_t<float, py::array::c_style | py::array::forcecast> coords,
@@ -212,6 +239,7 @@ public:
     SampleResult result;
     {
       py::gil_scoped_release release;
+      std::lock_guard<std::mutex> lock(ls_mutex);
       solver->sample(require_prob, prior_ptr, result, parallel_traced);
     }
 
@@ -917,6 +945,10 @@ PYBIND11_MODULE(faco_opt, m) {
       .def_property_readonly("source_positions",
                              &PyMFACO_TSP::get_source_positions)
       .def("seed_rng", &PyMFACO_TSP::seed_rng, py::arg("seed"))
+      .def("set_ls_widths", &PyMFACO_TSP::set_ls_widths, py::arg("widths"))
+      .def("enable_ls_counts", &PyMFACO_TSP::enable_ls_counts, py::arg("enabled"))
+      .def("get_ls_counts", &PyMFACO_TSP::get_ls_counts)
+      .def("get_ls_state", &PyMFACO_TSP::get_ls_state)
       .def("sample", &PyMFACO_TSP::sample, py::arg("invtemp") = 1.0f,
            py::arg("require_prob") = false, py::arg("prior") = py::none(),
            py::arg("parallel_traced") = false)

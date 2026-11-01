@@ -3,3 +3,10 @@ r3/** text eol=lf
 tests/test_r3_*.py text eol=lf
 # Preserve immutable measurement and provenance bytes, including saved SHA256s.
 artifacts/r3/** -text
+r3_final/** text eol=lf
+tests/test_r3_final.py text eol=lf
+artifacts/r3_final_end_to_end/** -text
+# Keep the exact compiled LF source bytes across Windows/WSL checkouts.
+src/mfaco_train.cpp text eol=lf
+src/mfaco_train.h text eol=lf
+src/binding.cpp text eol=lf

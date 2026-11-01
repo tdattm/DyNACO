@@ -1,0 +1,2384 @@
+{
+  "scope": "development-only ant0 at iterations 0,499,999; not principal causal evidence",
+  "exact_native_replays": 9,
+  "accepted_native": 284,
+  "robust": 220,
+  "positive_f64": 220,
+  "zero_f64": 64,
+  "negative_f64": 0,
+  "unchanged_route": 64,
+  "expanded_accepted": 4,
+  "records": [
+    {
+      "visits": 399,
+      "gain_evaluations": 324,
+      "expanded_visits": 0,
+      "events": [
+        {
+          "anchor": 521,
+          "rank": 6,
+          "gain_f32": 0.04469192773103714,
+          "gain_f64": 0.044691921018682024,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 443,
+          "rank": 3,
+          "gain_f32": 0.05227425694465637,
+          "gain_f64": 0.052274250586357596,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 232,
+          "rank": 2,
+          "gain_f32": 0.044926226139068604,
+          "gain_f64": 0.04492621935250085,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 762,
+          "rank": 1,
+          "gain_f32": 7.450580596923828e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 148,
+          "rank": 1,
+          "gain_f32": 7.450580596923828e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 969,
+          "rank": 2,
+          "gain_f32": 7.450580596923828e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 881,
+          "rank": 14,
+          "gain_f32": 0.10726513713598251,
+          "gain_f64": 0.1072651372327087,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 462,
+          "rank": 1,
+          "gain_f32": 7.450580596923828e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 792,
+          "rank": 2,
+          "gain_f32": 0.10466399788856506,
+          "gain_f64": 0.10466399718536934,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 296,
+          "rank": 1,
+          "gain_f32": 0.018508344888687134,
+          "gain_f64": 0.018508332242134884,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 45,
+          "rank": 27,
+          "gain_f32": 0.07879728078842163,
+          "gain_f64": 0.07879728157974597,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 140,
+          "rank": 6,
+          "gain_f32": 0.04924699664115906,
+          "gain_f64": 0.049246996796725284,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 619,
+          "rank": 2,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 706,
+          "rank": 4,
+          "gain_f32": 0.0193287655711174,
+          "gain_f64": 0.019328757988347434,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 683,
+          "rank": 7,
+          "gain_f32": 0.10585534572601318,
+          "gain_f64": 0.10585534130910901,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 368,
+          "rank": 3,
+          "gain_f32": 0.0039201416075229645,
+          "gain_f64": 0.0039201433277256115,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 29,
+          "rank": 2,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 448,
+          "rank": 2,
+          "gain_f32": 0.013951681554317474,
+          "gain_f64": 0.013951668598195965,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 936,
+          "rank": 1,
+          "gain_f32": 0.005404803901910782,
+          "gain_f64": 0.005404799728665921,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 654,
+          "rank": 3,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        }
+      ],
+      "input_length": 28.21624130524211,
+      "output_length": 27.567406458295842,
+      "arm": "A",
+      "completed_iteration": 1
+    },
+    {
+      "visits": 1234,
+      "gain_evaluations": 1064,
+      "expanded_visits": 0,
+      "events": [
+        {
+          "anchor": 693,
+          "rank": 2,
+          "gain_f32": 0.15953019261360168,
+          "gain_f64": 0.1595301979057524,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 952,
+          "rank": 4,
+          "gain_f32": 0.0591980442404747,
+          "gain_f64": 0.05919804400905093,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 169,
+          "rank": 2,
+          "gain_f32": 0.0037710927426815033,
+          "gain_f64": 0.0037710929408376614,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 473,
+          "rank": 5,
+          "gain_f32": 0.005169413983821869,
+          "gain_f64": 0.005169414329508015,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 755,
+          "rank": 4,
+          "gain_f32": 0.06470822542905807,
+          "gain_f64": 0.06470822119775832,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 216,
+          "rank": 7,
+          "gain_f32": 0.05854978412389755,
+          "gain_f64": 0.0585497923495204,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 454,
+          "rank": 3,
+          "gain_f32": 0.01950855553150177,
+          "gain_f64": 0.01950855432615839,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 780,
+          "rank": 15,
+          "gain_f32": 0.028395287692546844,
+          "gain_f64": 0.028395290306146848,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 152,
+          "rank": 10,
+          "gain_f32": 0.015907397493720055,
+          "gain_f64": 0.015907394316347023,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 355,
+          "rank": 3,
+          "gain_f32": 0.04906624183058739,
+          "gain_f64": 0.04906623884733463,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 710,
+          "rank": 1,
+          "gain_f32": 0.057737112045288086,
+          "gain_f64": 0.05773707778142523,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 399,
+          "rank": 2,
+          "gain_f32": 0.03491036593914032,
+          "gain_f64": 0.03491035127032305,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 654,
+          "rank": 6,
+          "gain_f32": 0.11071883141994476,
+          "gain_f64": 0.11071883275553773,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 29,
+          "rank": 1,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 21,
+          "rank": 8,
+          "gain_f32": 0.012977175414562225,
+          "gain_f64": 0.012977171021468337,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 622,
+          "rank": 9,
+          "gain_f32": 0.01884184405207634,
+          "gain_f64": 0.01884184550425516,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 764,
+          "rank": 7,
+          "gain_f32": 0.04122859239578247,
+          "gain_f64": 0.041228596043460186,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 84,
+          "rank": 21,
+          "gain_f32": 0.07729743421077728,
+          "gain_f64": 0.07729746930830927,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 689,
+          "rank": 1,
+          "gain_f32": 0.05355717986822128,
+          "gain_f64": 0.053557174533022334,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 990,
+          "rank": 1,
+          "gain_f32": 0.1022997498512268,
+          "gain_f64": 0.10229974780526163,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 410,
+          "rank": 1,
+          "gain_f32": 0.05660674721002579,
+          "gain_f64": 0.056606752511719094,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 950,
+          "rank": 6,
+          "gain_f32": 0.015853259712457657,
+          "gain_f64": 0.015853249878766462,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 384,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 536,
+          "rank": 3,
+          "gain_f32": 0.02932276576757431,
+          "gain_f64": 0.02932276306331616,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 548,
+          "rank": 6,
+          "gain_f32": 0.019983522593975067,
+          "gain_f64": 0.019983509135631294,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 602,
+          "rank": 1,
+          "gain_f32": 0.10242725908756256,
+          "gain_f64": 0.10242725469786862,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 623,
+          "rank": 3,
+          "gain_f32": 0.003243379294872284,
+          "gain_f64": 0.0032433798581230633,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 97,
+          "rank": 4,
+          "gain_f32": 0.05701757222414017,
+          "gain_f64": 0.05701757683494435,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 549,
+          "rank": 13,
+          "gain_f32": 0.10701388120651245,
+          "gain_f64": 0.1070138570579573,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 5,
+          "rank": 6,
+          "gain_f32": 0.07314182817935944,
+          "gain_f64": 0.07314185538093199,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 858,
+          "rank": 3,
+          "gain_f32": 0.004370804876089096,
+          "gain_f64": 0.0043708030239706375,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 149,
+          "rank": 2,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 118,
+          "rank": 1,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 111,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 314,
+          "rank": 5,
+          "gain_f32": 0.018642673268914223,
+          "gain_f64": 0.018642675307663836,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 358,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 561,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 155,
+          "rank": 7,
+          "gain_f32": 0.014831975102424622,
+          "gain_f64": 0.01483197367552691,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 619,
+          "rank": 3,
+          "gain_f32": 0.02707776427268982,
+          "gain_f64": 0.027077768913532196,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 228,
+          "rank": 6,
+          "gain_f32": 0.015956223011016846,
+          "gain_f64": 0.015956219022900342,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 87,
+          "rank": 1,
+          "gain_f32": 7.450580596923828e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 493,
+          "rank": 1,
+          "gain_f32": 7.450580596923828e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 646,
+          "rank": 3,
+          "gain_f32": 0.003394678235054016,
+          "gain_f64": 0.0033946873042935977,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 620,
+          "rank": 27,
+          "gain_f32": 0.06454042345285416,
+          "gain_f64": 0.06454041411651446,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 20,
+          "rank": 19,
+          "gain_f32": 0.00976637750864029,
+          "gain_f64": 0.009766373789020122,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 465,
+          "rank": 2,
+          "gain_f32": 0.004633411765098572,
+          "gain_f64": 0.004633414744869668,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 869,
+          "rank": 4,
+          "gain_f32": 0.057785145938396454,
+          "gain_f64": 0.057785148065736536,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 531,
+          "rank": 2,
+          "gain_f32": 0.0027101561427116394,
+          "gain_f64": 0.00271015623707882,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 967,
+          "rank": 2,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 28,
+          "rank": 5,
+          "gain_f32": 0.003931557759642601,
+          "gain_f64": 0.003931559759600134,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 991,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        }
+      ],
+      "input_length": 25.41730249580325,
+      "output_length": 23.751678596871805,
+      "arm": "A",
+      "completed_iteration": 500
+    },
+    {
+      "visits": 853,
+      "gain_evaluations": 727,
+      "expanded_visits": 0,
+      "events": [
+        {
+          "anchor": 905,
+          "rank": 2,
+          "gain_f32": 0.014899209141731262,
+          "gain_f64": 0.014899209486863185,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 846,
+          "rank": 23,
+          "gain_f32": 0.07723976671695709,
+          "gain_f64": 0.07723977588364761,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 464,
+          "rank": 2,
+          "gain_f32": 0.03321190923452377,
+          "gain_f64": 0.033211899503545084,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 898,
+          "rank": 3,
+          "gain_f32": 0.011169863864779472,
+          "gain_f64": 0.011169863572977334,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 156,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 163,
+          "rank": 12,
+          "gain_f32": 0.11326339840888977,
+          "gain_f64": 0.11326337811328813,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 382,
+          "rank": 5,
+          "gain_f32": 0.04628919064998627,
+          "gain_f64": 0.04628919934357967,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 546,
+          "rank": 17,
+          "gain_f32": 0.1021900400519371,
+          "gain_f64": 0.10219003547930683,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 551,
+          "rank": 5,
+          "gain_f32": 0.0016392618417739868,
+          "gain_f64": 0.0016392506249331973,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 489,
+          "rank": 2,
+          "gain_f32": 0.015328114852309227,
+          "gain_f64": 0.01532811653066446,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 555,
+          "rank": 5,
+          "gain_f32": 0.04223480820655823,
+          "gain_f64": 0.042234808031228255,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 714,
+          "rank": 4,
+          "gain_f32": 0.002567550167441368,
+          "gain_f64": 0.002567551154420755,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 793,
+          "rank": 1,
+          "gain_f32": 9.313225746154785e-10,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 698,
+          "rank": 4,
+          "gain_f32": 0.0013356804847717285,
+          "gain_f64": 0.0013356843180218902,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 110,
+          "rank": 4,
+          "gain_f32": 0.08883687108755112,
+          "gain_f64": 0.0888368893173066,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 32,
+          "rank": 2,
+          "gain_f32": 0.018337666988372803,
+          "gain_f64": 0.018337679157323095,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 200,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 208,
+          "rank": 4,
+          "gain_f32": 0.0430084764957428,
+          "gain_f64": 0.04300847672362451,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 396,
+          "rank": 3,
+          "gain_f32": 0.07081243395805359,
+          "gain_f64": 0.070812436014414,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 558,
+          "rank": 6,
+          "gain_f32": 0.007542159408330917,
+          "gain_f64": 0.007542152577727279,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 183,
+          "rank": 2,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 39,
+          "rank": 4,
+          "gain_f32": 0.022024767473340034,
+          "gain_f64": 0.022024769355660112,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 786,
+          "rank": 9,
+          "gain_f32": 0.027173738926649094,
+          "gain_f64": 0.027173734279166695,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 457,
+          "rank": 1,
+          "gain_f32": 0.014652736485004425,
+          "gain_f64": 0.014652734811704704,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 285,
+          "rank": 1,
+          "gain_f32": 0.05468346178531647,
+          "gain_f64": 0.054683455729787056,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 925,
+          "rank": 7,
+          "gain_f32": 0.021213427186012268,
+          "gain_f64": 0.021213419300771363,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 690,
+          "rank": 1,
+          "gain_f32": 0.0005066227167844772,
+          "gain_f64": 0.0005066240134539157,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 19,
+          "rank": 15,
+          "gain_f32": 0.04126031696796417,
+          "gain_f64": 0.0412603186505649,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 783,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 902,
+          "rank": 2,
+          "gain_f32": 0.10856971144676208,
+          "gain_f64": 0.10856971785109693,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 158,
+          "rank": 3,
+          "gain_f32": 0.0031150877475738525,
+          "gain_f64": 0.003115085070973578,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 586,
+          "rank": 3,
+          "gain_f32": 0.013427194207906723,
+          "gain_f64": 0.013427192369636742,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 598,
+          "rank": 1,
+          "gain_f32": 0.015576548874378204,
+          "gain_f64": 0.01557656006749042,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 616,
+          "rank": 26,
+          "gain_f32": 0.015390384942293167,
+          "gain_f64": 0.01539038150259131,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 195,
+          "rank": 2,
+          "gain_f32": 0.0005325004458427429,
+          "gain_f64": 0.0005325014259014438,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 799,
+          "rank": 1,
+          "gain_f32": 0.004263289272785187,
+          "gain_f64": 0.0042632925479786365,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 198,
+          "rank": 4,
+          "gain_f32": 0.013059791177511215,
+          "gain_f64": 0.013059790909164093,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 352,
+          "rank": 2,
+          "gain_f32": 0.0047432854771614075,
+          "gain_f64": 0.004743284951359783,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 168,
+          "rank": 3,
+          "gain_f32": 0.00623562466353178,
+          "gain_f64": 0.006235627371871999,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 406,
+          "rank": 17,
+          "gain_f32": 0.003446221351623535,
+          "gain_f64": 0.0034462218144284407,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 324,
+          "rank": 2,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 866,
+          "rank": 1,
+          "gain_f32": 9.313225746154785e-10,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        }
+      ],
+      "input_length": 24.461492912309346,
+      "output_length": 23.401711794452872,
+      "arm": "A",
+      "completed_iteration": 1000
+    },
+    {
+      "visits": 461,
+      "gain_evaluations": 379,
+      "expanded_visits": 25,
+      "events": [
+        {
+          "anchor": 521,
+          "rank": 6,
+          "gain_f32": 0.04469192773103714,
+          "gain_f64": 0.044691921018682024,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 443,
+          "rank": 3,
+          "gain_f32": 0.05227425694465637,
+          "gain_f64": 0.052274250586357596,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 232,
+          "rank": 2,
+          "gain_f32": 0.044926226139068604,
+          "gain_f64": 0.04492621935250085,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 762,
+          "rank": 1,
+          "gain_f32": 7.450580596923828e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 148,
+          "rank": 1,
+          "gain_f32": 7.450580596923828e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 969,
+          "rank": 2,
+          "gain_f32": 7.450580596923828e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 881,
+          "rank": 14,
+          "gain_f32": 0.10726513713598251,
+          "gain_f64": 0.1072651372327087,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 462,
+          "rank": 1,
+          "gain_f32": 7.450580596923828e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 792,
+          "rank": 2,
+          "gain_f32": 0.10466399788856506,
+          "gain_f64": 0.10466399718536934,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 296,
+          "rank": 1,
+          "gain_f32": 0.018508344888687134,
+          "gain_f64": 0.018508332242134884,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 45,
+          "rank": 27,
+          "gain_f32": 0.07879728078842163,
+          "gain_f64": 0.07879728157974597,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 140,
+          "rank": 36,
+          "gain_f32": 0.10967482626438141,
+          "gain_f64": 0.10967481366679266,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 619,
+          "rank": 2,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 706,
+          "rank": 1,
+          "gain_f32": 0.036135829985141754,
+          "gain_f64": 0.03613582654718783,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 683,
+          "rank": 3,
+          "gain_f32": 0.005404802039265633,
+          "gain_f64": 0.005404799728665921,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 251,
+          "rank": 3,
+          "gain_f32": 0.04542752727866173,
+          "gain_f64": 0.04542752443904874,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 638,
+          "rank": 2,
+          "gain_f32": 0.0031180381774902344,
+          "gain_f64": 0.003118031322962622,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 368,
+          "rank": 3,
+          "gain_f32": 0.0039201416075229645,
+          "gain_f64": 0.0039201433277256115,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 29,
+          "rank": 2,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 654,
+          "rank": 3,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        }
+      ],
+      "input_length": 28.21624130524211,
+      "output_length": 27.561433027012228,
+      "arm": "B",
+      "completed_iteration": 1
+    },
+    {
+      "visits": 837,
+      "gain_evaluations": 720,
+      "expanded_visits": 40,
+      "events": [
+        {
+          "anchor": 693,
+          "rank": 2,
+          "gain_f32": 0.17193728685379028,
+          "gain_f64": 0.17193731151252578,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 952,
+          "rank": 4,
+          "gain_f32": 0.02529485523700714,
+          "gain_f64": 0.025294860447605316,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 169,
+          "rank": 13,
+          "gain_f32": 0.00960133969783783,
+          "gain_f64": 0.009601332086674574,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 473,
+          "rank": 10,
+          "gain_f32": 0.015070747584104538,
+          "gain_f64": 0.015070743183777324,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 5,
+          "rank": 4,
+          "gain_f32": 0.01413821056485176,
+          "gain_f64": 0.014138205750818145,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 858,
+          "rank": 9,
+          "gain_f32": 0.03052263706922531,
+          "gain_f64": 0.030522635987779267,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 504,
+          "rank": 9,
+          "gain_f32": 0.019907180219888687,
+          "gain_f64": 0.019907177405016796,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 222,
+          "rank": 1,
+          "gain_f32": 0.02611587569117546,
+          "gain_f64": 0.02611587898221046,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 314,
+          "rank": 3,
+          "gain_f32": 0.06583559513092041,
+          "gain_f64": 0.06583559997703503,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 575,
+          "rank": 17,
+          "gain_f32": 0.09800952672958374,
+          "gain_f64": 0.09800953431264503,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 510,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 587,
+          "rank": 4,
+          "gain_f32": 0.03666535019874573,
+          "gain_f64": 0.03666535412541805,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 516,
+          "rank": 2,
+          "gain_f32": 0.04562114551663399,
+          "gain_f64": 0.04562114527308481,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 630,
+          "rank": 2,
+          "gain_f32": 0.013601331040263176,
+          "gain_f64": 0.013601328338712193,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 83,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 307,
+          "rank": 13,
+          "gain_f32": 0.03141020983457565,
+          "gain_f64": 0.031410207029747284,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 54,
+          "rank": 5,
+          "gain_f32": 0.013032101094722748,
+          "gain_f64": 0.01303210119680287,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 155,
+          "rank": 4,
+          "gain_f32": 0.0065063610672950745,
+          "gain_f64": 0.006506359247929083,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 28,
+          "rank": 18,
+          "gain_f32": 0.12983691692352295,
+          "gain_f64": 0.1298369089171807,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 386,
+          "rank": 1,
+          "gain_f32": 0.03142170608043671,
+          "gain_f64": 0.031421703072798124,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 118,
+          "rank": 17,
+          "gain_f32": 0.08314181864261627,
+          "gain_f64": 0.08314180525871961,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 62,
+          "rank": 4,
+          "gain_f32": 0.01725962944328785,
+          "gain_f64": 0.017259630724687725,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 946,
+          "rank": 4,
+          "gain_f32": 0.013516012579202652,
+          "gain_f64": 0.013516012165140978,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 758,
+          "rank": 1,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 892,
+          "rank": 16,
+          "gain_f32": 0.03852378576993942,
+          "gain_f64": 0.038523785524457566,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 299,
+          "rank": 4,
+          "gain_f32": 0.0371856614947319,
+          "gain_f64": 0.03718565959608355,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 255,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 666,
+          "rank": 1,
+          "gain_f32": 0.010123342275619507,
+          "gain_f64": 0.010123349168910778,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 494,
+          "rank": 2,
+          "gain_f32": 0.006858572363853455,
+          "gain_f64": 0.006858570186281554,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 672,
+          "rank": 2,
+          "gain_f32": 0.013535477221012115,
+          "gain_f64": 0.013535479814599682,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 942,
+          "rank": 4,
+          "gain_f32": 0.0021727122366428375,
+          "gain_f64": 0.0021727072892829824,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 225,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 139,
+          "rank": 1,
+          "gain_f32": 0.016459230333566666,
+          "gain_f64": 0.016459235896483904,
+          "robust": true,
+          "route_changed": true
+        }
+      ],
+      "input_length": 24.642719681889893,
+      "output_length": 23.619415059417484,
+      "arm": "B",
+      "completed_iteration": 500
+    },
+    {
+      "visits": 693,
+      "gain_evaluations": 567,
+      "expanded_visits": 28,
+      "events": [
+        {
+          "anchor": 905,
+          "rank": 31,
+          "gain_f32": 0.17117440700531006,
+          "gain_f64": 0.17117441288698032,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 820,
+          "rank": 1,
+          "gain_f32": 0.08296960592269897,
+          "gain_f64": 0.0829696053357516,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 144,
+          "rank": 1,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 846,
+          "rank": 10,
+          "gain_f32": 0.007882233709096909,
+          "gain_f64": 0.00788223355458939,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 211,
+          "rank": 5,
+          "gain_f32": 0.14852575957775116,
+          "gain_f64": 0.1485257464606491,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 134,
+          "rank": 3,
+          "gain_f32": 0.0501100979745388,
+          "gain_f64": 0.050110103774684944,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 0,
+          "rank": 6,
+          "gain_f32": 0.04407142102718353,
+          "gain_f64": 0.044071427020568876,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 4,
+          "rank": 2,
+          "gain_f32": 0.011559680104255676,
+          "gain_f64": 0.011559685240566608,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 852,
+          "rank": 2,
+          "gain_f32": 0.025529589504003525,
+          "gain_f64": 0.025529591424113818,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 670,
+          "rank": 6,
+          "gain_f32": 0.01955663040280342,
+          "gain_f64": 0.019556628318621705,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 787,
+          "rank": 3,
+          "gain_f32": 0.014904886484146118,
+          "gain_f64": 0.014904889958682332,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 971,
+          "rank": 12,
+          "gain_f32": 0.10681439191102982,
+          "gain_f64": 0.10681439640369561,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 582,
+          "rank": 2,
+          "gain_f32": 0.020313069224357605,
+          "gain_f64": 0.02031307239961322,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 131,
+          "rank": 4,
+          "gain_f32": 0.11581418663263321,
+          "gain_f64": 0.11581418964377477,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 95,
+          "rank": 2,
+          "gain_f32": 0.022130578756332397,
+          "gain_f64": 0.022130573494337114,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 841,
+          "rank": 16,
+          "gain_f32": 0.07117661088705063,
+          "gain_f64": 0.07117661514883622,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 961,
+          "rank": 1,
+          "gain_f32": 0.03694401681423187,
+          "gain_f64": 0.036944013816537336,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 289,
+          "rank": 1,
+          "gain_f32": 0.023195326328277588,
+          "gain_f64": 0.02319532666572499,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 737,
+          "rank": 5,
+          "gain_f32": 0.017541036009788513,
+          "gain_f64": 0.017541039304273198,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 79,
+          "rank": 1,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 944,
+          "rank": 4,
+          "gain_f32": 0.022198058664798737,
+          "gain_f64": 0.0221980581154817,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 34,
+          "rank": 2,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 169,
+          "rank": 2,
+          "gain_f32": 0.045062050223350525,
+          "gain_f64": 0.04506203846817414,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 332,
+          "rank": 5,
+          "gain_f32": 0.005045756697654724,
+          "gain_f64": 0.005045758388785515,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 539,
+          "rank": 2,
+          "gain_f32": 0.02214355766773224,
+          "gain_f64": 0.02214356195843692,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 285,
+          "rank": 5,
+          "gain_f32": 0.019492775201797485,
+          "gain_f64": 0.019492772529943636,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 80,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 25,
+          "rank": 3,
+          "gain_f32": 0.0064085666090250015,
+          "gain_f64": 0.006408571198079471,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 362,
+          "rank": 5,
+          "gain_f32": 0.004057742655277252,
+          "gain_f64": 0.004057739263149784,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 578,
+          "rank": 2,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 341,
+          "rank": 1,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 858,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 207,
+          "rank": 15,
+          "gain_f32": 0.03384018689393997,
+          "gain_f64": 0.033840186494732194,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 151,
+          "rank": 2,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        }
+      ],
+      "input_length": 24.737339035162684,
+      "output_length": 23.5888767978939,
+      "arm": "B",
+      "completed_iteration": 1000
+    },
+    {
+      "visits": 477,
+      "gain_evaluations": 395,
+      "expanded_visits": 41,
+      "events": [
+        {
+          "anchor": 521,
+          "rank": 6,
+          "gain_f32": 0.04469192773103714,
+          "gain_f64": 0.044691921018682024,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 443,
+          "rank": 3,
+          "gain_f32": 0.05227425694465637,
+          "gain_f64": 0.052274250586357596,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 232,
+          "rank": 2,
+          "gain_f32": 0.044926226139068604,
+          "gain_f64": 0.04492621935250085,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 762,
+          "rank": 1,
+          "gain_f32": 7.450580596923828e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 148,
+          "rank": 1,
+          "gain_f32": 7.450580596923828e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 969,
+          "rank": 2,
+          "gain_f32": 7.450580596923828e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 881,
+          "rank": 14,
+          "gain_f32": 0.10726513713598251,
+          "gain_f64": 0.1072651372327087,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 462,
+          "rank": 1,
+          "gain_f32": 7.450580596923828e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 792,
+          "rank": 2,
+          "gain_f32": 0.10466399788856506,
+          "gain_f64": 0.10466399718536934,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 296,
+          "rank": 1,
+          "gain_f32": 0.018508344888687134,
+          "gain_f64": 0.018508332242134884,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 45,
+          "rank": 27,
+          "gain_f32": 0.07879728078842163,
+          "gain_f64": 0.07879728157974597,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 140,
+          "rank": 36,
+          "gain_f32": 0.10967482626438141,
+          "gain_f64": 0.10967481366679266,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 619,
+          "rank": 2,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 706,
+          "rank": 1,
+          "gain_f32": 0.036135829985141754,
+          "gain_f64": 0.03613582654718783,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 683,
+          "rank": 3,
+          "gain_f32": 0.005404802039265633,
+          "gain_f64": 0.005404799728665921,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 251,
+          "rank": 3,
+          "gain_f32": 0.04542752727866173,
+          "gain_f64": 0.04542752443904874,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 638,
+          "rank": 2,
+          "gain_f32": 0.0031180381774902344,
+          "gain_f64": 0.003118031322962622,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 368,
+          "rank": 3,
+          "gain_f32": 0.0039201416075229645,
+          "gain_f64": 0.0039201433277256115,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 29,
+          "rank": 2,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 654,
+          "rank": 3,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        }
+      ],
+      "input_length": 28.21624130524211,
+      "output_length": 27.561433027012228,
+      "arm": "C",
+      "completed_iteration": 1
+    },
+    {
+      "visits": 859,
+      "gain_evaluations": 741,
+      "expanded_visits": 52,
+      "events": [
+        {
+          "anchor": 952,
+          "rank": 4,
+          "gain_f32": 0.0591980442404747,
+          "gain_f64": 0.05919804400905093,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 169,
+          "rank": 2,
+          "gain_f32": 0.009172707796096802,
+          "gain_f64": 0.009172698283599345,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 473,
+          "rank": 5,
+          "gain_f32": 0.015214577317237854,
+          "gain_f64": 0.015214569920800614,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 504,
+          "rank": 6,
+          "gain_f32": 0.10281911492347717,
+          "gain_f64": 0.10281911556980461,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 510,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 341,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 748,
+          "rank": 2,
+          "gain_f32": 0.21526584029197693,
+          "gain_f64": 0.21526584900540158,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 858,
+          "rank": 3,
+          "gain_f32": 0.004370804876089096,
+          "gain_f64": 0.004370803023967085,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 149,
+          "rank": 1,
+          "gain_f32": 9.313225746154785e-10,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 681,
+          "rank": 27,
+          "gain_f32": 0.08124279230833054,
+          "gain_f64": 0.0812427818237218,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 667,
+          "rank": 1,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 522,
+          "rank": 4,
+          "gain_f32": 0.008776545524597168,
+          "gain_f64": 0.008776549960227698,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 612,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 15,
+          "rank": 2,
+          "gain_f32": 0.0002624504268169403,
+          "gain_f64": 0.00026244553762211353,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 978,
+          "rank": 1,
+          "gain_f32": 0.008036129176616669,
+          "gain_f64": 0.008036133100077336,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 993,
+          "rank": 12,
+          "gain_f32": 0.023502953350543976,
+          "gain_f64": 0.023502964723228104,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 871,
+          "rank": 7,
+          "gain_f32": 0.00882970541715622,
+          "gain_f64": 0.008829707418883004,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 535,
+          "rank": 2,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 109,
+          "rank": 50,
+          "gain_f32": 0.1504000574350357,
+          "gain_f64": 0.15040006418033158,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 797,
+          "rank": 3,
+          "gain_f32": 0.031122781336307526,
+          "gain_f64": 0.031122786011728465,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 780,
+          "rank": 2,
+          "gain_f32": 0.053781211376190186,
+          "gain_f64": 0.05378120657341867,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 358,
+          "rank": 1,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 97,
+          "rank": 4,
+          "gain_f32": 0.04967103898525238,
+          "gain_f64": 0.04967103221685676,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 899,
+          "rank": 17,
+          "gain_f32": 0.08470189571380615,
+          "gain_f64": 0.08470187382962635,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 916,
+          "rank": 2,
+          "gain_f32": 0.045074883848428726,
+          "gain_f64": 0.045074888418408676,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 466,
+          "rank": 2,
+          "gain_f32": 0.07738682627677917,
+          "gain_f64": 0.07738683691299997,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 863,
+          "rank": 3,
+          "gain_f32": 0.007515266537666321,
+          "gain_f64": 0.007515266906281681,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 322,
+          "rank": 1,
+          "gain_f32": 0.02749088779091835,
+          "gain_f64": 0.027490883618661144,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 946,
+          "rank": 8,
+          "gain_f32": 0.022059008479118347,
+          "gain_f64": 0.022059006311206275,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 314,
+          "rank": 7,
+          "gain_f32": 0.015447072684764862,
+          "gain_f64": 0.015447072302208653,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 150,
+          "rank": 1,
+          "gain_f32": 0.06391294300556183,
+          "gain_f64": 0.06391294307242745,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 774,
+          "rank": 12,
+          "gain_f32": 0.07183000445365906,
+          "gain_f64": 0.07182997895638721,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 557,
+          "rank": 7,
+          "gain_f32": 0.008970219641923904,
+          "gain_f64": 0.008970221764116104,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 676,
+          "rank": 3,
+          "gain_f32": 0.013116076588630676,
+          "gain_f64": 0.013116075790051696,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 5,
+          "rank": 21,
+          "gain_f32": 0.16250741481781006,
+          "gain_f64": 0.16250743057084094,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 454,
+          "rank": 5,
+          "gain_f32": 0.06020844727754593,
+          "gain_f64": 0.06020845785845452,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 325,
+          "rank": 1,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 178,
+          "rank": 1,
+          "gain_f32": 0.03944931924343109,
+          "gain_f64": 0.03944931073829494,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 364,
+          "rank": 1,
+          "gain_f32": 0.02812538668513298,
+          "gain_f64": 0.028125384282063237,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 230,
+          "rank": 2,
+          "gain_f32": 0.020192239433526993,
+          "gain_f64": 0.020192233663728132,
+          "robust": true,
+          "route_changed": true
+        }
+      ],
+      "input_length": 25.07104790483872,
+      "output_length": 23.501393288484245,
+      "arm": "C",
+      "completed_iteration": 500
+    },
+    {
+      "visits": 649,
+      "gain_evaluations": 555,
+      "expanded_visits": 50,
+      "events": [
+        {
+          "anchor": 905,
+          "rank": 31,
+          "gain_f32": 0.0736532211303711,
+          "gain_f64": 0.07365318450080593,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 820,
+          "rank": 1,
+          "gain_f32": 0.08296960592269897,
+          "gain_f64": 0.0829696053357516,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 144,
+          "rank": 1,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 846,
+          "rank": 10,
+          "gain_f32": 0.007882233709096909,
+          "gain_f64": 0.00788223355458939,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 294,
+          "rank": 1,
+          "gain_f32": 0.042397722601890564,
+          "gain_f64": 0.042397720634156144,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 0,
+          "rank": 4,
+          "gain_f32": 0.013077929615974426,
+          "gain_f64": 0.013077939957216955,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 537,
+          "rank": 12,
+          "gain_f32": 0.01209956780076027,
+          "gain_f64": 0.012099569032336888,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 4,
+          "rank": 2,
+          "gain_f32": 0.011559680104255676,
+          "gain_f64": 0.011559685240566608,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 852,
+          "rank": 2,
+          "gain_f32": 0.09342307597398758,
+          "gain_f64": 0.09342307384897452,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 343,
+          "rank": 2,
+          "gain_f32": 0.011479292064905167,
+          "gain_f64": 0.011479292080206704,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 389,
+          "rank": 5,
+          "gain_f32": 0.0015716394409537315,
+          "gain_f64": 0.0015716400165324274,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 270,
+          "rank": 3,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 907,
+          "rank": 2,
+          "gain_f32": 0.009209226816892624,
+          "gain_f64": 0.009209220817375297,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 491,
+          "rank": 1,
+          "gain_f32": 0.0298914834856987,
+          "gain_f64": 0.02989148766059202,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 959,
+          "rank": 3,
+          "gain_f32": 0.016044683754444122,
+          "gain_f64": 0.016044682050981862,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 734,
+          "rank": 1,
+          "gain_f32": 0.07340725511312485,
+          "gain_f64": 0.07340726336597925,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 479,
+          "rank": 54,
+          "gain_f32": 0.06818057596683502,
+          "gain_f64": 0.06818058966977958,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 192,
+          "rank": 1,
+          "gain_f32": 0.059846073389053345,
+          "gain_f64": 0.05984607721811841,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 285,
+          "rank": 2,
+          "gain_f32": 0.007081408053636551,
+          "gain_f64": 0.007081406664390499,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 80,
+          "rank": 12,
+          "gain_f32": 0.003539998084306717,
+          "gain_f64": 0.003539993140503128,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 241,
+          "rank": 16,
+          "gain_f32": 0.015765957534313202,
+          "gain_f64": 0.015765960989302386,
+          "robust": true,
+          "route_changed": true
+        },
+        {
+          "anchor": 159,
+          "rank": 2,
+          "gain_f32": 1.862645149230957e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 113,
+          "rank": 1,
+          "gain_f32": 3.725290298461914e-09,
+          "gain_f64": 0.0,
+          "robust": false,
+          "route_changed": false
+        },
+        {
+          "anchor": 835,
+          "rank": 4,
+          "gain_f32": 0.011666828766465187,
+          "gain_f64": 0.011666833467192106,
+          "robust": true,
+          "route_changed": true
+        }
+      ],
+      "input_length": 24.506024965325242,
+      "output_length": 23.86127750607989,
+      "arm": "C",
+      "completed_iteration": 1000
+    }
+  ]
+}
