@@ -1,0 +1,824 @@
+{
+  "by_phase": {
+    "0": {
+      "processed_nodes": {
+        "mean": 66.9375,
+        "median": 62.5,
+        "minimum": 31,
+        "maximum": 113
+      },
+      "unreached_nodes": {
+        "mean": 933.0625,
+        "median": 937.5,
+        "minimum": 887,
+        "maximum": 969
+      },
+      "candidate_evaluations": {
+        "mean": 743.25,
+        "median": 710.0,
+        "minimum": 230,
+        "maximum": 1434
+      },
+      "pruned_neighbor_slots": {
+        "mean": 3540.75,
+        "median": 3359.5,
+        "minimum": 1754,
+        "maximum": 5970
+      },
+      "evaluated_not_final_chosen": {
+        "mean": 705.6875,
+        "median": 674.0,
+        "minimum": 217,
+        "maximum": 1368
+      },
+      "accepted_moves": {
+        "mean": 37.5625,
+        "median": 35.0,
+        "minimum": 13,
+        "maximum": 66
+      },
+      "processed_node_reinsertion_attempts": {
+        "mean": 78.3125,
+        "median": 79.0,
+        "minimum": 31,
+        "maximum": 132
+      },
+      "residual_k32_offline": {
+        "mean": 337.8125,
+        "median": 326.5,
+        "minimum": 274,
+        "maximum": 425
+      },
+      "residual_off_k32_offline": {
+        "mean": 70.3125,
+        "median": 67.5,
+        "minimum": 25,
+        "maximum": 118
+      }
+    },
+    "249": {
+      "processed_nodes": {
+        "mean": 24.5625,
+        "median": 23.5,
+        "minimum": 18,
+        "maximum": 35
+      },
+      "unreached_nodes": {
+        "mean": 975.4375,
+        "median": 976.5,
+        "minimum": 965,
+        "maximum": 982
+      },
+      "candidate_evaluations": {
+        "mean": 167.4375,
+        "median": 148.5,
+        "minimum": 80,
+        "maximum": 275
+      },
+      "pruned_neighbor_slots": {
+        "mean": 1404.5625,
+        "median": 1366.0,
+        "minimum": 1031,
+        "maximum": 2069
+      },
+      "evaluated_not_final_chosen": {
+        "mean": 153.25,
+        "median": 135.0,
+        "minimum": 67,
+        "maximum": 259
+      },
+      "accepted_moves": {
+        "mean": 14.1875,
+        "median": 13.5,
+        "minimum": 8,
+        "maximum": 22
+      },
+      "processed_node_reinsertion_attempts": {
+        "mean": 31.5625,
+        "median": 30.0,
+        "minimum": 18,
+        "maximum": 54
+      },
+      "residual_k32_offline": {
+        "mean": 5.8125,
+        "median": 5.0,
+        "minimum": 1,
+        "maximum": 15
+      },
+      "residual_off_k32_offline": {
+        "mean": 0,
+        "median": 0.0,
+        "minimum": 0,
+        "maximum": 0
+      }
+    },
+    "499": {
+      "processed_nodes": {
+        "mean": 62.3125,
+        "median": 64.0,
+        "minimum": 38,
+        "maximum": 91
+      },
+      "unreached_nodes": {
+        "mean": 937.6875,
+        "median": 936.0,
+        "minimum": 909,
+        "maximum": 962
+      },
+      "candidate_evaluations": {
+        "mean": 579.3125,
+        "median": 579.5,
+        "minimum": 321,
+        "maximum": 902
+      },
+      "pruned_neighbor_slots": {
+        "mean": 3408.6875,
+        "median": 3454.0,
+        "minimum": 2111,
+        "maximum": 4922
+      },
+      "evaluated_not_final_chosen": {
+        "mean": 543.8125,
+        "median": 539.0,
+        "minimum": 300,
+        "maximum": 848
+      },
+      "accepted_moves": {
+        "mean": 35.5,
+        "median": 37.5,
+        "minimum": 21,
+        "maximum": 54
+      },
+      "processed_node_reinsertion_attempts": {
+        "mean": 73.6875,
+        "median": 76.0,
+        "minimum": 43,
+        "maximum": 109
+      },
+      "residual_k32_offline": {
+        "mean": 14.8125,
+        "median": 11.5,
+        "minimum": 5,
+        "maximum": 43
+      },
+      "residual_off_k32_offline": {
+        "mean": 2.25,
+        "median": 0.0,
+        "minimum": 0,
+        "maximum": 36
+      }
+    },
+    "999": {
+      "processed_nodes": {
+        "mean": 69.5625,
+        "median": 70.0,
+        "minimum": 47,
+        "maximum": 93
+      },
+      "unreached_nodes": {
+        "mean": 930.4375,
+        "median": 930.0,
+        "minimum": 907,
+        "maximum": 953
+      },
+      "candidate_evaluations": {
+        "mean": 734.8125,
+        "median": 768.5,
+        "minimum": 450,
+        "maximum": 1047
+      },
+      "pruned_neighbor_slots": {
+        "mean": 3717.1875,
+        "median": 3677.0,
+        "minimum": 2558,
+        "maximum": 4905
+      },
+      "evaluated_not_final_chosen": {
+        "mean": 696.25,
+        "median": 731.0,
+        "minimum": 417,
+        "maximum": 993
+      },
+      "accepted_moves": {
+        "mean": 38.5625,
+        "median": 38.0,
+        "minimum": 29,
+        "maximum": 54
+      },
+      "processed_node_reinsertion_attempts": {
+        "mean": 80.125,
+        "median": 78.5,
+        "minimum": 56,
+        "maximum": 113
+      },
+      "residual_k32_offline": {
+        "mean": 14.125,
+        "median": 13.5,
+        "minimum": 3,
+        "maximum": 27
+      },
+      "residual_off_k32_offline": {
+        "mean": 0.375,
+        "median": 0.0,
+        "minimum": 0,
+        "maximum": 5
+      }
+    }
+  },
+  "by_instance": {
+    "0": {
+      "processed_nodes": {
+        "mean": 55.875,
+        "median": 58.5,
+        "minimum": 20,
+        "maximum": 93
+      },
+      "unreached_nodes": {
+        "mean": 944.125,
+        "median": 941.5,
+        "minimum": 907,
+        "maximum": 980
+      },
+      "candidate_evaluations": {
+        "mean": 574.125,
+        "median": 579.0,
+        "minimum": 117,
+        "maximum": 1047
+      },
+      "pruned_neighbor_slots": {
+        "mean": 3001.875,
+        "median": 3149.0,
+        "minimum": 1159,
+        "maximum": 4905
+      },
+      "evaluated_not_final_chosen": {
+        "mean": 542,
+        "median": 545.0,
+        "minimum": 109,
+        "maximum": 993
+      },
+      "accepted_moves": {
+        "mean": 32.125,
+        "median": 36.0,
+        "minimum": 8,
+        "maximum": 54
+      },
+      "processed_node_reinsertion_attempts": {
+        "mean": 66.25,
+        "median": 77.0,
+        "minimum": 18,
+        "maximum": 113
+      },
+      "residual_k32_offline": {
+        "mean": 82.25,
+        "median": 11.5,
+        "minimum": 6,
+        "maximum": 313
+      },
+      "residual_off_k32_offline": {
+        "mean": 12.375,
+        "median": 0.0,
+        "minimum": 0,
+        "maximum": 59
+      }
+    },
+    "1": {
+      "processed_nodes": {
+        "mean": 48,
+        "median": 47.0,
+        "minimum": 24,
+        "maximum": 70
+      },
+      "unreached_nodes": {
+        "mean": 952,
+        "median": 953.0,
+        "minimum": 930,
+        "maximum": 976
+      },
+      "candidate_evaluations": {
+        "mean": 466.25,
+        "median": 479.5,
+        "minimum": 121,
+        "maximum": 761
+      },
+      "pruned_neighbor_slots": {
+        "mean": 2605.75,
+        "median": 2494.5,
+        "minimum": 1415,
+        "maximum": 3719
+      },
+      "evaluated_not_final_chosen": {
+        "mean": 439,
+        "median": 449.0,
+        "minimum": 108,
+        "maximum": 723
+      },
+      "accepted_moves": {
+        "mean": 27.25,
+        "median": 30.5,
+        "minimum": 13,
+        "maximum": 38
+      },
+      "processed_node_reinsertion_attempts": {
+        "mean": 58.375,
+        "median": 62.0,
+        "minimum": 29,
+        "maximum": 81
+      },
+      "residual_k32_offline": {
+        "mean": 101.125,
+        "median": 13.0,
+        "minimum": 5,
+        "maximum": 378
+      },
+      "residual_off_k32_offline": {
+        "mean": 26.5,
+        "median": 0.0,
+        "minimum": 0,
+        "maximum": 106
+      }
+    },
+    "2": {
+      "processed_nodes": {
+        "mean": 55.5,
+        "median": 55.5,
+        "minimum": 18,
+        "maximum": 113
+      },
+      "unreached_nodes": {
+        "mean": 944.5,
+        "median": 944.5,
+        "minimum": 887,
+        "maximum": 982
+      },
+      "candidate_evaluations": {
+        "mean": 524.625,
+        "median": 482.5,
+        "minimum": 80,
+        "maximum": 1262
+      },
+      "pruned_neighbor_slots": {
+        "mean": 3027.375,
+        "median": 3040.5,
+        "minimum": 1072,
+        "maximum": 5970
+      },
+      "evaluated_not_final_chosen": {
+        "mean": 495.875,
+        "median": 453.5,
+        "minimum": 67,
+        "maximum": 1199
+      },
+      "accepted_moves": {
+        "mean": 28.75,
+        "median": 29.0,
+        "minimum": 11,
+        "maximum": 63
+      },
+      "processed_node_reinsertion_attempts": {
+        "mean": 58.75,
+        "median": 57.5,
+        "minimum": 22,
+        "maximum": 120
+      },
+      "residual_k32_offline": {
+        "mean": 93.375,
+        "median": 11.0,
+        "minimum": 2,
+        "maximum": 378
+      },
+      "residual_off_k32_offline": {
+        "mean": 26.75,
+        "median": 0.0,
+        "minimum": 0,
+        "maximum": 118
+      }
+    },
+    "3": {
+      "processed_nodes": {
+        "mean": 58.25,
+        "median": 66.5,
+        "minimum": 22,
+        "maximum": 78
+      },
+      "unreached_nodes": {
+        "mean": 941.75,
+        "median": 933.5,
+        "minimum": 922,
+        "maximum": 978
+      },
+      "candidate_evaluations": {
+        "mean": 578.5,
+        "median": 616.5,
+        "minimum": 107,
+        "maximum": 1029
+      },
+      "pruned_neighbor_slots": {
+        "mean": 3149.5,
+        "median": 3649.5,
+        "minimum": 1301,
+        "maximum": 4049
+      },
+      "evaluated_not_final_chosen": {
+        "mean": 545.875,
+        "median": 583.5,
+        "minimum": 94,
+        "maximum": 986
+      },
+      "accepted_moves": {
+        "mean": 32.625,
+        "median": 37.0,
+        "minimum": 13,
+        "maximum": 44
+      },
+      "processed_node_reinsertion_attempts": {
+        "mean": 70.5,
+        "median": 78.5,
+        "minimum": 31,
+        "maximum": 96
+      },
+      "residual_k32_offline": {
+        "mean": 93.25,
+        "median": 16.5,
+        "minimum": 3,
+        "maximum": 329
+      },
+      "residual_off_k32_offline": {
+        "mean": 20.5,
+        "median": 0.0,
+        "minimum": 0,
+        "maximum": 73
+      }
+    },
+    "4": {
+      "processed_nodes": {
+        "mean": 61.25,
+        "median": 65.0,
+        "minimum": 18,
+        "maximum": 94
+      },
+      "unreached_nodes": {
+        "mean": 938.75,
+        "median": 935.0,
+        "minimum": 906,
+        "maximum": 982
+      },
+      "candidate_evaluations": {
+        "mean": 629.875,
+        "median": 682.0,
+        "minimum": 121,
+        "maximum": 1041
+      },
+      "pruned_neighbor_slots": {
+        "mean": 3290.125,
+        "median": 3484.5,
+        "minimum": 1031,
+        "maximum": 4975
+      },
+      "evaluated_not_final_chosen": {
+        "mean": 596.875,
+        "median": 642.5,
+        "minimum": 108,
+        "maximum": 991
+      },
+      "accepted_moves": {
+        "mean": 33,
+        "median": 36.5,
+        "minimum": 13,
+        "maximum": 50
+      },
+      "processed_node_reinsertion_attempts": {
+        "mean": 66.875,
+        "median": 74.5,
+        "minimum": 27,
+        "maximum": 103
+      },
+      "residual_k32_offline": {
+        "mean": 88.375,
+        "median": 18.0,
+        "minimum": 1,
+        "maximum": 323
+      },
+      "residual_off_k32_offline": {
+        "mean": 7.625,
+        "median": 0.0,
+        "minimum": 0,
+        "maximum": 36
+      }
+    },
+    "5": {
+      "processed_nodes": {
+        "mean": 45.5,
+        "median": 43.5,
+        "minimum": 27,
+        "maximum": 71
+      },
+      "unreached_nodes": {
+        "mean": 954.5,
+        "median": 956.5,
+        "minimum": 929,
+        "maximum": 973
+      },
+      "candidate_evaluations": {
+        "mean": 458.5,
+        "median": 426.0,
+        "minimum": 190,
+        "maximum": 822
+      },
+      "pruned_neighbor_slots": {
+        "mean": 2453.5,
+        "median": 2358.0,
+        "minimum": 1517,
+        "maximum": 3722
+      },
+      "evaluated_not_final_chosen": {
+        "mean": 433,
+        "median": 400.0,
+        "minimum": 173,
+        "maximum": 779
+      },
+      "accepted_moves": {
+        "mean": 25.5,
+        "median": 26.0,
+        "minimum": 13,
+        "maximum": 43
+      },
+      "processed_node_reinsertion_attempts": {
+        "mean": 52.875,
+        "median": 55.0,
+        "minimum": 31,
+        "maximum": 85
+      },
+      "residual_k32_offline": {
+        "mean": 85.875,
+        "median": 8.0,
+        "minimum": 3,
+        "maximum": 329
+      },
+      "residual_off_k32_offline": {
+        "mean": 24.25,
+        "median": 0.0,
+        "minimum": 0,
+        "maximum": 100
+      }
+    },
+    "6": {
+      "processed_nodes": {
+        "mean": 62.125,
+        "median": 65.5,
+        "minimum": 23,
+        "maximum": 111
+      },
+      "unreached_nodes": {
+        "mean": 937.875,
+        "median": 934.5,
+        "minimum": 889,
+        "maximum": 977
+      },
+      "candidate_evaluations": {
+        "mean": 619.5,
+        "median": 558.5,
+        "minimum": 171,
+        "maximum": 1434
+      },
+      "pruned_neighbor_slots": {
+        "mean": 3356.5,
+        "median": 3633.5,
+        "minimum": 1251,
+        "maximum": 5670
+      },
+      "evaluated_not_final_chosen": {
+        "mean": 582.75,
+        "median": 520.5,
+        "minimum": 149,
+        "maximum": 1368
+      },
+      "accepted_moves": {
+        "mean": 36.75,
+        "median": 38.0,
+        "minimum": 15,
+        "maximum": 66
+      },
+      "processed_node_reinsertion_attempts": {
+        "mean": 79.75,
+        "median": 83.5,
+        "minimum": 35,
+        "maximum": 132
+      },
+      "residual_k32_offline": {
+        "mean": 111,
+        "median": 21.0,
+        "minimum": 5,
+        "maximum": 425
+      },
+      "residual_off_k32_offline": {
+        "mean": 13.125,
+        "median": 0.0,
+        "minimum": 0,
+        "maximum": 62
+      }
+    },
+    "7": {
+      "processed_nodes": {
+        "mean": 60.25,
+        "median": 71.0,
+        "minimum": 21,
+        "maximum": 91
+      },
+      "unreached_nodes": {
+        "mean": 939.75,
+        "median": 929.0,
+        "minimum": 909,
+        "maximum": 979
+      },
+      "candidate_evaluations": {
+        "mean": 598.25,
+        "median": 710.0,
+        "minimum": 142,
+        "maximum": 902
+      },
+      "pruned_neighbor_slots": {
+        "mean": 3257.75,
+        "median": 3834.0,
+        "minimum": 1202,
+        "maximum": 4922
+      },
+      "evaluated_not_final_chosen": {
+        "mean": 562.625,
+        "median": 672.0,
+        "minimum": 128,
+        "maximum": 848
+      },
+      "accepted_moves": {
+        "mean": 35.625,
+        "median": 38.0,
+        "minimum": 13,
+        "maximum": 54
+      },
+      "processed_node_reinsertion_attempts": {
+        "mean": 74,
+        "median": 78.5,
+        "minimum": 29,
+        "maximum": 109
+      },
+      "residual_k32_offline": {
+        "mean": 89.875,
+        "median": 12.0,
+        "minimum": 3,
+        "maximum": 338
+      },
+      "residual_off_k32_offline": {
+        "mean": 14.75,
+        "median": 0.0,
+        "minimum": 0,
+        "maximum": 88
+      }
+    }
+  },
+  "middle_late_instance_means": {
+    "0": {
+      "processed_nodes": 69.25,
+      "unreached_nodes": 930.75,
+      "candidate_evaluations": 710,
+      "pruned_neighbor_slots": 3722,
+      "evaluated_not_final_chosen": 668.5,
+      "accepted_moves": 41.5,
+      "processed_node_reinsertion_attempts": 87,
+      "residual_k32_offline": 13.5,
+      "residual_off_k32_offline": 0
+    },
+    "1": {
+      "processed_nodes": 55.0,
+      "unreached_nodes": 945.0,
+      "candidate_evaluations": 570,
+      "pruned_neighbor_slots": 2950,
+      "evaluated_not_final_chosen": 539.5,
+      "accepted_moves": 30.5,
+      "processed_node_reinsertion_attempts": 64.25,
+      "residual_k32_offline": 14.0,
+      "residual_off_k32_offline": 0.25
+    },
+    "2": {
+      "processed_nodes": 59.5,
+      "unreached_nodes": 940.5,
+      "candidate_evaluations": 581.75,
+      "pruned_neighbor_slots": 3226.25,
+      "evaluated_not_final_chosen": 550.75,
+      "accepted_moves": 31.0,
+      "processed_node_reinsertion_attempts": 64.5,
+      "residual_k32_offline": 11.25,
+      "residual_off_k32_offline": 0
+    },
+    "3": {
+      "processed_nodes": 68.25,
+      "unreached_nodes": 931.75,
+      "candidate_evaluations": 657.75,
+      "pruned_neighbor_slots": 3710.25,
+      "evaluated_not_final_chosen": 619.5,
+      "accepted_moves": 38.25,
+      "processed_node_reinsertion_attempts": 80.75,
+      "residual_k32_offline": 21,
+      "residual_off_k32_offline": 9
+    },
+    "4": {
+      "processed_nodes": 73,
+      "unreached_nodes": 927,
+      "candidate_evaluations": 711.25,
+      "pruned_neighbor_slots": 3960.75,
+      "evaluated_not_final_chosen": 673.5,
+      "accepted_moves": 37.75,
+      "processed_node_reinsertion_attempts": 72.75,
+      "residual_k32_offline": 17.5,
+      "residual_off_k32_offline": 0
+    },
+    "5": {
+      "processed_nodes": 58.25,
+      "unreached_nodes": 941.75,
+      "candidate_evaluations": 627.75,
+      "pruned_neighbor_slots": 3100.25,
+      "evaluated_not_final_chosen": 594.75,
+      "accepted_moves": 33.0,
+      "processed_node_reinsertion_attempts": 66.75,
+      "residual_k32_offline": 7.5,
+      "residual_off_k32_offline": 0
+    },
+    "6": {
+      "processed_nodes": 71.25,
+      "unreached_nodes": 928.75,
+      "candidate_evaluations": 688.25,
+      "pruned_neighbor_slots": 3871.75,
+      "evaluated_not_final_chosen": 647,
+      "accepted_moves": 41.25,
+      "processed_node_reinsertion_attempts": 90.75,
+      "residual_k32_offline": 19.25,
+      "residual_off_k32_offline": 1.25
+    },
+    "7": {
+      "processed_nodes": 73,
+      "unreached_nodes": 927,
+      "candidate_evaluations": 709.75,
+      "pruned_neighbor_slots": 3962.25,
+      "evaluated_not_final_chosen": 666.75,
+      "accepted_moves": 43,
+      "processed_node_reinsertion_attempts": 88.5,
+      "residual_k32_offline": 11.75,
+      "residual_off_k32_offline": 0
+    }
+  },
+  "middle_late_between_instance_dispersion": {
+    "processed_nodes": {
+      "mean": 65.9375,
+      "median": 68.75,
+      "minimum": 55.0,
+      "maximum": 73
+    },
+    "unreached_nodes": {
+      "mean": 934.0625,
+      "median": 931.25,
+      "minimum": 927,
+      "maximum": 945.0
+    },
+    "candidate_evaluations": {
+      "mean": 657.0625,
+      "median": 673.0,
+      "minimum": 570,
+      "maximum": 711.25
+    },
+    "pruned_neighbor_slots": {
+      "mean": 3562.9375,
+      "median": 3716.125,
+      "minimum": 2950,
+      "maximum": 3962.25
+    },
+    "evaluated_not_final_chosen": {
+      "mean": 620.03125,
+      "median": 633.25,
+      "minimum": 539.5,
+      "maximum": 673.5
+    },
+    "accepted_moves": {
+      "mean": 37.03125,
+      "median": 38.0,
+      "minimum": 30.5,
+      "maximum": 43
+    },
+    "processed_node_reinsertion_attempts": {
+      "mean": 76.90625,
+      "median": 76.75,
+      "minimum": 64.25,
+      "maximum": 90.75
+    },
+    "residual_k32_offline": {
+      "mean": 14.46875,
+      "median": 13.75,
+      "minimum": 7.5,
+      "maximum": 21
+    },
+    "residual_off_k32_offline": {
+      "mean": 1.3125,
+      "median": 0.0,
+      "minimum": 0,
+      "maximum": 9
+    }
+  }
+}

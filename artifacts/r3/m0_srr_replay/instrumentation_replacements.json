@@ -1,0 +1,12 @@
+{
+  "int32_t a = checklist[checklist_pos++];": "int32_t a = checklist[checklist_pos++];\n    py::dict event; py::list evals, prunes, insertions;\n    event[\"cursor\"] = checklist_pos - 1; event[\"node\"] = a;\n    event[\"checklist_size_before\"] = checklist.size();\n    processed[a] = true;",
+  "if (b < 0 || b >= n)\n        break;": "if (b < 0 || b >= n) {\n        py::dict p; p[\"direction\"] = direction; p[\"rank\"] = j;\n        p[\"reason\"] = \"invalid_neighbor\"; prunes.append(p); break;\n      }",
+  "// Check moves with a -> a_next edge": "int direction = 0;\n    // Check moves with a -> a_next edge",
+  "// Check moves with a_prev -> a edge": "direction = 1;\n    // Check moves with a_prev -> a edge",
+  "if (diff > max_diff) {": "py::dict e; e[\"direction\"] = direction; e[\"rank\"] = j;\n        e[\"b\"] = b; e[\"gain_f32\"] = diff; e[\"selected_at_this_point\"] = diff > max_diff;\n        evals.append(e);\n        if (diff > max_diff) {",
+  "} else {\n        break;\n      }": "} else {\n        py::dict p; p[\"direction\"] = direction; p[\"rank\"] = j; p[\"b\"] = b;\n        p[\"reason\"] = \"distance_early_break\"; p[\"remaining_including_boundary\"] = k-j;\n        p[\"edge_distance_f32\"] = direction == 0 ? dist_a_to_next : dist_a_to_prev;\n        p[\"neighbor_distance_f32\"] = dist_ab; prunes.append(p); break;\n      }",
+  "if (max_diff > 0) {": "event[\"evaluations\"] = evals; event[\"prunes\"] = prunes;\n    event[\"selected_gain_f32\"] = max_diff;\n    event[\"selected_move\"] = std::vector<int32_t>(best_move, best_move+4);\n    if (max_diff > 0) {\n      auto before_route = route;",
+  "++changes_count;": "++changes_count;\n      py::list updates;\n      for(int z=0;z<n;++z) if(route[z]!=before_route[z]) updates.append(py::make_tuple(z,route[z]));\n      event[\"route_updates\"] = updates;\n      for(int z=0;z<n;++z) if(positions[route[z]]!=z) throw std::runtime_error(\"position invariant\");",
+  "int32_t node = best_move[i];": "int32_t node = best_move[i];\n          py::dict ins; ins[\"node\"] = node; ins[\"already_processed\"] = bool(processed[node]);\n          ins[\"inserted\"] = std::find(checklist.begin(),checklist.end(),node)==checklist.end();\n          insertions.append(ins);",
+  "\n  }\n\n  return total_change;": "\n    event[\"insertions\"] = insertions;\n    event[\"checklist_size_after\"] = checklist.size();\n    events.append(event);\n    if(events.size()>size_t(n)) throw std::runtime_error(\"bounded log exceeded\");\n  }\n\n  return total_change;"
+}

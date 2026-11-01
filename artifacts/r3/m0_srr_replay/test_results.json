@@ -1,0 +1,19 @@
+{
+  "all_input_hashes_unchanged": true,
+  "passed": 64,
+  "total": 64,
+  "required_gate_passed": true,
+  "selected_cases_dropped": 0,
+  "new_trajectories": 0,
+  "per_case_checks": [
+    "raw reconstruction",
+    "initial checklist exact",
+    "final exact array including closure",
+    "logging invariance",
+    "float32 evaluation and selection",
+    "literal route mutation",
+    "accepted edge gain vs independent float64 cost",
+    "permutation and positions",
+    "checklist evolution"
+  ]
+}

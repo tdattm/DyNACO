@@ -1,0 +1,21 @@
+{
+  "branch": "feature/r3-budget-aware-candidate-graph",
+  "head": "390f3e46186113ffd5ed714343fc93ea09119b0a",
+  "worktrees": [
+    "D:/GitRepository/DyNACO     cd16e2a [final]",
+    "D:/GitRepository/DyNACO-r3  390f3e4 [feature/r3-budget-aware-candidate-graph]"
+  ],
+  "remotes": [
+    "origin\thttps://github.com/tdattm/DyNACO.git (fetch)",
+    "origin\thttps://github.com/tdattm/DyNACO.git (push)"
+  ],
+  "original_worktree_status": [
+    "?? .r1-env/"
+  ],
+  "tracked_existing_diff": [],
+  "delivery_status": [
+    "?? artifacts/r3/m0_srr_replay/",
+    "?? r3/m0/"
+  ],
+  "pushed": false
+}

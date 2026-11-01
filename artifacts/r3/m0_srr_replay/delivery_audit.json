@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "all_source_input_output_hashes_verified": true,
+  "exact_cases": 64,
+  "accepted_moves": 2013,
+  "candidate_evaluations": 35597,
+  "processed_reinsertion_attempts": 4219,
+  "existing_tracked_files_changed": 0
+}
