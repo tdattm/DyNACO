@@ -1,0 +1,8 @@
+{
+  "status": "RESOURCE-INCONCLUSIVE",
+  "reason": "OWNER_SIGNAL_15",
+  "origin_monotonic": 85.514747767,
+  "cleanup_errors": [],
+  "started": true,
+  "containment_live_processes": []
+}

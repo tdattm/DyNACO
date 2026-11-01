@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/m2_safety/dummy.py", line 31, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/m2_safety/dummy.py", line 23, in main
+    time.sleep(.5);raise OSError(28,'synthetic serialization failure')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 28] synthetic serialization failure

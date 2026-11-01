@@ -1,0 +1,9 @@
+{
+  "mode": "fixture",
+  "scenario": "low_disk",
+  "record": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v6/low_disk/record",
+  "output": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v6/low_disk/output",
+  "nested_namespace": false,
+  "aggregate_start_monotonic": 47.541016403,
+  "input_spec_sha256": "f5b4232ee855c900e5f56cf1d2a6b91cf700ab9ff58dde7e41bbaff4414a96df"
+}

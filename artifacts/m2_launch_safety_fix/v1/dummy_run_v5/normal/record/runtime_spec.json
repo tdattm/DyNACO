@@ -1,0 +1,10 @@
+{
+  "mode": "fixture",
+  "scenario": "normal",
+  "record": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v5/normal/record",
+  "output": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v5/normal/output",
+  "nested_namespace": true,
+  "escape_fd": 4,
+  "aggregate_start_monotonic": 11.441214958,
+  "input_spec_sha256": "93b8ced7e25ca324397f89afe15eed4ceb1bb5caaee50b687990d39f1d9ba817"
+}

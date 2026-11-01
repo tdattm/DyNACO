@@ -1,0 +1,82 @@
+{
+  "test": "watchdog_crash",
+  "status": "PASS",
+  "controller_pid": 415,
+  "controller_exit": 0,
+  "host_snapshot": [
+    {
+      "pid": 417,
+      "ppid": 416,
+      "pgid": 416,
+      "sid": 416,
+      "state": "S",
+      "start_ticks": 3970,
+      "pid_namespace": 4026532265
+    },
+    {
+      "pid": 418,
+      "ppid": 417,
+      "pgid": 418,
+      "sid": 418,
+      "state": "S",
+      "start_ticks": 4022,
+      "pid_namespace": 4026532265
+    },
+    {
+      "pid": 419,
+      "ppid": 417,
+      "pgid": 419,
+      "sid": 419,
+      "state": "S",
+      "start_ticks": 4067,
+      "pid_namespace": 4026532265
+    },
+    {
+      "pid": 420,
+      "ppid": 419,
+      "pgid": 420,
+      "sid": 420,
+      "state": "S",
+      "start_ticks": 4124,
+      "pid_namespace": 4026532265
+    }
+  ],
+  "nested_namespace_snapshot": [],
+  "nested_remaining_live_processes": [],
+  "namespace_owner": {
+    "pid": 417,
+    "ppid": 416,
+    "pgid": 416,
+    "sid": 416,
+    "state": "R",
+    "start_ticks": 3970,
+    "pid_namespace": 4026532265
+  },
+  "namespace_identity": {
+    "pid": 3,
+    "ppid": 1,
+    "pgid": 3,
+    "sid": 3,
+    "pid_namespace": 4026532265
+  },
+  "descendant": {
+    "pid": 4,
+    "ppid": 3,
+    "pgid": 4,
+    "sid": 4,
+    "pid_namespace": 4026532265
+  },
+  "escape_test": null,
+  "remaining_live_processes": [],
+  "result": {
+    "status": "RESOURCE-INCONCLUSIVE",
+    "reason": "DISK_MONITOR_FAILURE",
+    "origin_monotonic": 41.952086139,
+    "error": "RuntimeError: synthetic sampler crash",
+    "cleanup_errors": [],
+    "started": true,
+    "containment_live_processes": []
+  },
+  "unrelated_sentinel_survived": true,
+  "partial_prefix_preserved": true
+}

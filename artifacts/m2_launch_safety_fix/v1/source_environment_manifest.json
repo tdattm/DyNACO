@@ -1,0 +1,38 @@
+{
+  "source_commit": "a09e725b613c122ccb054ed9c6ba707d681577ea",
+  "implementation_sha256": "4e2b950f4b2ed327ad1537c285e5b00fbdb114fa59a2b280e05d8916a4ab76d9",
+  "amendment_sha256": "fad6ca186c37b07cd2a2a48e742e22a3cea99bc137e2b4446fe7b80dda883967",
+  "files": {
+    "m2_safety/.gitattributes": "86013e6b9434810158ab594bbfd2d77f64b030a5eac5f27fc17afd2f474d561e",
+    "m2_safety/README.md": "f76bf54faa66bc4cac1ab2c860dd618b84b9577bebc77b48c731d58f35ff2902",
+    "m2_safety/approval.py": "bca7808b1d34dc2f742fd23e44e9b26d909f5d54bf27e1a90d2d44bdb93e2914",
+    "m2_safety/bootstrap.py": "aa91a6718de2d7d15a4c41b4638440201098c911d8bf1b814b0fee9e15597747",
+    "m2_safety/common.py": "83e3a3b394bf0845c125560e546f67a6785f2c3b13deae7372fc6aac84577f49",
+    "m2_safety/dummy.py": "2c3287deba540de0c285e21a1653360c7b9ea0a209a0ed7ba40444b4d05a8f1d",
+    "m2_safety/guard.py": "a06c9715258caa194e7b14c12f5f97d37e754aa57ece9809da16ed6c328e04ef",
+    "m2_safety/init.py": "9b8f9cd0d2085959c91c79766f02afe8b59496f7ba89032d71b20609b67d9c52",
+    "m2_safety/launch.py": "fd0c33b44694793dd0345395714c1e8aa7be38e564809bf9caf1d84735deb1a7",
+    "m2_safety/sampler.py": "9c49e48b4d02516220b46557939b331e988255703db947ab48e8c1ab3b03f027",
+    "m2_safety/tests.py": "e87f2e94d9754ca28aa8dfff797fe2fbc49572e9fe25556ed592043b8daa4011"
+  },
+  "environment": {
+    "python": "3.13.18 (main, Oct 26 2026, 14:08:20) [Clang 23.1.3 ]",
+    "numpy": "2.5.4",
+    "torch": "2.7.1+cu126",
+    "kernel": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "unshare": "unshare from util-linux 2.39.3\n",
+    "unshare_sha256": "a23c8863860669003dc4660039fe642f5795c8c2195898ebc5d01afa1ac3d11c",
+    "compiler": "x86_64-linux-gnu-g++-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU, 577.00, 4096 MiB\n",
+    "filesystem_free_bytes": 19949977600
+  },
+  "old_registration_sha256": "5d2d8942f900d4d1a4ef89e069668c3d0290d17c628d058150ffe6998d5bca45",
+  "new_candidate_sha256": "42da5437d40a714298bfed823ba2120a771674c66c637ca736d5d99b1e447f59",
+  "expected_pinned_delta": [
+    "srr_p2/execute.py",
+    "srr_p2/worker.py"
+  ],
+  "other_historical_hashes_verified": 1214,
+  "approvals_created": 0,
+  "principal_runs": 0
+}

@@ -1,0 +1,7 @@
+{
+  "mode": "fixture",
+  "scenario": "watchdog_crash",
+  "record": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v6/watchdog_crash/record",
+  "output": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v6/watchdog_crash/output",
+  "nested_namespace": false
+}

@@ -1,0 +1,13 @@
+PASS normal COMPLETE
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/m2_safety/tests.py", line 110, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/m2_safety/tests.py", line 54, in main
+    waitfor(lambda:(record/'namespace_owner.json').exists() and (output/'descendant.json').exists())
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/m2_safety/tests.py", line 14, in waitfor
+    raise TimeoutError('dummy safety condition not reached')
+TimeoutError: dummy safety condition not reached

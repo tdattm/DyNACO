@@ -1,0 +1,6 @@
+{
+  "mode": "fixture",
+  "scenario": "normal",
+  "record": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/pinned_bootstrap_checks/normal/record",
+  "output": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/pinned_bootstrap_checks/normal/output"
+}

@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "test": "wrong_amendment",
+      "status": "PASS"
+    },
+    {
+      "test": "wrong_registration",
+      "status": "PASS"
+    },
+    {
+      "test": "wrong_implementation",
+      "status": "PASS"
+    },
+    {
+      "test": "old_attempt",
+      "status": "PASS"
+    },
+    {
+      "test": "malformed",
+      "status": "PASS"
+    },
+    {
+      "test": "missing_identity",
+      "status": "PASS"
+    },
+    {
+      "test": "missing_approval",
+      "status": "PASS"
+    },
+    {
+      "test": "duplicate_attempt",
+      "status": "PASS"
+    },
+    {
+      "test": "GPU_lock_contention",
+      "status": "PASS"
+    },
+    {
+      "test": "legacy_bypass_srr_p2.execute",
+      "status": "PASS",
+      "returncode": 1
+    },
+    {
+      "test": "legacy_bypass_srr_p2.worker",
+      "status": "PASS",
+      "returncode": 1
+    },
+    {
+      "test": "new_entry_missing_approval",
+      "status": "PASS"
+    }
+  ],
+  "synthetic_metadata_only": true,
+  "actual_approval_files_created": 0
+}

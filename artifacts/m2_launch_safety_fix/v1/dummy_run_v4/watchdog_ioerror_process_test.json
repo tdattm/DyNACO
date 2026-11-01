@@ -1,0 +1,82 @@
+{
+  "test": "watchdog_ioerror",
+  "status": "PASS",
+  "controller_pid": 421,
+  "controller_exit": 0,
+  "host_snapshot": [
+    {
+      "pid": 423,
+      "ppid": 422,
+      "pgid": 422,
+      "sid": 422,
+      "state": "S",
+      "start_ticks": 4293,
+      "pid_namespace": 4026532265
+    },
+    {
+      "pid": 424,
+      "ppid": 423,
+      "pgid": 424,
+      "sid": 424,
+      "state": "S",
+      "start_ticks": 4345,
+      "pid_namespace": 4026532265
+    },
+    {
+      "pid": 425,
+      "ppid": 423,
+      "pgid": 425,
+      "sid": 425,
+      "state": "S",
+      "start_ticks": 4390,
+      "pid_namespace": 4026532265
+    },
+    {
+      "pid": 426,
+      "ppid": 425,
+      "pgid": 426,
+      "sid": 426,
+      "state": "S",
+      "start_ticks": 4446,
+      "pid_namespace": 4026532265
+    }
+  ],
+  "nested_namespace_snapshot": [],
+  "nested_remaining_live_processes": [],
+  "namespace_owner": {
+    "pid": 423,
+    "ppid": 422,
+    "pgid": 422,
+    "sid": 422,
+    "state": "D",
+    "start_ticks": 4293,
+    "pid_namespace": 4026532265
+  },
+  "namespace_identity": {
+    "pid": 3,
+    "ppid": 1,
+    "pgid": 3,
+    "sid": 3,
+    "pid_namespace": 4026532265
+  },
+  "descendant": {
+    "pid": 4,
+    "ppid": 3,
+    "pgid": 4,
+    "sid": 4,
+    "pid_namespace": 4026532265
+  },
+  "escape_test": null,
+  "remaining_live_processes": [],
+  "result": {
+    "status": "RESOURCE-INCONCLUSIVE",
+    "reason": "DISK_WRITE_ERROR",
+    "origin_monotonic": 45.188934738,
+    "error": "OSError: [Errno 28] synthetic disk error",
+    "cleanup_errors": [],
+    "started": true,
+    "containment_live_processes": []
+  },
+  "unrelated_sentinel_survived": true,
+  "partial_prefix_preserved": true
+}

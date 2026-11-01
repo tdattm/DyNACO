@@ -1,0 +1,26 @@
+{
+  "test": "insufficient",
+  "status": "PASS",
+  "controller_pid": 479,
+  "controller_exit": 0,
+  "host_snapshot": [],
+  "nested_namespace_snapshot": [],
+  "nested_remaining_live_processes": [],
+  "namespace_owner": null,
+  "namespace_identity": null,
+  "descendant": null,
+  "escape_test": null,
+  "remaining_live_processes": [],
+  "result": {
+    "status": "BLOCKED",
+    "reason": "DISK_ADMISSION",
+    "origin_monotonic": 87.504782661,
+    "free_bytes": 1,
+    "required_bytes": 17817796608,
+    "cleanup_errors": [],
+    "started": false,
+    "containment_live_processes": []
+  },
+  "unrelated_sentinel_survived": true,
+  "partial_prefix_preserved": false
+}

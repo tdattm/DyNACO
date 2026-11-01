@@ -1,0 +1,8 @@
+{
+  "status": "RESOURCE-INCONCLUSIVE",
+  "reason": "SAFETY_MONITOR_FAILURE",
+  "error": "RuntimeError: synthetic init supervisor failure",
+  "cleanup_errors": [],
+  "started": true,
+  "containment_live_processes": []
+}

@@ -1,0 +1,102 @@
+{
+  "test": "normal",
+  "status": "PASS",
+  "controller_pid": 361,
+  "controller_exit": 0,
+  "host_snapshot": [
+    {
+      "pid": 364,
+      "ppid": 363,
+      "pgid": 363,
+      "sid": 363,
+      "state": "S",
+      "start_ticks": 1188,
+      "pid_namespace": 4026532268
+    },
+    {
+      "pid": 365,
+      "ppid": 364,
+      "pgid": 365,
+      "sid": 365,
+      "state": "S",
+      "start_ticks": 1258,
+      "pid_namespace": 4026532268
+    },
+    {
+      "pid": 366,
+      "ppid": 364,
+      "pgid": 366,
+      "sid": 366,
+      "state": "S",
+      "start_ticks": 1316,
+      "pid_namespace": 4026532268
+    },
+    {
+      "pid": 368,
+      "ppid": 366,
+      "pgid": 368,
+      "sid": 368,
+      "state": "S",
+      "start_ticks": 1383,
+      "pid_namespace": 4026532268
+    },
+    {
+      "pid": 369,
+      "ppid": 366,
+      "pgid": 369,
+      "sid": 369,
+      "state": "S",
+      "start_ticks": 1383,
+      "pid_namespace": 4026532268
+    }
+  ],
+  "nested_namespace_snapshot": [
+    {
+      "pid": 370,
+      "ppid": 369,
+      "pgid": 369,
+      "sid": 369,
+      "state": "S",
+      "start_ticks": 1383,
+      "pid_namespace": 4026532270
+    }
+  ],
+  "nested_remaining_live_processes": [],
+  "namespace_owner": {
+    "pid": 364,
+    "ppid": 363,
+    "pgid": 363,
+    "sid": 363,
+    "state": "D",
+    "start_ticks": 1188,
+    "pid_namespace": 4026532268
+  },
+  "namespace_identity": {
+    "pid": 3,
+    "ppid": 1,
+    "pgid": 3,
+    "sid": 3,
+    "pid_namespace": 4026532268
+  },
+  "descendant": {
+    "pid": 4,
+    "ppid": 3,
+    "pgid": 4,
+    "sid": 4,
+    "pid_namespace": 4026532268
+  },
+  "escape_test": {
+    "result": -1,
+    "errno": 1
+  },
+  "remaining_live_processes": [],
+  "result": {
+    "status": "COMPLETE",
+    "reason": "validated_full_grid",
+    "cleanup_errors": [],
+    "started": true,
+    "containment_live_processes": []
+  },
+  "unrelated_sentinel_survived": true,
+  "partial_prefix_preserved": true
+}

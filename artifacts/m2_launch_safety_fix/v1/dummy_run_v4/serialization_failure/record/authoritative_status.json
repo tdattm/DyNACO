@@ -1,0 +1,8 @@
+{
+  "status": "RESOURCE-INCONCLUSIVE",
+  "reason": "DISK_WRITE_ERROR",
+  "origin_monotonic": 54.102601049,
+  "cleanup_errors": [],
+  "started": true,
+  "containment_live_processes": []
+}

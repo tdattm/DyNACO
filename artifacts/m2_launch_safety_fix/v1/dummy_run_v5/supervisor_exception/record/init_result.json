@@ -1,0 +1,8 @@
+{
+  "status": "RESOURCE-INCONCLUSIVE",
+  "reason": "SAFETY_MONITOR_FAILURE",
+  "origin_monotonic": 18.139270489,
+  "error": "RuntimeError: synthetic init supervisor failure",
+  "cleanup_errors": [],
+  "started": true
+}

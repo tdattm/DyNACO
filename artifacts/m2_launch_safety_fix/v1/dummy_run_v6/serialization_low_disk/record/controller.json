@@ -1,0 +1,11 @@
+{
+  "pid": 433,
+  "ppid": 282,
+  "pgid": 433,
+  "sid": 433,
+  "state": "R",
+  "start_ticks": 5132,
+  "pid_namespace": 4026532257,
+  "at": "2026-11-01T08:06:03.758922+00:00",
+  "mode": "fixture"
+}

@@ -1,0 +1,6 @@
+{
+  "mode": "fixture",
+  "scenario": "serialization_failure",
+  "record": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v3/serialization_failure/record",
+  "output": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v3/serialization_failure/output"
+}

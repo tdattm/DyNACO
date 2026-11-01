@@ -1,0 +1,82 @@
+{
+  "test": "watchdog_stall",
+  "status": "PASS",
+  "controller_pid": 427,
+  "controller_exit": 0,
+  "host_snapshot": [
+    {
+      "pid": 429,
+      "ppid": 428,
+      "pgid": 428,
+      "sid": 428,
+      "state": "S",
+      "start_ticks": 4621,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 430,
+      "ppid": 429,
+      "pgid": 430,
+      "sid": 430,
+      "state": "S",
+      "start_ticks": 4679,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 431,
+      "ppid": 429,
+      "pgid": 431,
+      "sid": 431,
+      "state": "S",
+      "start_ticks": 4728,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 432,
+      "ppid": 431,
+      "pgid": 432,
+      "sid": 432,
+      "state": "S",
+      "start_ticks": 4787,
+      "pid_namespace": 4026532266
+    }
+  ],
+  "nested_namespace_snapshot": [],
+  "nested_remaining_live_processes": [],
+  "namespace_owner": {
+    "pid": 429,
+    "ppid": 428,
+    "pgid": 428,
+    "sid": 428,
+    "state": "R",
+    "start_ticks": 4621,
+    "pid_namespace": 4026532266
+  },
+  "namespace_identity": {
+    "pid": 3,
+    "ppid": 1,
+    "pgid": 3,
+    "sid": 3,
+    "pid_namespace": 4026532266
+  },
+  "descendant": {
+    "pid": 4,
+    "ppid": 3,
+    "pgid": 4,
+    "sid": 4,
+    "pid_namespace": 4026532266
+  },
+  "escape_test": null,
+  "remaining_live_processes": [],
+  "result": {
+    "status": "RESOURCE-INCONCLUSIVE",
+    "reason": "SAFETY_MONITOR_FAILURE",
+    "origin_monotonic": 50.326655859,
+    "error": "RuntimeError: disk watchdog heartbeat expired",
+    "cleanup_errors": [],
+    "started": true,
+    "containment_live_processes": []
+  },
+  "unrelated_sentinel_survived": true,
+  "partial_prefix_preserved": true
+}

@@ -1,0 +1,8 @@
+{
+  "status": "RESOURCE-INCONCLUSIVE",
+  "reason": "DISK_WRITE_ERROR",
+  "origin_monotonic": 64.726317468,
+  "error": "OSError: [Errno 28] synthetic disk error",
+  "cleanup_errors": [],
+  "started": true
+}

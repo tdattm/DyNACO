@@ -1,0 +1,8 @@
+{
+  "mode": "fixture",
+  "scenario": "normal",
+  "record": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/pinned_bootstrap_checks/normal/record",
+  "output": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/pinned_bootstrap_checks/normal/output",
+  "aggregate_start_monotonic": 5.785840221,
+  "input_spec_sha256": "7e084978a000a04fca32685571d9f5671d1c9e3d04a0a9daf6782b8a14083f50"
+}

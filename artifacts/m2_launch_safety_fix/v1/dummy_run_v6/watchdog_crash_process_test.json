@@ -1,0 +1,82 @@
+{
+  "test": "watchdog_crash",
+  "status": "PASS",
+  "controller_pid": 439,
+  "controller_exit": 0,
+  "host_snapshot": [
+    {
+      "pid": 441,
+      "ppid": 440,
+      "pgid": 440,
+      "sid": 440,
+      "state": "S",
+      "start_ticks": 5693,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 442,
+      "ppid": 441,
+      "pgid": 442,
+      "sid": 442,
+      "state": "S",
+      "start_ticks": 5770,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 443,
+      "ppid": 441,
+      "pgid": 443,
+      "sid": 443,
+      "state": "S",
+      "start_ticks": 5835,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 444,
+      "ppid": 443,
+      "pgid": 444,
+      "sid": 444,
+      "state": "S",
+      "start_ticks": 5912,
+      "pid_namespace": 4026532266
+    }
+  ],
+  "nested_namespace_snapshot": [],
+  "nested_remaining_live_processes": [],
+  "namespace_owner": {
+    "pid": 441,
+    "ppid": 440,
+    "pgid": 440,
+    "sid": 440,
+    "state": "D",
+    "start_ticks": 5693,
+    "pid_namespace": 4026532266
+  },
+  "namespace_identity": {
+    "pid": 3,
+    "ppid": 1,
+    "pgid": 3,
+    "sid": 3,
+    "pid_namespace": 4026532266
+  },
+  "descendant": {
+    "pid": 4,
+    "ppid": 3,
+    "pgid": 4,
+    "sid": 4,
+    "pid_namespace": 4026532266
+  },
+  "escape_test": null,
+  "remaining_live_processes": [],
+  "result": {
+    "status": "RESOURCE-INCONCLUSIVE",
+    "reason": "DISK_MONITOR_FAILURE",
+    "origin_monotonic": 60.14887086,
+    "error": "RuntimeError: synthetic sampler crash",
+    "cleanup_errors": [],
+    "started": true,
+    "containment_live_processes": []
+  },
+  "unrelated_sentinel_survived": true,
+  "partial_prefix_preserved": true
+}

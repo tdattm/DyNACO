@@ -1,0 +1,79 @@
+{
+  "test": "watchdog_crash",
+  "status": "PASS",
+  "controller_pid": 408,
+  "controller_exit": 0,
+  "host_snapshot": [
+    {
+      "pid": 410,
+      "ppid": 409,
+      "pgid": 409,
+      "sid": 409,
+      "state": "S",
+      "start_ticks": 14187,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 411,
+      "ppid": 410,
+      "pgid": 411,
+      "sid": 411,
+      "state": "S",
+      "start_ticks": 14236,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 412,
+      "ppid": 410,
+      "pgid": 412,
+      "sid": 412,
+      "state": "S",
+      "start_ticks": 14278,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 413,
+      "ppid": 412,
+      "pgid": 413,
+      "sid": 413,
+      "state": "S",
+      "start_ticks": 14329,
+      "pid_namespace": 4026532266
+    }
+  ],
+  "namespace_owner": {
+    "pid": 410,
+    "ppid": 409,
+    "pgid": 409,
+    "sid": 409,
+    "state": "D",
+    "start_ticks": 14187,
+    "pid_namespace": 4026532266
+  },
+  "namespace_identity": {
+    "pid": 3,
+    "ppid": 1,
+    "pgid": 3,
+    "sid": 3,
+    "pid_namespace": 4026532266
+  },
+  "descendant": {
+    "pid": 4,
+    "ppid": 3,
+    "pgid": 4,
+    "sid": 4,
+    "pid_namespace": 4026532266
+  },
+  "escape_test": null,
+  "remaining_live_processes": [],
+  "result": {
+    "status": "RESOURCE-INCONCLUSIVE",
+    "reason": "SAFETY_MONITOR_FAILURE",
+    "error": "RuntimeError: disk watchdog error: RuntimeError: synthetic sampler crash",
+    "cleanup_errors": [],
+    "started": true,
+    "containment_live_processes": []
+  },
+  "unrelated_sentinel_survived": true,
+  "partial_prefix_preserved": true
+}

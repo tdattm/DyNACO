@@ -1,0 +1,11 @@
+{
+  "status": "RESOURCE-INCONCLUSIVE",
+  "reason": "CONTROLLER_SIGNAL_15",
+  "origin_monotonic": 28.959037598,
+  "cleanup_errors": [
+    {
+      "error": "containment bootstrap termination: TimeoutExpired(['/mnt/d/GitRepository/DyNACO/.r1-env/venv/bin/python', '-m', 'm2_safety.bootstrap', '390', '/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v6/controller_term/record/runtime_spec.json'], 5)"
+    }
+  ],
+  "containment_live_processes": []
+}

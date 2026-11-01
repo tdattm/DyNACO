@@ -1,0 +1,79 @@
+{
+  "test": "supervisor_exception",
+  "status": "PASS",
+  "controller_pid": 346,
+  "controller_exit": 0,
+  "host_snapshot": [
+    {
+      "pid": 348,
+      "ppid": 347,
+      "pgid": 347,
+      "sid": 347,
+      "state": "S",
+      "start_ticks": 11373,
+      "pid_namespace": 4026532265
+    },
+    {
+      "pid": 352,
+      "ppid": 348,
+      "pgid": 352,
+      "sid": 352,
+      "state": "S",
+      "start_ticks": 11435,
+      "pid_namespace": 4026532265
+    },
+    {
+      "pid": 353,
+      "ppid": 348,
+      "pgid": 353,
+      "sid": 353,
+      "state": "S",
+      "start_ticks": 11481,
+      "pid_namespace": 4026532265
+    },
+    {
+      "pid": 354,
+      "ppid": 353,
+      "pgid": 354,
+      "sid": 354,
+      "state": "S",
+      "start_ticks": 11537,
+      "pid_namespace": 4026532265
+    }
+  ],
+  "namespace_owner": {
+    "pid": 348,
+    "ppid": 347,
+    "pgid": 347,
+    "sid": 347,
+    "state": "D",
+    "start_ticks": 11373,
+    "pid_namespace": 4026532265
+  },
+  "namespace_identity": {
+    "pid": 3,
+    "ppid": 1,
+    "pgid": 3,
+    "sid": 3,
+    "pid_namespace": 4026532265
+  },
+  "descendant": {
+    "pid": 4,
+    "ppid": 3,
+    "pgid": 4,
+    "sid": 4,
+    "pid_namespace": 4026532265
+  },
+  "escape_test": null,
+  "remaining_live_processes": [],
+  "result": {
+    "status": "RESOURCE-INCONCLUSIVE",
+    "reason": "SAFETY_MONITOR_FAILURE",
+    "error": "RuntimeError: synthetic init supervisor failure",
+    "cleanup_errors": [],
+    "started": true,
+    "containment_live_processes": []
+  },
+  "unrelated_sentinel_survived": true,
+  "partial_prefix_preserved": true
+}

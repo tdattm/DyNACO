@@ -1,0 +1,9 @@
+{
+  "mode": "fixture",
+  "scenario": "insufficient",
+  "record": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v6/insufficient/record",
+  "output": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v6/insufficient/output",
+  "nested_namespace": false,
+  "aggregate_start_monotonic": 86.30025155,
+  "input_spec_sha256": "3945816ecbc80f0f20b1b2a46e1072052687466136f97cf87b435aa9317ce3cd"
+}

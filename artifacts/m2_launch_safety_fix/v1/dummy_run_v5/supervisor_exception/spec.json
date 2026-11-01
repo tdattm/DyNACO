@@ -1,0 +1,7 @@
+{
+  "mode": "fixture",
+  "scenario": "supervisor_exception",
+  "record": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v5/supervisor_exception/record",
+  "output": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v5/supervisor_exception/output",
+  "nested_namespace": false
+}

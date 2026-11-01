@@ -1,0 +1,11 @@
+{
+  "pid": 356,
+  "ppid": 278,
+  "pgid": 356,
+  "sid": 356,
+  "state": "R",
+  "start_ticks": 496,
+  "pid_namespace": 4026532257,
+  "at": "2026-11-01T07:54:21.231513+00:00",
+  "mode": "fixture"
+}

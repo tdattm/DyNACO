@@ -1,0 +1,1 @@
+The preliminary artifact manifest was captured before the redirected package-audit stdout log closed. It is retained as artifact_manifest_pre_stdout.json. The authoritative artifact_manifest.json is finalized after logs close and hashes all retained artifacts, including that preliminary record.

@@ -1,0 +1,6 @@
+{
+  "mode": "fixture",
+  "scenario": "low_disk",
+  "record": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v3/native_stall/record",
+  "output": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v3/native_stall/output"
+}

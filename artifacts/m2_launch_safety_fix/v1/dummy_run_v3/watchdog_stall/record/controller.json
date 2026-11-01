@@ -1,0 +1,11 @@
+{
+  "pid": 414,
+  "ppid": 289,
+  "pgid": 414,
+  "sid": 414,
+  "state": "R",
+  "start_ticks": 14414,
+  "pid_namespace": 4026532258,
+  "at": "2026-11-01T07:41:29.712734+00:00",
+  "mode": "fixture"
+}

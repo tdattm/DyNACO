@@ -1,0 +1,7 @@
+{
+  "mode": "fixture",
+  "scenario": "insufficient",
+  "record": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v5/insufficient/record",
+  "output": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v5/insufficient/output",
+  "nested_namespace": false
+}

@@ -1,0 +1,9 @@
+{
+  "mode": "fixture",
+  "scenario": "watchdog_ioerror",
+  "record": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v5/watchdog_ioerror/record",
+  "output": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v5/watchdog_ioerror/output",
+  "nested_namespace": false,
+  "aggregate_start_monotonic": 52.648974945,
+  "input_spec_sha256": "24a426ae56da180efd4d06a8134b4ea9683f47016d926b261c3d08c6710c4c76"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "changed_pinned_files": {
+    "srr_p2/execute.py": {
+      "semantic_delta": "Guard import/checks and sealed-fd inheritance only",
+      "new_sha256": "0e94e16ea8f246eade229a9b3e06d3eac7f4e9b84a5bf1b6e100252aec763527",
+      "old_sha256": "b9072aac4ef8e5127cde21d58ea5260533b09f4f5999604f2748c4f72d9235e2"
+    },
+    "srr_p2/worker.py": {
+      "semantic_delta": "Guard import/checks and sealed-fd inheritance only",
+      "new_sha256": "c23174f49a1f6bf1ac2a6c4b2360c30f9bc59136ba0305cd29fe5fb66017166f",
+      "old_sha256": "e7d01b4e102fc794650ff739452f446d9fd15085aafc63c94c2483f3455207a0"
+    }
+  },
+  "other_registered_hashes_unchanged": 106
+}

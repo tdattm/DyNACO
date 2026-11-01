@@ -1,0 +1,81 @@
+{
+  "test": "low_disk",
+  "status": "PASS",
+  "controller_pid": 422,
+  "controller_exit": 0,
+  "host_snapshot": [
+    {
+      "pid": 424,
+      "ppid": 423,
+      "pgid": 423,
+      "sid": 423,
+      "state": "S",
+      "start_ticks": 4148,
+      "pid_namespace": 4026532269
+    },
+    {
+      "pid": 426,
+      "ppid": 424,
+      "pgid": 426,
+      "sid": 426,
+      "state": "S",
+      "start_ticks": 4204,
+      "pid_namespace": 4026532269
+    },
+    {
+      "pid": 427,
+      "ppid": 424,
+      "pgid": 427,
+      "sid": 427,
+      "state": "S",
+      "start_ticks": 4248,
+      "pid_namespace": 4026532269
+    },
+    {
+      "pid": 429,
+      "ppid": 427,
+      "pgid": 429,
+      "sid": 429,
+      "state": "S",
+      "start_ticks": 4306,
+      "pid_namespace": 4026532269
+    }
+  ],
+  "nested_namespace_snapshot": [],
+  "nested_remaining_live_processes": [],
+  "namespace_owner": {
+    "pid": 424,
+    "ppid": 423,
+    "pgid": 423,
+    "sid": 423,
+    "state": "D",
+    "start_ticks": 4148,
+    "pid_namespace": 4026532269
+  },
+  "namespace_identity": {
+    "pid": 3,
+    "ppid": 1,
+    "pgid": 3,
+    "sid": 3,
+    "pid_namespace": 4026532269
+  },
+  "descendant": {
+    "pid": 4,
+    "ppid": 3,
+    "pgid": 4,
+    "sid": 4,
+    "pid_namespace": 4026532269
+  },
+  "escape_test": null,
+  "remaining_live_processes": [],
+  "result": {
+    "status": "RESOURCE-INCONCLUSIVE",
+    "reason": "DISK_FREE_FLOOR",
+    "origin_monotonic": 43.781114559,
+    "cleanup_errors": [],
+    "started": true,
+    "containment_live_processes": []
+  },
+  "unrelated_sentinel_survived": true,
+  "partial_prefix_preserved": true
+}

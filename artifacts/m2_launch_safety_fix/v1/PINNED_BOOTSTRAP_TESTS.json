@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "unshare_sha256": "a23c8863860669003dc4660039fe642f5795c8c2195898ebc5d01afa1ac3d11c",
+  "pidfd_race_check_string_present": true,
+  "tests": [
+    {
+      "case": "normal",
+      "status": "PASS",
+      "controller_pid": 356,
+      "controller_exit": 0,
+      "owner": {
+        "pid": 358,
+        "ppid": 357,
+        "pgid": 357,
+        "sid": 357,
+        "state": "R",
+        "start_ticks": 643,
+        "pid_namespace": 4026532267
+      },
+      "bootstrap_exited": true,
+      "remaining_members": [],
+      "result": {
+        "status": "COMPLETE",
+        "reason": "validated_full_grid",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "case": "early_controller_kill",
+      "status": "PASS",
+      "controller_pid": 362,
+      "controller_exit": -9,
+      "owner": null,
+      "bootstrap_exited": true,
+      "remaining_members": [],
+      "result": {
+        "status": "BLOCKED",
+        "reason": "SAFETY_OWNER_LOST",
+        "cleanup_errors": [],
+        "containment_live_processes": []
+      }
+    },
+    {
+      "case": "controller_kill",
+      "status": "PASS",
+      "controller_pid": 366,
+      "controller_exit": -9,
+      "owner": {
+        "pid": 369,
+        "ppid": 368,
+        "pgid": 368,
+        "sid": 368,
+        "state": "R",
+        "start_ticks": 1226,
+        "pid_namespace": 4026532267
+      },
+      "bootstrap_exited": true,
+      "remaining_members": [],
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "SAFETY_OWNER_LOST",
+        "cleanup_errors": [],
+        "containment_live_processes": []
+      }
+    }
+  ],
+  "principal_actions": 0
+}

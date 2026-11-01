@@ -1,0 +1,1 @@
+{"status": "RESOURCE-INCONCLUSIVE", "reason": "SAFETY_MONITOR_FAILURE", "error": "RuntimeError: disk watchdog error: RuntimeError: synthetic sampler crash", "cleanup_errors": [], "started": true, "containment_live_processes": []}

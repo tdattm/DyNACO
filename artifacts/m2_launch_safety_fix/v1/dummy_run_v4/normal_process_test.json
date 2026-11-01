@@ -1,0 +1,102 @@
+{
+  "test": "normal",
+  "status": "PASS",
+  "controller_pid": 340,
+  "controller_exit": 0,
+  "host_snapshot": [
+    {
+      "pid": 342,
+      "ppid": 341,
+      "pgid": 341,
+      "sid": 341,
+      "state": "S",
+      "start_ticks": 482,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 343,
+      "ppid": 342,
+      "pgid": 343,
+      "sid": 343,
+      "state": "S",
+      "start_ticks": 547,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 344,
+      "ppid": 342,
+      "pgid": 344,
+      "sid": 344,
+      "state": "S",
+      "start_ticks": 604,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 345,
+      "ppid": 344,
+      "pgid": 345,
+      "sid": 345,
+      "state": "S",
+      "start_ticks": 661,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 346,
+      "ppid": 344,
+      "pgid": 346,
+      "sid": 346,
+      "state": "S",
+      "start_ticks": 662,
+      "pid_namespace": 4026532266
+    }
+  ],
+  "nested_namespace_snapshot": [
+    {
+      "pid": 347,
+      "ppid": 346,
+      "pgid": 346,
+      "sid": 346,
+      "state": "S",
+      "start_ticks": 662,
+      "pid_namespace": 4026532268
+    }
+  ],
+  "nested_remaining_live_processes": [],
+  "namespace_owner": {
+    "pid": 342,
+    "ppid": 341,
+    "pgid": 341,
+    "sid": 341,
+    "state": "D",
+    "start_ticks": 482,
+    "pid_namespace": 4026532266
+  },
+  "namespace_identity": {
+    "pid": 3,
+    "ppid": 1,
+    "pgid": 3,
+    "sid": 3,
+    "pid_namespace": 4026532266
+  },
+  "descendant": {
+    "pid": 4,
+    "ppid": 3,
+    "pgid": 4,
+    "sid": 4,
+    "pid_namespace": 4026532266
+  },
+  "escape_test": {
+    "result": -1,
+    "errno": 1
+  },
+  "remaining_live_processes": [],
+  "result": {
+    "status": "COMPLETE",
+    "reason": "validated_full_grid",
+    "cleanup_errors": [],
+    "started": true,
+    "containment_live_processes": []
+  },
+  "unrelated_sentinel_survived": true,
+  "partial_prefix_preserved": true
+}

@@ -1,0 +1,7 @@
+{
+  "status": "RESOURCE-INCONCLUSIVE",
+  "reason": "DISK_FREE_FLOOR",
+  "origin_monotonic": 31.978868847,
+  "cleanup_errors": [],
+  "started": true
+}

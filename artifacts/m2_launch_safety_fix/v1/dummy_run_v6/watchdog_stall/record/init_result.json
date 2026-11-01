@@ -1,0 +1,8 @@
+{
+  "status": "RESOURCE-INCONCLUSIVE",
+  "reason": "SAFETY_MONITOR_FAILURE",
+  "origin_monotonic": 70.474919881,
+  "error": "RuntimeError: disk watchdog heartbeat expired",
+  "cleanup_errors": [],
+  "started": true
+}

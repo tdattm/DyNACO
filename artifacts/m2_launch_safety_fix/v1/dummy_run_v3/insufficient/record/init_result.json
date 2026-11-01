@@ -1,0 +1,8 @@
+{
+  "status": "BLOCKED",
+  "reason": "DISK_ADMISSION",
+  "free_bytes": 1,
+  "required_bytes": 17817796608,
+  "cleanup_errors": [],
+  "started": false
+}

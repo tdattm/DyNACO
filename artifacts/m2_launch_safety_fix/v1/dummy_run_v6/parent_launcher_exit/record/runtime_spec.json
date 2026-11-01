@@ -1,0 +1,9 @@
+{
+  "mode": "fixture",
+  "scenario": "parent_launcher_exit",
+  "record": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v6/parent_launcher_exit/record",
+  "output": "/mnt/d/GitRepository/DyNACO-m2-safety-s2f/artifacts/m2_launch_safety_fix/v1/dummy_run_v6/parent_launcher_exit/output",
+  "nested_namespace": false,
+  "aggregate_start_monotonic": 38.922904996,
+  "input_spec_sha256": "5acf11dc997aee45653e40eb340a61539ac0e02a57cb8af0cfaaa88d215a4991"
+}

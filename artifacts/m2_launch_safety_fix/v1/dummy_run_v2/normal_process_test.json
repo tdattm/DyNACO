@@ -1,0 +1,81 @@
+{
+  "test": "normal",
+  "status": "PASS",
+  "controller_pid": 325,
+  "controller_exit": 0,
+  "host_snapshot": [
+    {
+      "pid": 327,
+      "ppid": 326,
+      "pgid": 326,
+      "sid": 326,
+      "state": "S",
+      "start_ticks": 6179,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 328,
+      "ppid": 327,
+      "pgid": 328,
+      "sid": 328,
+      "state": "S",
+      "start_ticks": 6236,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 329,
+      "ppid": 327,
+      "pgid": 329,
+      "sid": 329,
+      "state": "S",
+      "start_ticks": 6281,
+      "pid_namespace": 4026532266
+    },
+    {
+      "pid": 330,
+      "ppid": 329,
+      "pgid": 330,
+      "sid": 330,
+      "state": "S",
+      "start_ticks": 6340,
+      "pid_namespace": 4026532266
+    }
+  ],
+  "namespace_owner": {
+    "pid": 327,
+    "ppid": 326,
+    "pgid": 326,
+    "sid": 326,
+    "state": "R",
+    "start_ticks": 6179,
+    "pid_namespace": 4026532266
+  },
+  "namespace_identity": {
+    "pid": 3,
+    "ppid": 1,
+    "pgid": 3,
+    "sid": 3,
+    "pid_namespace": 4026532266
+  },
+  "descendant": {
+    "pid": 4,
+    "ppid": 3,
+    "pgid": 4,
+    "sid": 4,
+    "pid_namespace": 4026532266
+  },
+  "escape_test": {
+    "result": -1,
+    "errno": 1
+  },
+  "remaining_live_processes": [],
+  "result": {
+    "status": "COMPLETE",
+    "reason": "validated_full_grid",
+    "cleanup_errors": [],
+    "started": true,
+    "containment_live_processes": []
+  },
+  "unrelated_sentinel_survived": true,
+  "partial_prefix_preserved": true
+}

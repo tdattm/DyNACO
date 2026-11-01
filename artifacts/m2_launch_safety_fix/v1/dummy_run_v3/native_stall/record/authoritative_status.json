@@ -1,0 +1,7 @@
+{
+  "status": "RESOURCE-INCONCLUSIVE",
+  "reason": "DISK_FREE_FLOOR",
+  "cleanup_errors": [],
+  "started": true,
+  "containment_live_processes": []
+}

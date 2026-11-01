@@ -1,0 +1,11 @@
+{
+  "pid": 402,
+  "ppid": 289,
+  "pgid": 402,
+  "sid": 402,
+  "state": "R",
+  "start_ticks": 13791,
+  "pid_namespace": 4026532258,
+  "at": "2026-11-01T07:41:20.526645+00:00",
+  "mode": "fixture"
+}

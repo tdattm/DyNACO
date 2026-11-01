@@ -1,0 +1,197 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "test": "normal",
+      "status": "PASS",
+      "result": {
+        "status": "COMPLETE",
+        "reason": "validated_full_grid",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "supervisor_exception",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "SAFETY_MONITOR_FAILURE",
+        "origin_monotonic": 11.108817119,
+        "error": "RuntimeError: synthetic init supervisor failure",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "owner_term",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "OWNER_SIGNAL_15",
+        "origin_monotonic": 14.339539073,
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "owner_kill",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "SAFETY_OWNER_LOST",
+        "cleanup_errors": [],
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "controller_term",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "CONTROLLER_SIGNAL_15",
+        "origin_monotonic": 21.078721656,
+        "cleanup_errors": [],
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "controller_kill",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "SAFETY_OWNER_LOST",
+        "cleanup_errors": [],
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "parent_launcher_exit",
+      "status": "PASS",
+      "result": {
+        "status": "INCONCLUSIVE",
+        "reason": "LAUNCHER_EXIT_BEFORE_COMPLETE",
+        "origin_monotonic": 28.418490894,
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "native_stall",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_FREE_FLOOR",
+        "origin_monotonic": 31.978868847,
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "low_disk",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_FREE_FLOOR",
+        "origin_monotonic": 35.518669172,
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "serialization_low_disk",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_FREE_FLOOR",
+        "origin_monotonic": 38.804063842,
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "watchdog_crash",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_MONITOR_FAILURE",
+        "origin_monotonic": 41.952086139,
+        "error": "RuntimeError: synthetic sampler crash",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "watchdog_ioerror",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_WRITE_ERROR",
+        "origin_monotonic": 45.188934738,
+        "error": "OSError: [Errno 28] synthetic disk error",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "watchdog_stall",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "SAFETY_MONITOR_FAILURE",
+        "origin_monotonic": 50.326655859,
+        "error": "RuntimeError: disk watchdog heartbeat expired",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "serialization_failure",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_WRITE_ERROR",
+        "origin_monotonic": 54.102601049,
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "repeated_term",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "OWNER_SIGNAL_15",
+        "origin_monotonic": 57.28147167,
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "insufficient",
+      "status": "PASS",
+      "result": {
+        "status": "BLOCKED",
+        "reason": "DISK_ADMISSION",
+        "origin_monotonic": 58.748676008,
+        "free_bytes": 1,
+        "required_bytes": 17817796608,
+        "cleanup_errors": [],
+        "started": false,
+        "containment_live_processes": []
+      }
+    }
+  ]
+}

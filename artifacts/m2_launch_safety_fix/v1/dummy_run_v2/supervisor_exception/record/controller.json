@@ -1,0 +1,11 @@
+{
+  "pid": 331,
+  "ppid": 267,
+  "pgid": 331,
+  "sid": 331,
+  "state": "R",
+  "start_ticks": 6442,
+  "pid_namespace": 4026532259,
+  "at": "2026-11-01T07:40:04.787224+00:00",
+  "mode": "fixture"
+}

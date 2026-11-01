@@ -1,0 +1,172 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "test": "normal",
+      "status": "PASS",
+      "result": {
+        "status": "COMPLETE",
+        "reason": "validated_full_grid",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "supervisor_exception",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "SAFETY_MONITOR_FAILURE",
+        "error": "RuntimeError: synthetic init supervisor failure",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "owner_term",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "OWNER_SIGNAL_15",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "owner_kill",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "SAFETY_OWNER_LOST",
+        "cleanup_errors": [],
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "controller_term",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "CONTROLLER_SIGNAL_15",
+        "cleanup_errors": [],
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "controller_kill",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "SAFETY_OWNER_LOST",
+        "cleanup_errors": [],
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "parent_launcher_exit",
+      "status": "PASS",
+      "result": {
+        "status": "INCONCLUSIVE",
+        "reason": "LAUNCHER_EXIT_BEFORE_COMPLETE",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "native_stall",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_FREE_FLOOR",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "low_disk",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_FREE_FLOOR",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "serialization_low_disk",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_FREE_FLOOR",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "watchdog_crash",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "SAFETY_MONITOR_FAILURE",
+        "error": "RuntimeError: disk watchdog error: RuntimeError: synthetic sampler crash",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "watchdog_stall",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "SAFETY_MONITOR_FAILURE",
+        "error": "RuntimeError: disk watchdog heartbeat expired",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "serialization_failure",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_WRITE_ERROR",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "repeated_term",
+      "status": "PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "OWNER_SIGNAL_15",
+        "cleanup_errors": [],
+        "started": true,
+        "containment_live_processes": []
+      }
+    },
+    {
+      "test": "insufficient",
+      "status": "PASS",
+      "result": {
+        "status": "BLOCKED",
+        "reason": "DISK_ADMISSION",
+        "free_bytes": 1,
+        "required_bytes": 17817796608,
+        "cleanup_errors": [],
+        "started": false,
+        "containment_live_processes": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "pid": 386,
+  "ppid": 262,
+  "pgid": 386,
+  "sid": 386,
+  "state": "R",
+  "start_ticks": 2458,
+  "pid_namespace": 4026532257,
+  "at": "2026-11-01T07:45:53.073460+00:00",
+  "mode": "fixture"
+}

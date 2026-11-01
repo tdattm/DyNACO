@@ -1,0 +1,53 @@
+diff --git a/srr_p2/execute.py b/srr_p2/execute.py
+index 65adc67..25f0013 100644
+--- a/srr_p2/execute.py
++++ b/srr_p2/execute.py
+@@ -2,6 +2,7 @@
+ import argparse,os,sys,time,subprocess,fcntl
+ from pathlib import Path
+ from srr_p2.core import ROOT,read,save,sha,verify_registration,dataset,monitor
++from m2_safety.guard import require
+ 
+ def main():
+     p=argparse.ArgumentParser(description=__doc__)
+@@ -10,6 +11,7 @@ def main():
+     p.add_argument('--dataset-manifest',required=True,type=Path)
+     p.add_argument('--output',required=True,type=Path)
+     a=p.parse_args();start=time.monotonic()
++    safety_fd=require('execute',a.registration,a.authorization,a.dataset_manifest,a.output)
+     # Cross-output, cross-session lock on this registered checkout/GPU workload.
+     lock=(ROOT/'.srr-build/principal_gpu.lock').open('a')
+     fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+@@ -24,7 +26,7 @@ def main():
+     save(a.output/'launch.json',dict(authorization=auth,registration_sha256=rh,dataset_manifest_sha256=sha(a.dataset_manifest),aggregate_start_monotonic=start))
+     env=os.environ.copy();env.update(OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='2',CUBLAS_WORKSPACE_CONFIG=':4096:8')
+     with (a.output/'worker.log').open('x') as log:
+-        proc=subprocess.Popen([sys.executable,'-m','srr_p2.worker',str(a.registration.resolve()),rh,str(a.dataset_manifest.resolve()),str(a.output.resolve())],env=env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True,pass_fds=(lock.fileno(),))
++        proc=subprocess.Popen([sys.executable,'-m','srr_p2.worker',str(a.registration.resolve()),rh,str(a.dataset_manifest.resolve()),str(a.output.resolve())],env=env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True,pass_fds=(lock.fileno(),safety_fd))
+         result=monitor(proc,a.output/'events.jsonl',start+2700)
+     if (a.output/'study_status.json').exists() and result['status']!='RESOURCE-INCONCLUSIVE':
+         result=read(a.output/'study_status.json')
+diff --git a/srr_p2/worker.py b/srr_p2/worker.py
+index e7327e1..45fb313 100644
+--- a/srr_p2/worker.py
++++ b/srr_p2/worker.py
+@@ -2,9 +2,11 @@
+ import os,sys,time,json,traceback
+ from pathlib import Path
+ from srr_p2.core import ROOT,read,save,sha,verify_registration,dataset,schedule,validate,complete,journal_record
++from m2_safety.guard import require
+ 
+ def main():
+     reg,rh,dm,out=sys.argv[1:];out=Path(out)
++    require('worker',reg,None,dm,out)
+     launch=read(out/'launch.json');auth=launch['authorization']
+     if auth.get('action')!='APPROVE_M2_PRINCIPAL_192' or auth.get('registration_sha256')!=rh or auth.get('dataset_manifest_sha256')!=sha(dm):raise ValueError('worker authorization gate')
+     def phase(name):
+@@ -48,6 +50,7 @@ def main():
+     save(out/'study_status.json',dict(status='COMPLETE',runs=len(rows),checkpoint_load_seconds=load))
+ 
+ if __name__=='__main__':
++    require('worker',sys.argv[1],None,sys.argv[3],Path(sys.argv[4]))
+     try:main()
+     except BaseException as e:
+         out=Path(sys.argv[-1])

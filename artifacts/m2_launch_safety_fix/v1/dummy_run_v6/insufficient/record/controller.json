@@ -1,0 +1,11 @@
+{
+  "pid": 479,
+  "ppid": 282,
+  "pgid": 479,
+  "sid": 479,
+  "state": "R",
+  "start_ticks": 8561,
+  "pid_namespace": 4026532257,
+  "at": "2026-11-01T08:06:16.437635+00:00",
+  "mode": "fixture"
+}
