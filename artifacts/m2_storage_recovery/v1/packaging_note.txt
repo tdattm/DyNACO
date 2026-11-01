@@ -1,0 +1,1 @@
+Transient /tmp stdout log was unavailable during packaging. Durable safety_tests.json and all generated audit records remain intact. No tests or principal work were rerun.

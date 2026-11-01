@@ -1,0 +1,12 @@
+{
+  "observed_at": "2026-11-01T05:26:24.853226+00:00",
+  "filesystem_path": "/mnt/d/GitRepository/DyNACO-m2-storage-s1/artifacts/m2_storage_recovery/v1",
+  "filesystem_device": 84,
+  "current_free_bytes": 21037568000,
+  "proposed_required_bytes": 17817796608,
+  "proposed_admission_now": true,
+  "historical_free_bytes": 22120095744,
+  "historical_capacity_would_meet_proposal": true,
+  "no_launch_permission": true,
+  "remaining_review": "New human approval of operational amendment plus new bound principal authorization and fresh full preflight"
+}

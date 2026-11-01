@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "registration_sha256": "5d2d8942f900d4d1a4ef89e069668c3d0290d17c628d058150ffe6998d5bca45",
+  "protocol_sha256": "574cd6781e7a026951521e12bfdef28f5790752289c029f21b8db0f4e5e5dedd",
+  "registered_files_verified": 108,
+  "historical_files_verified": 1216,
+  "prior_result": "M2 RESOURCE-INCONCLUSIVE",
+  "principal_valid_runs": 0,
+  "principal_dataset_present": false,
+  "claims_present": false
+}

@@ -1,0 +1,152 @@
+{
+  "old_per_iteration_bytes": 8584,
+  "old_estimate_bytes": 83230464000,
+  "old_required_bytes": 166460928000,
+  "actual_development_file_bytes": {
+    "0": {
+      "json": 72652,
+      "npz": 340560,
+      "bin": 4024000
+    },
+    "1": {
+      "json": 72653,
+      "npz": 304539,
+      "bin": 4024000
+    }
+  },
+  "npz_array_layout": {
+    "0": {
+      "initial": {
+        "shape": [
+          1000
+        ],
+        "dtype": "int32",
+        "bytes": 4000
+      },
+      "times": {
+        "shape": [
+          1000
+        ],
+        "dtype": "float64",
+        "bytes": 8000
+      },
+      "tours": {
+        "shape": [
+          1000,
+          1000
+        ],
+        "dtype": "int32",
+        "bytes": 4000000
+      },
+      "costs": {
+        "shape": [
+          1000,
+          100
+        ],
+        "dtype": "float32",
+        "bytes": 400000
+      },
+      "source": {
+        "shape": [
+          1000
+        ],
+        "dtype": "int32",
+        "bytes": 4000
+      },
+      "best": {
+        "shape": [
+          1000
+        ],
+        "dtype": "int32",
+        "bytes": 4000
+      },
+      "pheromone": {
+        "shape": [
+          1000,
+          32
+        ],
+        "dtype": "float32",
+        "bytes": 128000
+      }
+    },
+    "1": {
+      "initial": {
+        "shape": [
+          1000
+        ],
+        "dtype": "int32",
+        "bytes": 4000
+      },
+      "times": {
+        "shape": [
+          1000
+        ],
+        "dtype": "float64",
+        "bytes": 8000
+      },
+      "tours": {
+        "shape": [
+          1000,
+          1000
+        ],
+        "dtype": "int32",
+        "bytes": 4000000
+      },
+      "costs": {
+        "shape": [
+          1000,
+          100
+        ],
+        "dtype": "float32",
+        "bytes": 400000
+      },
+      "source": {
+        "shape": [
+          1000
+        ],
+        "dtype": "int32",
+        "bytes": 4000
+      },
+      "best": {
+        "shape": [
+          1000
+        ],
+        "dtype": "int32",
+        "bytes": 4000
+      },
+      "pheromone": {
+        "shape": [
+          1000,
+          32
+        ],
+        "dtype": "float32",
+        "bytes": 128000
+      }
+    }
+  },
+  "journal_record_bytes": 4024,
+  "expected_development_scaled_bytes": 1022759618,
+  "observed_wall_attempts": [
+    1401,
+    1218
+  ],
+  "observed_max_attempts_per_second": 350.25,
+  "throughput_multiplier": 4,
+  "wall_envelope_iterations": 5605,
+  "provision_bytes_per_iteration": 10240,
+  "fixed_per_case_bytes": 1048576,
+  "top_level_bytes": 67108864,
+  "conservative_payload_bytes": 6761414656,
+  "delivery_copy_factor": 2,
+  "free_floor_bytes": 4294967296,
+  "admission_required_bytes": 17817796608,
+  "theoretical_format_envelope_bytes": 99555475456,
+  "deterministic_total_filesystem_guarantee": false,
+  "wall_loop_ceiling_unchanged": 100000,
+  "runtime_policy": {
+    "poll_seconds": 0.25,
+    "free_floor_bytes": 4294967296,
+    "serialization_burst_bytes": 1025048576,
+    "reaction_seconds": 2.0
+  }
+}

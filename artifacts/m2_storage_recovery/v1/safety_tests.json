@@ -1,0 +1,164 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "test": "original_formula_exact",
+      "status": "PASS"
+    },
+    {
+      "test": "development_sizes_independent",
+      "status": "PASS"
+    },
+    {
+      "test": "simulated_admission_pass",
+      "status": "PASS"
+    },
+    {
+      "test": "simulated_admission_reject",
+      "status": "PASS"
+    },
+    {
+      "test": "stop_classification_floor",
+      "status": "PASS"
+    },
+    {
+      "test": "partial_journal_preserved_floor",
+      "status": "PASS"
+    },
+    {
+      "test": "nested_worker_session_stopped_floor",
+      "status": "PASS"
+    },
+    {
+      "test": "stop_classification_growth",
+      "status": "PASS"
+    },
+    {
+      "test": "partial_journal_preserved_growth",
+      "status": "PASS"
+    },
+    {
+      "test": "nested_worker_session_stopped_growth",
+      "status": "PASS"
+    },
+    {
+      "test": "stop_classification_enospc",
+      "status": "PASS"
+    },
+    {
+      "test": "partial_journal_preserved_enospc",
+      "status": "PASS"
+    },
+    {
+      "test": "nested_worker_session_stopped_enospc",
+      "status": "PASS"
+    },
+    {
+      "test": "stop_classification_write_error",
+      "status": "PASS"
+    },
+    {
+      "test": "partial_journal_preserved_write_error",
+      "status": "PASS"
+    },
+    {
+      "test": "frozen_protection_unchanged_srr_p2/core.py",
+      "status": "PASS"
+    },
+    {
+      "test": "frozen_protection_unchanged_srr_p2/execute.py",
+      "status": "PASS"
+    },
+    {
+      "test": "frozen_protection_unchanged_srr_p2/worker.py",
+      "status": "PASS"
+    },
+    {
+      "test": "frozen_protection_unchanged_srr_p2/runner.py",
+      "status": "PASS"
+    },
+    {
+      "test": "exclusive_lock_mechanics",
+      "status": "PASS"
+    },
+    {
+      "test": "all_historical_bytes_unchanged",
+      "status": "PASS"
+    },
+    {
+      "test": "no_principal_data_or_execution",
+      "status": "PASS"
+    }
+  ],
+  "synthetic_failure_evidence": [
+    {
+      "scenario": "floor",
+      "prefix_sha256": "de096db7aa5477d970a7f1c3f306be3b8e32eb5657927b467e139823e4ec156a",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_FREE_FLOOR",
+        "valid_partial_runs": 0,
+        "observations": [
+          {
+            "monotonic": 18.217250835,
+            "free": 1,
+            "persisted_bytes": 0,
+            "filesystem_device": 84,
+            "growth_bytes_per_second": 0,
+            "stop_threshold_bytes": 1.0741398197025828e+18
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "growth",
+      "prefix_sha256": "de096db7aa5477d970a7f1c3f306be3b8e32eb5657927b467e139823e4ec156a",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_GROWTH_RESERVE",
+        "valid_partial_runs": 0,
+        "observations": [
+          {
+            "monotonic": 18.576615559,
+            "free": 1000000000000000,
+            "persisted_bytes": 1000000000000000,
+            "filesystem_device": 84,
+            "growth_bytes_per_second": 6.013167634478611e+17,
+            "stop_threshold_bytes": 1.2026335311906895e+18
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "enospc",
+      "prefix_sha256": "de096db7aa5477d970a7f1c3f306be3b8e32eb5657927b467e139823e4ec156a",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_WRITE_ERROR",
+        "errno": 28,
+        "observations": []
+      }
+    },
+    {
+      "scenario": "write_error",
+      "prefix_sha256": "de096db7aa5477d970a7f1c3f306be3b8e32eb5657927b467e139823e4ec156a",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_WRITE_ERROR",
+        "returncode": 0,
+        "observations": [
+          {
+            "monotonic": 19.260161233,
+            "free": 1000000000000000,
+            "persisted_bytes": 0,
+            "filesystem_device": 84,
+            "growth_bytes_per_second": 0,
+            "stop_threshold_bytes": 5320015872
+          }
+        ]
+      }
+    }
+  ],
+  "principal_commands_invoked": 0,
+  "principal_coordinates_accessed": false
+}
