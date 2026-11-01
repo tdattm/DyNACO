@@ -1,0 +1,29 @@
+{
+  "correctness_pass": true,
+  "resource_pass": true,
+  "experiment_wall_seconds": 13.167146089,
+  "peak_process_rss_bytes": 151834624,
+  "rss_measurement": "Linux ru_maxrss *1024; process lifetime peak, conservative",
+  "virtual_memory_enforced_bytes": 1000000000,
+  "cpu_workers": 1,
+  "physical_native_invocations": 128,
+  "preflight_native_invocations": 32,
+  "sequential_passes_per_treatment_path": 2,
+  "verification_repeats_from_pass1_state": true,
+  "preserved_input_hashes": true,
+  "cases_passed": 32,
+  "cases_failed": 0,
+  "cases_not_run": 0,
+  "failure": null,
+  "decision": "M1 EXPLORATORY SIGNAL",
+  "signal_instances": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

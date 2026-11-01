@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "rehashed_historical_inputs": 747,
+  "native_calls_added": 0,
+  "unchanged_v1_scientific_fields": true,
+  "case_lengths_independently_recomputed": 32,
+  "robust_cases": 31,
+  "signal_instances": 8,
+  "pass2_accepted_moves": 536,
+  "extra_evaluations": 10435,
+  "instance_mean_relative_improvement": 0.0028272139361177786,
+  "instance_mean_extra_evaluation_ratio": 0.4936610254800069,
+  "instance_mean_offline_k32_residual": 8.5625,
+  "delivery_audit_seconds": 5.414048563000009,
+  "decision": "M1 EXPLORATORY SIGNAL"
+}

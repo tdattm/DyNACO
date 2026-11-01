@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "cases_passed": 32,
+  "cases_attempted": 32,
+  "cases_not_run": 0,
+  "native_invocations": 32,
+  "second_pass_invocations": 0,
+  "error": null,
+  "elapsed_seconds": 6.083867145999999
+}

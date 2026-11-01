@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "tests": 10,
+  "failures": 0,
+  "errors": 0,
+  "log": "test_checklist (r3.m1_v2_compare.ComparatorTests.test_checklist) ... ok\ntest_complete_record (r3.m1_v2_compare.ComparatorTests.test_complete_record) ... ok\ntest_event_delete (r3.m1_v2_compare.ComparatorTests.test_event_delete) ... ok\ntest_event_order (r3.m1_v2_compare.ComparatorTests.test_event_order) ... ok\ntest_flags_and_fields (r3.m1_v2_compare.ComparatorTests.test_flags_and_fields) ... ok\ntest_gain (r3.m1_v2_compare.ComparatorTests.test_gain) ... ok\ntest_nonfinite (r3.m1_v2_compare.ComparatorTests.test_nonfinite) ... ok\ntest_rank (r3.m1_v2_compare.ComparatorTests.test_rank) ... ok\ntest_route (r3.m1_v2_compare.ComparatorTests.test_route) ... ok\ntest_tuple_list (r3.m1_v2_compare.ComparatorTests.test_tuple_list) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.092s\n\nOK\n",
+  "native_invocations": 0
+}

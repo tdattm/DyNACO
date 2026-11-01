@@ -1,0 +1,7513 @@
+{
+  "route": [
+    58,
+    539,
+    293,
+    311,
+    42,
+    182,
+    426,
+    212,
+    324,
+    640,
+    727,
+    181,
+    660,
+    422,
+    177,
+    831,
+    911,
+    788,
+    667,
+    217,
+    469,
+    644,
+    76,
+    54,
+    578,
+    864,
+    744,
+    282,
+    77,
+    494,
+    271,
+    136,
+    30,
+    850,
+    366,
+    296,
+    551,
+    259,
+    960,
+    892,
+    203,
+    142,
+    81,
+    329,
+    808,
+    354,
+    228,
+    222,
+    45,
+    693,
+    702,
+    87,
+    108,
+    9,
+    358,
+    791,
+    130,
+    904,
+    532,
+    300,
+    38,
+    262,
+    55,
+    244,
+    806,
+    178,
+    295,
+    116,
+    330,
+    28,
+    313,
+    20,
+    746,
+    711,
+    856,
+    114,
+    447,
+    814,
+    410,
+    961,
+    634,
+    172,
+    737,
+    718,
+    997,
+    590,
+    450,
+    314,
+    386,
+    571,
+    499,
+    69,
+    877,
+    150,
+    615,
+    220,
+    389,
+    623,
+    50,
+    121,
+    619,
+    544,
+    716,
+    25,
+    406,
+    75,
+    799,
+    401,
+    872,
+    368,
+    741,
+    863,
+    455,
+    796,
+    562,
+    240,
+    379,
+    357,
+    285,
+    117,
+    993,
+    92,
+    926,
+    700,
+    534,
+    254,
+    331,
+    643,
+    742,
+    772,
+    603,
+    19,
+    980,
+    934,
+    824,
+    288,
+    945,
+    353,
+    482,
+    813,
+    227,
+    310,
+    957,
+    8,
+    852,
+    605,
+    104,
+    976,
+    522,
+    828,
+    648,
+    462,
+    336,
+    761,
+    157,
+    545,
+    398,
+    242,
+    183,
+    798,
+    1,
+    402,
+    251,
+    74,
+    635,
+    280,
+    887,
+    773,
+    359,
+    858,
+    270,
+    679,
+    625,
+    929,
+    475,
+    533,
+    649,
+    134,
+    847,
+    127,
+    167,
+    979,
+    897,
+    985,
+    26,
+    98,
+    64,
+    6,
+    24,
+    783,
+    140,
+    725,
+    53,
+    319,
+    924,
+    857,
+    940,
+    322,
+    421,
+    830,
+    572,
+    628,
+    969,
+    131,
+    210,
+    191,
+    323,
+    261,
+    663,
+    247,
+    209,
+    672,
+    18,
+    495,
+    372,
+    597,
+    297,
+    598,
+    673,
+    143,
+    106,
+    829,
+    900,
+    332,
+    696,
+    161,
+    424,
+    115,
+    520,
+    277,
+    291,
+    797,
+    397,
+    305,
+    745,
+    414,
+    337,
+    256,
+    373,
+    292,
+    360,
+    263,
+    938,
+    880,
+    733,
+    753,
+    839,
+    409,
+    538,
+    138,
+    752,
+    552,
+    748,
+    939,
+    886,
+    147,
+    67,
+    735,
+    585,
+    630,
+    964,
+    818,
+    782,
+    309,
+    553,
+    685,
+    513,
+    743,
+    736,
+    764,
+    31,
+    86,
+    460,
+    686,
+    425,
+    681,
+    85,
+    610,
+    975,
+    485,
+    132,
+    73,
+    689,
+    153,
+    207,
+    636,
+    868,
+    326,
+    738,
+    60,
+    196,
+    843,
+    13,
+    226,
+    955,
+    734,
+    403,
+    559,
+    647,
+    160,
+    642,
+    219,
+    646,
+    922,
+    987,
+    27,
+    827,
+    815,
+    429,
+    676,
+    399,
+    849,
+    758,
+    112,
+    344,
+    371,
+    894,
+    102,
+    4,
+    151,
+    607,
+    665,
+    942,
+    257,
+    334,
+    918,
+    803,
+    514,
+    974,
+    156,
+    249,
+    574,
+    587,
+    627,
+    264,
+    701,
+    998,
+    325,
+    505,
+    606,
+    556,
+    66,
+    491,
+    41,
+    844,
+    972,
+    434,
+    956,
+    162,
+    301,
+    393,
+    62,
+    536,
+    404,
+    923,
+    575,
+    369,
+    687,
+    754,
+    124,
+    728,
+    916,
+    826,
+    250,
+    941,
+    521,
+    476,
+    515,
+    629,
+    800,
+    128,
+    122,
+    776,
+    708,
+    96,
+    932,
+    7,
+    835,
+    453,
+    769,
+    618,
+    88,
+    582,
+    780,
+    584,
+    959,
+    626,
+    902,
+    35,
+    893,
+    223,
+    159,
+    712,
+    388,
+    290,
+    563,
+    427,
+    915,
+    930,
+    234,
+    573,
+    158,
+    443,
+    624,
+    146,
+    723,
+    303,
+    265,
+    882,
+    925,
+    982,
+    486,
+    876,
+    973,
+    125,
+    356,
+    346,
+    596,
+    281,
+    970,
+    436,
+    274,
+    576,
+    318,
+    340,
+    666,
+    821,
+    500,
+    952,
+    238,
+    778,
+    834,
+    881,
+    557,
+    15,
+    614,
+    638,
+    179,
+    747,
+    633,
+    498,
+    602,
+    298,
+    327,
+    428,
+    611,
+    861,
+    919,
+    139,
+    221,
+    376,
+    525,
+    387,
+    3,
+    110,
+    763,
+    507,
+    430,
+    200,
+    706,
+    204,
+    809,
+    502,
+    802,
+    885,
+    888,
+    548,
+    23,
+    211,
+    235,
+    392,
+    859,
+    561,
+    232,
+    269,
+    378,
+    16,
+    825,
+    790,
+    978,
+    540,
+    986,
+    215,
+    860,
+    452,
+    963,
+    118,
+    851,
+    650,
+    669,
+    617,
+    214,
+    109,
+    44,
+    889,
+    713,
+    967,
+    36,
+    717,
+    166,
+    591,
+    774,
+    11,
+    374,
+    855,
+    992,
+    554,
+    454,
+    729,
+    895,
+    105,
+    616,
+    342,
+    321,
+    705,
+    218,
+    943,
+    750,
+    657,
+    971,
+    950,
+    999,
+    836,
+    566,
+    236,
+    586,
+    440,
+    201,
+    935,
+    489,
+    400,
+    471,
+    48,
+    418,
+    622,
+    506,
+    732,
+    581,
+    459,
+    639,
+    965,
+    714,
+    343,
+    594,
+    577,
+    148,
+    565,
+    819,
+    415,
+    185,
+    197,
+    995,
+    32,
+    229,
+    352,
+    755,
+    766,
+    589,
+    82,
+    588,
+    451,
+    70,
+    558,
+    349,
+    186,
+    171,
+    683,
+    56,
+    720,
+    51,
+    807,
+    145,
+    883,
+    472,
+    446,
+    989,
+    348,
+    870,
+    659,
+    367,
+    751,
+    698,
+    40,
+    793,
+    612,
+    731,
+    535,
+    154,
+    984,
+    193,
+    119,
+    988,
+    531,
+    710,
+    144,
+    306,
+    412,
+    604,
+    420,
+    21,
+    187,
+    699,
+    375,
+    405,
+    123,
+    438,
+    516,
+    496,
+    47,
+    756,
+    233,
+    580,
+    512,
+    601,
+    677,
+    655,
+    467,
+    784,
+    913,
+    658,
+    953,
+    413,
+    688,
+    120,
+    873,
+    432,
+    641,
+    862,
+    675,
+    279,
+    272,
+    165,
+    252,
+    5,
+    651,
+    962,
+    126,
+    411,
+    842,
+    37,
+    770,
+    80,
+    680,
+    133,
+    832,
+    155,
+    176,
+    445,
+    417,
+    524,
+    308,
+    927,
+    294,
+    684,
+    977,
+    805,
+    14,
+    508,
+    822,
+    299,
+    550,
+    268,
+    416,
+    275,
+    564,
+    537,
+    205,
+    583,
+    511,
+    527,
+    504,
+    237,
+    260,
+    781,
+    530,
+    903,
+    439,
+    129,
+    468,
+    567,
+    621,
+    570,
+    94,
+    490,
+    528,
+    12,
+    816,
+    724,
+    541,
+    365,
+    216,
+    224,
+    63,
+    707,
+    928,
+    441,
+    920,
+    91,
+    141,
+    767,
+    276,
+    345,
+    697,
+    419,
+    169,
+    266,
+    431,
+    722,
+    765,
+    652,
+    547,
+    170,
+    492,
+    874,
+    101,
+    395,
+    848,
+    898,
+    355,
+    569,
+    208,
+    907,
+    253,
+    542,
+    396,
+    899,
+    255,
+    384,
+    213,
+    579,
+    433,
+    149,
+    493,
+    966,
+    377,
+    777,
+    786,
+    175,
+    363,
+    444,
+    709,
+    258,
+    49,
+    52,
+    474,
+    944,
+    884,
+    286,
+    949,
+    703,
+    470,
+    17,
+    347,
+    878,
+    715,
+    771,
+    111,
+    568,
+    39,
+    668,
+    163,
+    613,
+    906,
+    364,
+    519,
+    2,
+    103,
+    871,
+    951,
+    206,
+    840,
+    794,
+    408,
+    391,
+    691,
+    478,
+    189,
+    854,
+    71,
+    503,
+    775,
+    231,
+    315,
+    79,
+    890,
+    370,
+    287,
+    609,
+    497,
+    740,
+    779,
+    423,
+    739,
+    509,
+    198,
+    435,
+    246,
+    483,
+    608,
+    385,
+    968,
+    543,
+    917,
+    905,
+    84,
+    726,
+    320,
+    631,
+    670,
+    68,
+    190,
+    991,
+    339,
+    465,
+    480,
+    29,
+    682,
+    933,
+    721,
+    810,
+    407,
+    664,
+    33,
+    461,
+    381,
+    278,
+    43,
+    448,
+    637,
+    853,
+    57,
+    283,
+    192,
+    632,
+    184,
+    879,
+    749,
+    78,
+    921,
+    350,
+    487,
+    382,
+    823,
+    891,
+    946,
+    93,
+    695,
+    869,
+    10,
+    466,
+    599,
+    795,
+    833,
+    284,
+    812,
+    804,
+    458,
+    931,
+    653,
+    662,
+    383,
+    202,
+    912,
+    72,
+    317,
+    0,
+    719,
+    273,
+    958,
+    241,
+    518,
+    549,
+    817,
+    267,
+    560,
+    690,
+    529,
+    449,
+    875,
+    113,
+    390,
+    692,
+    841,
+    477,
+    789,
+    230,
+    593,
+    95,
+    704,
+    910,
+    694,
+    137,
+    316,
+    909,
+    34,
+    595,
+    661,
+    362,
+    312,
+    801,
+    243,
+    674,
+    865,
+    61,
+    656,
+    983,
+    517,
+    908,
+    866,
+    768,
+    180,
+    792,
+    787,
+    901,
+    199,
+    620,
+    757,
+    328,
+    351,
+    759,
+    523,
+    239,
+    481,
+    501,
+    97,
+    510,
+    996,
+    947,
+    338,
+    867,
+    914,
+    22,
+    188,
+    730,
+    46,
+    456,
+    936,
+    341,
+    896,
+    195,
+    488,
+    335,
+    100,
+    307,
+    645,
+    442,
+    592,
+    760,
+    173,
+    464,
+    820,
+    361,
+    463,
+    785,
+    526,
+    948,
+    245,
+    484,
+    473,
+    302,
+    248,
+    954,
+    457,
+    174,
+    333,
+    994,
+    437,
+    937,
+    555,
+    168,
+    65,
+    90,
+    671,
+    990,
+    678,
+    600,
+    225,
+    152,
+    845,
+    107,
+    981,
+    394,
+    546,
+    83,
+    135,
+    304,
+    762,
+    89,
+    846,
+    380,
+    811,
+    194,
+    59,
+    838,
+    479,
+    654,
+    289,
+    164,
+    837,
+    99
+  ],
+  "checklist": [
+    905,
+    968,
+    68,
+    670,
+    898,
+    907,
+    355,
+    899,
+    384,
+    255,
+    377,
+    767,
+    141,
+    920,
+    266,
+    169,
+    777,
+    652,
+    765,
+    431,
+    781,
+    216,
+    504,
+    237,
+    537,
+    550,
+    268,
+    724,
+    365,
+    541,
+    564,
+    565,
+    415,
+    819,
+    608,
+    385,
+    483,
+    190,
+    848,
+    208,
+    84,
+    213,
+    175,
+    441,
+    260,
+    547,
+    224,
+    511,
+    129,
+    468,
+    567,
+    416,
+    459,
+    732,
+    991,
+    395,
+    726,
+    101,
+    928,
+    205,
+    299,
+    492,
+    874,
+    148,
+    506,
+    320,
+    714,
+    965,
+    639,
+    622,
+    581,
+    569,
+    966,
+    786,
+    276,
+    530,
+    527,
+    185,
+    439,
+    343,
+    493,
+    903,
+    149
+  ],
+  "total_change_f32": -0.04578894004225731,
+  "events": [
+    {
+      "cursor": 0,
+      "node": 905,
+      "checklist_size_before": 71,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 917,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 543,
+          "gain_f32": -0.02798975631594658,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 968,
+          "gain_f32": -0.038744743913412094,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 608,
+          "gain_f32": -0.05223780497908592,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 84,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 28,
+          "edge_distance_f32": 0.04872401803731918,
+          "neighbor_distance_f32": 0.04872401803731918
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 917,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.02058056928217411,
+          "neighbor_distance_f32": 0.02058056928217411
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 71
+    },
+    {
+      "cursor": 1,
+      "node": 968,
+      "checklist_size_before": 71,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 543,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 917,
+          "gain_f32": -0.001901242882013321,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 905,
+          "gain_f32": -0.01831435039639473,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 543,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.01383925136178732,
+          "neighbor_distance_f32": 0.01383925136178732
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 385,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.04692380875349045,
+          "neighbor_distance_f32": 0.04692380875349045
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 71
+    },
+    {
+      "cursor": 2,
+      "node": 68,
+      "checklist_size_before": 71,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 320,
+          "gain_f32": -0.017056073993444443,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 670,
+          "gain_f32": -1.862645149230957e-09,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 320,
+          "gain_f32": -0.015803681686520576,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 190,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.024404464289546013,
+          "neighbor_distance_f32": 0.024404464289546013
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 670,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.015813108533620834,
+          "neighbor_distance_f32": 0.015813108533620834
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 71
+    },
+    {
+      "cursor": 3,
+      "node": 670,
+      "checklist_size_before": 71,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 480,
+          "gain_f32": -0.021147198975086212,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 480,
+          "gain_f32": -0.02736504003405571,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 68,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 320,
+          "gain_f32": -0.011613208800554276,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 465,
+          "gain_f32": -0.03816136717796326,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 68,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.015813108533620834,
+          "neighbor_distance_f32": 0.015813108533620834
+        },
+        {
+          "direction": 1,
+          "rank": 4,
+          "b": 631,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 28,
+          "edge_distance_f32": 0.024447128176689148,
+          "neighbor_distance_f32": 0.024447128176689148
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 71
+    },
+    {
+      "cursor": 4,
+      "node": 898,
+      "checklist_size_before": 71,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 848,
+          "gain_f32": 3.725290298461914e-09,
+          "selected_at_this_point": true
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 395,
+          "gain_f32": -0.008511364459991455,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 848,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.021713541820645332,
+          "neighbor_distance_f32": 0.021713541820645332
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 355,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.060066428035497665,
+          "neighbor_distance_f32": 0.060066428035497665
+        }
+      ],
+      "selected_gain_f32": 3.725290298461914e-09,
+      "selected_move": [
+        898,
+        848,
+        355,
+        898
+      ],
+      "route_updates": [],
+      "insertions": [
+        {
+          "node": 898,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 848,
+          "already_processed": false,
+          "inserted": false
+        },
+        {
+          "node": 355,
+          "already_processed": false,
+          "inserted": false
+        },
+        {
+          "node": 898,
+          "already_processed": true,
+          "inserted": false
+        }
+      ],
+      "checklist_size_after": 71
+    },
+    {
+      "cursor": 5,
+      "node": 907,
+      "checklist_size_before": 71,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 253,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 569,
+          "gain_f32": -0.00790148600935936,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 355,
+          "gain_f32": -0.019631043076515198,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 208,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.020323850214481354,
+          "neighbor_distance_f32": 0.020323850214481354
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 253,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.008289139717817307,
+          "neighbor_distance_f32": 0.008289139717817307
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 71
+    },
+    {
+      "cursor": 6,
+      "node": 355,
+      "checklist_size_before": 71,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 569,
+          "gain_f32": 3.725290298461914e-09,
+          "selected_at_this_point": true
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 907,
+          "gain_f32": -0.019631043076515198,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 208,
+          "gain_f32": -0.022199615836143494,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 253,
+          "gain_f32": -0.026395689696073532,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 395,
+          "gain_f32": -0.0382964089512825,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 726,
+          "gain_f32": -0.07914024591445923,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 6,
+          "b": 84,
+          "gain_f32": -0.058588553220033646,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 7,
+          "b": 101,
+          "gain_f32": -0.030645053833723068,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 8,
+          "b": 898,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 24,
+          "edge_distance_f32": 0.060066428035497665,
+          "neighbor_distance_f32": 0.060066428035497665
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 569,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.011353337205946445,
+          "neighbor_distance_f32": 0.011353337205946445
+        }
+      ],
+      "selected_gain_f32": 3.725290298461914e-09,
+      "selected_move": [
+        898,
+        355,
+        355,
+        569
+      ],
+      "route_updates": [],
+      "insertions": [
+        {
+          "node": 898,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 355,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 355,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 569,
+          "already_processed": false,
+          "inserted": true
+        }
+      ],
+      "checklist_size_after": 72
+    },
+    {
+      "cursor": 7,
+      "node": 899,
+      "checklist_size_before": 72,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 255,
+          "gain_f32": -1.862645149230957e-09,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 396,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.024073055014014244,
+          "neighbor_distance_f32": 0.024073055014014244
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 255,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.0197003073990345,
+          "neighbor_distance_f32": 0.0197003073990345
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 72
+    },
+    {
+      "cursor": 8,
+      "node": 384,
+      "checklist_size_before": 72,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 255,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 52,
+          "gain_f32": -0.001576438546180725,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 899,
+          "gain_f32": -0.013494975864887238,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 255,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.020868046209216118,
+          "neighbor_distance_f32": 0.020868046209216118
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 213,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.04173237830400467,
+          "neighbor_distance_f32": 0.04173237830400467
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 72
+    },
+    {
+      "cursor": 9,
+      "node": 255,
+      "checklist_size_before": 72,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 899,
+          "gain_f32": -1.862645149230957e-09,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 899,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.0197003073990345,
+          "neighbor_distance_f32": 0.0197003073990345
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 384,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.020868046209216118,
+          "neighbor_distance_f32": 0.020868046209216118
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 72
+    },
+    {
+      "cursor": 10,
+      "node": 377,
+      "checklist_size_before": 72,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 966,
+          "gain_f32": 1.862645149230957e-09,
+          "selected_at_this_point": true
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 966,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.015000121667981148,
+          "neighbor_distance_f32": 0.015000121667981148
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 777,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.019230682402849197,
+          "neighbor_distance_f32": 0.019230682402849197
+        }
+      ],
+      "selected_gain_f32": 1.862645149230957e-09,
+      "selected_move": [
+        377,
+        966,
+        777,
+        377
+      ],
+      "route_updates": [],
+      "insertions": [
+        {
+          "node": 377,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 966,
+          "already_processed": false,
+          "inserted": true
+        },
+        {
+          "node": 777,
+          "already_processed": false,
+          "inserted": false
+        },
+        {
+          "node": 377,
+          "already_processed": true,
+          "inserted": false
+        }
+      ],
+      "checklist_size_after": 73
+    },
+    {
+      "cursor": 11,
+      "node": 767,
+      "checklist_size_before": 73,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 786,
+          "gain_f32": -0.010375145822763443,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 276,
+          "gain_f32": 0.011640245094895363,
+          "selected_at_this_point": true
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 777,
+          "gain_f32": -0.02523791417479515,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 141,
+          "gain_f32": 3.725290298461914e-09,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 786,
+          "gain_f32": -0.006636608392000198,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 276,
+          "gain_f32": -0.04105610400438309,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 777,
+          "gain_f32": -0.04858005791902542,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 175,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 28,
+          "edge_distance_f32": 0.03943485766649246,
+          "neighbor_distance_f32": 0.03943485766649246
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 141,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.036490920931100845,
+          "neighbor_distance_f32": 0.036490920931100845
+        }
+      ],
+      "selected_gain_f32": 0.011640245094895363,
+      "selected_move": [
+        175,
+        786,
+        767,
+        276
+      ],
+      "route_updates": [
+        [
+          676,
+          767
+        ],
+        [
+          677,
+          141
+        ],
+        [
+          678,
+          91
+        ],
+        [
+          679,
+          920
+        ],
+        [
+          680,
+          441
+        ],
+        [
+          681,
+          928
+        ],
+        [
+          682,
+          707
+        ],
+        [
+          683,
+          63
+        ],
+        [
+          684,
+          224
+        ],
+        [
+          685,
+          216
+        ],
+        [
+          686,
+          365
+        ],
+        [
+          687,
+          541
+        ],
+        [
+          688,
+          724
+        ],
+        [
+          689,
+          816
+        ],
+        [
+          690,
+          12
+        ],
+        [
+          691,
+          528
+        ],
+        [
+          692,
+          490
+        ],
+        [
+          693,
+          94
+        ],
+        [
+          694,
+          570
+        ],
+        [
+          695,
+          621
+        ],
+        [
+          696,
+          567
+        ],
+        [
+          697,
+          468
+        ],
+        [
+          698,
+          129
+        ],
+        [
+          699,
+          439
+        ],
+        [
+          700,
+          903
+        ],
+        [
+          701,
+          530
+        ],
+        [
+          702,
+          527
+        ],
+        [
+          703,
+          504
+        ],
+        [
+          704,
+          237
+        ],
+        [
+          705,
+          260
+        ],
+        [
+          707,
+          722
+        ],
+        [
+          708,
+          765
+        ],
+        [
+          709,
+          652
+        ],
+        [
+          710,
+          547
+        ],
+        [
+          711,
+          170
+        ],
+        [
+          712,
+          492
+        ],
+        [
+          713,
+          874
+        ],
+        [
+          714,
+          101
+        ],
+        [
+          715,
+          395
+        ],
+        [
+          716,
+          848
+        ],
+        [
+          717,
+          898
+        ],
+        [
+          718,
+          355
+        ],
+        [
+          719,
+          569
+        ],
+        [
+          720,
+          208
+        ],
+        [
+          721,
+          907
+        ],
+        [
+          722,
+          253
+        ],
+        [
+          723,
+          542
+        ],
+        [
+          724,
+          396
+        ],
+        [
+          725,
+          899
+        ],
+        [
+          726,
+          255
+        ],
+        [
+          727,
+          384
+        ],
+        [
+          728,
+          213
+        ],
+        [
+          729,
+          579
+        ],
+        [
+          730,
+          433
+        ],
+        [
+          731,
+          149
+        ],
+        [
+          732,
+          493
+        ],
+        [
+          733,
+          966
+        ],
+        [
+          734,
+          377
+        ],
+        [
+          735,
+          777
+        ],
+        [
+          736,
+          786
+        ]
+      ],
+      "insertions": [
+        {
+          "node": 175,
+          "already_processed": false,
+          "inserted": false
+        },
+        {
+          "node": 786,
+          "already_processed": false,
+          "inserted": true
+        },
+        {
+          "node": 767,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 276,
+          "already_processed": false,
+          "inserted": true
+        }
+      ],
+      "checklist_size_after": 75
+    },
+    {
+      "cursor": 12,
+      "node": 141,
+      "checklist_size_before": 75,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 767,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 91,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.03996049240231514,
+          "neighbor_distance_f32": 0.03996049240231514
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 767,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.036490920931100845,
+          "neighbor_distance_f32": 0.036490920931100845
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 75
+    },
+    {
+      "cursor": 13,
+      "node": 920,
+      "checklist_size_before": 75,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 91,
+          "gain_f32": -7.450580596923828e-09,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 141,
+          "gain_f32": -0.004721783101558685,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 707,
+          "gain_f32": -0.02469927817583084,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 63,
+          "gain_f32": -0.01886729896068573,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 266,
+          "gain_f32": -0.08672839403152466,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 169,
+          "gain_f32": -0.10237216204404831,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 6,
+          "b": 419,
+          "gain_f32": -0.10697636753320694,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 7,
+          "b": 441,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 25,
+          "edge_distance_f32": 0.06491727381944656,
+          "neighbor_distance_f32": 0.06491727381944656
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 91,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.01083473488688469,
+          "neighbor_distance_f32": 0.01083473488688469
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 75
+    },
+    {
+      "cursor": 14,
+      "node": 266,
+      "checklist_size_before": 75,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 169,
+          "gain_f32": -3.725290298461914e-09,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 419,
+          "gain_f32": -0.02098981663584709,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 431,
+          "gain_f32": 0.007588967680931091,
+          "selected_at_this_point": true
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 722,
+          "gain_f32": 0.002025000751018524,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 4,
+          "b": 697,
+          "gain_f32": -0.03187428042292595,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 5,
+          "b": 91,
+          "gain_f32": -0.05382530391216278,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 6,
+          "b": 260,
+          "gain_f32": -0.01792840287089348,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 7,
+          "b": 237,
+          "gain_f32": -0.014883611351251602,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 8,
+          "b": 765,
+          "gain_f32": -0.054135143756866455,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 9,
+          "b": 920,
+          "gain_f32": -0.05955546721816063,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 10,
+          "b": 63,
+          "gain_f32": -0.03242667391896248,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 11,
+          "b": 345,
+          "gain_f32": -0.07342615723609924,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 169,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.010902978479862213,
+          "neighbor_distance_f32": 0.010902978479862213
+        },
+        {
+          "direction": 1,
+          "rank": 12,
+          "b": 781,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 20,
+          "edge_distance_f32": 0.05873758718371391,
+          "neighbor_distance_f32": 0.05873758718371391
+        }
+      ],
+      "selected_gain_f32": 0.007588967680931091,
+      "selected_move": [
+        266,
+        431,
+        781,
+        260
+      ],
+      "route_updates": [
+        [
+          670,
+          260
+        ],
+        [
+          671,
+          237
+        ],
+        [
+          672,
+          504
+        ],
+        [
+          673,
+          527
+        ],
+        [
+          674,
+          530
+        ],
+        [
+          675,
+          903
+        ],
+        [
+          676,
+          439
+        ],
+        [
+          677,
+          129
+        ],
+        [
+          678,
+          468
+        ],
+        [
+          679,
+          567
+        ],
+        [
+          680,
+          621
+        ],
+        [
+          681,
+          570
+        ],
+        [
+          682,
+          94
+        ],
+        [
+          683,
+          490
+        ],
+        [
+          684,
+          528
+        ],
+        [
+          685,
+          12
+        ],
+        [
+          686,
+          816
+        ],
+        [
+          687,
+          724
+        ],
+        [
+          688,
+          541
+        ],
+        [
+          689,
+          365
+        ],
+        [
+          690,
+          216
+        ],
+        [
+          691,
+          224
+        ],
+        [
+          692,
+          63
+        ],
+        [
+          693,
+          707
+        ],
+        [
+          694,
+          928
+        ],
+        [
+          695,
+          441
+        ],
+        [
+          696,
+          920
+        ],
+        [
+          697,
+          91
+        ],
+        [
+          698,
+          141
+        ],
+        [
+          699,
+          767
+        ],
+        [
+          700,
+          276
+        ],
+        [
+          701,
+          345
+        ],
+        [
+          702,
+          697
+        ],
+        [
+          703,
+          419
+        ],
+        [
+          704,
+          169
+        ],
+        [
+          705,
+          266
+        ]
+      ],
+      "insertions": [
+        {
+          "node": 266,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 431,
+          "already_processed": false,
+          "inserted": false
+        },
+        {
+          "node": 781,
+          "already_processed": false,
+          "inserted": false
+        },
+        {
+          "node": 260,
+          "already_processed": false,
+          "inserted": false
+        }
+      ],
+      "checklist_size_after": 75
+    },
+    {
+      "cursor": 15,
+      "node": 169,
+      "checklist_size_before": 75,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 419,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 266,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.010902978479862213,
+          "neighbor_distance_f32": 0.010902978479862213
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 419,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.006116366479545832,
+          "neighbor_distance_f32": 0.006116366479545832
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 75
+    },
+    {
+      "cursor": 16,
+      "node": 777,
+      "checklist_size_before": 75,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 786,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 786,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.010510601103305817,
+          "neighbor_distance_f32": 0.010510601103305817
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 377,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.019230682402849197,
+          "neighbor_distance_f32": 0.019230682402849197
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 75
+    },
+    {
+      "cursor": 17,
+      "node": 652,
+      "checklist_size_before": 75,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 765,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 547,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.024558791890740395,
+          "neighbor_distance_f32": 0.024558791890740395
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 765,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.016025962308049202,
+          "neighbor_distance_f32": 0.016025962308049202
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 75
+    },
+    {
+      "cursor": 18,
+      "node": 765,
+      "checklist_size_before": 75,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 722,
+          "gain_f32": -1.862645149230957e-09,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 652,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.016025962308049202,
+          "neighbor_distance_f32": 0.016025962308049202
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 722,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.015705905854701996,
+          "neighbor_distance_f32": 0.015705905854701996
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 75
+    },
+    {
+      "cursor": 19,
+      "node": 431,
+      "checklist_size_before": 75,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 260,
+          "gain_f32": -0.029477573931217194,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 266,
+          "gain_f32": -1.862645149230957e-09,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 237,
+          "gain_f32": -0.043330855667591095,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 169,
+          "gain_f32": -0.02474036067724228,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 260,
+          "gain_f32": -0.007588967680931091,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 722,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 28,
+          "edge_distance_f32": 0.028236934915184975,
+          "neighbor_distance_f32": 0.028236934915184975
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 266,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.023649387061595917,
+          "neighbor_distance_f32": 0.023649387061595917
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 75
+    },
+    {
+      "cursor": 20,
+      "node": 781,
+      "checklist_size_before": 75,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 530,
+          "gain_f32": -0.019618626683950424,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 903,
+          "gain_f32": -0.027391288429498672,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 224,
+          "gain_f32": -0.03763473778963089,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 439,
+          "gain_f32": -0.03156614676117897,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 216,
+          "gain_f32": -0.030193258076906204,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 527,
+          "gain_f32": -0.017711076885461807,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 6,
+          "b": 63,
+          "gain_f32": -0.060057900846004486,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 7,
+          "b": 237,
+          "gain_f32": -0.0004257969558238983,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 8,
+          "b": 504,
+          "gain_f32": -0.015908680856227875,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 9,
+          "b": 707,
+          "gain_f32": -0.06274204701185226,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 10,
+          "b": 129,
+          "gain_f32": -0.05791682377457619,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 11,
+          "b": 431,
+          "gain_f32": -0.007959030568599701,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 530,
+          "gain_f32": 0.018385041505098343,
+          "selected_at_this_point": true
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 903,
+          "gain_f32": 0.006751205772161484,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 224,
+          "gain_f32": -0.0219193696975708,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 439,
+          "gain_f32": -0.004287894815206528,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 4,
+          "b": 216,
+          "gain_f32": -0.038219768553972244,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 5,
+          "b": 527,
+          "gain_f32": 0.015285279601812363,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 6,
+          "b": 63,
+          "gain_f32": -0.04957641661167145,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 7,
+          "b": 237,
+          "gain_f32": -0.01846669614315033,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 8,
+          "b": 504,
+          "gain_f32": -0.00526341050863266,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 9,
+          "b": 707,
+          "gain_f32": -0.07088623195886612,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 10,
+          "b": 129,
+          "gain_f32": -0.0037078410387039185,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 11,
+          "b": 431,
+          "gain_f32": -0.05602797493338585,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 12,
+          "b": 260,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 13,
+          "b": 928,
+          "gain_f32": -0.06507595628499985,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 14,
+          "b": 365,
+          "gain_f32": -0.06093532219529152,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 15,
+          "b": 541,
+          "gain_f32": -0.05149129778146744,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 16,
+          "b": 266,
+          "gain_f32": -0.08339200913906097,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 17,
+          "b": 12,
+          "gain_f32": -0.10181224346160889,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 18,
+          "b": 724,
+          "gain_f32": -0.07452785223722458,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 12,
+          "b": 260,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 20,
+          "edge_distance_f32": 0.04925583302974701,
+          "neighbor_distance_f32": 0.04925583302974701
+        },
+        {
+          "direction": 1,
+          "rank": 19,
+          "b": 511,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 13,
+          "edge_distance_f32": 0.0673583447933197,
+          "neighbor_distance_f32": 0.0673583447933197
+        }
+      ],
+      "selected_gain_f32": 0.018385041505098343,
+      "selected_move": [
+        781,
+        530,
+        511,
+        527
+      ],
+      "route_updates": [
+        [
+          669,
+          527
+        ],
+        [
+          670,
+          504
+        ],
+        [
+          672,
+          260
+        ],
+        [
+          673,
+          781
+        ]
+      ],
+      "insertions": [
+        {
+          "node": 781,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 530,
+          "already_processed": false,
+          "inserted": true
+        },
+        {
+          "node": 511,
+          "already_processed": false,
+          "inserted": false
+        },
+        {
+          "node": 527,
+          "already_processed": false,
+          "inserted": true
+        }
+      ],
+      "checklist_size_after": 77
+    },
+    {
+      "cursor": 21,
+      "node": 216,
+      "checklist_size_before": 77,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 365,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 224,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.02578909695148468,
+          "neighbor_distance_f32": 0.02578909695148468
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 365,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.021092791110277176,
+          "neighbor_distance_f32": 0.021092791110277176
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 77
+    },
+    {
+      "cursor": 22,
+      "node": 504,
+      "checklist_size_before": 77,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 527,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 237,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.017459603026509285,
+          "neighbor_distance_f32": 0.017459603026509285
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 527,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.014118457213044167,
+          "neighbor_distance_f32": 0.014118457213044167
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 77
+    },
+    {
+      "cursor": 23,
+      "node": 237,
+      "checklist_size_before": 77,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 260,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 260,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.009941861033439636,
+          "neighbor_distance_f32": 0.009941861033439636
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 504,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.017459603026509285,
+          "neighbor_distance_f32": 0.017459603026509285
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 77
+    },
+    {
+      "cursor": 24,
+      "node": 537,
+      "checklist_size_before": 77,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 564,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 468,
+          "gain_f32": -0.015305615961551666,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 205,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.029923252761363983,
+          "neighbor_distance_f32": 0.029923252761363983
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 564,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.015043467283248901,
+          "neighbor_distance_f32": 0.015043467283248901
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 77
+    },
+    {
+      "cursor": 25,
+      "node": 550,
+      "checklist_size_before": 77,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 268,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 564,
+          "gain_f32": -0.006296977400779724,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 567,
+          "gain_f32": -0.04337364807724953,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 275,
+          "gain_f32": -0.02782660722732544,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 4,
+          "b": 537,
+          "gain_f32": -0.04589088633656502,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 5,
+          "b": 805,
+          "gain_f32": -0.03663991391658783,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 6,
+          "b": 508,
+          "gain_f32": -0.015155002474784851,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 7,
+          "b": 14,
+          "gain_f32": -0.03364982828497887,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 268,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.011275675147771835,
+          "neighbor_distance_f32": 0.011275675147771835
+        },
+        {
+          "direction": 1,
+          "rank": 8,
+          "b": 299,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 24,
+          "edge_distance_f32": 0.04590430110692978,
+          "neighbor_distance_f32": 0.04590430110692978
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 77
+    },
+    {
+      "cursor": 26,
+      "node": 268,
+      "checklist_size_before": 77,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 550,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 275,
+          "gain_f32": -0.0036336183547973633,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 564,
+          "gain_f32": -0.036535266786813736,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 299,
+          "gain_f32": -0.0005981810390949249,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 508,
+          "gain_f32": -0.026588894426822662,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 805,
+          "gain_f32": -0.07398055493831635,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 6,
+          "b": 416,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 26,
+          "edge_distance_f32": 0.043121520429849625,
+          "neighbor_distance_f32": 0.043121520429849625
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 550,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.011275675147771835,
+          "neighbor_distance_f32": 0.011275675147771835
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 77
+    },
+    {
+      "cursor": 27,
+      "node": 724,
+      "checklist_size_before": 77,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 541,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 541,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.02152332477271557,
+          "neighbor_distance_f32": 0.02152332477271557
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 816,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.03004998154938221,
+          "neighbor_distance_f32": 0.03004998154938221
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 77
+    },
+    {
+      "cursor": 28,
+      "node": 365,
+      "checklist_size_before": 77,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 541,
+          "gain_f32": 1.862645149230957e-09,
+          "selected_at_this_point": true
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 816,
+          "gain_f32": -0.016060229390859604,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 12,
+          "gain_f32": -0.011477768421173096,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 216,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.021092791110277176,
+          "neighbor_distance_f32": 0.021092791110277176
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 541,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.01444845087826252,
+          "neighbor_distance_f32": 0.01444845087826252
+        }
+      ],
+      "selected_gain_f32": 1.862645149230957e-09,
+      "selected_move": [
+        216,
+        365,
+        365,
+        541
+      ],
+      "route_updates": [],
+      "insertions": [
+        {
+          "node": 216,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 365,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 365,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 541,
+          "already_processed": false,
+          "inserted": false
+        }
+      ],
+      "checklist_size_after": 77
+    },
+    {
+      "cursor": 29,
+      "node": 541,
+      "checklist_size_before": 77,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 816,
+          "gain_f32": -0.004081573337316513,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 816,
+          "gain_f32": -0.017821747809648514,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 365,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 365,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.01444845087826252,
+          "neighbor_distance_f32": 0.01444845087826252
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 724,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.02152332477271557,
+          "neighbor_distance_f32": 0.02152332477271557
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 77
+    },
+    {
+      "cursor": 30,
+      "node": 564,
+      "checklist_size_before": 77,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 537,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 537,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.015043467283248901,
+          "neighbor_distance_f32": 0.015043467283248901
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 275,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.030218198895454407,
+          "neighbor_distance_f32": 0.030218198895454407
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 77
+    },
+    {
+      "cursor": 31,
+      "node": 565,
+      "checklist_size_before": 77,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 819,
+          "gain_f32": 0.008174652233719826,
+          "selected_at_this_point": true
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 819,
+          "gain_f32": -0.005447041243314743,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 415,
+          "gain_f32": -7.450580596923828e-09,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 416,
+          "gain_f32": -0.010890677571296692,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 299,
+          "gain_f32": -0.042198359966278076,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 4,
+          "b": 275,
+          "gain_f32": -0.002166643738746643,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 5,
+          "b": 822,
+          "gain_f32": -0.04975588619709015,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 6,
+          "b": 268,
+          "gain_f32": -0.06595674157142639,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 7,
+          "b": 508,
+          "gain_f32": -0.09116396307945251,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 8,
+          "b": 185,
+          "gain_f32": -0.008683532476425171,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 9,
+          "b": 352,
+          "gain_f32": -0.031327567994594574,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 10,
+          "b": 550,
+          "gain_f32": -0.03775215521454811,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 11,
+          "b": 197,
+          "gain_f32": -0.028956294059753418,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 12,
+          "b": 229,
+          "gain_f32": -0.030285771936178207,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 13,
+          "b": 564,
+          "gain_f32": -0.0296919047832489,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 14,
+          "b": 995,
+          "gain_f32": -0.03506654128432274,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 15,
+          "b": 14,
+          "gain_f32": -0.1213063895702362,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 16,
+          "b": 755,
+          "gain_f32": -0.03819003701210022,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 17,
+          "b": 805,
+          "gain_f32": -0.12868651747703552,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 415,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.02776641771197319,
+          "neighbor_distance_f32": 0.02776641771197319
+        },
+        {
+          "direction": 1,
+          "rank": 18,
+          "b": 148,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 14,
+          "edge_distance_f32": 0.06885477155447006,
+          "neighbor_distance_f32": 0.06885477155447006
+        }
+      ],
+      "selected_gain_f32": 0.008174652233719826,
+      "selected_move": [
+        415,
+        185,
+        565,
+        819
+      ],
+      "route_updates": [
+        [
+          547,
+          819
+        ],
+        [
+          548,
+          415
+        ]
+      ],
+      "insertions": [
+        {
+          "node": 415,
+          "already_processed": false,
+          "inserted": false
+        },
+        {
+          "node": 185,
+          "already_processed": false,
+          "inserted": true
+        },
+        {
+          "node": 565,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 819,
+          "already_processed": false,
+          "inserted": false
+        }
+      ],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 32,
+      "node": 415,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 819,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 185,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.021979747340083122,
+          "neighbor_distance_f32": 0.021979747340083122
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 819,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.007863260805606842,
+          "neighbor_distance_f32": 0.007863260805606842
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 33,
+      "node": 819,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 415,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 415,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.007863260805606842,
+          "neighbor_distance_f32": 0.007863260805606842
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 565,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.023135989904403687,
+          "neighbor_distance_f32": 0.023135989904403687
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 34,
+      "node": 608,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 879,
+          "gain_f32": -0.03778043016791344,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 749,
+          "gain_f32": -0.040290266275405884,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 483,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 917,
+          "gain_f32": -0.03499656170606613,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 184,
+          "gain_f32": -0.042796023190021515,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 879,
+          "gain_f32": -0.03485209494829178,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 749,
+          "gain_f32": -0.026008496060967445,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 385,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 27,
+          "edge_distance_f32": 0.04139655455946922,
+          "neighbor_distance_f32": 0.04139655455946922
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 483,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.03128967806696892,
+          "neighbor_distance_f32": 0.03128967806696892
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 35,
+      "node": 385,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 198,
+          "gain_f32": -0.06265857815742493,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 435,
+          "gain_f32": -0.06223637983202934,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 779,
+          "gain_f32": -0.06283833086490631,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 543,
+          "gain_f32": -0.0019012447446584702,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 423,
+          "gain_f32": -0.05071970820426941,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 483,
+          "gain_f32": -0.019568797200918198,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 6,
+          "b": 739,
+          "gain_f32": -0.0783921629190445,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 7,
+          "b": 509,
+          "gain_f32": -0.052270788699388504,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 8,
+          "b": 608,
+          "gain_f32": -3.725290298461914e-09,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 9,
+          "b": 246,
+          "gain_f32": -0.05828394740819931,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 10,
+          "b": 917,
+          "gain_f32": -0.01831435039639473,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 11,
+          "b": 39,
+          "gain_f32": -0.06065702438354492,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 198,
+          "gain_f32": -0.03770718351006508,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 435,
+          "gain_f32": -0.03841698542237282,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 779,
+          "gain_f32": -0.07179377973079681,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 543,
+          "gain_f32": -0.04068623483181,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 4,
+          "b": 423,
+          "gain_f32": -0.0711667388677597,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 5,
+          "b": 483,
+          "gain_f32": -0.028796158730983734,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 6,
+          "b": 739,
+          "gain_f32": -0.04940874129533768,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 7,
+          "b": 509,
+          "gain_f32": -0.06520651280879974,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 12,
+          "b": 968,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 20,
+          "edge_distance_f32": 0.04692380875349045,
+          "neighbor_distance_f32": 0.04692380875349045
+        },
+        {
+          "direction": 1,
+          "rank": 8,
+          "b": 608,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 24,
+          "edge_distance_f32": 0.04139655455946922,
+          "neighbor_distance_f32": 0.04139655455946922
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 36,
+      "node": 483,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 246,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 198,
+          "gain_f32": -0.0383908748626709,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 435,
+          "gain_f32": -0.025784121826291084,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 749,
+          "gain_f32": -0.0265444777905941,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 608,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 28,
+          "edge_distance_f32": 0.03128967806696892,
+          "neighbor_distance_f32": 0.03128967806696892
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 246,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.015972524881362915,
+          "neighbor_distance_f32": 0.015972524881362915
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 37,
+      "node": 190,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 339,
+          "gain_f32": -0.007801743224263191,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 465,
+          "gain_f32": -0.021948494017124176,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 339,
+          "gain_f32": -0.032917506992816925,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 465,
+          "gain_f32": -0.02328677661716938,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 991,
+          "gain_f32": 1.862645149230957e-09,
+          "selected_at_this_point": true
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 991,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.022870592772960663,
+          "neighbor_distance_f32": 0.022870592772960663
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 68,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.024404464289546013,
+          "neighbor_distance_f32": 0.024404464289546013
+        }
+      ],
+      "selected_gain_f32": 1.862645149230957e-09,
+      "selected_move": [
+        190,
+        991,
+        68,
+        190
+      ],
+      "route_updates": [],
+      "insertions": [
+        {
+          "node": 190,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 991,
+          "already_processed": false,
+          "inserted": false
+        },
+        {
+          "node": 68,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 190,
+          "already_processed": true,
+          "inserted": false
+        }
+      ],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 38,
+      "node": 848,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 898,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 652,
+          "gain_f32": -0.07853598892688751,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 765,
+          "gain_f32": -0.09809582680463791,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 170,
+          "gain_f32": -0.08260075747966766,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 4,
+          "b": 492,
+          "gain_f32": -0.0647844523191452,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 898,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.021713541820645332,
+          "neighbor_distance_f32": 0.021713541820645332
+        },
+        {
+          "direction": 1,
+          "rank": 5,
+          "b": 395,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 27,
+          "edge_distance_f32": 0.06174003332853317,
+          "neighbor_distance_f32": 0.06174003332853317
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 39,
+      "node": 208,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 569,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 907,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.020323850214481354,
+          "neighbor_distance_f32": 0.020323850214481354
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 569,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.009580088779330254,
+          "neighbor_distance_f32": 0.009580088779330254
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 40,
+      "node": 84,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 726,
+          "gain_f32": -3.725290298461914e-09,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 208,
+          "gain_f32": -0.07899067550897598,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 569,
+          "gain_f32": -0.09371939301490784,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 726,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.03633531555533409,
+          "neighbor_distance_f32": 0.03633531555533409
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 905,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.04872401803731918,
+          "neighbor_distance_f32": 0.04872401803731918
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 41,
+      "node": 213,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 579,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 433,
+          "gain_f32": -0.019137874245643616,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 149,
+          "gain_f32": -0.01921466365456581,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 899,
+          "gain_f32": -0.020531587302684784,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 4,
+          "b": 255,
+          "gain_f32": -0.013494975864887238,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 579,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.010898319073021412,
+          "neighbor_distance_f32": 0.010898319073021412
+        },
+        {
+          "direction": 1,
+          "rank": 5,
+          "b": 384,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 27,
+          "edge_distance_f32": 0.04173237830400467,
+          "neighbor_distance_f32": 0.04173237830400467
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 42,
+      "node": 175,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 786,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 777,
+          "gain_f32": -0.04265676811337471,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 767,
+          "gain_f32": -0.05532926321029663,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 966,
+          "gain_f32": -0.05768587812781334,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 377,
+          "gain_f32": -0.05216694995760918,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 276,
+          "gain_f32": -0.09648182988166809,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 6,
+          "b": 363,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 26,
+          "edge_distance_f32": 0.05728050321340561,
+          "neighbor_distance_f32": 0.05728050321340561
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 786,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.02544250525534153,
+          "neighbor_distance_f32": 0.02544250525534153
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 43,
+      "node": 441,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 928,
+          "gain_f32": 7.450580596923828e-09,
+          "selected_at_this_point": true
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 707,
+          "gain_f32": -0.02099069207906723,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 63,
+          "gain_f32": -0.02469927817583084,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 224,
+          "gain_f32": -0.01886729896068573,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 12,
+          "gain_f32": -0.0874537006020546,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 216,
+          "gain_f32": -0.03704341873526573,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 6,
+          "b": 920,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 26,
+          "edge_distance_f32": 0.06491727381944656,
+          "neighbor_distance_f32": 0.06491727381944656
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 928,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.030533242970705032,
+          "neighbor_distance_f32": 0.030533242970705032
+        }
+      ],
+      "selected_gain_f32": 7.450580596923828e-09,
+      "selected_move": [
+        920,
+        441,
+        441,
+        928
+      ],
+      "route_updates": [],
+      "insertions": [
+        {
+          "node": 920,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 441,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 441,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 928,
+          "already_processed": false,
+          "inserted": false
+        }
+      ],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 44,
+      "node": 260,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 237,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 431,
+          "gain_f32": -0.021259497851133347,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 504,
+          "gain_f32": -0.0004257969558238983,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 547,
+          "gain_f32": -0.04990385100245476,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 722,
+          "gain_f32": -0.058725129812955856,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 527,
+          "gain_f32": -0.015908680856227875,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 6,
+          "b": 652,
+          "gain_f32": -0.039620496332645416,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 7,
+          "b": 765,
+          "gain_f32": -0.06424599885940552,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 8,
+          "b": 530,
+          "gain_f32": -0.012443799525499344,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 9,
+          "b": 266,
+          "gain_f32": -0.021502215415239334,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 10,
+          "b": 169,
+          "gain_f32": -0.04732317104935646,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 11,
+          "b": 781,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 21,
+          "edge_distance_f32": 0.04925583302974701,
+          "neighbor_distance_f32": 0.04925583302974701
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 237,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.009941861033439636,
+          "neighbor_distance_f32": 0.009941861033439636
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 45,
+      "node": 547,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 652,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 260,
+          "gain_f32": -0.04990385100245476,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 170,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.031318485736846924,
+          "neighbor_distance_f32": 0.031318485736846924
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 652,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.024558791890740395,
+          "neighbor_distance_f32": 0.024558791890740395
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 46,
+      "node": 224,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 63,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 707,
+          "gain_f32": -0.025067836046218872,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 928,
+          "gain_f32": -0.012730006128549576,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 63,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.015078391879796982,
+          "neighbor_distance_f32": 0.015078391879796982
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 216,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.02578909695148468,
+          "neighbor_distance_f32": 0.02578909695148468
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 47,
+      "node": 511,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 583,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 205,
+          "gain_f32": -0.016860753297805786,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 504,
+          "gain_f32": -0.009305495768785477,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 527,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.033655039966106415,
+          "neighbor_distance_f32": 0.033655039966106415
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 583,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.017200110480189323,
+          "neighbor_distance_f32": 0.017200110480189323
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 78
+    },
+    {
+      "cursor": 48,
+      "node": 129,
+      "checklist_size_before": 78,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 439,
+          "gain_f32": 1.862645149230957e-09,
+          "selected_at_this_point": true
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 903,
+          "gain_f32": -0.03261623531579971,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 468,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.02560865506529808,
+          "neighbor_distance_f32": 0.02560865506529808
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 439,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.016685182228684425,
+          "neighbor_distance_f32": 0.016685182228684425
+        }
+      ],
+      "selected_gain_f32": 1.862645149230957e-09,
+      "selected_move": [
+        468,
+        129,
+        129,
+        439
+      ],
+      "route_updates": [],
+      "insertions": [
+        {
+          "node": 468,
+          "already_processed": false,
+          "inserted": false
+        },
+        {
+          "node": 129,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 129,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 439,
+          "already_processed": false,
+          "inserted": true
+        }
+      ],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 49,
+      "node": 468,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 537,
+          "gain_f32": -0.015305615961551666,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 129,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 205,
+          "gain_f32": -0.051533110439777374,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 564,
+          "gain_f32": -0.016448047012090683,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 724,
+          "gain_f32": -0.04531573876738548,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 439,
+          "gain_f32": -0.0476653128862381,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 6,
+          "b": 903,
+          "gain_f32": -0.08094069361686707,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 537,
+          "gain_f32": -0.04046105593442917,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 7,
+          "b": 567,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 25,
+          "edge_distance_f32": 0.04486159607768059,
+          "neighbor_distance_f32": 0.04486159607768059
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 129,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.02560865506529808,
+          "neighbor_distance_f32": 0.02560865506529808
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 50,
+      "node": 567,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 550,
+          "gain_f32": -0.06552773714065552,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 537,
+          "gain_f32": -0.06534841656684875,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 268,
+          "gain_f32": -0.08481371402740479,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 468,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 564,
+          "gain_f32": -0.06358601152896881,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 977,
+          "gain_f32": -0.06455308198928833,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 6,
+          "b": 724,
+          "gain_f32": -0.03439018875360489,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 7,
+          "b": 805,
+          "gain_f32": -0.08571229875087738,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 8,
+          "b": 176,
+          "gain_f32": -0.04252204671502113,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 550,
+          "gain_f32": -0.04337364807724953,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 537,
+          "gain_f32": -0.016448047012090683,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 268,
+          "gain_f32": -0.04463404789566994,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 9,
+          "b": 621,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 23,
+          "edge_distance_f32": 0.05468480661511421,
+          "neighbor_distance_f32": 0.05468480661511421
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 468,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.04486159607768059,
+          "neighbor_distance_f32": 0.04486159607768059
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 51,
+      "node": 416,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 275,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 565,
+          "gain_f32": -0.010890677571296692,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 819,
+          "gain_f32": -0.012642517685890198,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 275,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.016691572964191437,
+          "neighbor_distance_f32": 0.016691572964191437
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 268,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.043121520429849625,
+          "neighbor_distance_f32": 0.043121520429849625
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 52,
+      "node": 459,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 639,
+          "gain_f32": -1.862645149230957e-09,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 639,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.00771979009732604,
+          "neighbor_distance_f32": 0.00771979009732604
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 581,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.02594372257590294,
+          "neighbor_distance_f32": 0.02594372257590294
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 53,
+      "node": 732,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 581,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 148,
+          "gain_f32": -0.019550280645489693,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 714,
+          "gain_f32": -0.027078259736299515,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 581,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.010745538398623466,
+          "neighbor_distance_f32": 0.010745538398623466
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 506,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.024637678638100624,
+          "neighbor_distance_f32": 0.024637678638100624
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 54,
+      "node": 991,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 339,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 43,
+          "gain_f32": -0.018809055909514427,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 339,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.009334392845630646,
+          "neighbor_distance_f32": 0.009334392845630646
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 190,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.022870592772960663,
+          "neighbor_distance_f32": 0.022870592772960663
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 55,
+      "node": 395,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 101,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 898,
+          "gain_f32": -0.008511364459991455,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 355,
+          "gain_f32": -0.06914635002613068,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 631,
+          "gain_f32": -0.10274103283882141,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 726,
+          "gain_f32": -0.08778388798236847,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 569,
+          "gain_f32": -0.08667464554309845,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 6,
+          "b": 874,
+          "gain_f32": -0.02373851090669632,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 7,
+          "b": 320,
+          "gain_f32": -0.08801513910293579,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 8,
+          "b": 848,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 24,
+          "edge_distance_f32": 0.06174003332853317,
+          "neighbor_distance_f32": 0.06174003332853317
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 101,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.021836986765265465,
+          "neighbor_distance_f32": 0.021836986765265465
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 56,
+      "node": 726,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 320,
+          "gain_f32": 3.725290298461914e-09,
+          "selected_at_this_point": true
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 68,
+          "gain_f32": -0.05924571678042412,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 320,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.02743985690176487,
+          "neighbor_distance_f32": 0.02743985690176487
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 84,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.03633531555533409,
+          "neighbor_distance_f32": 0.03633531555533409
+        }
+      ],
+      "selected_gain_f32": 3.725290298461914e-09,
+      "selected_move": [
+        726,
+        320,
+        84,
+        726
+      ],
+      "route_updates": [],
+      "insertions": [
+        {
+          "node": 726,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 320,
+          "already_processed": false,
+          "inserted": false
+        },
+        {
+          "node": 84,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 726,
+          "already_processed": true,
+          "inserted": false
+        }
+      ],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 57,
+      "node": 101,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 395,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 631,
+          "gain_f32": -0.03430892527103424,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 726,
+          "gain_f32": -0.075344517827034,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 320,
+          "gain_f32": -0.050109557807445526,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 4,
+          "b": 670,
+          "gain_f32": -0.031450893729925156,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 5,
+          "b": 68,
+          "gain_f32": -0.06346948444843292,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 395,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.021836986765265465,
+          "neighbor_distance_f32": 0.021836986765265465
+        },
+        {
+          "direction": 1,
+          "rank": 6,
+          "b": 874,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 26,
+          "edge_distance_f32": 0.05376892536878586,
+          "neighbor_distance_f32": 0.05376892536878586
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 58,
+      "node": 928,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 224,
+          "gain_f32": -0.024487342685461044,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 707,
+          "gain_f32": -1.862645149230957e-09,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 12,
+          "gain_f32": -0.05174575001001358,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 224,
+          "gain_f32": -0.012730006128549576,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 441,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.030533242970705032,
+          "neighbor_distance_f32": 0.030533242970705032
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 707,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.027503727003932,
+          "neighbor_distance_f32": 0.027503727003932
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 59,
+      "node": 205,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 511,
+          "gain_f32": -0.016860753297805786,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 511,
+          "gain_f32": -0.02388896979391575,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 583,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 583,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.022347286343574524,
+          "neighbor_distance_f32": 0.022347286343574524
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 537,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.029923252761363983,
+          "neighbor_distance_f32": 0.029923252761363983
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 60,
+      "node": 299,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 508,
+          "gain_f32": -0.007641531527042389,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 822,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 565,
+          "gain_f32": -0.036653175950050354,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 268,
+          "gain_f32": -0.0005981810390949249,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 14,
+          "gain_f32": -0.015155002474784851,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 805,
+          "gain_f32": -0.03364982828497887,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 508,
+          "gain_f32": -0.02801050804555416,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 6,
+          "b": 550,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 26,
+          "edge_distance_f32": 0.04590430110692978,
+          "neighbor_distance_f32": 0.04590430110692978
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 822,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.023329535499215126,
+          "neighbor_distance_f32": 0.023329535499215126
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 61,
+      "node": 492,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 170,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 343,
+          "gain_f32": -0.07040683925151825,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 714,
+          "gain_f32": -0.0646972507238388,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 965,
+          "gain_f32": -0.056878745555877686,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 874,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 28,
+          "edge_distance_f32": 0.053424812853336334,
+          "neighbor_distance_f32": 0.053424812853336334
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 170,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.028581589460372925,
+          "neighbor_distance_f32": 0.028581589460372925
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 62,
+      "node": 874,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 492,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 101,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.05376892536878586,
+          "neighbor_distance_f32": 0.05376892536878586
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 492,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.053424812853336334,
+          "neighbor_distance_f32": 0.053424812853336334
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 63,
+      "node": 148,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 577,
+          "gain_f32": -7.450580596923828e-09,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 732,
+          "gain_f32": -0.043770067393779755,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 506,
+          "gain_f32": -0.022499196231365204,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 622,
+          "gain_f32": -0.023641251027584076,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 418,
+          "gain_f32": -0.029964089393615723,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 581,
+          "gain_f32": -0.05369284749031067,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 6,
+          "b": 594,
+          "gain_f32": -0.01995258778333664,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 7,
+          "b": 995,
+          "gain_f32": -0.03105263039469719,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 8,
+          "b": 714,
+          "gain_f32": -0.06995910406112671,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 9,
+          "b": 459,
+          "gain_f32": -0.09020300209522247,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 10,
+          "b": 48,
+          "gain_f32": -0.03182079643011093,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 11,
+          "b": 197,
+          "gain_f32": -0.03506654128432274,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 12,
+          "b": 965,
+          "gain_f32": -0.07007332891225815,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 13,
+          "b": 185,
+          "gain_f32": -0.028956294059753418,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 14,
+          "b": 343,
+          "gain_f32": -0.06076609343290329,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 15,
+          "b": 416,
+          "gain_f32": -0.002166643738746643,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 16,
+          "b": 639,
+          "gain_f32": -0.07637202739715576,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 17,
+          "b": 819,
+          "gain_f32": -0.005527503788471222,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 18,
+          "b": 32,
+          "gain_f32": -0.030285771936178207,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 19,
+          "b": 415,
+          "gain_f32": -0.01677771657705307,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 20,
+          "b": 275,
+          "gain_f32": -0.0296919047832489,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 21,
+          "b": 229,
+          "gain_f32": -0.031327567994594574,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 22,
+          "b": 565,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 10,
+          "edge_distance_f32": 0.06885477155447006,
+          "neighbor_distance_f32": 0.06885477155447006
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 577,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.022132065147161484,
+          "neighbor_distance_f32": 0.022132065147161484
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 64,
+      "node": 506,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 622,
+          "gain_f32": 1.862645149230957e-09,
+          "selected_at_this_point": true
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 732,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.024637678638100624,
+          "neighbor_distance_f32": 0.024637678638100624
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 622,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.024316061288118362,
+          "neighbor_distance_f32": 0.024316061288118362
+        }
+      ],
+      "selected_gain_f32": 1.862645149230957e-09,
+      "selected_move": [
+        732,
+        506,
+        506,
+        622
+      ],
+      "route_updates": [],
+      "insertions": [
+        {
+          "node": 732,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 506,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 506,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 622,
+          "already_processed": false,
+          "inserted": false
+        }
+      ],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 65,
+      "node": 320,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 68,
+          "gain_f32": -0.017056073993444443,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 670,
+          "gain_f32": -0.012316327542066574,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 68,
+          "gain_f32": -0.015803681686520576,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 670,
+          "gain_f32": -0.011613208800554276,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 631,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 631,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.023644043132662773,
+          "neighbor_distance_f32": 0.023644043132662773
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 726,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.02743985690176487,
+          "neighbor_distance_f32": 0.02743985690176487
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 79
+    },
+    {
+      "cursor": 66,
+      "node": 714,
+      "checklist_size_before": 79,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 343,
+          "gain_f32": 1.862645149230957e-09,
+          "selected_at_this_point": true
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 581,
+          "gain_f32": -0.014696424826979637,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 343,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.011378479190170765,
+          "neighbor_distance_f32": 0.011378479190170765
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 965,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.016568278893828392,
+          "neighbor_distance_f32": 0.016568278893828392
+        }
+      ],
+      "selected_gain_f32": 1.862645149230957e-09,
+      "selected_move": [
+        714,
+        343,
+        965,
+        714
+      ],
+      "route_updates": [],
+      "insertions": [
+        {
+          "node": 714,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 343,
+          "already_processed": false,
+          "inserted": true
+        },
+        {
+          "node": 965,
+          "already_processed": false,
+          "inserted": false
+        },
+        {
+          "node": 714,
+          "already_processed": true,
+          "inserted": false
+        }
+      ],
+      "checklist_size_after": 80
+    },
+    {
+      "cursor": 67,
+      "node": 965,
+      "checklist_size_before": 80,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 581,
+          "gain_f32": -0.012095924466848373,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 581,
+          "gain_f32": -0.014972735196352005,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 714,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 714,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.016568278893828392,
+          "neighbor_distance_f32": 0.016568278893828392
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 639,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.02290368266403675,
+          "neighbor_distance_f32": 0.02290368266403675
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 80
+    },
+    {
+      "cursor": 68,
+      "node": 639,
+      "checklist_size_before": 80,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 459,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 965,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.02290368266403675,
+          "neighbor_distance_f32": 0.02290368266403675
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 459,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.00771979009732604,
+          "neighbor_distance_f32": 0.00771979009732604
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 80
+    },
+    {
+      "cursor": 69,
+      "node": 622,
+      "checklist_size_before": 80,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 418,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 995,
+          "gain_f32": -0.040911488234996796,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 48,
+          "gain_f32": -0.008416209369897842,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 506,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.024316061288118362,
+          "neighbor_distance_f32": 0.024316061288118362
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 418,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.006730143912136555,
+          "neighbor_distance_f32": 0.006730143912136555
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 80
+    },
+    {
+      "cursor": 70,
+      "node": 581,
+      "checklist_size_before": 80,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 732,
+          "gain_f32": -1.862645149230957e-09,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 714,
+          "gain_f32": -0.02775140106678009,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 965,
+          "gain_f32": -0.012095924466848373,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 594,
+          "gain_f32": -0.030481630936264992,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 459,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 28,
+          "edge_distance_f32": 0.02594372257590294,
+          "neighbor_distance_f32": 0.02594372257590294
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 732,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.010745538398623466,
+          "neighbor_distance_f32": 0.010745538398623466
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 80
+    },
+    {
+      "cursor": 71,
+      "node": 569,
+      "checklist_size_before": 80,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 208,
+          "gain_f32": 9.313225746154785e-10,
+          "selected_at_this_point": true
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 208,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.009580088779330254,
+          "neighbor_distance_f32": 0.009580088779330254
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 355,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.011353337205946445,
+          "neighbor_distance_f32": 0.011353337205946445
+        }
+      ],
+      "selected_gain_f32": 9.313225746154785e-10,
+      "selected_move": [
+        569,
+        208,
+        355,
+        569
+      ],
+      "route_updates": [],
+      "insertions": [
+        {
+          "node": 569,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 208,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 355,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 569,
+          "already_processed": true,
+          "inserted": false
+        }
+      ],
+      "checklist_size_after": 80
+    },
+    {
+      "cursor": 72,
+      "node": 966,
+      "checklist_size_before": 80,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 377,
+          "gain_f32": 3.725290298461914e-09,
+          "selected_at_this_point": true
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 777,
+          "gain_f32": -0.013511057943105698,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 786,
+          "gain_f32": -0.04749036580324173,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 377,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.015000121667981148,
+          "neighbor_distance_f32": 0.015000121667981148
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 493,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 29,
+          "edge_distance_f32": 0.03880937770009041,
+          "neighbor_distance_f32": 0.03880937770009041
+        }
+      ],
+      "selected_gain_f32": 3.725290298461914e-09,
+      "selected_move": [
+        966,
+        377,
+        493,
+        966
+      ],
+      "route_updates": [],
+      "insertions": [
+        {
+          "node": 966,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 377,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 493,
+          "already_processed": false,
+          "inserted": true
+        },
+        {
+          "node": 966,
+          "already_processed": true,
+          "inserted": false
+        }
+      ],
+      "checklist_size_after": 81
+    },
+    {
+      "cursor": 73,
+      "node": 786,
+      "checklist_size_before": 81,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 777,
+          "gain_f32": -1.862645149230957e-09,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 175,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.02544250525534153,
+          "neighbor_distance_f32": 0.02544250525534153
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 777,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.010510601103305817,
+          "neighbor_distance_f32": 0.010510601103305817
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 81
+    },
+    {
+      "cursor": 74,
+      "node": 276,
+      "checklist_size_before": 81,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 345,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 697,
+          "gain_f32": -0.02806433103978634,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 777,
+          "gain_f32": -0.027041925117373466,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 786,
+          "gain_f32": -0.02180260792374611,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 4,
+          "b": 377,
+          "gain_f32": -0.04370984807610512,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 345,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.0226433202624321,
+          "neighbor_distance_f32": 0.0226433202624321
+        },
+        {
+          "direction": 1,
+          "rank": 5,
+          "b": 767,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 27,
+          "edge_distance_f32": 0.03441319987177849,
+          "neighbor_distance_f32": 0.03441319987177849
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 81
+    },
+    {
+      "cursor": 75,
+      "node": 530,
+      "checklist_size_before": 81,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 903,
+          "gain_f32": 1.862645149230957e-09,
+          "selected_at_this_point": true
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 439,
+          "gain_f32": -0.007892776280641556,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 527,
+          "gain_f32": -0.018385041505098343,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 504,
+          "gain_f32": -0.017337830737233162,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 903,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.008179793134331703,
+          "neighbor_distance_f32": 0.008179793134331703
+        },
+        {
+          "direction": 1,
+          "rank": 4,
+          "b": 781,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 28,
+          "edge_distance_f32": 0.02552952989935875,
+          "neighbor_distance_f32": 0.02552952989935875
+        }
+      ],
+      "selected_gain_f32": 1.862645149230957e-09,
+      "selected_move": [
+        530,
+        903,
+        781,
+        530
+      ],
+      "route_updates": [],
+      "insertions": [
+        {
+          "node": 530,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 903,
+          "already_processed": false,
+          "inserted": true
+        },
+        {
+          "node": 781,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 530,
+          "already_processed": true,
+          "inserted": false
+        }
+      ],
+      "checklist_size_after": 82
+    },
+    {
+      "cursor": 76,
+      "node": 527,
+      "checklist_size_before": 82,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 530,
+          "gain_f32": -0.018707968294620514,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 530,
+          "gain_f32": -0.018385041505098343,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 504,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 903,
+          "gain_f32": -0.017407914623618126,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 439,
+          "gain_f32": -0.02582383155822754,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 4,
+          "b": 237,
+          "gain_f32": -0.009305495768785477,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 5,
+          "b": 129,
+          "gain_f32": -0.023439832031726837,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 504,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.014118457213044167,
+          "neighbor_distance_f32": 0.014118457213044167
+        },
+        {
+          "direction": 1,
+          "rank": 6,
+          "b": 511,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 26,
+          "edge_distance_f32": 0.033655039966106415,
+          "neighbor_distance_f32": 0.033655039966106415
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 82
+    },
+    {
+      "cursor": 77,
+      "node": 185,
+      "checklist_size_before": 82,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 197,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 229,
+          "gain_f32": -0.020694293081760406,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 2,
+          "b": 995,
+          "gain_f32": -0.022438539192080498,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 3,
+          "b": 32,
+          "gain_f32": -0.025707321241497993,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 4,
+          "b": 352,
+          "gain_f32": -0.016624631360173225,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 197,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.011407895013689995,
+          "neighbor_distance_f32": 0.011407895013689995
+        },
+        {
+          "direction": 1,
+          "rank": 5,
+          "b": 415,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 27,
+          "edge_distance_f32": 0.021979747340083122,
+          "neighbor_distance_f32": 0.021979747340083122
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 82
+    },
+    {
+      "cursor": 78,
+      "node": 439,
+      "checklist_size_before": 82,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 903,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 530,
+          "gain_f32": -0.004665102809667587,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 129,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 30,
+          "edge_distance_f32": 0.016685182228684425,
+          "neighbor_distance_f32": 0.016685182228684425
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 903,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.003075295826420188,
+          "neighbor_distance_f32": 0.003075295826420188
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 82
+    },
+    {
+      "cursor": 79,
+      "node": 343,
+      "checklist_size_before": 82,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 714,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 594,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.013171096332371235,
+          "neighbor_distance_f32": 0.013171096332371235
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 714,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.011378479190170765,
+          "neighbor_distance_f32": 0.011378479190170765
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 82
+    },
+    {
+      "cursor": 80,
+      "node": 493,
+      "checklist_size_before": 82,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 149,
+          "gain_f32": 3.725290298461914e-09,
+          "selected_at_this_point": true
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 966,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.03880937770009041,
+          "neighbor_distance_f32": 0.03880937770009041
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 149,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.03787166625261307,
+          "neighbor_distance_f32": 0.03787166625261307
+        }
+      ],
+      "selected_gain_f32": 3.725290298461914e-09,
+      "selected_move": [
+        966,
+        493,
+        493,
+        149
+      ],
+      "route_updates": [],
+      "insertions": [
+        {
+          "node": 966,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 493,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 493,
+          "already_processed": true,
+          "inserted": false
+        },
+        {
+          "node": 149,
+          "already_processed": false,
+          "inserted": true
+        }
+      ],
+      "checklist_size_after": 83
+    },
+    {
+      "cursor": 81,
+      "node": 903,
+      "checklist_size_before": 83,
+      "evaluations": [
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 439,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 439,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 32,
+          "edge_distance_f32": 0.003075295826420188,
+          "neighbor_distance_f32": 0.003075295826420188
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 530,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.008179793134331703,
+          "neighbor_distance_f32": 0.008179793134331703
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 83
+    },
+    {
+      "cursor": 82,
+      "node": 149,
+      "checklist_size_before": 83,
+      "evaluations": [
+        {
+          "direction": 0,
+          "rank": 0,
+          "b": 579,
+          "gain_f32": -0.015910131856799126,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 1,
+          "b": 433,
+          "gain_f32": 0.0,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 2,
+          "b": 213,
+          "gain_f32": -0.02316555753350258,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 3,
+          "b": 542,
+          "gain_f32": -0.03325429558753967,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 4,
+          "b": 899,
+          "gain_f32": -0.06653526425361633,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 0,
+          "rank": 5,
+          "b": 396,
+          "gain_f32": -0.04481077194213867,
+          "selected_at_this_point": false
+        },
+        {
+          "direction": 1,
+          "rank": 0,
+          "b": 579,
+          "gain_f32": -0.0007887538522481918,
+          "selected_at_this_point": false
+        }
+      ],
+      "prunes": [
+        {
+          "direction": 0,
+          "rank": 6,
+          "b": 493,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 26,
+          "edge_distance_f32": 0.03787166625261307,
+          "neighbor_distance_f32": 0.03787166625261307
+        },
+        {
+          "direction": 1,
+          "rank": 1,
+          "b": 433,
+          "reason": "distance_early_break",
+          "remaining_including_boundary": 31,
+          "edge_distance_f32": 0.020879335701465607,
+          "neighbor_distance_f32": 0.020879335701465607
+        }
+      ],
+      "selected_gain_f32": 0.0,
+      "selected_move": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "insertions": [],
+      "checklist_size_after": 83
+    }
+  ]
+}

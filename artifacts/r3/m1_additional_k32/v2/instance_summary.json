@@ -1,0 +1,245 @@
+{
+  "instances": [
+    {
+      "instance": 0,
+      "robust_cases": 4,
+      "improvement": 0.036431601324371954,
+      "relative_improvement": 0.001528726735910034,
+      "pass1_processed": 69.25,
+      "pass2_processed": 73.0,
+      "pass1_evaluations": 710,
+      "pass2_evaluations": 328.75,
+      "pass1_accepted": 41.5,
+      "pass2_accepted": 15.75,
+      "pass2_processed_requeue_attempts": 41.0,
+      "extra_eval_ratio": 0.46038058580589813,
+      "total_eval_ratio": 1.4603805858058982,
+      "second_pass_unlogged_seconds": 7.838875000043544e-05,
+      "offline_final_robust_k32": 10.25
+    },
+    {
+      "instance": 1,
+      "robust_cases": 4,
+      "improvement": 0.11943626623830461,
+      "relative_improvement": 0.005020708892848207,
+      "pass1_processed": 55.0,
+      "pass2_processed": 58.75,
+      "pass1_evaluations": 570,
+      "pass2_evaluations": 240,
+      "pass1_accepted": 30.5,
+      "pass2_accepted": 13.5,
+      "pass2_processed_requeue_attempts": 31.75,
+      "extra_eval_ratio": 0.40386723818973386,
+      "total_eval_ratio": 1.403867238189734,
+      "second_pass_unlogged_seconds": 8.198599999964529e-05,
+      "offline_final_robust_k32": 5.5
+    },
+    {
+      "instance": 2,
+      "robust_cases": 4,
+      "improvement": 0.05368559576533283,
+      "relative_improvement": 0.0022662536565652034,
+      "pass1_processed": 59.5,
+      "pass2_processed": 64.5,
+      "pass1_evaluations": 581.75,
+      "pass2_evaluations": 345.0,
+      "pass1_accepted": 31.0,
+      "pass2_accepted": 15.25,
+      "pass2_processed_requeue_attempts": 38.75,
+      "extra_eval_ratio": 0.59559471897365,
+      "total_eval_ratio": 1.5955947189736501,
+      "second_pass_unlogged_seconds": 8.616000000039037e-05,
+      "offline_final_robust_k32": 6
+    },
+    {
+      "instance": 3,
+      "robust_cases": 4,
+      "improvement": 0.08688194005678262,
+      "relative_improvement": 0.0036080794534830295,
+      "pass1_processed": 68.25,
+      "pass2_processed": 74.25,
+      "pass1_evaluations": 657.75,
+      "pass2_evaluations": 351.5,
+      "pass1_accepted": 38.25,
+      "pass2_accepted": 19.5,
+      "pass2_processed_requeue_attempts": 51.5,
+      "extra_eval_ratio": 0.541162669136962,
+      "total_eval_ratio": 1.541162669136962,
+      "second_pass_unlogged_seconds": 8.648750000261884e-05,
+      "offline_final_robust_k32": 14.25
+    },
+    {
+      "instance": 4,
+      "robust_cases": 4,
+      "improvement": 0.06321533440274596,
+      "relative_improvement": 0.002662106539462339,
+      "pass1_processed": 73,
+      "pass2_processed": 76.75,
+      "pass1_evaluations": 711.25,
+      "pass2_evaluations": 386.25,
+      "pass1_accepted": 37.75,
+      "pass2_accepted": 16,
+      "pass2_processed_requeue_attempts": 39,
+      "extra_eval_ratio": 0.5415100288138645,
+      "total_eval_ratio": 1.5415100288138643,
+      "second_pass_unlogged_seconds": 8.321025000057602e-05,
+      "offline_final_robust_k32": 10
+    },
+    {
+      "instance": 5,
+      "robust_cases": 3,
+      "improvement": 0.029674880504990675,
+      "relative_improvement": 0.0012750633681582607,
+      "pass1_processed": 58.25,
+      "pass2_processed": 62.75,
+      "pass1_evaluations": 627.75,
+      "pass2_evaluations": 284,
+      "pass1_accepted": 33.0,
+      "pass2_accepted": 14,
+      "pass2_processed_requeue_attempts": 35.75,
+      "extra_eval_ratio": 0.44260039325104406,
+      "total_eval_ratio": 1.4426003932510438,
+      "second_pass_unlogged_seconds": 8.50570000014983e-05,
+      "offline_final_robust_k32": 5.0
+    },
+    {
+      "instance": 6,
+      "robust_cases": 4,
+      "improvement": 0.100426880626725,
+      "relative_improvement": 0.004254308239883921,
+      "pass1_processed": 71.25,
+      "pass2_processed": 75.0,
+      "pass1_evaluations": 688.25,
+      "pass2_evaluations": 351.75,
+      "pass1_accepted": 41.25,
+      "pass2_accepted": 19.5,
+      "pass2_processed_requeue_attempts": 50.75,
+      "extra_eval_ratio": 0.5221480811208015,
+      "total_eval_ratio": 1.5221480811208015,
+      "second_pass_unlogged_seconds": 8.105250000234321e-05,
+      "offline_final_robust_k32": 10.5
+    },
+    {
+      "instance": 7,
+      "robust_cases": 4,
+      "improvement": 0.04752002119545207,
+      "relative_improvement": 0.0020024646026312334,
+      "pass1_processed": 73,
+      "pass2_processed": 78.5,
+      "pass1_evaluations": 709.75,
+      "pass2_evaluations": 321.5,
+      "pass1_accepted": 43,
+      "pass2_accepted": 20.5,
+      "pass2_processed_requeue_attempts": 51.75,
+      "extra_eval_ratio": 0.442024488548101,
+      "total_eval_ratio": 1.442024488548101,
+      "second_pass_unlogged_seconds": 8.183449999776826e-05,
+      "offline_final_robust_k32": 7.0
+    }
+  ],
+  "between_instance_dispersion": {
+    "improvement": {
+      "mean": 0.06715906501433822,
+      "median": 0.058450465084039394,
+      "minimum": 0.029674880504990675,
+      "maximum": 0.11943626623830461,
+      "sample_sd": 0.03198362452296165
+    },
+    "relative_improvement": {
+      "mean": 0.0028272139361177786,
+      "median": 0.0024641800980137714,
+      "minimum": 0.0012750633681582607,
+      "maximum": 0.005020708892848207,
+      "sample_sd": 0.0013403175518578018
+    },
+    "pass1_processed": {
+      "mean": 65.9375,
+      "median": 68.75,
+      "minimum": 55.0,
+      "maximum": 73,
+      "sample_sd": 7.215744194864054
+    },
+    "pass2_processed": {
+      "mean": 70.4375,
+      "median": 73.625,
+      "minimum": 58.75,
+      "maximum": 78.5,
+      "sample_sd": 7.345734914123394
+    },
+    "pass1_evaluations": {
+      "mean": 657.0625,
+      "median": 673.0,
+      "minimum": 570,
+      "maximum": 711.25,
+      "sample_sd": 58.06258169300727
+    },
+    "pass2_evaluations": {
+      "mean": 326.09375,
+      "median": 336.875,
+      "minimum": 240,
+      "maximum": 386.25,
+      "sample_sd": 45.50057642884475
+    },
+    "pass1_accepted": {
+      "mean": 37.03125,
+      "median": 38.0,
+      "minimum": 30.5,
+      "maximum": 43,
+      "sample_sd": 4.93789555377592
+    },
+    "pass2_accepted": {
+      "mean": 16.75,
+      "median": 15.875,
+      "minimum": 13.5,
+      "maximum": 20.5,
+      "sample_sd": 2.7025120589132308
+    },
+    "pass2_processed_requeue_attempts": {
+      "mean": 42.53125,
+      "median": 40.0,
+      "minimum": 31.75,
+      "maximum": 51.75,
+      "sample_sd": 7.785560696388081
+    },
+    "extra_eval_ratio": {
+      "mean": 0.4936610254800069,
+      "median": 0.4912643334633498,
+      "minimum": 0.40386723818973386,
+      "maximum": 0.59559471897365,
+      "sample_sd": 0.06567447372051666
+    },
+    "total_eval_ratio": {
+      "mean": 1.493661025480007,
+      "median": 1.49126433346335,
+      "minimum": 1.403867238189734,
+      "maximum": 1.5955947189736501,
+      "sample_sd": 0.06567447372051667
+    },
+    "second_pass_unlogged_seconds": {
+      "mean": 8.302206250065947e-05,
+      "median": 8.259812500011066e-05,
+      "minimum": 7.838875000043544e-05,
+      "maximum": 8.648750000261884e-05,
+      "sample_sd": 2.7739292751164347e-06
+    },
+    "offline_final_robust_k32": {
+      "mean": 8.5625,
+      "median": 8.5,
+      "minimum": 5.0,
+      "maximum": 14.25,
+      "sample_sd": 3.209222202163188
+    }
+  },
+  "decision": "M1 EXPLORATORY SIGNAL",
+  "signal_instances": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "nesting": "phases within seeds within independent instances"
+}

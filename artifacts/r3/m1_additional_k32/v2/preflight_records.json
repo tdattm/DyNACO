@@ -1,0 +1,578 @@
+[
+  {
+    "case": "i0_s31415_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 60,
+      "unreached_nodes": 940,
+      "candidate_evaluations": 635,
+      "pruned_neighbor_slots": 3205,
+      "evaluated_not_final_chosen": 595,
+      "accepted_moves": 40,
+      "processed_node_reinsertion_attempts": 81,
+      "candidate_unavailable_directed_anchor_pairs": 58020
+    }
+  },
+  {
+    "case": "i0_s31415_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 93,
+      "unreached_nodes": 907,
+      "candidate_evaluations": 1047,
+      "pruned_neighbor_slots": 4905,
+      "evaluated_not_final_chosen": 993,
+      "accepted_moves": 54,
+      "processed_node_reinsertion_attempts": 113,
+      "candidate_unavailable_directed_anchor_pairs": 89931
+    }
+  },
+  {
+    "case": "i0_s27182_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 67,
+      "unreached_nodes": 933,
+      "candidate_evaluations": 603,
+      "pruned_neighbor_slots": 3685,
+      "evaluated_not_final_chosen": 565,
+      "accepted_moves": 38,
+      "processed_node_reinsertion_attempts": 81,
+      "candidate_unavailable_directed_anchor_pairs": 64789
+    }
+  },
+  {
+    "case": "i0_s27182_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 57,
+      "unreached_nodes": 943,
+      "candidate_evaluations": 555,
+      "pruned_neighbor_slots": 3093,
+      "evaluated_not_final_chosen": 521,
+      "accepted_moves": 34,
+      "processed_node_reinsertion_attempts": 73,
+      "candidate_unavailable_directed_anchor_pairs": 55119
+    }
+  },
+  {
+    "case": "i1_s31415_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 38,
+      "unreached_nodes": 962,
+      "candidate_evaluations": 321,
+      "pruned_neighbor_slots": 2111,
+      "evaluated_not_final_chosen": 300,
+      "accepted_moves": 21,
+      "processed_node_reinsertion_attempts": 43,
+      "candidate_unavailable_directed_anchor_pairs": 36746
+    }
+  },
+  {
+    "case": "i1_s31415_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 67,
+      "unreached_nodes": 933,
+      "candidate_evaluations": 739,
+      "pruned_neighbor_slots": 3549,
+      "evaluated_not_final_chosen": 704,
+      "accepted_moves": 35,
+      "processed_node_reinsertion_attempts": 81,
+      "candidate_unavailable_directed_anchor_pairs": 64789
+    }
+  },
+  {
+    "case": "i1_s27182_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 45,
+      "unreached_nodes": 955,
+      "candidate_evaluations": 459,
+      "pruned_neighbor_slots": 2421,
+      "evaluated_not_final_chosen": 431,
+      "accepted_moves": 28,
+      "processed_node_reinsertion_attempts": 56,
+      "candidate_unavailable_directed_anchor_pairs": 43515
+    }
+  },
+  {
+    "case": "i1_s27182_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 70,
+      "unreached_nodes": 930,
+      "candidate_evaluations": 761,
+      "pruned_neighbor_slots": 3719,
+      "evaluated_not_final_chosen": 723,
+      "accepted_moves": 38,
+      "processed_node_reinsertion_attempts": 77,
+      "candidate_unavailable_directed_anchor_pairs": 67690
+    }
+  },
+  {
+    "case": "i2_s31415_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 56,
+      "unreached_nodes": 944,
+      "candidate_evaluations": 506,
+      "pruned_neighbor_slots": 3078,
+      "evaluated_not_final_chosen": 477,
+      "accepted_moves": 29,
+      "processed_node_reinsertion_attempts": 59,
+      "candidate_unavailable_directed_anchor_pairs": 54152
+    }
+  },
+  {
+    "case": "i2_s31415_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 70,
+      "unreached_nodes": 930,
+      "candidate_evaluations": 845,
+      "pruned_neighbor_slots": 3635,
+      "evaluated_not_final_chosen": 813,
+      "accepted_moves": 32,
+      "processed_node_reinsertion_attempts": 68,
+      "candidate_unavailable_directed_anchor_pairs": 67690
+    }
+  },
+  {
+    "case": "i2_s27182_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 55,
+      "unreached_nodes": 945,
+      "candidate_evaluations": 517,
+      "pruned_neighbor_slots": 3003,
+      "evaluated_not_final_chosen": 483,
+      "accepted_moves": 34,
+      "processed_node_reinsertion_attempts": 75,
+      "candidate_unavailable_directed_anchor_pairs": 53185
+    }
+  },
+  {
+    "case": "i2_s27182_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 57,
+      "unreached_nodes": 943,
+      "candidate_evaluations": 459,
+      "pruned_neighbor_slots": 3189,
+      "evaluated_not_final_chosen": 430,
+      "accepted_moves": 29,
+      "processed_node_reinsertion_attempts": 56,
+      "candidate_unavailable_directed_anchor_pairs": 55119
+    }
+  },
+  {
+    "case": "i3_s31415_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 69,
+      "unreached_nodes": 931,
+      "candidate_evaluations": 748,
+      "pruned_neighbor_slots": 3668,
+      "evaluated_not_final_chosen": 711,
+      "accepted_moves": 37,
+      "processed_node_reinsertion_attempts": 75,
+      "candidate_unavailable_directed_anchor_pairs": 66723
+    }
+  },
+  {
+    "case": "i3_s31415_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 63,
+      "unreached_nodes": 937,
+      "candidate_evaluations": 576,
+      "pruned_neighbor_slots": 3456,
+      "evaluated_not_final_chosen": 547,
+      "accepted_moves": 29,
+      "processed_node_reinsertion_attempts": 57,
+      "candidate_unavailable_directed_anchor_pairs": 60921
+    }
+  },
+  {
+    "case": "i3_s27182_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 66,
+      "unreached_nodes": 934,
+      "candidate_evaluations": 556,
+      "pruned_neighbor_slots": 3668,
+      "evaluated_not_final_chosen": 513,
+      "accepted_moves": 43,
+      "processed_node_reinsertion_attempts": 96,
+      "candidate_unavailable_directed_anchor_pairs": 63822
+    }
+  },
+  {
+    "case": "i3_s27182_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 75,
+      "unreached_nodes": 925,
+      "candidate_evaluations": 751,
+      "pruned_neighbor_slots": 4049,
+      "evaluated_not_final_chosen": 707,
+      "accepted_moves": 44,
+      "processed_node_reinsertion_attempts": 95,
+      "candidate_unavailable_directed_anchor_pairs": 72525
+    }
+  },
+  {
+    "case": "i4_s31415_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 63,
+      "unreached_nodes": 937,
+      "candidate_evaluations": 670,
+      "pruned_neighbor_slots": 3362,
+      "evaluated_not_final_chosen": 638,
+      "accepted_moves": 32,
+      "processed_node_reinsertion_attempts": 62,
+      "candidate_unavailable_directed_anchor_pairs": 60921
+    }
+  },
+  {
+    "case": "i4_s31415_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 67,
+      "unreached_nodes": 933,
+      "candidate_evaluations": 681,
+      "pruned_neighbor_slots": 3607,
+      "evaluated_not_final_chosen": 643,
+      "accepted_moves": 38,
+      "processed_node_reinsertion_attempts": 72,
+      "candidate_unavailable_directed_anchor_pairs": 64789
+    }
+  },
+  {
+    "case": "i4_s27182_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 86,
+      "unreached_nodes": 914,
+      "candidate_evaluations": 683,
+      "pruned_neighbor_slots": 4821,
+      "evaluated_not_final_chosen": 642,
+      "accepted_moves": 41,
+      "processed_node_reinsertion_attempts": 77,
+      "candidate_unavailable_directed_anchor_pairs": 83162
+    }
+  },
+  {
+    "case": "i4_s27182_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 76,
+      "unreached_nodes": 924,
+      "candidate_evaluations": 811,
+      "pruned_neighbor_slots": 4053,
+      "evaluated_not_final_chosen": 771,
+      "accepted_moves": 40,
+      "processed_node_reinsertion_attempts": 80,
+      "candidate_unavailable_directed_anchor_pairs": 73492
+    }
+  },
+  {
+    "case": "i5_s31415_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 42,
+      "unreached_nodes": 958,
+      "candidate_evaluations": 390,
+      "pruned_neighbor_slots": 2298,
+      "evaluated_not_final_chosen": 364,
+      "accepted_moves": 26,
+      "processed_node_reinsertion_attempts": 58,
+      "candidate_unavailable_directed_anchor_pairs": 40614
+    }
+  },
+  {
+    "case": "i5_s31415_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 71,
+      "unreached_nodes": 929,
+      "candidate_evaluations": 822,
+      "pruned_neighbor_slots": 3722,
+      "evaluated_not_final_chosen": 779,
+      "accepted_moves": 43,
+      "processed_node_reinsertion_attempts": 85,
+      "candidate_unavailable_directed_anchor_pairs": 68657
+    }
+  },
+  {
+    "case": "i5_s27182_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 53,
+      "unreached_nodes": 947,
+      "candidate_evaluations": 523,
+      "pruned_neighbor_slots": 2869,
+      "evaluated_not_final_chosen": 495,
+      "accepted_moves": 28,
+      "processed_node_reinsertion_attempts": 60,
+      "candidate_unavailable_directed_anchor_pairs": 51251
+    }
+  },
+  {
+    "case": "i5_s27182_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 67,
+      "unreached_nodes": 933,
+      "candidate_evaluations": 776,
+      "pruned_neighbor_slots": 3512,
+      "evaluated_not_final_chosen": 741,
+      "accepted_moves": 35,
+      "processed_node_reinsertion_attempts": 64,
+      "candidate_unavailable_directed_anchor_pairs": 64789
+    }
+  },
+  {
+    "case": "i6_s31415_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 65,
+      "unreached_nodes": 935,
+      "candidate_evaluations": 614,
+      "pruned_neighbor_slots": 3546,
+      "evaluated_not_final_chosen": 576,
+      "accepted_moves": 38,
+      "processed_node_reinsertion_attempts": 78,
+      "candidate_unavailable_directed_anchor_pairs": 62855
+    }
+  },
+  {
+    "case": "i6_s31415_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 76,
+      "unreached_nodes": 924,
+      "candidate_evaluations": 850,
+      "pruned_neighbor_slots": 4014,
+      "evaluated_not_final_chosen": 808,
+      "accepted_moves": 42,
+      "processed_node_reinsertion_attempts": 90,
+      "candidate_unavailable_directed_anchor_pairs": 73492
+    }
+  },
+  {
+    "case": "i6_s27182_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 66,
+      "unreached_nodes": 934,
+      "candidate_evaluations": 503,
+      "pruned_neighbor_slots": 3721,
+      "evaluated_not_final_chosen": 465,
+      "accepted_moves": 38,
+      "processed_node_reinsertion_attempts": 89,
+      "candidate_unavailable_directed_anchor_pairs": 63822
+    }
+  },
+  {
+    "case": "i6_s27182_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 78,
+      "unreached_nodes": 922,
+      "candidate_evaluations": 786,
+      "pruned_neighbor_slots": 4206,
+      "evaluated_not_final_chosen": 739,
+      "accepted_moves": 47,
+      "processed_node_reinsertion_attempts": 106,
+      "candidate_unavailable_directed_anchor_pairs": 75426
+    }
+  },
+  {
+    "case": "i7_s31415_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 91,
+      "unreached_nodes": 909,
+      "candidate_evaluations": 902,
+      "pruned_neighbor_slots": 4922,
+      "evaluated_not_final_chosen": 848,
+      "accepted_moves": 54,
+      "processed_node_reinsertion_attempts": 109,
+      "candidate_unavailable_directed_anchor_pairs": 87997
+    }
+  },
+  {
+    "case": "i7_s31415_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 79,
+      "unreached_nodes": 921,
+      "candidate_evaluations": 848,
+      "pruned_neighbor_slots": 4208,
+      "evaluated_not_final_chosen": 804,
+      "accepted_moves": 44,
+      "processed_node_reinsertion_attempts": 94,
+      "candidate_unavailable_directed_anchor_pairs": 76393
+    }
+  },
+  {
+    "case": "i7_s27182_t499",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 75,
+      "unreached_nodes": 925,
+      "candidate_evaluations": 639,
+      "pruned_neighbor_slots": 4161,
+      "evaluated_not_final_chosen": 598,
+      "accepted_moves": 41,
+      "processed_node_reinsertion_attempts": 80,
+      "candidate_unavailable_directed_anchor_pairs": 72525
+    }
+  },
+  {
+    "case": "i7_s27182_t999",
+    "status": "PASS",
+    "complete_event_comparison": true,
+    "exact_array_and_closure": true,
+    "final_checklist_exact": true,
+    "float32_delta_exact": true,
+    "independent_checks": {
+      "processed_nodes": 47,
+      "unreached_nodes": 953,
+      "candidate_evaluations": 450,
+      "pruned_neighbor_slots": 2558,
+      "evaluated_not_final_chosen": 417,
+      "accepted_moves": 33,
+      "processed_node_reinsertion_attempts": 71,
+      "candidate_unavailable_directed_anchor_pairs": 45449
+    }
+  }
+]

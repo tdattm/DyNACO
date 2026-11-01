@@ -1,0 +1,13 @@
+{
+  "v1_commit": "1e6884fed9eb349ac7c3a2bfeab3f975131a6e95",
+  "v1_protocol_sha256": "aecb4747ed0611cb5343b7e07a160665e1bb7ade7b43f04648c0f5b7cd94840f",
+  "v2_protocol_sha256": "a91acd1b29b8fdea20b45f20aa124cd93cd451b55b9157a14ca5622a0754a970",
+  "v1_decision": "INCONCLUSIVE; no second-pass outcome",
+  "scientific_design_changed": false,
+  "repair": "Canonical JSON serialization with allow_nan=False and every field retained; strict complete representation equality",
+  "additional_checks": [
+    "10 deterministic comparator tests, no native replay",
+    "32 control-only preflight cases with independent trace validation"
+  ],
+  "failure_policy": "Stop and preserve evidence; no v3 retry"
+}
