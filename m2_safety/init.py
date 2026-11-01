@@ -6,6 +6,16 @@ from .approval import validate_bundle
 
 class Stop(BaseException):pass
 def signal_stop(number,frame):raise Stop('OWNER_SIGNAL_'+str(number))
+def message(stream,buffer):
+    if b'\n' not in buffer:
+        try:chunk=os.read(stream.fileno(),8192)
+        except BlockingIOError:return None,buffer
+        if not chunk:raise RuntimeError('disk watchdog exited')
+        buffer+=chunk
+    if len(buffer)>8192:raise RuntimeError('disk watchdog message too large')
+    if b'\n' not in buffer:return None,buffer
+    line,buffer=buffer.split(b'\n',1)
+    return json.loads(line),buffer
 def main():
     if os.getpid()!=1:raise RuntimeError('must run as namespace init')
     for s in (signal.SIGTERM,signal.SIGINT,signal.SIGHUP):signal.signal(s,signal_stop)
@@ -30,12 +40,14 @@ def main():
             # Sealed capability can only be inherited by the contained launch.
             grant=sealed_grant(dict(mode='principal',spec_file=str(specfile),spec_sha256=sha(specfile),implementation_sha256=implementation(),pid_namespace=Path('/proc/1/ns/pid').stat().st_ino,registration_sha256=sha(spec['registration']),authorization_file=str(Path(spec['execution_authorization']).resolve()),authorization_sha256=sha(spec['execution_authorization']),dataset_manifest_sha256=sha(spec['dataset_manifest']),output=str(root.resolve())))
         else:grant=None
-        sampler=subprocess.Popen([sys.executable,'-m','m2_safety.sampler',str(specfile)],stdout=subprocess.PIPE,stderr=log,text=True,start_new_session=True)
+        sampler=subprocess.Popen([sys.executable,'-m','m2_safety.sampler',str(specfile)],stdout=subprocess.PIPE,stderr=log,start_new_session=True)
+        os.set_blocking(sampler.stdout.fileno(),False);buffer=b''
         selector=selectors.DefaultSelector();selector.register(sampler.stdout,selectors.EVENT_READ)
         # A valid first sample is required BEFORE worker creation.
-        ready=selector.select(timeout=2)
-        if not ready:raise RuntimeError('disk sampler startup heartbeat missing')
-        previous=json.loads(sampler.stdout.readline())
+        previous=None;ready_deadline=time.monotonic()+2
+        while previous is None:
+            if time.monotonic()>ready_deadline:raise RuntimeError('disk sampler startup heartbeat missing')
+            if selector.select(timeout=.1):previous,buffer=message(sampler.stdout,buffer)
         if 'error' in previous or previous['device']!=device or previous['free']<ADMISSION:raise RuntimeError('disk sampler startup refused')
         last=time.monotonic()
         if time.monotonic()-read(record/'admission.json')['monotonic']>2:raise RuntimeError('stale admission')
@@ -53,10 +65,10 @@ def main():
             if fixture and spec['scenario']=='supervisor_exception' and (record/'inject').exists():raise RuntimeError('synthetic init supervisor failure')
             if time.monotonic()-spec['aggregate_start_monotonic']>2700:state.fail('RESOURCE-INCONCLUSIVE','AGGREGATE_CAP');break
             events=selector.select(timeout=.1)
-            if events:
-                line=sampler.stdout.readline()
-                if not line:raise RuntimeError('disk watchdog exited')
-                sample=json.loads(line);now=time.monotonic()
+            sample=None
+            if events or b'\n' in buffer:sample,buffer=message(sampler.stdout,buffer)
+            if sample is not None:
+                now=time.monotonic()
                 if 'error' in sample:
                     state.fail('RESOURCE-INCONCLUSIVE','DISK_WRITE_ERROR' if sample.get('errno') in (28,122) else 'DISK_MONITOR_FAILURE',error=sample['error']);break
                 if sample['device']!=device:raise RuntimeError('output filesystem changed')

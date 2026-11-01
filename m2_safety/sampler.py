@@ -10,6 +10,8 @@ def main():
             if fixture=='watchdog_crash' and inject:raise RuntimeError('synthetic sampler crash')
             if fixture=='watchdog_ioerror' and inject:raise OSError(28,'synthetic disk error')
             if fixture=='watchdog_stall' and inject:time.sleep(30)
+            if fixture=='watchdog_partial' and inject:
+                os.write(sys.stdout.fileno(),b'{"partial":');time.sleep(30)
             files=[p for p in root.rglob('*') if p.is_file()] if root.exists() else []
             if root.is_symlink():raise RuntimeError('output root became symlink')
             target=root if root.exists() else parent

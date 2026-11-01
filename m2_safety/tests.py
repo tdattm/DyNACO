@@ -32,13 +32,13 @@ def approval_tests():
 
 def main():
     process=[];gates=approval_tests();watchdog=[]
-    run_dir=OUT/'dummy_run_v5';run_dir.mkdir()
+    run_dir=OUT/'dummy_run_v6';run_dir.mkdir()
     with contextlib.nullcontext(str(run_dir)) as td:
         tmp=Path(td)
         sentinel=subprocess.Popen([sys.executable,'-c','import time;time.sleep(120)'],start_new_session=True)
         sentinel_fd=os.pidfd_open(sentinel.pid)
         try:
-            for scenario in ('normal','supervisor_exception','owner_term','owner_kill','controller_term','controller_kill','parent_launcher_exit','native_stall','low_disk','serialization_low_disk','watchdog_crash','watchdog_ioerror','watchdog_stall','serialization_failure','repeated_term','insufficient'):
+            for scenario in ('normal','supervisor_exception','owner_term','owner_kill','controller_term','controller_kill','parent_launcher_exit','native_stall','low_disk','serialization_low_disk','watchdog_crash','watchdog_ioerror','watchdog_stall','watchdog_partial','serialization_failure','repeated_term','insufficient'):
                 folder=tmp/scenario;folder.mkdir();record=folder/'record';output=folder/'output'
                 internal={'owner_term':'native_stall','owner_kill':'native_stall','controller_term':'native_stall','controller_kill':'native_stall','repeated_term':'native_stall','native_stall':'low_disk'}.get(scenario,scenario)
                 spec=dict(mode='fixture',scenario=internal,record=str(record),output=str(output),nested_namespace=scenario=='normal')
