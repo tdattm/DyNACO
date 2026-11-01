@@ -2,9 +2,11 @@
 import os,sys,time,json,traceback
 from pathlib import Path
 from srr_p2.core import ROOT,read,save,sha,verify_registration,dataset,schedule,validate,complete,journal_record
+from m2_safety.guard import require
 
 def main():
     reg,rh,dm,out=sys.argv[1:];out=Path(out)
+    require('worker',reg,None,dm,out)
     launch=read(out/'launch.json');auth=launch['authorization']
     if auth.get('action')!='APPROVE_M2_PRINCIPAL_192' or auth.get('registration_sha256')!=rh or auth.get('dataset_manifest_sha256')!=sha(dm):raise ValueError('worker authorization gate')
     def phase(name):
@@ -48,6 +50,7 @@ def main():
     save(out/'study_status.json',dict(status='COMPLETE',runs=len(rows),checkpoint_load_seconds=load))
 
 if __name__=='__main__':
+    require('worker',sys.argv[1],None,sys.argv[3],Path(sys.argv[4]))
     try:main()
     except BaseException as e:
         out=Path(sys.argv[-1])
