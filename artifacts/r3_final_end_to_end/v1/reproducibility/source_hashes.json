@@ -1,0 +1,15 @@
+{
+  "r3_final/__init__.py": "96de2a7fd6aad4600fa22eb3abe6c7d622d075ef77128b5b75b9163d1f896f40",
+  "r3_final/core.py": "95540a0996f7e1448b86a2609935d6a5feb42c2d82fcc63c6e7b2762d1204ca0",
+  "r3_final/execute.py": "47a5df2e128a5b56c8a2a9ab15ef5c7ce65f6d9eb24a6fc05bc2c9d67c061dfa",
+  "src/mfaco_train.cpp": "af99cc0546ed3e9afec1a1511adeca90fc816661ca7dd41cf172e666e778a224",
+  "src/mfaco_train.h": "37bcedd2c98de8784316d1d192908236f614ce392aeb5a39585253b6fb4f1264",
+  "src/binding.cpp": "1d7be02ae65c622c3d746980a21857a0df432e64586899ca6f2b2c306ed96798",
+  "src/setup.py": "014203723d6c85edf85a2ad592305a1eccc34d5eb7494ef5dcb575c4407d9137",
+  "src/kd_tree.h": "aaede77216a4422faf92d8b344e831501d5dd05ae775ce37aced67c3639800b9",
+  "faco.py": "64fe4597d51ca23444e33f6ce46e7350d6e5d9409051773d5374d9d32d59e9c0",
+  "net.py": "56272201f839baabebb4b27d4ee996845ac512f8d3e15b9d253cbf9950703094",
+  "utils.py": "90e43fa1c671bf4ef0d512c39cc8e8d36d8ebb68a91af39cd1ebc7613521e739",
+  "r3/state_capture.py": "d3bd2d2dc45bcf2409d7d8350bfba9ed1cf419fb092e25ce1e7aecfdbe0a266a",
+  "r3/common.py": "d0fa653cc44b3be6669776fa7268185b0e43bff7ea5482b33f2baa836ea63629"
+}

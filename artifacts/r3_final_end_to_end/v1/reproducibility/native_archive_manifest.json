@@ -1,0 +1,16 @@
+{
+  "executed": {
+    "source_path": "/mnt/d/GitRepository/DyNACO-r3-final/.r3-build/native/faco_opt.cpython-313-x86_64-linux-gnu.so",
+    "uncompressed_sha256": "25c6a788672ba240eddef8abe068a66f66f876b6004d26b38e679b94c286ef36",
+    "compressed_sha256": "27cf9322444cb575c88eca3375c324ddcabb8beb6fadc399d9d471f038d04310",
+    "uncompressed_bytes": 1014744,
+    "compressed_bytes": 360427
+  },
+  "original_reference": {
+    "source_path": "/mnt/d/GitRepository/DyNACO-r3/.r3-build/native/faco_opt.cpython-313-x86_64-linux-gnu.so",
+    "uncompressed_sha256": "8e1e67b69343956e4b1ce5f1ff667fd052b74132a7522d36346afc73fe926955",
+    "compressed_sha256": "91eed4f9d1c8ab3a470d70e8e85de8092e61c290501eef5f838e8ea53b70f80d",
+    "uncompressed_bytes": 989272,
+    "compressed_bytes": 350979
+  }
+}
