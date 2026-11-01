@@ -1,0 +1,4 @@
+{
+  "utc": "2026-11-01T08:57:47.350660+00:00",
+  "output": "name, memory.used [MiB], utilization.gpu [%], temperature.gpu, power.draw [W]\nNVIDIA GeForce RTX 3050 Laptop GPU, 257 MiB, 2 %, 59, 14.67 W\n"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "reviewer": "assistant visual inspection through view_image; no human review claimed",
+  "contact_sheet_all_eight_checked": true,
+  "full_resolution_checks": [
+    "06_completed_iterations.png",
+    "08_allocation_behavior.png"
+  ],
+  "gain_comparison_axes_equal": true,
+  "absolute_quality_axes_start_zero": true,
+  "legends_checked": true,
+  "output_formats": [
+    "PNG 300 DPI",
+    "SVG"
+  ]
+}

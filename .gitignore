@@ -21,3 +21,4 @@ tmp_models
 csv
 .r3-build/
 .pytest_cache/
+artifacts/r3_final_end_to_end/*/principal.lock

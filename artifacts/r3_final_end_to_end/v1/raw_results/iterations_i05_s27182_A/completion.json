@@ -1,0 +1,19 @@
+{
+  "identity": {
+    "mode": "iterations",
+    "instance": 5,
+    "seed": 27182,
+    "arm": "A",
+    "run_id": "iterations_i05_s27182_A"
+  },
+  "status": "VALID",
+  "attempt": 1,
+  "files": {
+    "attempt_1/gpu_before.json": "f7200730da983f80140803e76091452574aef7f8d34c849364ee9aef1be1029f",
+    "attempt_1/result.json": "88ab4c9a6d57dd2c04d52cb23fc5a05b34ea3471d53c66e6ecd6f21bb8f83537",
+    "attempt_1/started.json": "b0e98cb4ec1265f12cfc72a2ab369210ab1962440685ed13db634a6bff2c5764",
+    "attempt_1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "attempt_1/stdout.log": "879288f61e2fa8e2e54afb0de2af629b594857a0d8acbffe85e193d88ac81104",
+    "attempt_1/trajectory.npz": "1b05eebe594779ca5879a0dbc4dc1654f63a695467497698a28742e2ee7c70c5"
+  }
+}

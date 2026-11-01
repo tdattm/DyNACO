@@ -1,11 +1,23 @@
 """Rebuild every result, figure and decision solely from sealed raw records."""
 import csv
 import json
+import re
 from collections import Counter
 import numpy as np
 from r3_final.core import *
 
 LABELS={'A':'K32','B':'K40','C':'Adaptive K32/K64'}
+
+
+def polish(text):
+    # Typographic spacing in prose only; never alter code, hashes, or numeric results.
+    pieces=re.split(r'(`[^`]*`)',text)
+    for i in range(0,len(pieces),2):
+        pieces[i]=re.sub(r'\b(có|đều|mở|ở|giữ|đúng|mỗi|vượt|lúc|gồm|và|seed|mod|watchdog|RSS|allocation|reserve|metric|Anytime|Khoảng|dùng|median|mean|gain|CUDA|Python|NumPy|PyTorch|VRAM|tại|iteration|Full|trên|với|trước|epoch|Trong|chiếm|range|đó|bình|tất)(?=[−-]?\d)',r'\1 ',pieces[i])
+        pieces[i]=pieces[i].replace('ngoàiK32','ngoài K32')
+        pieces[i]=re.sub(r'(?<=\d)(GiB|MiB|ms|s|instances|iteration|run|case|seed|CPU)\b',r' \1',pieces[i])
+        pieces[i]=re.sub(r',(?=[A-Za-zÀ-ỹ])',', ',pieces[i])
+    return ''.join(pieces)
 
 
 def decision(gains, indices):
@@ -17,7 +29,7 @@ def decision(gains, indices):
                 worst=float(np.min(gains)),best=float(np.max(gains)),n_independent_instances=16)
     values['conditions']=dict(median_at_least_0_001=values['median']>=.001,
                               at_least_12_positive=values['positive']>=12,
-                              bootstrap_lower_above_zero=lo>0)
+                              bootstrap_lower_above_zero=bool(lo>0))
     values['passes']=bool(all(values['conditions'].values()))
     return values
 
@@ -34,7 +46,8 @@ def main():
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'figure.dpi':140,
-                         'savefig.dpi':300,'axes.spines.top':False,'axes.spines.right':False})
+                         'savefig.dpi':300,'axes.spines.top':False,'axes.spines.right':False,
+                         'svg.hashsalt':'r3-final-end-to-end-v1'})
     analysis=OUT/'analysis';analysis.mkdir(exist_ok=True)
     figures=OUT/'figures';figures.mkdir(exist_ok=True)
     coords=np.load(OUT/'principal_coords.npy')
@@ -140,7 +153,7 @@ def main():
     colors={'A':'#3b6ca8','B':'#df8b28','C':'#24845c'}
     def save(name,fig):
         fig.savefig(figures/(name+'.png'),bbox_inches='tight')
-        fig.savefig(figures/(name+'.svg'),bbox_inches='tight')
+        fig.savefig(figures/(name+'.svg'),bbox_inches='tight',metadata={'Date':None})
         plt.close(fig)
     wall=[r for r in per if r['mode']=='wall']
     fig,ax=plt.subplots(figsize=(8,5))
@@ -151,11 +164,12 @@ def main():
     for r in wall:ax.plot(range(3),[r[f'length_{a}'] for a in ARMS],c='gray',alpha=.2,lw=.7)
     ax.set(xticks=range(3),xticklabels=list(LABELS.values()),ylabel='Float64 cyclic tour length',title='8-second budget: all 16 independent instance means',ylim=(0,None))
     save('01_wall_final_length',fig)
+    gain_limit=1.15*max(abs(r[f'gain_C_{control}'])*100 for r in wall for control in ('A','B'))
     for no,control in ((2,'A'),(3,'B')):
         fig,ax=plt.subplots(figsize=(9,4.6));g=np.array([r[f'gain_C_{control}'] for r in wall])*100
         ax.bar(range(16),g,color=[colors['C'] if v>0 else '#b94b4b' for v in g])
         ax.axhline(0,color='black',lw=.8);ax.axhline(.1,color='black',ls='--',label='0.1% median screening threshold')
-        ax.set(xticks=range(16),xlabel='Independent instance',ylabel='Adaptive relative gain (%)',title=f'8 seconds: Adaptive vs {LABELS[control]} (mean of two paired seed gains)')
+        ax.set(xticks=range(16),xlabel='Independent instance',ylabel='Adaptive relative gain (%)',ylim=(-gain_limit,gain_limit),title=f'8 seconds: Adaptive vs {LABELS[control]} (mean of two paired seed gains)')
         ax.legend(fontsize=8);save(f'0{no}_paired_gain_C_{control}',fig)
     anytime=[]
     points=np.linspace(0,8,161)
@@ -181,19 +195,20 @@ def main():
     ax.set(xlabel='1000-iteration search wall time (s)',ylabel='Float64 tour length',xlim=(0,None),ylim=(0,None),title='Equal iterations: all independent instance means');ax.legend();save('05_iteration_quality_runtime',fig)
     fig,ax=plt.subplots(figsize=(9,5));xx=np.arange(16)
     for j,arm in enumerate(ARMS):ax.bar(xx+(j-1)*.25,[r[f'iterations_{arm}'] for r in wall],width=.24,color=colors[arm],label=LABELS[arm])
-    ax.set(xticks=xx,xlabel='Independent instance',ylabel='Completed iterations at timestamp ≤ 8 s',title='Equal wall time: completed work (seed means)');ax.legend();save('06_completed_iterations',fig)
+    ax.set(xticks=xx,xlabel='Independent instance',ylabel='Completed iterations at timestamp ≤ 8 s',title='Equal wall time: completed work (seed means)');ax.legend(loc='upper center',bbox_to_anchor=(.5,-.19),ncol=3);save('06_completed_iterations',fig)
     fig,axes=plt.subplots(1,2,figsize=(11,4.5))
     for ax,mode in zip(axes,MODES):
         for j,arm in enumerate(ARMS):
             rows=[r for r in records if r['mode']==mode and r['arm']==arm]
             visits=np.array([r['counters']['candidates'] for r in rows])/1e6
             ax.bar(j,visits.mean(),color=colors[arm]);ax.scatter(j+np.linspace(-.1,.1,32),visits,c='black',s=6,alpha=.35)
-        ax.set(xticks=range(3),xticklabels=['K32','K40','Adaptive'],ylabel='Candidate visits (million)',title=mode+'; includes recorded overshoot')
+        ax.set(xticks=range(3),xticklabels=['K32','K40','Adaptive'],ylabel='Candidate visits (million)',title='1000 iterations; no overshoot' if mode=='iterations' else '8-second runs; includes recorded overshoot')
     save('07_candidate_evaluations',fig)
     fig,axes=plt.subplots(1,3,figsize=(13,4))
-    axes[0].bar(['K32','K40','Adaptive'],[1000,1000,750],label='width 32 / 40',color=colors['A'])
+    axes[0].bar(['K32','K40','Adaptive'],[1000,0,750],label='width 32',color=colors['A'])
+    axes[0].bar(['K32','K40','Adaptive'],[0,1000,0],label='width 40',color=colors['B'])
     axes[0].bar(['K32','K40','Adaptive'],[0,0,250],bottom=[1000,1000,750],label='width 64',color=colors['C'])
-    axes[0].set(ylabel='Nodes',title='Fixed allocation sizes');axes[0].legend(fontsize=7)
+    axes[0].set(ylabel='Nodes',title='Fixed allocation sizes');axes[0].legend(fontsize=7,loc='upper center',bbox_to_anchor=(.5,-.15),ncol=3)
     changes=[r['changed_nodes'] for r in epoch_rows if r['iteration']>0]
     axes[1].hist(changes,bins=20,color=colors['C']);axes[1].set(xlabel='Nodes whose width changed / epoch',ylabel='Epochs',title='Adaptive allocation changes')
     scores=np.concatenate([a['allocation_scores'].ravel() for id,a in trajectories.items() if id.endswith('_C')])
@@ -236,9 +251,41 @@ def report(records,per,aggregate,stats,verdict,epochs):
     individual='\n'.join(['| Budget | Instance | K32 | K40 | Adaptive | Gain C−A | Gain C−B |','|---|---:|---:|---:|---:|---:|---:|',*individuals])
     changes=[r['changed_nodes'] for r in epochs if r['iteration']>0]
     adaptive_accept=sum(aggregate[m]['C']['counters_total']['expanded_accepted'] for m in MODES)
+    wa=aggregate['wall']['A'];wb=aggregate['wall']['B'];wc=aggregate['wall']['C']
+    wallc=wc['counters_total']
+    expanded_events=[e for r in diag['records'] for e in r['events'] if e['rank']>32]
+    interpretation=f'''Các đo lường cụ thể cho tradeoff compute/quality:
+
+- C so với K32 tại8s: mean gain{pct(stats['wall']['C_A']['mean'])},
+  median{pct(stats['wall']['C_A']['median'])}; tại1000 iteration:
+  mean{pct(stats['iterations']['C_A']['mean'])}.
+- C so với K40 tại8s: mean gain{pct(stats['wall']['C_B']['mean'])},
+  median{pct(stats['wall']['C_B']['median'])}; tại1000 iteration:
+  mean{pct(stats['iterations']['C_B']['mean'])}.
+- C thay đổi runtime/iteration so với K32: {pct(wc['seconds_per_iteration']/wa['seconds_per_iteration']-1)},
+  so với K40: {pct(wc['seconds_per_iteration']/wb['seconds_per_iteration']-1)}.
+  Trong8s, C hoàn tất{wc['mean_completed_iterations']:.2f} iteration trung bình,
+  K32 {wa['mean_completed_iterations']:.2f}, K40 {wb['mean_completed_iterations']:.2f}.
+- Score/allocation cost của C trung bình{wc['mean_allocation_seconds']*1000:.3f}ms/run wall,
+  chiếm{pct(wc['mean_allocation_seconds']/wc['mean_search_seconds'])} search time.
+  Rank33–64 chiếm{pct(wallc['expanded_candidates']/wallc['candidates'])} candidate visits
+  và{pct(wallc['expanded_gains']/wallc['gains'])} actual gain evaluations của C.
+- Trong untimed development replay, có{len(expanded_events)} accepted move ngoàiK32,
+  trong đó{sum(e['robust'] for e in expanded_events)} robust float64 improvement.
+  Điều này xác nhận cơ chế có thể thực thi move hữu ích, nhưng không chứng minh
+  lượng gain đủ bù chi phí trong principal global-best trajectories.
+
+Các số liệu trên cho phép tách hiệu ứng chất lượng theo iteration khỏi throughput
+theo thời gian. Chúng không cho phép gán toàn bộ outcome cho overhead hoặc allocator
+riêng lẻ. Không có ablation về checklist, allocator khác hoặc full-K64 nên không
+thể kết luận đã xác định duy nhất nguyên nhân. Screening rule chỉ đánh giá policy
+cụ thể này với cả hai control dưới ngân sách đã định.
+'''
     overshoots=sum(r['overshoot_iterations'] for r in records if r['mode']=='wall')
     policy_recommend=('Tiếp tục một nghiên cứu xác nhận độc lập trước khi mở rộng phạm vi; kết quả hiện tại chỉ hỗ trợ cấu hình và phân phối này.' if final=='GO' else
                        'Dừng đầu tư thêm vào đúng adaptive candidate policy K32/K64 này trên uniform TSP1K. Hướng ưu tiên tiếp theo là nghiên cứu SRR scheduling/revisit với equal-compute control và dữ liệu mới; M1 v2 có tín hiệu cơ học trực tiếp hơn nhưng chưa chứng minh hiệu quả end-to-end.')
+    relationship=('Kết quả mới củng cố quyết định không đầu tư thêm vào adaptive policy này trên uniform TSP1K; nó không xác định duy nhất cơ chế thất bại và không phủ định mọi allocator khác.' if final=='NO-GO' else
+                  'Kết quả mới hỗ trợ policy tích hợp này trong cấu hình đã đo, đồng thời giới hạn cách suy rộng từ offline Stage A sang end-to-end search.')
     text=f'''# Báo cáo nghiên cứu R3 final end-to-end
 
 **R3 FINAL DECISION: {final}**  
@@ -311,7 +358,8 @@ semantics. Các con số replay này thuộc development, không phải principa
 ## 5. Timing, scheduling và xử lý lỗi
 
 Equal-iterations chạy trước; instance tăng dần; seed31415 rồi27182; order ABC/BCA/CAB
-theo p mod3.192 identity đều có atomic completion và hash raw data. Một GPU worker
+theo p mod3.192 identity đều có atomic completion và hash raw data. Cả192 run đều
+hoàn thành ở attempt1; không có failed attempt, retry, exclusion hoặc imputation. Một GPU worker
 tuần tự, watchdog300s/identity, RSS4GiB, torch allocation3.5GiB, disk reserve1GiB;
 không áp cap M2. Log lỗi/retry nếu có được giữ nguyên, không loại theo tour quality.
 
@@ -325,8 +373,10 @@ Anytime0,1,2,4,6,8 dùng latest completed global-best≤mốc. Native best selec
 float32, không chọn lại tour theo float64. Khoảng8s là ngân sách chứ không bảo đảm
 iteration cuối đúng8.000000s; actual search gồm overshoot được báo đầy đủ.
 
-Peak RSS{max(r['rss_peak_bytes'] for r in records)/1024**3:.3f}GiB;
+Peak RSS {max(r['rss_peak_bytes'] for r in records)/1024**3:.3f} GiB;
 peak torch CUDA allocation{max(r['peak_cuda_bytes'] for r in records)/1024**2:.2f}MiB.
+RSS dùng Linux ru_maxrss (process-lifetime high-water), không giả định đã reset
+peak riêng từng run. CUDA allocation peak được reset trước mỗi search.
 Warmup records, setup/serialization từng run và GPU snapshots được lưu trong raw_results.
 
 ## 6. Kết quả đầy đủ
@@ -368,6 +418,8 @@ của từng node/epoch có trong raw npz; selection frequency trong allocation_
 Unique undirected edge counts tính ngoài timed loop từ chính native prefix; khác
 với directed slots. Thông tin này không thay đổi policy hoặc timing.
 
+{interpretation}
+
 Đánh giá nhân quả có giới hạn: end-to-end paired outcomes kiểm tra toàn bộ policy,
 không cô lập riêng chất lượng node selection hay checklist. Expanded-candidate
 counts chứng minh việc thực thi truy cập; chỉ official float64 gains chứng minh
@@ -389,9 +441,8 @@ optimal tour hoặc reference solution; không báo optimality gap không có c�
 Stage A lịch sử giữ nguyên NO-GO (G0/G4 pass,G1/G2/G3 0/8). Late source snapshots
 có0 missed robust moves ngoàiK32, nhưng raw ant0 có off-K32 headroom. Nghiên cứu
 mới kiểm tra integrated global-best trajectory trên dataset độc lập; không biến
-Stage A thành GO hay thỏa old Stage B gate. Nếu final NO-GO, bằng chứng làm yếu
-động lực đầu tư vào policy này; nếu GO, nó giới hạn diễn giải offline Stage A chứ
-không sửa lịch sử. Các phân phối/trạng thái và primary outcomes khác nhau.
+Stage A thành GO hay thỏa old Stage B gate. {relationship}
+Các phân phối/trạng thái và primary outcomes khác nhau.
 
 M1 v2 báo exploratory signal trên32 saved ant0 cases:31/32 robust cases theo bảng
 instance (một instance3/4),8/8 instance có robust case; second unchanged K32 pass
@@ -400,6 +451,11 @@ M2 principal lịch sử resource-inconclusive trước launch, không cung cấ
 hiệu quả. Không trộn sample, p-value, budget hoặc statistical unit giữa các nghiên cứu.
 Historical numerical no-op findings vẫn áp dụng: native positive float32 gain
 không đủ chứng minh robust improvement; native semantics được bảo tồn.
+
+Nguồn lịch sử: [Stage A report](../../r3/reports/R3_STAGE_A_REPORT.md),
+[M1 v2 report](../../r3/m1_additional_k32/v2/M1_V2_RESEARCH_REPORT.md),
+[M2 RESOURCE-INCONCLUSIVE report](reproducibility/historical_M2_report.md)
+(M2 được trích từ commit c40a034, không phải principal data của nghiên cứu này).
 
 ## 11. Giới hạn và quyết định đầu tư
 
@@ -435,7 +491,7 @@ lệch nhỏ. Gain plots có zero/negative rõ ràng. Rebuild bằng `python -m 
 trong môi trường r3/run.sh; không chạy solver lại. Lệnh, hashes và execution log
 ở reproducibility/. analysis/raw_integrity_audit.json xác thực toàn bộ192 run.
 '''
-    (OUT/'FINAL_RESEARCH_REPORT.md').write_text(text,encoding='utf-8')
+    (OUT/'FINAL_RESEARCH_REPORT.md').write_text(polish(text),encoding='utf-8')
     executive=f'''# R3 FINAL DECISION: {final}
 
 **SCIENTIFIC CONCLUSION: {final}. 192/192 run hợp lệ.**
@@ -452,7 +508,7 @@ Protocol `{imp['protocol_sha256']}`; dataset `{data['sha256']}`.
 Nguồn thực thi `{imp['executed_source_commit']}`; Stage A giữ nguyên NO-GO.
 Xem FINAL_RESEARCH_REPORT.md và analysis/decision.json; không có missing/imputed run.
 '''
-    (OUT/'EXECUTIVE_DECISION.md').write_text(executive,encoding='utf-8')
+    (OUT/'EXECUTIVE_DECISION.md').write_text(polish(executive),encoding='utf-8')
     (OUT/'HANDOFF.md').write_text(f'''# Completed research delivery
 
 R3 final investment/scientific decision: **{final}**. Complete valid grid192/192.

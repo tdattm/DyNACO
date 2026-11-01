@@ -1,0 +1,283 @@
+{
+  "arm": "C",
+  "mode": "wall",
+  "seed": 31415,
+  "native_seed": 2689878502059415719,
+  "official_length": 23.029853901338072,
+  "initial_length": 28.176247955007426,
+  "primary_route_index": 170,
+  "completed_iterations": 3383,
+  "eligible_completed_iterations": 3382,
+  "overshoot_iterations": 1,
+  "last_completed_before_budget": 7.999787737999895,
+  "search_seconds": 8.001330801999984,
+  "setup_seconds": 0.025627948999954242,
+  "allocation_seconds": 0.051848290999714663,
+  "graph_neural_seconds": 2.6395934349998242,
+  "counters": {
+    "calls": 338300,
+    "candidates": 101364545,
+    "expanded_candidates": 3999961,
+    "gains": 81129950,
+    "expanded_gains": 3882774,
+    "accepted": 5790687,
+    "expanded_accepted": 32435
+  },
+  "rss_peak_bytes": 1575604224,
+  "peak_cuda_bytes": 128029696,
+  "initial_route_sha256": "5a7170bf0c314f9ca302d10f603bbdeab5a81fbec7e4f638fcb5317b3633d148",
+  "initial_source_sha256": "5a7170bf0c314f9ca302d10f603bbdeab5a81fbec7e4f638fcb5317b3633d148",
+  "initial_pheromone_sha256": "b7c46cddd009d4ce7deeca17475cd745dbe22193ba1a92cf13ee59d7559dcc5a",
+  "native_candidates_sha256": "0a063b08d730e9c8a6fb53ecdcbde005931c10153f4d34246ad613eba6f3b008",
+  "slots": 40000,
+  "unique_undirected_edges": [
+    24291,
+    24188,
+    24112,
+    24130,
+    24151,
+    24151,
+    24124,
+    24124,
+    24173,
+    24173,
+    24173,
+    24173,
+    24173,
+    24173,
+    24173,
+    24173,
+    24173,
+    24173,
+    24173,
+    24156,
+    24156,
+    24134,
+    24145,
+    24145,
+    24145,
+    24145,
+    24145,
+    24145,
+    24145,
+    24145,
+    24145,
+    24145,
+    24145,
+    24139
+  ],
+  "allocations": [
+    {
+      "iteration": 0,
+      "changed_nodes": 250,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 100,
+      "changed_nodes": 230,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 200,
+      "changed_nodes": 116,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 300,
+      "changed_nodes": 34,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 400,
+      "changed_nodes": 66,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 500,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 600,
+      "changed_nodes": 38,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 700,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 800,
+      "changed_nodes": 26,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 900,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1000,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1100,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1200,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1300,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1400,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1500,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1600,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1700,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1800,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1900,
+      "changed_nodes": 24,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2000,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2100,
+      "changed_nodes": 26,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2200,
+      "changed_nodes": 10,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2300,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2400,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2500,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2600,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2700,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2800,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2900,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 3000,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 3100,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 3200,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 3300,
+      "changed_nodes": 26,
+      "slots": 40000,
+      "expanded_nodes": 250
+    }
+  ],
+  "final_overshoot_length": 23.029853901338072,
+  "instance": 13,
+  "run_id": "wall_i13_s31415_C",
+  "attempt": 1,
+  "warmup_file": "raw_results/warmup_1793523467156882136.json",
+  "serialization_seconds": 0.047692556000129116,
+  "total_run_seconds": 8.20026823100011,
+  "completed_utc": "2026-11-01T09:15:00.584857+00:00"
+}

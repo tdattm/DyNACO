@@ -1,0 +1,115 @@
+{
+  "arm": "B",
+  "mode": "iterations",
+  "seed": 27182,
+  "native_seed": 1156282883728294138,
+  "official_length": 23.142672754959094,
+  "initial_length": 28.176247955007426,
+  "primary_route_index": 134,
+  "completed_iterations": 1000,
+  "eligible_completed_iterations": 1000,
+  "overshoot_iterations": 0,
+  "last_completed_before_budget": 2.3113516839999875,
+  "search_seconds": 2.311371149000024,
+  "setup_seconds": 0.02595769700008077,
+  "allocation_seconds": 0.0006698600001300292,
+  "graph_neural_seconds": 0.7888034139999718,
+  "counters": {
+    "calls": 100000,
+    "candidates": 32650499,
+    "expanded_candidates": 1239584,
+    "gains": 26305455,
+    "expanded_gains": 1200889,
+    "accepted": 1801224,
+    "expanded_accepted": 13745
+  },
+  "rss_peak_bytes": 1379823616,
+  "peak_cuda_bytes": 128029696,
+  "initial_route_sha256": "5a7170bf0c314f9ca302d10f603bbdeab5a81fbec7e4f638fcb5317b3633d148",
+  "initial_source_sha256": "5a7170bf0c314f9ca302d10f603bbdeab5a81fbec7e4f638fcb5317b3633d148",
+  "initial_pheromone_sha256": "b7c46cddd009d4ce7deeca17475cd745dbe22193ba1a92cf13ee59d7559dcc5a",
+  "native_candidates_sha256": "0a063b08d730e9c8a6fb53ecdcbde005931c10153f4d34246ad613eba6f3b008",
+  "slots": 40000,
+  "unique_undirected_edges": [
+    22142,
+    22142,
+    22142,
+    22142,
+    22142,
+    22142,
+    22142,
+    22142,
+    22142,
+    22142
+  ],
+  "allocations": [
+    {
+      "iteration": 0,
+      "changed_nodes": 1000,
+      "slots": 40000,
+      "expanded_nodes": 0
+    },
+    {
+      "iteration": 100,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 0
+    },
+    {
+      "iteration": 200,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 0
+    },
+    {
+      "iteration": 300,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 0
+    },
+    {
+      "iteration": 400,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 0
+    },
+    {
+      "iteration": 500,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 0
+    },
+    {
+      "iteration": 600,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 0
+    },
+    {
+      "iteration": 700,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 0
+    },
+    {
+      "iteration": 800,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 0
+    },
+    {
+      "iteration": 900,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 0
+    }
+  ],
+  "final_overshoot_length": 23.142672754959094,
+  "instance": 13,
+  "run_id": "iterations_i13_s27182_B",
+  "attempt": 1,
+  "warmup_file": "raw_results/warmup_1793523467156882136.json",
+  "serialization_seconds": 0.04496280599994407,
+  "total_run_seconds": 2.425368417999948,
+  "completed_utc": "2026-11-01T09:01:44.489245+00:00"
+}

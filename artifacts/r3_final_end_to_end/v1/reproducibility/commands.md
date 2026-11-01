@@ -24,4 +24,18 @@ The unchanged reference binary for the full1000 comparison was reused from
 DyNACO-r3/.r3-build/native; its hash is archived in development/reference_identity.json.
 Rebuild that binary from the reference commit if it is unavailable.
 
+`executed_sources.zip` preserves literal scientific and analysis source bytes,
+including the original Windows/WSL line-ending representations. Its per-file
+SHA256 ledger is `executed_source_archive_manifest.json`. In a fresh reproduction
+checkout, use those archived bytes if checkout line endings differ from the seal.
+The exact new and original native binaries are also archived as `.so.gz`, with
+compressed/uncompressed hashes in `native_archive_manifest.json`.
+
+Final delivery checks: `python -m r3_final.delivery_audit` (no solver execution).
+Analysis reporting fixes only normalized NumPy Boolean JSON serialization,
+clarified report text and improved plot layout; the frozen scientific source,
+dataset, allocation, budgets, pairing, bootstrap RNG and decision thresholds did
+not change during or after collection. The principal repository HEAD was the
+seal commit `de828bb`; the scientific implementation was frozen in `6742353`.
+
 No paid services, training, reserved confirmation data or two-pass SRR are used.

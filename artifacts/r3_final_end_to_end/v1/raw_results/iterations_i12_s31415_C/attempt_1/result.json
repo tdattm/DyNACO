@@ -1,0 +1,115 @@
+{
+  "arm": "C",
+  "mode": "iterations",
+  "seed": 31415,
+  "native_seed": 2689878502059415719,
+  "official_length": 23.413729533601952,
+  "initial_length": 28.604495727826073,
+  "primary_route_index": 144,
+  "completed_iterations": 1000,
+  "eligible_completed_iterations": 1000,
+  "overshoot_iterations": 0,
+  "last_completed_before_budget": 2.557973121000032,
+  "search_seconds": 2.5579901329999757,
+  "setup_seconds": 0.02421140399997057,
+  "allocation_seconds": 0.015464970000152789,
+  "graph_neural_seconds": 0.7617934899999455,
+  "counters": {
+    "calls": 100000,
+    "candidates": 32765501,
+    "expanded_candidates": 1485200,
+    "gains": 26458563,
+    "expanded_gains": 1447078,
+    "accepted": 1778274,
+    "expanded_accepted": 12111
+  },
+  "rss_peak_bytes": 1379823616,
+  "peak_cuda_bytes": 128029696,
+  "initial_route_sha256": "81bd0607fa9a02c526f20b0dbdda9bf9135c58f10233d910b78517f7b1a45b22",
+  "initial_source_sha256": "81bd0607fa9a02c526f20b0dbdda9bf9135c58f10233d910b78517f7b1a45b22",
+  "initial_pheromone_sha256": "b7c46cddd009d4ce7deeca17475cd745dbe22193ba1a92cf13ee59d7559dcc5a",
+  "native_candidates_sha256": "c5da863d90d7adac650ab996e4ee9b1189c5ca9203c1a95c7aa2508fea6c0f49",
+  "slots": 40000,
+  "unique_undirected_edges": [
+    24189,
+    24068,
+    24098,
+    24138,
+    24092,
+    24141,
+    24179,
+    24134,
+    24134,
+    24134
+  ],
+  "allocations": [
+    {
+      "iteration": 0,
+      "changed_nodes": 250,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 100,
+      "changed_nodes": 202,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 200,
+      "changed_nodes": 112,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 300,
+      "changed_nodes": 32,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 400,
+      "changed_nodes": 28,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 500,
+      "changed_nodes": 26,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 600,
+      "changed_nodes": 28,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 700,
+      "changed_nodes": 30,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 800,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 900,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    }
+  ],
+  "final_overshoot_length": 23.413729533601952,
+  "instance": 12,
+  "run_id": "iterations_i12_s31415_C",
+  "attempt": 1,
+  "warmup_file": "raw_results/warmup_1793523467156882136.json",
+  "serialization_seconds": 0.04423354499999732,
+  "total_run_seconds": 2.6724461719999226,
+  "completed_utc": "2026-11-01T09:01:19.244410+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "identity": {
+    "mode": "wall",
+    "instance": 9,
+    "seed": 27182,
+    "arm": "A",
+    "run_id": "wall_i09_s27182_A"
+  },
+  "status": "VALID",
+  "attempt": 1,
+  "files": {
+    "attempt_1/gpu_before.json": "81060b9242f062b29bfc9a314d4c3540bf2f08cf669993282c1506756bd2283e",
+    "attempt_1/result.json": "346bee8d73c6936aa430e587020e5065ac1184586fec092d50e47104d73a17a4",
+    "attempt_1/started.json": "86191afc9348d5c895ec3357bd8dec443835f976ef9a3631e9d454a9a5dccef8",
+    "attempt_1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "attempt_1/stdout.log": "ccfda2fed5b232ceb8a8d35adde847708adbddf4ea8da52817ce9b9b25e205d5",
+    "attempt_1/trajectory.npz": "fae95502021c5c7827b22c08e9326e141acb7f18bb6ae4e5bed06f336583bcb5"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "mode": "iterations",
+  "instance": 13,
+  "seed": 31415,
+  "arm": "B",
+  "run_id": "iterations_i13_s31415_B",
+  "started_utc": "2026-11-01T09:01:36.416610+00:00",
+  "source_commit": "de828bbd3623685fe3ef690a04a544705a49dbdc"
+}

@@ -1,0 +1,23 @@
+{
+  "utc": "2026-11-01T08:57:47.156891+00:00",
+  "development_only": true,
+  "records": [
+    {
+      "arm": "A",
+      "total_seconds": 2.141484752999986,
+      "search_seconds": 2.017379570999992
+    },
+    {
+      "arm": "B",
+      "total_seconds": 0.2898935260000144,
+      "search_seconds": 0.24201138699999092
+    },
+    {
+      "arm": "C",
+      "total_seconds": 0.29656346999996686,
+      "search_seconds": 0.2665102680000473
+    }
+  ],
+  "imports_seconds": 24.05131113699997,
+  "checkpoint_setup_seconds": 0.6237871519999771
+}

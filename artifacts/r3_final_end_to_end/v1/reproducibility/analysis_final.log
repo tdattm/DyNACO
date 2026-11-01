@@ -1,0 +1,51 @@
+{
+  "project_decision": "NO-GO",
+  "scientific_conclusion": "NO-GO",
+  "valid_runs": 192,
+  "planned_runs": 192,
+  "primary_mode": "wall",
+  "criteria": {
+    "C_A": {
+      "mean": -0.00012762044405610742,
+      "median": -0.00019949346696982828,
+      "positive": 7,
+      "negative": 9,
+      "tied": 0,
+      "ci95": [
+        -0.0007540078409728097,
+        0.000533251921413334
+      ],
+      "worst": -0.002320485715258374,
+      "best": 0.002896176237039262,
+      "n_independent_instances": 16,
+      "conditions": {
+        "median_at_least_0_001": false,
+        "at_least_12_positive": false,
+        "bootstrap_lower_above_zero": false
+      },
+      "passes": false
+    },
+    "C_B": {
+      "mean": 0.0002414344586529438,
+      "median": 0.0004869661841324733,
+      "positive": 9,
+      "negative": 7,
+      "tied": 0,
+      "ci95": [
+        -0.00033945878825820665,
+        0.0008322384634245351
+      ],
+      "worst": -0.0015391421259970978,
+      "best": 0.0020707816535711866,
+      "n_independent_instances": 16,
+      "conditions": {
+        "median_at_least_0_001": false,
+        "at_least_12_positive": false,
+        "bootstrap_lower_above_zero": false
+      },
+      "passes": false
+    }
+  },
+  "complete_grid_validated": true,
+  "bootstrap_indices_sha256": "13448173a26e712dd8557a716a0c32c39992f8a905f41b216dd31d364854537b"
+}

@@ -1,0 +1,174 @@
+{
+  "iterations": {
+    "A": {
+      "label": "K32",
+      "n_runs": 32,
+      "mean_length": 23.3275931294367,
+      "median_instance_length": 23.33130327041913,
+      "mean_length_ci95": [
+        23.239937427513137,
+        23.423771345320848
+      ],
+      "mean_completed_iterations": 1000.0,
+      "mean_search_seconds": 2.1988216000625016,
+      "mean_setup_seconds": 0.023883491781255373,
+      "mean_serialization_seconds": 0.04203109656251236,
+      "seconds_per_iteration": 0.0021988216000625015,
+      "mean_allocation_seconds": 0.0006042708749980363,
+      "mean_neural_seconds": 0.7498641986874883,
+      "mean_relative_gain_per_search_second": 0.08110712121545499,
+      "mean_unique_undirected_edges": 17775.1875,
+      "counters_total": {
+        "calls": 3200000,
+        "candidates": 1010037392,
+        "expanded_candidates": 0,
+        "gains": 806706532,
+        "expanded_gains": 0,
+        "accepted": 58011908,
+        "expanded_accepted": 0
+      }
+    },
+    "B": {
+      "label": "K40",
+      "n_runs": 32,
+      "mean_length": 23.33124895724867,
+      "median_instance_length": 23.332361853244393,
+      "mean_length_ci95": [
+        23.25071324611912,
+        23.42230027071632
+      ],
+      "mean_completed_iterations": 1000.0,
+      "mean_search_seconds": 2.248059473125002,
+      "mean_setup_seconds": 0.023810224406256353,
+      "mean_serialization_seconds": 0.04142660384374075,
+      "seconds_per_iteration": 0.002248059473125002,
+      "mean_allocation_seconds": 0.0006333445937478643,
+      "mean_neural_seconds": 0.7594219629375392,
+      "mean_relative_gain_per_search_second": 0.07946166944358796,
+      "mean_unique_undirected_edges": 22170.8125,
+      "counters_total": {
+        "calls": 3200000,
+        "candidates": 1043871491,
+        "expanded_candidates": 39665271,
+        "gains": 839876341,
+        "expanded_gains": 38428451,
+        "accepted": 57782369,
+        "expanded_accepted": 443876
+      }
+    },
+    "C": {
+      "label": "Adaptive K32/K64",
+      "n_runs": 32,
+      "mean_length": 23.321929522800804,
+      "median_instance_length": 23.328574112480005,
+      "mean_length_ci95": [
+        23.237078252229086,
+        23.41950314521472
+      ],
+      "mean_completed_iterations": 1000.0,
+      "mean_search_seconds": 2.2820141691875033,
+      "mean_setup_seconds": 0.024335235875005523,
+      "mean_serialization_seconds": 0.0433272611562483,
+      "seconds_per_iteration": 0.002282014169187503,
+      "mean_allocation_seconds": 0.01399273243750443,
+      "mean_neural_seconds": 0.7615424050312303,
+      "mean_relative_gain_per_search_second": 0.07848771386466527,
+      "mean_unique_undirected_edges": 24166.228125,
+      "counters_total": {
+        "calls": 3200000,
+        "candidates": 1050424745,
+        "expanded_candidates": 46826535,
+        "gains": 846714122,
+        "expanded_gains": 45618123,
+        "accepted": 57778065,
+        "expanded_accepted": 389242
+      }
+    }
+  },
+  "wall": {
+    "A": {
+      "label": "K32",
+      "n_runs": 32,
+      "mean_length": 23.275308081716005,
+      "median_instance_length": 23.28156149215924,
+      "mean_length_ci95": [
+        23.187679307963776,
+        23.37113104498587
+      ],
+      "mean_completed_iterations": 3402.03125,
+      "mean_search_seconds": 8.0171655269375,
+      "mean_setup_seconds": 0.026457814874977004,
+      "mean_serialization_seconds": 0.0484648198124944,
+      "seconds_per_iteration": 0.0023595725905437644,
+      "mean_allocation_seconds": 0.002337485843668219,
+      "mean_neural_seconds": 2.678527885406403,
+      "mean_relative_gain_per_search_second": 0.022518631260453788,
+      "mean_unique_undirected_edges": 17775.1875,
+      "counters_total": {
+        "calls": 10889700,
+        "candidates": 3150469050,
+        "expanded_candidates": 0,
+        "gains": 2497855854,
+        "expanded_gains": 0,
+        "accepted": 186994456,
+        "expanded_accepted": 0
+      }
+    },
+    "B": {
+      "label": "K40",
+      "n_runs": 32,
+      "mean_length": 23.28380416872261,
+      "median_instance_length": 23.28145029558997,
+      "mean_length_ci95": [
+        23.20286810850517,
+        23.373771212982543
+      ],
+      "mean_completed_iterations": 3387.96875,
+      "mean_search_seconds": 8.010010782718737,
+      "mean_setup_seconds": 0.027014482218742586,
+      "mean_serialization_seconds": 0.04653243553122266,
+      "seconds_per_iteration": 0.002368153167979165,
+      "mean_allocation_seconds": 0.0023179110935664937,
+      "mean_neural_seconds": 2.6617663076562224,
+      "mean_relative_gain_per_search_second": 0.022481508787010766,
+      "mean_unique_undirected_edges": 22170.8125,
+      "counters_total": {
+        "calls": 10844700,
+        "candidates": 3240231614,
+        "expanded_candidates": 115802563,
+        "gains": 2587546142,
+        "expanded_gains": 111950860,
+        "accepted": 185689534,
+        "expanded_accepted": 1229214
+      }
+    },
+    "C": {
+      "label": "Adaptive K32/K64",
+      "n_runs": 32,
+      "mean_length": 23.27823255508944,
+      "median_instance_length": 23.286276212939455,
+      "mean_length_ci95": [
+        23.193687627973713,
+        23.37271958159355
+      ],
+      "mean_completed_iterations": 3301.9375,
+      "mean_search_seconds": 8.01527018796875,
+      "mean_setup_seconds": 0.026453075125008496,
+      "mean_serialization_seconds": 0.04933003534376468,
+      "seconds_per_iteration": 0.002432912767749967,
+      "mean_allocation_seconds": 0.051820317468759924,
+      "mean_neural_seconds": 2.6097778433124432,
+      "mean_relative_gain_per_search_second": 0.022506264177773225,
+      "mean_unique_undirected_edges": 24165.442224526825,
+      "counters_total": {
+        "calls": 10569400,
+        "candidates": 3175777127,
+        "expanded_candidates": 128866663,
+        "gains": 2539822593,
+        "expanded_gains": 125219601,
+        "accepted": 181007109,
+        "expanded_accepted": 1023313
+      }
+    }
+  }
+}

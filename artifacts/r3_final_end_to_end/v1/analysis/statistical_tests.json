@@ -1,0 +1,86 @@
+{
+  "iterations": {
+    "C_A": {
+      "mean": 0.000239510331176111,
+      "median": -0.0001164336625071354,
+      "positive": 7,
+      "negative": 9,
+      "tied": 0,
+      "ci95": [
+        -0.0007295060520798198,
+        0.00133278173708171
+      ],
+      "worst": -0.002568130134568679,
+      "best": 0.006101720647928206,
+      "n_independent_instances": 16,
+      "conditions": {
+        "median_at_least_0_001": false,
+        "at_least_12_positive": false,
+        "bootstrap_lower_above_zero": false
+      },
+      "passes": false
+    },
+    "C_B": {
+      "mean": 0.00040120327758591355,
+      "median": 0.0008177157191403431,
+      "positive": 10,
+      "negative": 6,
+      "tied": 0,
+      "ci95": [
+        -0.0003031519847914306,
+        0.0010708205849403445
+      ],
+      "worst": -0.0020561989164929774,
+      "best": 0.0023175639382611315,
+      "n_independent_instances": 16,
+      "conditions": {
+        "median_at_least_0_001": false,
+        "at_least_12_positive": false,
+        "bootstrap_lower_above_zero": false
+      },
+      "passes": false
+    }
+  },
+  "wall": {
+    "C_A": {
+      "mean": -0.00012762044405610742,
+      "median": -0.00019949346696982828,
+      "positive": 7,
+      "negative": 9,
+      "tied": 0,
+      "ci95": [
+        -0.0007540078409728097,
+        0.000533251921413334
+      ],
+      "worst": -0.002320485715258374,
+      "best": 0.002896176237039262,
+      "n_independent_instances": 16,
+      "conditions": {
+        "median_at_least_0_001": false,
+        "at_least_12_positive": false,
+        "bootstrap_lower_above_zero": false
+      },
+      "passes": false
+    },
+    "C_B": {
+      "mean": 0.0002414344586529438,
+      "median": 0.0004869661841324733,
+      "positive": 9,
+      "negative": 7,
+      "tied": 0,
+      "ci95": [
+        -0.00033945878825820665,
+        0.0008322384634245351
+      ],
+      "worst": -0.0015391421259970978,
+      "best": 0.0020707816535711866,
+      "n_independent_instances": 16,
+      "conditions": {
+        "median_at_least_0_001": false,
+        "at_least_12_positive": false,
+        "bootstrap_lower_above_zero": false
+      },
+      "passes": false
+    }
+  }
+}

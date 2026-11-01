@@ -1,0 +1,9 @@
+{
+  "mode": "wall",
+  "instance": 5,
+  "seed": 31415,
+  "arm": "C",
+  "run_id": "wall_i05_s31415_C",
+  "started_utc": "2026-11-01T09:07:20.505482+00:00",
+  "source_commit": "de828bbd3623685fe3ef690a04a544705a49dbdc"
+}

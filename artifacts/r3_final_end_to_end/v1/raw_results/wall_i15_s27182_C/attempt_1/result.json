@@ -1,0 +1,276 @@
+{
+  "arm": "C",
+  "mode": "wall",
+  "seed": 27182,
+  "native_seed": 1156282883728294138,
+  "official_length": 22.957540664221483,
+  "initial_length": 28.188568540123917,
+  "primary_route_index": 192,
+  "completed_iterations": 3281,
+  "eligible_completed_iterations": 3280,
+  "overshoot_iterations": 1,
+  "last_completed_before_budget": 7.999786239000059,
+  "search_seconds": 8.002441465999937,
+  "setup_seconds": 0.027320031000044764,
+  "allocation_seconds": 0.05393464900066647,
+  "graph_neural_seconds": 2.5976610269995035,
+  "counters": {
+    "calls": 328100,
+    "candidates": 97603854,
+    "expanded_candidates": 4035460,
+    "gains": 77958167,
+    "expanded_gains": 3920825,
+    "accepted": 5561962,
+    "expanded_accepted": 32036
+  },
+  "rss_peak_bytes": 1579941888,
+  "peak_cuda_bytes": 128029696,
+  "initial_route_sha256": "21c3531007fbedbaed226bc759490808b4173102fab994ff48d1dd1ea83c4868",
+  "initial_source_sha256": "21c3531007fbedbaed226bc759490808b4173102fab994ff48d1dd1ea83c4868",
+  "initial_pheromone_sha256": "b7c46cddd009d4ce7deeca17475cd745dbe22193ba1a92cf13ee59d7559dcc5a",
+  "native_candidates_sha256": "04632e7728b0523b2faaded1b867653e118aee3a648abfdc3cc5c3c3c5440b2d",
+  "slots": 40000,
+  "unique_undirected_edges": [
+    24343,
+    24263,
+    24261,
+    24216,
+    24237,
+    24209,
+    24201,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24212,
+    24208,
+    24208,
+    24198,
+    24198,
+    24219,
+    24214
+  ],
+  "allocations": [
+    {
+      "iteration": 0,
+      "changed_nodes": 250,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 100,
+      "changed_nodes": 208,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 200,
+      "changed_nodes": 106,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 300,
+      "changed_nodes": 36,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 400,
+      "changed_nodes": 66,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 500,
+      "changed_nodes": 44,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 600,
+      "changed_nodes": 28,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 700,
+      "changed_nodes": 14,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 800,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 900,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1000,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1100,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1200,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1300,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1400,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1500,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1600,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1700,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1800,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 1900,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2000,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2100,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2200,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2300,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2400,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2500,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2600,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2700,
+      "changed_nodes": 40,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2800,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 2900,
+      "changed_nodes": 14,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 3000,
+      "changed_nodes": 0,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 3100,
+      "changed_nodes": 12,
+      "slots": 40000,
+      "expanded_nodes": 250
+    },
+    {
+      "iteration": 3200,
+      "changed_nodes": 22,
+      "slots": 40000,
+      "expanded_nodes": 250
+    }
+  ],
+  "final_overshoot_length": 22.957540664221483,
+  "instance": 15,
+  "run_id": "wall_i15_s27182_C",
+  "attempt": 1,
+  "warmup_file": "raw_results/warmup_1793523467156882136.json",
+  "serialization_seconds": 0.054451760000119975,
+  "total_run_seconds": 8.227950758999896,
+  "completed_utc": "2026-11-01T09:17:37.273056+00:00"
+}

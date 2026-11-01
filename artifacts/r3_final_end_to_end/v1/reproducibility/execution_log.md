@@ -1,0 +1,3 @@
+- 2026-11-01T08:57:19.364164+00:00 Supervisor started; one sequential GPU worker, watchdog300s, disk reserve1GiB, RSS ceiling4GiB.
+- 2026-11-01T09:17:50.638272+00:00 All192 planned principal runs completed.
+- 2026-11-01T09:29:49.6685960Z Offline analysis and raw integrity audit PASS:192/192. Scientific NO-GO. All eight figures visually checked; plot layout and report typography corrected. No solver/policy/data/budget/threshold change or additional principal run.

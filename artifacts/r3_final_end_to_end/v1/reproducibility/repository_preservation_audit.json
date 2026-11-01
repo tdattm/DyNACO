@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "historical_paths_unchanged": true,
+  "original_checkout_branch": "final",
+  "original_checkout_commit": "cd16e2a68fd035f94a8916d41463904f31483d7f",
+  "original_checkout_status": [
+    "?? .r1-env/"
+  ],
+  "reference_branch_commit": "e3eae0055e61789e75a445d61dfa75238ec7ef27",
+  "reference_worktree_status": []
+}
