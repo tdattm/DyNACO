@@ -1,0 +1,39 @@
+{
+  "base_commit": "21ce14680c3b84ecd7f2e39223b6ca3c37674bd2",
+  "source_sha256": {
+    "srr_p1/.gitattributes": "ad83196a57e0c674efddfa0711adacef647a4f181a528898798f7e81edcab483",
+    "srr_p1/analysis.py": "af7eadf48859e988f8ae81be97c4f815169f21d2680d38356029d4c632d12095",
+    "srr_p1/build.sh": "f14606e7787bde25f2892369fcda1b2cea1f707c0b46aebb6181dc5ca2a812f6",
+    "srr_p1/gates.py": "5ca9f13619b84165663bcdae8139617b487049ef35920733fa10607abee05b42",
+    "srr_p1/MEASUREMENT.md": "2454a9b435d64e1c6137b817b0603f56f24bddc5f1c5413dd080a3f0a19871b2",
+    "srr_p1/pilot.py": "720a2f91c1ad2e5a64a877949eb31241e9502efc8e20949edd9fa0831baf0ea5",
+    "srr_p1/review.py": "52c5b9453a5d8f27e26763544af004b1e6d209a68b89f2df071bb74b17ee5900",
+    "srr_p1/runner.py": "8f39df385a2b142c15af8d43c513304cead1b5e10d03e149f499a6420db27939",
+    "srr_p1/run_pilot.sh": "0d3e3b84cae053fc82dce7efec5a4a599157b597cc0d15f70fdca4b3a1c43472",
+    "srr_p1/startup_probe.py": "eeb3c45374e974f3566c1ab74f9c4fea58859983a3c453bc757f5e4897fdc034",
+    "srr_p1/worker.py": "e5eaca31b1d1e5c99d0cfbc6702fdcd8f03444fa4459ebe13f21c13a60ec26e7",
+    "src/mfaco_train.cpp": "bb3feaa0c8d80bdd30eac31ebe4d8917ea3adf694c10c74d57bd81942c1853e3",
+    "src/mfaco_train.h": "a48f024a5393c069cb31c76141c6499358e9b4e73318b43249e20c7f3313e88c",
+    "faco.py": "a15ccb4047d4dac2bc2b8ba78399aa1d0e029a5ed1ab310c2d2bd6228081c0b0",
+    "src/binding.cpp": "60601d64252bb65cccea7c94825db05bf772918f9addc131feac7a16787468c6"
+  },
+  "checkpoint_sha256": "33f7da301e49f74d5b66de2a12c7bd95f247de8c217343c3410bb716a6f22358",
+  "environment": {
+    "import_seconds": 14.07496273199996,
+    "cuda_initialization_seconds": 1.6117904589999625,
+    "checkpoint_load_after_cuda_seconds": 15.333315835000008,
+    "note": "Separate startup-only process after main pilot; not a decomposition measured in the pilot process",
+    "python": "3.13.18 (main, Oct 26 2026, 14:08:20) [Clang 23.1.3 ]",
+    "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "numpy": "2.5.4",
+    "torch": "2.7.1+cu126",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "cpu_threads": 2,
+    "peak_rss_bytes": 735318016
+  },
+  "binary_sha256": {
+    "/mnt/d/GitRepository/DyNACO-srr-p1/.srr-build/native/faco_opt.cpython-313-x86_64-linux-gnu.so": "f6b52878fd2e0312c7857ea7c938ca9a40be709b1a5f632b951d9bf150be5bc3",
+    "/mnt/d/GitRepository/DyNACO-srr-p1/.srr-build/test/faco_opt.cpython-313-x86_64-linux-gnu.so": "172c02ccd8e54926f21b87d3e113dc85882ea69eeee304f28f4166ed89411b32"
+  }
+}

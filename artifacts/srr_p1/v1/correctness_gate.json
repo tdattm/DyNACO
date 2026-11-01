@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "cases": 32,
+  "disabled_frozen_baseline_exact": true,
+  "light_no_route_copies": true,
+  "light_vs_unmeasured_exact": true,
+  "detailed_preserved": true,
+  "normal_parallel_traced_parallel_serial_checked": true,
+  "neural_input_output_exact": true
+}

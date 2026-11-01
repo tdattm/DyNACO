@@ -1,0 +1,8 @@
+{
+  "fields": {
+    "source": true,
+    "best": true,
+    "pheromone": true
+  },
+  "status": "PASS"
+}

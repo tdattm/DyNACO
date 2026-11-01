@@ -1,0 +1,21 @@
+{
+  "development_instance": 0,
+  "execution_seed": 31415,
+  "ants": 100,
+  "block": 100,
+  "warmup": "100 iterations per arm, unmeasured; excluded",
+  "repeats": 3,
+  "full_iterations": 1000,
+  "wall_budget": 4.0,
+  "ordering": "For repeat r then arm0/1; measured then unmeasured if r even, reversed if odd. Then wall arm0/1.",
+  "caps": {
+    "overall_seconds": 600,
+    "per_search_seconds": 60,
+    "rss_bytes": 3221225472,
+    "cuda_allocated_bytes": 1073741824,
+    "threads": 2
+  },
+  "correctness": "20-iteration original utils reference and telemetry invariance before performance runs",
+  "no_policy_tuning": true,
+  "principal_data_access": false
+}

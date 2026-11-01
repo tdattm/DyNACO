@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "seconds": 41.17089869799999,
+  "peak_rss_bytes": 1354399744,
+  "ants": 10,
+  "iterations": 3,
+  "paths": [
+    "normal parallel",
+    "traced parallel",
+    "traced serial"
+  ],
+  "extra": false,
+  "measure": false,
+  "binary": "/mnt/d/GitRepository/DyNACO-srr-p1/.srr-build/test/faco_opt.cpython-313-x86_64-linux-gnu.so",
+  "peak_cuda_allocated": 128539136
+}

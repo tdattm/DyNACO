@@ -887,11 +887,13 @@ PYBIND11_MODULE(faco_opt, m) {
            py::arg("disable_heuristic") = false, py::arg("extend_ls") = false,
            py::arg("smooth_mmas") = false, py::arg("fixed_steps") = 0,
            py::arg("nls") = false, py::arg("T_nls") = 10)
-      .def("configure_srr", [](PyMFACO_TSP& self, bool extra, bool measure) {
+      .def("configure_srr", [](PyMFACO_TSP& self, bool extra, bool measure, bool lightweight) {
         if (extra && (self.solver->k != 32 || self.solver->nls))
           throw std::runtime_error("extra SRR requires K32 and NLS disabled");
+        if (measure && lightweight) throw std::runtime_error("choose detailed or lightweight telemetry");
         self.solver->extra_srr_pass=extra; self.solver->measure_srr=measure;
-      }, py::arg("extra")=false, py::arg("measure")=false)
+        self.solver->lightweight_srr=lightweight;
+      }, py::arg("extra")=false, py::arg("measure")=false, py::arg("lightweight")=false)
       .def_property_readonly("srr_metrics", [](PyMFACO_TSP& self) {
         return std::vector<int64_t>{self.solver->srr_calls.load(),self.solver->srr_evaluations.load(),
           self.solver->srr_accepted.load(),self.solver->srr_mutations.load()};

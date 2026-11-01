@@ -1,0 +1,1 @@
+M2-P1 READY FOR FINAL PROTOCOL FREEZE. Technical/resource review only; no principal authorization. Review M2_REVISED_PROTOCOL.md, timing_memory_audit.json and P1_REVIEW_REPORT.md. Freeze approved source/binary/dispatch/data manifests before principal generation. Historical evidence unchanged; no push.

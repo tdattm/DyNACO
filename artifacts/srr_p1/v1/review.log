@@ -1,0 +1,106 @@
+{
+  "decision": "M2-P1 READY FOR FINAL PROTOCOL FREEZE",
+  "overhead": {
+    "0": {
+      "unmeasured": [
+        2.293831358000034,
+        2.332535507999978,
+        2.6492755030000126
+      ],
+      "measured": [
+        2.887554949000048,
+        2.8715606340000477,
+        2.935621868999988
+      ],
+      "paired_fraction": [
+        0.2588348916450749,
+        0.23108978369304833,
+        0.10808478230207452
+      ],
+      "mean_fraction": 0.19933648588006592,
+      "range_fraction": [
+        0.10808478230207452,
+        0.2588348916450749
+      ],
+      "sample_sd": 0.08023467335405315
+    },
+    "1": {
+      "unmeasured": [
+        2.563613750000002,
+        2.4969250320000356,
+        2.5044229619999783
+      ],
+      "measured": [
+        3.16624594700005,
+        3.246582246999992,
+        3.5804961800000115
+      ],
+      "paired_fraction": [
+        0.23507137024836422,
+        0.3002321677233062,
+        0.4296691231183667
+      ],
+      "mean_fraction": 0.32165755369667903,
+      "range_fraction": [
+        0.23507137024836422,
+        0.4296691231183667
+      ],
+      "sample_sd": 0.09905229289922894
+    }
+  },
+  "prospective_runs": 192,
+  "estimated_seconds": 750.1186117620036,
+  "conservative_2x_seconds": 1459.2171544980074,
+  "cap_seconds": 2700,
+  "margin_ratio": 1.850307194975953,
+  "walls": [
+    {
+      "extra": false,
+      "light": true,
+      "seed": 31415,
+      "native_seed": 2689878502059415719,
+      "iterations": 1401,
+      "eligible_iterations": 1400,
+      "budget": 4.0,
+      "setup_seconds": 0.02379827199996498,
+      "search_seconds": 4.051002122999989,
+      "last_update_seconds": 4.05073274099999,
+      "overshoot_seconds": 0.050732740999990256,
+      "primary_iteration": 1400,
+      "primary_length_f64": 23.403589129032085,
+      "calls": 140100,
+      "evaluations": 34807764,
+      "peak_rss_bytes": 1369473024,
+      "cuda_allocated": 128413696,
+      "cuda_reserved": 155189248,
+      "tag": "wall_arm0",
+      "prior_hashes_sha256": "56ff7ce592a4fb8f7a1b4100554529c1325b1ae81b6b4ba7f26bb05fc32960de"
+    },
+    {
+      "extra": true,
+      "light": true,
+      "seed": 31415,
+      "native_seed": 2689878502059415719,
+      "iterations": 1218,
+      "eligible_iterations": 1218,
+      "budget": 4.0,
+      "setup_seconds": 0.02340673800000559,
+      "search_seconds": 4.000189939999984,
+      "last_update_seconds": 3.9999927800000137,
+      "overshoot_seconds": 0,
+      "primary_iteration": 1218,
+      "primary_length_f64": 23.32185188990239,
+      "calls": 243600,
+      "evaluations": 45123648,
+      "peak_rss_bytes": 1378066432,
+      "cuda_allocated": 128413696,
+      "cuda_reserved": 155189248,
+      "tag": "wall_arm1",
+      "prior_hashes_sha256": "c43473f44b3baa5a9577c35f3b053c3950a612f429961a3be22ce8a01e4d6925"
+    }
+  ],
+  "historical_hashes_preserved": true,
+  "principal_data_access": false,
+  "principal_execution": false,
+  "assessment": "Conditional feasibility on one observed instance/seed; resource failure remains possible on independent data."
+}

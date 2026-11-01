@@ -1,0 +1,22 @@
+{
+  "extra": false,
+  "light": false,
+  "seed": 31415,
+  "native_seed": 2689878502059415719,
+  "iterations": 1000,
+  "eligible_iterations": 1000,
+  "budget": null,
+  "setup_seconds": 0.024324760999945738,
+  "search_seconds": 2.332535507999978,
+  "last_update_seconds": 2.332329278999964,
+  "overshoot_seconds": 0,
+  "primary_iteration": 1000,
+  "primary_length_f64": 23.445473963423296,
+  "calls": null,
+  "evaluations": null,
+  "peak_rss_bytes": 1366228992,
+  "cuda_allocated": 128413696,
+  "cuda_reserved": 155189248,
+  "tag": "iter_r1_arm0_light0",
+  "prior_hashes_sha256": "26bd1d493b92c4661376432e110903dca994971669382c9030c10c46d4d3f39e"
+}

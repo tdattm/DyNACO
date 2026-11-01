@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/GitRepository/DyNACO-srr-p1/srr_p1/pilot.py", line 9, in <module>
+    from r3.state_capture import args
+  File "/mnt/d/GitRepository/DyNACO-srr-p1/r3/state_capture.py", line 8, in <module>
+    from r3.diagnostics import canonical_tour,length
+  File "/mnt/d/GitRepository/DyNACO-srr-p1/r3/diagnostics.py", line 4, in <module>
+    import r3_diagnostic
+ModuleNotFoundError: No module named 'r3_diagnostic'

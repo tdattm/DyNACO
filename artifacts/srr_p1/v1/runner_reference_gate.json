@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "original_utils_exact": true,
+  "iterations": 20,
+  "ants": 100,
+  "guidance_refresh": 10,
+  "full_seed_contract_preserved": true,
+  "light_invariance_both_arms": true,
+  "repeats_exact": true
+}

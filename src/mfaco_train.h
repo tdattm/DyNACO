@@ -203,6 +203,7 @@ public:
   // SRR scheduling PoC: disabled by default; independent passive telemetry.
   bool extra_srr_pass = false;
   bool measure_srr = false;
+  bool lightweight_srr = false; // call/evaluation counters only; no route copies
   std::atomic<int64_t> srr_calls{0}, srr_evaluations{0}, srr_accepted{0}, srr_mutations{0};
   void run_srr_schedule(std::vector<int32_t>& route, std::vector<int32_t>& positions,
                         std::vector<int32_t>& checklist);

@@ -1,0 +1,62 @@
+{
+  "faco.py": {
+    "archive": "faco.py",
+    "sha256": "a15ccb4047d4dac2bc2b8ba78399aa1d0e029a5ed1ab310c2d2bd6228081c0b0"
+  },
+  "src/binding.cpp": {
+    "archive": "src__binding.cpp",
+    "sha256": "60601d64252bb65cccea7c94825db05bf772918f9addc131feac7a16787468c6"
+  },
+  "src/mfaco_train.cpp": {
+    "archive": "src__mfaco_train.cpp",
+    "sha256": "bb3feaa0c8d80bdd30eac31ebe4d8917ea3adf694c10c74d57bd81942c1853e3"
+  },
+  "src/mfaco_train.h": {
+    "archive": "src__mfaco_train.h",
+    "sha256": "a48f024a5393c069cb31c76141c6499358e9b4e73318b43249e20c7f3313e88c"
+  },
+  "srr_p1/.gitattributes": {
+    "archive": "srr_p1__.gitattributes",
+    "sha256": "ad83196a57e0c674efddfa0711adacef647a4f181a528898798f7e81edcab483"
+  },
+  "srr_p1/analysis.py": {
+    "archive": "srr_p1__analysis.py",
+    "sha256": "af7eadf48859e988f8ae81be97c4f815169f21d2680d38356029d4c632d12095"
+  },
+  "srr_p1/build.sh": {
+    "archive": "srr_p1__build.sh",
+    "sha256": "f14606e7787bde25f2892369fcda1b2cea1f707c0b46aebb6181dc5ca2a812f6"
+  },
+  "srr_p1/gates.py": {
+    "archive": "srr_p1__gates.py",
+    "sha256": "5ca9f13619b84165663bcdae8139617b487049ef35920733fa10607abee05b42"
+  },
+  "srr_p1/MEASUREMENT.md": {
+    "archive": "srr_p1__MEASUREMENT.md",
+    "sha256": "2454a9b435d64e1c6137b817b0603f56f24bddc5f1c5413dd080a3f0a19871b2"
+  },
+  "srr_p1/pilot.py": {
+    "archive": "srr_p1__pilot.py",
+    "sha256": "720a2f91c1ad2e5a64a877949eb31241e9502efc8e20949edd9fa0831baf0ea5"
+  },
+  "srr_p1/review.py": {
+    "archive": "srr_p1__review.py",
+    "sha256": "52c5b9453a5d8f27e26763544af004b1e6d209a68b89f2df071bb74b17ee5900"
+  },
+  "srr_p1/runner.py": {
+    "archive": "srr_p1__runner.py",
+    "sha256": "8f39df385a2b142c15af8d43c513304cead1b5e10d03e149f499a6420db27939"
+  },
+  "srr_p1/run_pilot.sh": {
+    "archive": "srr_p1__run_pilot.sh",
+    "sha256": "0d3e3b84cae053fc82dce7efec5a4a599157b597cc0d15f70fdca4b3a1c43472"
+  },
+  "srr_p1/startup_probe.py": {
+    "archive": "srr_p1__startup_probe.py",
+    "sha256": "eeb3c45374e974f3566c1ab74f9c4fea58859983a3c453bc757f5e4897fdc034"
+  },
+  "srr_p1/worker.py": {
+    "archive": "srr_p1__worker.py",
+    "sha256": "e5eaca31b1d1e5c99d0cfbc6702fdcd8f03444fa4459ebe13f21c13a60ec26e7"
+  }
+}

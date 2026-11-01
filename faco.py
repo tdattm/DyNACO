@@ -81,6 +81,7 @@ class MFACO_TSP:
         T_nls: int = 10,
         extra_srr_pass: bool = False,
         measure_srr: bool = False,
+        lightweight_srr: bool = False,
         **kwargs
     ):
         self.device = device
@@ -118,7 +119,9 @@ class MFACO_TSP:
             int(T_nls)
         )
         
-        if extra_srr_pass or measure_srr:
+        if lightweight_srr:
+            self._cpp.configure_srr(bool(extra_srr_pass), bool(measure_srr), True)
+        elif extra_srr_pass or measure_srr:
             self._cpp.configure_srr(bool(extra_srr_pass), bool(measure_srr))
 
         if self.normalized_heuristic and not self.disable_heuristic:

@@ -1,0 +1,22 @@
+{
+  "extra": true,
+  "light": true,
+  "seed": 31415,
+  "native_seed": 2689878502059415719,
+  "iterations": 1218,
+  "eligible_iterations": 1218,
+  "budget": 4.0,
+  "setup_seconds": 0.02340673800000559,
+  "search_seconds": 4.000189939999984,
+  "last_update_seconds": 3.9999927800000137,
+  "overshoot_seconds": 0,
+  "primary_iteration": 1218,
+  "primary_length_f64": 23.32185188990239,
+  "calls": 243600,
+  "evaluations": 45123648,
+  "peak_rss_bytes": 1378066432,
+  "cuda_allocated": 128413696,
+  "cuda_reserved": 155189248,
+  "tag": "wall_arm1",
+  "prior_hashes_sha256": "c43473f44b3baa5a9577c35f3b053c3950a612f429961a3be22ce8a01e4d6925"
+}
