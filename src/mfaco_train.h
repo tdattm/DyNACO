@@ -15,6 +15,7 @@
 #include <tuple>
 #include <utility>
 #include <vector>
+#include <atomic>
 
 namespace mfaco {
 
@@ -199,6 +200,12 @@ struct SampleResult {
 
 class MFACO_TSP {
 public:
+  // SRR scheduling PoC: disabled by default; independent passive telemetry.
+  bool extra_srr_pass = false;
+  bool measure_srr = false;
+  std::atomic<int64_t> srr_calls{0}, srr_evaluations{0}, srr_accepted{0}, srr_mutations{0};
+  void run_srr_schedule(std::vector<int32_t>& route, std::vector<int32_t>& positions,
+                        std::vector<int32_t>& checklist);
   // Configuration
   int32_t n; // number of nodes
   int32_t n_ants;

@@ -78,6 +78,9 @@ void MFACO_TSP::seed_rng(uint64_t seed) { rng_.seed(seed); }
 
 void MFACO_TSP::sample(bool require_prob, const float *prior,
                        SampleResult &result, bool parallel_traced) {
+  if (extra_srr_pass && (k != 32 || nls))
+    throw std::runtime_error("extra SRR requires K32 and NLS disabled");
+  if (measure_srr) { srr_calls=0; srr_evaluations=0; srr_accepted=0; srr_mutations=0; }
   result.clear();
   result.costs.resize(n_ants);
   result.routes.resize(n_ants);
@@ -649,7 +652,7 @@ float MFACO_TSP::sample_ant_fast(const float *probmat, int32_t start_node,
       }
       route = best_route;
     } else {
-      two_opt_nn(route, positions, checklist);
+      run_srr_schedule(route, positions, checklist);
     }
   }
 
@@ -770,7 +773,7 @@ float MFACO_TSP::sample_ant_traced(const float *probmat, int32_t start_node,
       }
       route = best_route;
     } else {
-      two_opt_nn(route, positions, checklist);
+      run_srr_schedule(route, positions, checklist);
     }
   }
 
@@ -956,9 +959,18 @@ float MFACO_TSP::relocate_node(int32_t target, int32_t node,
   return cost_delta;
 }
 
+void MFACO_TSP::run_srr_schedule(std::vector<int32_t>& route,
+    std::vector<int32_t>& positions, std::vector<int32_t>& checklist) {
+  if (extra_srr_pass && (k != 32 || nls))
+    throw std::runtime_error("extra SRR requires K32 and NLS disabled");
+  two_opt_nn(route, positions, checklist);
+  if (extra_srr_pass) two_opt_nn(route, positions, checklist);
+}
+
 float MFACO_TSP::two_opt_nn(std::vector<int32_t> &route,
                             std::vector<int32_t> &positions,
                             std::vector<int32_t> &checklist) {
+  if (measure_srr) srr_calls.fetch_add(1, std::memory_order_relaxed);
   int32_t changes_count = 0;
   float total_change = 0.0f;
   size_t checklist_pos = 0;
@@ -988,6 +1000,7 @@ float MFACO_TSP::two_opt_nn(std::vector<int32_t> &route,
         int32_t b_next = get_succ(b, route, positions);
         float diff =
             dist_a_to_next + dist(b, b_next) - dist_ab - dist(a_next, b_next);
+        if (measure_srr) srr_evaluations.fetch_add(1, std::memory_order_relaxed);
         if (diff > max_diff) {
           best_move[0] = a_next;
           best_move[1] = b_next;
@@ -1011,6 +1024,7 @@ float MFACO_TSP::two_opt_nn(std::vector<int32_t> &route,
         int32_t b_prev = get_pred(b, route, positions);
         float diff =
             dist_a_to_prev + dist(b_prev, b) - dist_ab - dist(a_prev, b_prev);
+        if (measure_srr) srr_evaluations.fetch_add(1, std::memory_order_relaxed);
         if (diff > max_diff) {
           best_move[0] = a;
           best_move[1] = b;
@@ -1024,7 +1038,13 @@ float MFACO_TSP::two_opt_nn(std::vector<int32_t> &route,
     }
 
     if (max_diff > 0) {
+      std::vector<int32_t> before;
+      if (measure_srr) before = route;
       flip_route_section(best_move[0], best_move[1], route, positions);
+      if (measure_srr) {
+        srr_accepted.fetch_add(1, std::memory_order_relaxed);
+        if (route != before) srr_mutations.fetch_add(1, std::memory_order_relaxed);
+      }
       ++changes_count;
       total_change -= max_diff;
 

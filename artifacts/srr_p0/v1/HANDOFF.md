@@ -1,0 +1,1 @@
+M2-P0 READY FOR PROTOCOL REVIEW only. See M15_REPORT.md, M2_P0_REPORT.md, independent_audit.json and M2_DRAFT_PROTOCOL.md. Historical decisions unchanged; principal not run; no push. Review measurement overhead and full-budget feasibility before independent registration.

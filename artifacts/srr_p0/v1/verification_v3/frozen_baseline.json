@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "seconds": 57.87640699899998,
+  "peak_rss_bytes": 1369866240,
+  "ants": 10,
+  "iterations": 3,
+  "paths": [
+    "normal parallel",
+    "traced parallel",
+    "traced serial"
+  ],
+  "extra": false,
+  "measure": false,
+  "binary": "/mnt/d/GitRepository/DyNACO-r3/.r3-build/native/faco_opt.cpython-313-x86_64-linux-gnu.so",
+  "peak_cuda_allocated": 128539136
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "saved_cases": 32,
+  "disabled_exact_fields": 98,
+  "costs_routes_source_best_pheromone_exact": true,
+  "seeded_repeated_rng_paths_exact": true,
+  "neural_graph_and_checkpoint_inference_exact": true,
+  "normal_parallel_equals_parallel_traced": true,
+  "serial_traced_disabled_regression": true,
+  "enabled_logging_invariant": true,
+  "enabled_repeat_exact": true,
+  "native_call_evaluation_accepted_mutation_counts": true,
+  "limitations": "Serial traced and normal use different baseline RNG seeding contracts; each compared to its own frozen path. Timing with atomic counters includes instrumentation overhead.",
+  "decision": "M2-P0 READY FOR PROTOCOL REVIEW"
+}

@@ -79,6 +79,8 @@ class MFACO_TSP:
         fixed_steps: int = 0,
         nls: bool = False,
         T_nls: int = 10,
+        extra_srr_pass: bool = False,
+        measure_srr: bool = False,
         **kwargs
     ):
         self.device = device
@@ -116,6 +118,9 @@ class MFACO_TSP:
             int(T_nls)
         )
         
+        if extra_srr_pass or measure_srr:
+            self._cpp.configure_srr(bool(extra_srr_pass), bool(measure_srr))
+
         if self.normalized_heuristic and not self.disable_heuristic:
             # Normalize heuristic
             h = np.asarray(self._cpp.heuristic_sparse_np) 

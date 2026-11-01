@@ -887,6 +887,26 @@ PYBIND11_MODULE(faco_opt, m) {
            py::arg("disable_heuristic") = false, py::arg("extend_ls") = false,
            py::arg("smooth_mmas") = false, py::arg("fixed_steps") = 0,
            py::arg("nls") = false, py::arg("T_nls") = 10)
+      .def("configure_srr", [](PyMFACO_TSP& self, bool extra, bool measure) {
+        if (extra && (self.solver->k != 32 || self.solver->nls))
+          throw std::runtime_error("extra SRR requires K32 and NLS disabled");
+        self.solver->extra_srr_pass=extra; self.solver->measure_srr=measure;
+      }, py::arg("extra")=false, py::arg("measure")=false)
+      .def_property_readonly("srr_metrics", [](PyMFACO_TSP& self) {
+        return std::vector<int64_t>{self.solver->srr_calls.load(),self.solver->srr_evaluations.load(),
+          self.solver->srr_accepted.load(),self.solver->srr_mutations.load()};
+      })
+#ifdef SRR_TEST_API
+      .def("test_srr_schedule", [](PyMFACO_TSP& self, std::vector<int32_t> route, std::vector<int32_t> checklist) {
+        int n=self.solver->n; std::vector<int32_t> positions(n,-1);
+        if(route.size()!=size_t(n)) throw std::runtime_error("route size");
+        for(int i=0;i<n;++i) {int u=route[i];if(u<0||u>=n||positions[u]!=-1) throw std::runtime_error("permutation");positions[u]=i;}
+        for(int u:checklist) if(u<0||u>=n) throw std::runtime_error("checklist");
+        self.solver->run_srr_schedule(route,positions,checklist);
+        for(int i=0;i<n;++i) if(positions[route[i]]!=i) throw std::runtime_error("position invariant");
+        return py::make_tuple(route,checklist);
+      })
+#endif
       .def_property_readonly("n", &PyMFACO_TSP::get_n)
       .def_property_readonly("n_ants", &PyMFACO_TSP::get_n_ants)
       .def_property_readonly("k", &PyMFACO_TSP::get_k)

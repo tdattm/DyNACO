@@ -1,0 +1,12 @@
+{
+  "srr_p0/audit_m15.py": "55607277c6dbc9a204360e83c4f9e0624db1fbe619f68fb40ea8b561d95c5717",
+  "srr_p0/build.sh": "f14606e7787bde25f2892369fcda1b2cea1f707c0b46aebb6181dc5ca2a812f6",
+  "srr_p0/check_rng.py": "7207901d2c2a68072e8cafbb52e522f446645902630c60038ee7a87eb85b3d85",
+  "srr_p0/final_audit.py": "2dac150c379fb2c4c4585969bc2b49d2275b33fc144d0212bb3fc45f35a77a9a",
+  "srr_p0/verify.py": "9f1e955da219e5c1930670909b15e383aa793294e57c71bb88edbea7e6c5fdf5",
+  "srr_p0/worker.py": "4848fd679f9fc6701d9f6457023ee591ad990054a623b43a2a069e9c1fbec8d1",
+  "faco.py": "82633c82ff2b2abb954eaaacd1bb49acde5c1552922c59eb12990b9772cf1194",
+  "src/mfaco_train.cpp": "31823d748b83650e9b300eda427c8f2ffe4ee44192c5fbd092be391b93ee68cc",
+  "src/binding.cpp": "1ed307272442fdf55cdac9002d5eda3fc9a6648d575f2bfec60c0b07411b3312",
+  "src/mfaco_train.h": "a8c2ea29fc445a69f4789135b6ead6bc0f196cc66c1e26d45f1b1cb165cffcf0"
+}

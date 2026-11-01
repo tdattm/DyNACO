@@ -1,0 +1,70 @@
+{
+  "columns": [
+    "calls",
+    "candidate_evaluations",
+    "accepted_events",
+    "route_mutations"
+  ],
+  "samples": {
+    "False_True_0_telemetry": [
+      20,
+      12235,
+      665,
+      451
+    ],
+    "False_True_1_telemetry": [
+      20,
+      9256,
+      537,
+      367
+    ],
+    "False_True_2_telemetry": [
+      20,
+      8021,
+      451,
+      313
+    ],
+    "True_True_0_telemetry": [
+      20,
+      12235,
+      665,
+      451
+    ],
+    "True_True_1_telemetry": [
+      20,
+      9256,
+      537,
+      367
+    ],
+    "True_True_2_telemetry": [
+      20,
+      8021,
+      451,
+      313
+    ],
+    "True_False_0_telemetry": [
+      20,
+      12308,
+      659,
+      454
+    ],
+    "True_False_1_telemetry": [
+      20,
+      6823,
+      408,
+      294
+    ],
+    "True_False_2_telemetry": [
+      20,
+      8578,
+      504,
+      331
+    ]
+  },
+  "totals": [
+    180,
+    86733,
+    4877,
+    3341
+  ]
+}

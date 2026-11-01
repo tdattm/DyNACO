@@ -1,0 +1,16 @@
+{
+  "totals": {
+    "accepted": 536,
+    "empty": 396,
+    "mutations": 140,
+    "robust": 140,
+    "noop_extensions": 73
+  },
+  "expected_counts_match": true,
+  "noop_degenerate": 396,
+  "noop_gain_range": [
+    1.1641532182693481e-10,
+    7.450580596923828e-09
+  ],
+  "noop_nonzero_float64_changes": 0
+}

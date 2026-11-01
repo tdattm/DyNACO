@@ -1,0 +1,290 @@
+[
+  {
+    "case": "i0_s31415_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i0_s31415_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i0_s27182_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i0_s27182_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i1_s31415_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i1_s31415_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i1_s27182_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i1_s27182_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i2_s31415_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i2_s31415_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i2_s27182_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i2_s27182_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i3_s31415_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i3_s31415_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i3_s27182_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i3_s27182_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i4_s31415_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i4_s31415_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i4_s27182_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i4_s27182_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i5_s31415_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i5_s31415_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i5_s27182_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i5_s27182_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i6_s31415_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i6_s31415_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i6_s27182_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i6_s27182_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i7_s31415_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i7_s31415_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i7_s27182_t499",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  },
+  {
+    "case": "i7_s27182_t999",
+    "disabled_exact": true,
+    "enabled_exact": true,
+    "checklist_exact": true,
+    "measurement_invariant": true,
+    "native_evaluations_exact": true,
+    "no_third_pass": true
+  }
+]

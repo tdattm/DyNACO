@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/d/GitRepository/DyNACO-srr-p0/srr_p0/verify.py", line 63, in <module>
+    try:main()
+        ~~~~^^
+  File "/mnt/d/GitRepository/DyNACO-srr-p0/srr_p0/verify.py", line 44, in main
+    a=worker('frozen_baseline',frozen);b=worker('disabled',ROOT/'.srr-build/test')
+  File "/mnt/d/GitRepository/DyNACO-srr-p0/srr_p0/verify.py", line 40, in worker
+    subprocess.run([sys.executable,str(ROOT/'srr_p0/worker.py'),str(binary),str(OUT/(tag+'.npz')),
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        str(int(extra)),str(int(measure))],env=env,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=90)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/GitRepository/DyNACO/.r1-env/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/mnt/d/GitRepository/DyNACO/.r1-env/venv/bin/python', '/mnt/d/GitRepository/DyNACO-srr-p0/srr_p0/worker.py', '/mnt/d/GitRepository/DyNACO-r3/.r3-build/native', '/mnt/d/GitRepository/DyNACO-srr-p0/artifacts/srr_p0/v1/verification_v2/frozen_baseline.npz', '0', '0']' returned non-zero exit status 1.

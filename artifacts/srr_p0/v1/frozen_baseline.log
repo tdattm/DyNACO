@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/mnt/d/GitRepository/DyNACO-srr-p0/srr_p0/worker.py", line 30, in <module>
+    best=int(np.argmin(costs));solver.update_pheromone(flats[best],float(costs[best]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'faco_opt.MFACO_TSP' object has no attribute 'update_pheromone'. Did you mean: 'set_pheromone'?

@@ -1,0 +1,17 @@
+[
+  {
+    "traced": false,
+    "parallel": true,
+    "next_sample_exact_after_state_sync_without_reseeding": true
+  },
+  {
+    "traced": true,
+    "parallel": true,
+    "next_sample_exact_after_state_sync_without_reseeding": true
+  },
+  {
+    "traced": true,
+    "parallel": false,
+    "next_sample_exact_after_state_sync_without_reseeding": true
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "case": "i0_s31415_t499",
+    "accepted": 9,
+    "empty": 8,
+    "mutations": 1,
+    "robust": 1,
+    "noop_extensions": 1
+  },
+  {
+    "case": "i0_s31415_t999",
+    "accepted": 18,
+    "empty": 16,
+    "mutations": 2,
+    "robust": 2,
+    "noop_extensions": 1
+  },
+  {
+    "case": "i0_s27182_t499",
+    "accepted": 20,
+    "empty": 13,
+    "mutations": 7,
+    "robust": 7,
+    "noop_extensions": 1
+  },
+  {
+    "case": "i0_s27182_t999",
+    "accepted": 16,
+    "empty": 15,
+    "mutations": 1,
+    "robust": 1,
+    "noop_extensions": 4
+  },
+  {
+    "case": "i1_s31415_t499",
+    "accepted": 10,
+    "empty": 7,
+    "mutations": 3,
+    "robust": 3,
+    "noop_extensions": 2
+  },
+  {
+    "case": "i1_s31415_t999",
+    "accepted": 15,
+    "empty": 8,
+    "mutations": 7,
+    "robust": 7,
+    "noop_extensions": 3
+  },
+  {
+    "case": "i1_s27182_t499",
+    "accepted": 9,
+    "empty": 7,
+    "mutations": 2,
+    "robust": 2,
+    "noop_extensions": 1
+  },
+  {
+    "case": "i1_s27182_t999",
+    "accepted": 20,
+    "empty": 10,
+    "mutations": 10,
+    "robust": 10,
+    "noop_extensions": 5
+  },
+  {
+    "case": "i2_s31415_t499",
+    "accepted": 14,
+    "empty": 11,
+    "mutations": 3,
+    "robust": 3,
+    "noop_extensions": 0
+  },
+  {
+    "case": "i2_s31415_t999",
+    "accepted": 13,
+    "empty": 8,
+    "mutations": 5,
+    "robust": 5,
+    "noop_extensions": 0
+  },
+  {
+    "case": "i2_s27182_t499",
+    "accepted": 20,
+    "empty": 16,
+    "mutations": 4,
+    "robust": 4,
+    "noop_extensions": 5
+  },
+  {
+    "case": "i2_s27182_t999",
+    "accepted": 14,
+    "empty": 9,
+    "mutations": 5,
+    "robust": 5,
+    "noop_extensions": 1
+  },
+  {
+    "case": "i3_s31415_t499",
+    "accepted": 17,
+    "empty": 13,
+    "mutations": 4,
+    "robust": 4,
+    "noop_extensions": 2
+  },
+  {
+    "case": "i3_s31415_t999",
+    "accepted": 11,
+    "empty": 10,
+    "mutations": 1,
+    "robust": 1,
+    "noop_extensions": 0
+  },
+  {
+    "case": "i3_s27182_t499",
+    "accepted": 26,
+    "empty": 18,
+    "mutations": 8,
+    "robust": 8,
+    "noop_extensions": 5
+  },
+  {
+    "case": "i3_s27182_t999",
+    "accepted": 24,
+    "empty": 16,
+    "mutations": 8,
+    "robust": 8,
+    "noop_extensions": 5
+  },
+  {
+    "case": "i4_s31415_t499",
+    "accepted": 12,
+    "empty": 5,
+    "mutations": 7,
+    "robust": 7,
+    "noop_extensions": 1
+  },
+  {
+    "case": "i4_s31415_t999",
+    "accepted": 14,
+    "empty": 12,
+    "mutations": 2,
+    "robust": 2,
+    "noop_extensions": 0
+  },
+  {
+    "case": "i4_s27182_t499",
+    "accepted": 21,
+    "empty": 20,
+    "mutations": 1,
+    "robust": 1,
+    "noop_extensions": 4
+  },
+  {
+    "case": "i4_s27182_t999",
+    "accepted": 17,
+    "empty": 11,
+    "mutations": 6,
+    "robust": 6,
+    "noop_extensions": 2
+  },
+  {
+    "case": "i5_s31415_t499",
+    "accepted": 10,
+    "empty": 7,
+    "mutations": 3,
+    "robust": 3,
+    "noop_extensions": 0
+  },
+  {
+    "case": "i5_s31415_t999",
+    "accepted": 18,
+    "empty": 14,
+    "mutations": 4,
+    "robust": 4,
+    "noop_extensions": 7
+  },
+  {
+    "case": "i5_s27182_t499",
+    "accepted": 18,
+    "empty": 13,
+    "mutations": 5,
+    "robust": 5,
+    "noop_extensions": 3
+  },
+  {
+    "case": "i5_s27182_t999",
+    "accepted": 10,
+    "empty": 10,
+    "mutations": 0,
+    "robust": 0,
+    "noop_extensions": 2
+  },
+  {
+    "case": "i6_s31415_t499",
+    "accepted": 19,
+    "empty": 13,
+    "mutations": 6,
+    "robust": 6,
+    "noop_extensions": 3
+  },
+  {
+    "case": "i6_s31415_t999",
+    "accepted": 15,
+    "empty": 9,
+    "mutations": 6,
+    "robust": 6,
+    "noop_extensions": 1
+  },
+  {
+    "case": "i6_s27182_t499",
+    "accepted": 20,
+    "empty": 16,
+    "mutations": 4,
+    "robust": 4,
+    "noop_extensions": 1
+  },
+  {
+    "case": "i6_s27182_t999",
+    "accepted": 24,
+    "empty": 16,
+    "mutations": 8,
+    "robust": 8,
+    "noop_extensions": 2
+  },
+  {
+    "case": "i7_s31415_t499",
+    "accepted": 27,
+    "empty": 21,
+    "mutations": 6,
+    "robust": 6,
+    "noop_extensions": 3
+  },
+  {
+    "case": "i7_s31415_t999",
+    "accepted": 17,
+    "empty": 11,
+    "mutations": 6,
+    "robust": 6,
+    "noop_extensions": 1
+  },
+  {
+    "case": "i7_s27182_t499",
+    "accepted": 20,
+    "empty": 16,
+    "mutations": 4,
+    "robust": 4,
+    "noop_extensions": 2
+  },
+  {
+    "case": "i7_s27182_t999",
+    "accepted": 18,
+    "empty": 17,
+    "mutations": 1,
+    "robust": 1,
+    "noop_extensions": 5
+  }
+]
