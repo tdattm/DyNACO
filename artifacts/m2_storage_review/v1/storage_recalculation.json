@@ -1,0 +1,141 @@
+{
+  "status": "REPRODUCED",
+  "journal_bytes": 4024,
+  "old_required_bytes": 166460928000,
+  "development_file_bytes": {
+    "0": {
+      "npz": 340560,
+      "json": 72652,
+      "bin": 4024000
+    },
+    "1": {
+      "npz": 304539,
+      "json": 72653,
+      "bin": 4024000
+    }
+  },
+  "npz_layout": {
+    "0": {
+      "initial": {
+        "dtype": "int32",
+        "shape": [
+          1000
+        ],
+        "bytes": 4000
+      },
+      "times": {
+        "dtype": "float64",
+        "shape": [
+          1000
+        ],
+        "bytes": 8000
+      },
+      "tours": {
+        "dtype": "int32",
+        "shape": [
+          1000,
+          1000
+        ],
+        "bytes": 4000000
+      },
+      "costs": {
+        "dtype": "float32",
+        "shape": [
+          1000,
+          100
+        ],
+        "bytes": 400000
+      },
+      "source": {
+        "dtype": "int32",
+        "shape": [
+          1000
+        ],
+        "bytes": 4000
+      },
+      "best": {
+        "dtype": "int32",
+        "shape": [
+          1000
+        ],
+        "bytes": 4000
+      },
+      "pheromone": {
+        "dtype": "float32",
+        "shape": [
+          1000,
+          32
+        ],
+        "bytes": 128000
+      }
+    },
+    "1": {
+      "initial": {
+        "dtype": "int32",
+        "shape": [
+          1000
+        ],
+        "bytes": 4000
+      },
+      "times": {
+        "dtype": "float64",
+        "shape": [
+          1000
+        ],
+        "bytes": 8000
+      },
+      "tours": {
+        "dtype": "int32",
+        "shape": [
+          1000,
+          1000
+        ],
+        "bytes": 4000000
+      },
+      "costs": {
+        "dtype": "float32",
+        "shape": [
+          1000,
+          100
+        ],
+        "bytes": 400000
+      },
+      "source": {
+        "dtype": "int32",
+        "shape": [
+          1000
+        ],
+        "bytes": 4000
+      },
+      "best": {
+        "dtype": "int32",
+        "shape": [
+          1000
+        ],
+        "bytes": 4000
+      },
+      "pheromone": {
+        "dtype": "float32",
+        "shape": [
+          1000,
+          32
+        ],
+        "bytes": 128000
+      }
+    }
+  },
+  "observed_wall_attempts": [
+    1401,
+    1218
+  ],
+  "wall_envelope_iterations": 5605,
+  "conservative_payload_bytes": 6761414656,
+  "proposed_required_bytes": 17817796608,
+  "classification": "Conditional engineering admission estimate; NOT deterministic upper bound",
+  "S1_observed_free_bytes": 21037568000,
+  "S1_free_margin_bytes": 3219771392,
+  "S1_margin_percent_of_required": 18.070536233163406,
+  "historical_preflight_margin_bytes": 4302299136,
+  "current_free_bytes": 21037240320,
+  "current_reading_usable_for_future_launch": false
+}

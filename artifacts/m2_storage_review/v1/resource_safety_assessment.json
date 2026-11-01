@@ -1,0 +1,15 @@
+{
+  "status": "BLOCKED",
+  "reviewed_at": "2026-11-01T05:38:29.019860+00:00",
+  "issues": [
+    "F1 mandatory launch wiring missing",
+    "F2 monitor exception fails open",
+    "F3 orphan worker survives launcher exit",
+    "F4 status and approval adapter missing"
+  ],
+  "storage_arithmetic": "PASS",
+  "registration_integrity": "PASS",
+  "runtime_guarantee": false,
+  "prior_study_decision": "M2 RESOURCE-INCONCLUSIVE",
+  "principal_valid_runs": 0
+}

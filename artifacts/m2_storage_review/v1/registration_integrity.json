@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "registration_sha256": "5d2d8942f900d4d1a4ef89e069668c3d0290d17c628d058150ffe6998d5bca45",
+  "protocol_sha256": "574cd6781e7a026951521e12bfdef28f5790752289c029f21b8db0f4e5e5dedd",
+  "amendment_sha256": "fc88ecb001f219bf1ee414df30a4405f158055b9e1417deb6674b8c417fe537c",
+  "registered_files_verified": 108,
+  "historical_files_verified": 1216,
+  "S1_artifacts_verified": 12,
+  "S1_source_hashes_verified": 2,
+  "drift": [],
+  "claims_present": false,
+  "principal_valid_runs": 0,
+  "principal_data_accessed": false
+}

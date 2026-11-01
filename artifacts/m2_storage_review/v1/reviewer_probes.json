@@ -1,0 +1,53 @@
+{
+  "method": "New synthetic probes in this Codex review turn, not external independent review",
+  "probes": [
+    {
+      "test": "standalone_low_disk_stop_and_prefix",
+      "observation": "REPRODUCED_PASS",
+      "result": {
+        "status": "RESOURCE-INCONCLUSIVE",
+        "reason": "DISK_FREE_FLOOR",
+        "valid_partial_runs": 0,
+        "observations": [
+          {
+            "monotonic": 11.367613292,
+            "free": 1,
+            "persisted_bytes": 15,
+            "filesystem_device": 84,
+            "growth_bytes_per_second": 0,
+            "stop_threshold_bytes": 5320015872
+          }
+        ]
+      }
+    },
+    {
+      "test": "non_OSError_supervisor_failure",
+      "observation": "UNSAFE_REPRODUCED",
+      "child_survived": true,
+      "resource_status_written": false
+    },
+    {
+      "test": "launcher_exit_with_separate_worker_session",
+      "observation": "UNSAFE_REPRODUCED",
+      "worker_survived": true,
+      "result": {
+        "status": "CHILD_EXITED",
+        "reason": "delegate_to_frozen_P2_status",
+        "returncode": 0,
+        "observations": [
+          {
+            "monotonic": 11.652057004,
+            "free": 1000000000000000,
+            "persisted_bytes": 0,
+            "filesystem_device": 84,
+            "growth_bytes_per_second": 0,
+            "stop_threshold_bytes": 5320015872
+          }
+        ]
+      }
+    }
+  ],
+  "principal_commands_invoked": 0,
+  "coordinates_generated_or_accessed": false,
+  "cleanup": "All synthetic process groups terminated by reviewer harness after observation"
+}

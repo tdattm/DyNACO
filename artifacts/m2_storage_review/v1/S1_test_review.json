@@ -1,0 +1,124 @@
+{
+  "reported_count": 22,
+  "reported_pass_count": 22,
+  "reviewed_tests": [
+    {
+      "test": "original_formula_exact",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "development_sizes_independent",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "simulated_admission_pass",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "simulated_admission_reject",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "stop_classification_floor",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "partial_journal_preserved_floor",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "nested_worker_session_stopped_floor",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "stop_classification_growth",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "partial_journal_preserved_growth",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "nested_worker_session_stopped_growth",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "stop_classification_enospc",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "partial_journal_preserved_enospc",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "nested_worker_session_stopped_enospc",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "stop_classification_write_error",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "partial_journal_preserved_write_error",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "frozen_protection_unchanged_srr_p2/core.py",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "frozen_protection_unchanged_srr_p2/execute.py",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "frozen_protection_unchanged_srr_p2/worker.py",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "frozen_protection_unchanged_srr_p2/runner.py",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "exclusive_lock_mechanics",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "all_historical_bytes_unchanged",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    },
+    {
+      "test": "no_principal_data_or_execution",
+      "status": "PASS",
+      "S2_scope": "Arithmetic/storage independently recomputed; low-disk prefix independently reprobed. Remaining items reviewed in code/evidence, not claimed rerun."
+    }
+  ],
+  "missing": [
+    "Mandatory admission/watchdog launch wiring",
+    "Watchdog non-OSError failure and loss-of-parent handling",
+    "Real filesystem sampler integration",
+    "Timed serialization growth and external writer coverage",
+    "Bound amendment approval enforcement",
+    "Single official stop-status arbitration"
+  ]
+}
