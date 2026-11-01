@@ -288,8 +288,8 @@ cụ thể này với cả hai control dưới ngân sách đã định.
                   'Kết quả mới hỗ trợ policy tích hợp này trong cấu hình đã đo, đồng thời giới hạn cách suy rộng từ offline Stage A sang end-to-end search.')
     text=f'''# Báo cáo nghiên cứu R3 final end-to-end
 
-**R3 FINAL DECISION: {final}**  
-**SCIENTIFIC CONCLUSION: {final}**  
+**R3 FINAL DECISION: {final}**{'  '}
+**SCIENTIFIC CONCLUSION: {final}**{'  '}
 Hoàn thành và kiểm toán độc lập **192/192 run hợp lệ**, 16 instance × 2 seed × 3 arm × 2 budget.
 Đây là kết luận khoa học theo screening rule đã đóng băng, không phải technical NO-GO.
 
