@@ -1,0 +1,19 @@
+{
+  "correctness_pass": false,
+  "resource_pass": true,
+  "experiment_wall_seconds": 5.247849200000001,
+  "peak_process_rss_bytes": 144273408,
+  "rss_measurement": "Linux ru_maxrss *1024; process lifetime peak, conservative",
+  "virtual_memory_enforced_bytes": 1000000000,
+  "cpu_workers": 1,
+  "physical_native_invocations": 1,
+  "sequential_passes_per_treatment_path": 2,
+  "verification_repeats_from_pass1_state": true,
+  "preserved_input_hashes": true,
+  "cases_passed": 0,
+  "cases_failed": 1,
+  "cases_not_run": 31,
+  "failure": "Traceback (most recent call last):\n  File \"/mnt/d/GitRepository/DyNACO-r3/r3/m1.py\", line 92, in run\n    assert p1==old,'pass1 differs from validated M0 events/route/checklist/delta'\n           ^^^^^^^\nAssertionError: pass1 differs from validated M0 events/route/checklist/delta\n",
+  "decision": "M1 INCONCLUSIVE",
+  "signal_instances": []
+}

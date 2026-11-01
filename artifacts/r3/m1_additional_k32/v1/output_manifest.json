@@ -1,0 +1,17 @@
+{
+  "execution.log": "35920e3355bb1ce1798d6e624dae992c83c577628e6799c8d727ca872fed778d",
+  "failure_diagnosis.json": "e23da78629e6acf8c2a6874a1199153b1ede228cf827ada3ace9c43dd4d70111",
+  "HANDOFF_SUPPLEMENT.md": "98e73701e14aea8c274b92dea1b83034eaa0a21b076aed96e7b2780d3fe02fee",
+  "HANDOFF_SUPPLEMENT.md.initial_generated": "d8b469c8b7744f8a30bfb29d3738de7d0a54a1eb98bedabb5a3fca93650e10cf",
+  "i0_s31415_t499_validation.json": "589c00716b6e33df60bc6a337e1d51ccc10bbc12a2ad0988808070a9d4481702",
+  "input_manifest.json": "700b14694487beeaf8159a70448ab000b567ddf8e82c75acd67f353bf21346b8",
+  "instance_summary.json": "3a57c51bc11be8f47da3ffedc837468531677202e2fdf077ceb498d96331fd22",
+  "M1_RESEARCH_REPORT.md": "7102b462ed36dba250390060bbf261e8d0e58d08474ee24b20a3833813fa6c07",
+  "M1_RESEARCH_REPORT.md.initial_generated": "0013e07e5e2c886d2da5858090ba91427124d9269f814d6ecc2e5bb9cda114ec",
+  "paired_metrics.csv": "39bf80f00c38c529c5d10013150c158168f42107ab917f9f0e202d8fc8f30266",
+  "protocol.json": "aecb4747ed0611cb5343b7e07a160665e1bb7ade7b43f04648c0f5b7cd94840f",
+  "protocol.sha256": "901e64eefb763d0baa482dfca682e3f9c43193ecdacd396145ab79e2b2a21d79",
+  "source_manifest.json": "44ab39f8713fe443d5887ec0234cf54aaaca717f9cddf36cb6d9e759da67ebf4",
+  "test_resource_audit.json": "d2e6564e444431c36466328b064e0142422166bb94de780ce3599681fc23c387",
+  "validation_records.json": "5063812880ae1fe3ef9d1cedb0781499f73bd2e71870a7d008bdb84409841782"
+}

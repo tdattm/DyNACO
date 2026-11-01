@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "question": "Exactly one additional unchanged K32 SRR call from pass1 final route/checklist",
+  "instances": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "seeds": [
+    31415,
+    27182
+  ],
+  "iterations": [
+    499,
+    999
+  ],
+  "cases": 32,
+  "control": "Original single K32 SRR pass, exact saved refined ant0 and M0 route/checklist/delta match",
+  "intervention": "Original identical routine once more; cursor reset, final checklist retained",
+  "robust_improvement": "float64 baseline length - second-pass length > max(1e-8,1e-6*baseline length)",
+  "signal": "All32 correct and at least one robust case in at least4 of8 instances",
+  "unit": "Independent saved instance; phases within seed, seeds within instance; exploratory only",
+  "resources": {
+    "cpu_workers": 1,
+    "wall_seconds": 300,
+    "rss_bytes": 1000000000,
+    "processed_anchors_per_two_pass_path": 2000,
+    "candidate_evaluations_per_two_pass_path": 128000
+  },
+  "call_accounting": "Two sequential calls per treatment trajectory. Required logging verification repeats pass2 from identical pass1 state, not from pass2 output. Three physical invocations per case, two-pass path bounds; all verification time/RSS included in resource audit. No third sequential pass.",
+  "timing": "perf_counter around unlogged native pass2 call only; includes pybind copies/conversion, excludes logging/independent checks/serialization",
+  "residual": "M0 offline scanner, all anchors on final pass2 frozen tour; robust float64 threshold; K32 membership",
+  "failure": "Stop on first correctness/resource failure; retain failing case and mark all remaining NOT_RUN; no replacements",
+  "restrictions": [
+    "No new instances/ACO/model/confirmation data",
+    "No solver or M0 edits",
+    "No other variants",
+    "No push"
+  ],
+  "historical": {
+    "stage_a": "NO-GO",
+    "secondary": "INCONCLUSIVE",
+    "m0": "VALIDATED"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "HARNESS_COMPARISON_ERROR",
+  "native_calls_added": 0,
+  "issue": "Native route_updates contain tuples; JSON round-trip contains lists. Direct whole-dict equality is not representation invariant.",
+  "evidence": [
+    "M0 replayer.cpp uses py::make_tuple for route_updates",
+    "Saved first-case M0 log has nonempty list-valued updates",
+    "Python tuple/list equality differs after JSON round-trip"
+  ],
+  "actual_pass1_output_persisted": false,
+  "limitation": "Failed assertion preceded explicit saved-tour and checklist/delta checks; actual numerical equality was not established in this run.",
+  "action": "No patch/retry of frozen run; pass2 never called; 31 cases NOT_RUN",
+  "original_inputs_rehashed": 728,
+  "original_inputs_unchanged": true
+}

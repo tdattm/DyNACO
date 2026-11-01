@@ -1,0 +1,227 @@
+[
+  {
+    "case": "i0_s31415_t499",
+    "instance": 0,
+    "seed": 31415,
+    "iteration": 499,
+    "status": "FAILED",
+    "error": "Traceback (most recent call last):\n  File \"/mnt/d/GitRepository/DyNACO-r3/r3/m1.py\", line 92, in run\n    assert p1==old,'pass1 differs from validated M0 events/route/checklist/delta'\n           ^^^^^^^\nAssertionError: pass1 differs from validated M0 events/route/checklist/delta\n"
+  },
+  {
+    "case": "i0_s31415_t999",
+    "instance": 0,
+    "seed": 31415,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i0_s27182_t499",
+    "instance": 0,
+    "seed": 27182,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i0_s27182_t999",
+    "instance": 0,
+    "seed": 27182,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i1_s31415_t499",
+    "instance": 1,
+    "seed": 31415,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i1_s31415_t999",
+    "instance": 1,
+    "seed": 31415,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i1_s27182_t499",
+    "instance": 1,
+    "seed": 27182,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i1_s27182_t999",
+    "instance": 1,
+    "seed": 27182,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i2_s31415_t499",
+    "instance": 2,
+    "seed": 31415,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i2_s31415_t999",
+    "instance": 2,
+    "seed": 31415,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i2_s27182_t499",
+    "instance": 2,
+    "seed": 27182,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i2_s27182_t999",
+    "instance": 2,
+    "seed": 27182,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i3_s31415_t499",
+    "instance": 3,
+    "seed": 31415,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i3_s31415_t999",
+    "instance": 3,
+    "seed": 31415,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i3_s27182_t499",
+    "instance": 3,
+    "seed": 27182,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i3_s27182_t999",
+    "instance": 3,
+    "seed": 27182,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i4_s31415_t499",
+    "instance": 4,
+    "seed": 31415,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i4_s31415_t999",
+    "instance": 4,
+    "seed": 31415,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i4_s27182_t499",
+    "instance": 4,
+    "seed": 27182,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i4_s27182_t999",
+    "instance": 4,
+    "seed": 27182,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i5_s31415_t499",
+    "instance": 5,
+    "seed": 31415,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i5_s31415_t999",
+    "instance": 5,
+    "seed": 31415,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i5_s27182_t499",
+    "instance": 5,
+    "seed": 27182,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i5_s27182_t999",
+    "instance": 5,
+    "seed": 27182,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i6_s31415_t499",
+    "instance": 6,
+    "seed": 31415,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i6_s31415_t999",
+    "instance": 6,
+    "seed": 31415,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i6_s27182_t499",
+    "instance": 6,
+    "seed": 27182,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i6_s27182_t999",
+    "instance": 6,
+    "seed": 27182,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i7_s31415_t499",
+    "instance": 7,
+    "seed": 31415,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i7_s31415_t999",
+    "instance": 7,
+    "seed": 31415,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i7_s27182_t499",
+    "instance": 7,
+    "seed": 27182,
+    "iteration": 499,
+    "status": "NOT_RUN"
+  },
+  {
+    "case": "i7_s27182_t999",
+    "instance": 7,
+    "seed": 27182,
+    "iteration": 999,
+    "status": "NOT_RUN"
+  }
+]
