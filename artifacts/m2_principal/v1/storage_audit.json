@@ -1,0 +1,24 @@
+{
+  "development_1000_iteration_file_bytes": {
+    "0": {
+      "json": 72652,
+      "npz": 340560,
+      "bin": 4024000
+    },
+    "1": {
+      "json": 72653,
+      "npz": 304539,
+      "bin": 4024000
+    }
+  },
+  "journal_record_bytes": 4024,
+  "observed_max_case_bytes": 4437212,
+  "pilot_scaled_192_cases_bytes": 851944704,
+  "admission": {
+    "free": 22120095744,
+    "estimated_max_bytes": 83230464000,
+    "required_headroom_bytes": 166460928000,
+    "per_iteration_bytes": 8584
+  },
+  "explanation": "Pilot-scaled size is much smaller than the theoretical wall-loop-ceiling bound. Admission used the latter with 2x headroom; this was a new conservative operational check, not a registered scientific parameter or an observed disk-full error. No alternate threshold was applied after failure."
+}

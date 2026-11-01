@@ -1,0 +1,17 @@
+{
+  "files": {
+    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "HANDOFF.md": "b16b2f24af990cb049d7898cca9708aed7c33c9adc94bc453d02e892035448cc",
+    "M2_RESEARCH_REPORT.md": "d1b98a16c2cb7f5dccda482d7930409d46e5c022efe79c53e327a56695fbfbf1",
+    "approval_provenance.json": "c1f5a7bc59a4f52c2584054e70d402ef3144f1b4c3286703c4aa1f33b233c81b",
+    "authorization_basis.txt": "126126a00682db4054d51154f0334b0bfec1211d5d79218bdb6c01fc0088c4f9",
+    "authorization_basis_message.json": "ddc4d1ba198900536c4674e27b9817f287ef4efc682f282b4488ac8ccb15f796",
+    "decision.json": "2ed7932fa4eaea31e3e4bdd77307e8ac4508e2af7456be7f66328ea7e8d5e1d2",
+    "full_grid_audit.json": "4732942aa98755972076597dbcab81125dadb665f76364ba2b87b78b71cd48c7",
+    "input_manifest.json": "d1bde5e6a51a90782151c0dfc7b371cf21d6fedac1ede9415edd67e1de3c0012",
+    "preflight.json": "7434473df27c8220a8a28c3136c72a4bdd7608f090ef4f26d72b0101b2a14c78",
+    "preflight.log": "39108b5bf8141cdcc7cc71f749d43fc20ea2e56f05244cf8455aebaa23e730aa",
+    "registration_reference.json": "2acbe0c31e93338741984cb9ab608e6ce52b1b872cc08ef991d4c8e894a51c7e",
+    "storage_audit.json": "2ee3aecf5e4d04cc5f7ee297c00eaea31dbb6a66f2933c532bedf708700f96cf"
+  }
+}

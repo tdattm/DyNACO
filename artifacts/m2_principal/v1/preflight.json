@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-11-01T04:28:04.166619+00:00",
+  "checks": [
+    {
+      "name": "registration_and_all_source_hashes",
+      "passed": true
+    },
+    {
+      "name": "192_unique_dispatch",
+      "passed": true
+    },
+    {
+      "name": "P2_independent_audit.json",
+      "passed": true
+    },
+    {
+      "name": "P2_final_validation/tests.json",
+      "passed": true
+    },
+    {
+      "name": "python_numpy_torch_cuda_versions",
+      "passed": true
+    },
+    {
+      "name": "compiler",
+      "passed": true
+    },
+    {
+      "name": "production_binary_loaded",
+      "passed": true
+    },
+    {
+      "name": "RTX3050_identity",
+      "passed": true
+    },
+    {
+      "name": "two_CPU_threads",
+      "passed": true
+    },
+    {
+      "name": "no_conflicting_GPU_process",
+      "passed": true
+    },
+    {
+      "name": "CUDA_free_above_cap",
+      "passed": true
+    },
+    {
+      "name": "available_RAM_above_RSS_cap",
+      "passed": true
+    },
+    {
+      "name": "conservative_disk_headroom",
+      "passed": false
+    }
+  ],
+  "registration_sha256": "5d2d8942f900d4d1a4ef89e069668c3d0290d17c628d058150ffe6998d5bca45",
+  "protocol_sha256": "574cd6781e7a026951521e12bfdef28f5790752289c029f21b8db0f4e5e5dedd",
+  "dispatch_sha256": "874eb02f9afe8642a90bffb272137c42548f51ed09dc6e179ba8dc4002657efe",
+  "gpu_processes": "",
+  "cuda_free_bytes": 3463865959,
+  "cuda_total_bytes": 4294443008,
+  "system_memory": {
+    "MemTotal": 8214568960,
+    "MemAvailable": 7247237120
+  },
+  "disk": {
+    "free": 22120095744,
+    "estimated_max_bytes": 83230464000,
+    "required_headroom_bytes": 166460928000,
+    "per_iteration_bytes": 8584
+  },
+  "status": "BLOCKED",
+  "error": "mandatory preflight gate: conservative_disk_headroom",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/d/GitRepository/DyNACO-srr-p2/m2_principal/preflight.py\", line 46, in main\n    check('conservative_disk_headroom',disk.free>2*estimate)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/d/GitRepository/DyNACO-srr-p2/m2_principal/preflight.py\", line 13, in check\n    if not ok:raise RuntimeError('mandatory preflight gate: '+name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: mandatory preflight gate: conservative_disk_headroom\n",
+  "elapsed_seconds": 14.472579413,
+  "peak_rss_bytes": 568557568
+}

@@ -1,0 +1,10 @@
+{
+  "source": "User-submitted instruction in this Codex conversation",
+  "session_id": "01a19265-45ec-75f2-bf7b-ad905d297865",
+  "session_log": "/mnt/c/Users/TIEN DAT/.codex/sessions/2026/10/31/rollout-2026-10-31T21-37-53-01a19265-45ec-75f2-bf7b-ad905d297865.jsonl",
+  "source_line": 2084,
+  "source_record_sha256": "598d16fa3f5632ef5f889af821566dd1c231514889fe8227e732b271942bc134",
+  "archived_at": "2026-11-01T04:28:27.810568+00:00",
+  "approval_basis_sha256": "126126a00682db4054d51154f0334b0bfec1211d5d79218bdb6c01fc0088c4f9",
+  "human_identity": "Not cryptographically verified; no personal name asserted"
+}

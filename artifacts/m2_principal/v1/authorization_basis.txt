@@ -1,0 +1,498 @@
+DyNACO — M2 Autonomous End-to-End Principal Experiment
+
+Mission
+
+Complete the registered M2 Sequential Route Refinement (SRR) scheduling study autonomously, from final pre-launch verification to principal execution, independent result analysis, research reporting, and Git delivery.
+
+The user submitting this instruction explicitly authorizes the complete registered M2 principal study, subject to all frozen scientific, resource, correctness, and safety constraints.
+
+Do not request additional manual approval or confirmation between stages.
+
+Proceed automatically when every mandatory gate passes. Stop immediately and preserve evidence when a mandatory gate fails.
+
+Do not fabricate approval provenance, bypass authorization checks, modify frozen protocol parameters, retry failed scientific cases, or silently repair a failed experiment.
+
+1. Repository and frozen research identity
+
+Repository: tdattm/DyNACO
+
+Branch: codex/srr-registration-p2
+
+Expected packaging HEAD:
+466706b1163155561ecad37be8367cadba61a9ef
+
+Registered implementation commit:
+07af7acf09e1685db3c61500579f65420148b3dc
+
+Frozen registration SHA256:
+5d2d8942f900d4d1a4ef89e069668c3d0290d17c628d058150ffe6998d5bca45
+
+Authoritative files:
+
+* artifacts/srr_p2/v1/FINAL_PROTOCOL.md
+* artifacts/srr_p2/v1/registration.json
+* artifacts/srr_p2/v1/registration.sha256
+* artifacts/srr_p2/v1/dispatch.json
+* artifacts/srr_p2/v1/FINAL_REVIEW_REPORT.md
+* artifacts/srr_p2/v1/independent_audit.json
+* artifacts/srr_p2/v1/final_validation/tests.json
+* srr_p2/README.md
+* srr_p2/core.py
+* srr_p2/execute.py
+* srr_p2/worker.py
+* srr_p2/runner.py
+
+Historical research decisions must remain unchanged:
+
+* R3 Stage A: NO-GO.
+* R3 secondary review: INCONCLUSIVE.
+* M0: VALIDATED.
+* M1 v1: INCONCLUSIVE (technical).
+* M1 v2: EXPLORATORY SIGNAL.
+* M1.5: 536 accepted events, 396 no-ops, 140 robust route mutations.
+* M2-P0: READY FOR PROTOCOL REVIEW.
+* M2-P1: READY FOR FINAL PROTOCOL FREEZE.
+* M2-P2: READY FOR EXPLICIT PRINCIPAL APPROVAL.
+
+This experiment evaluates an additional unchanged K32 SRR pass. It does NOT evaluate adaptive candidate-graph expansion.
+
+2. Autonomous execution policy
+
+You have one-time authorization through this user-submitted instruction to perform the registered principal study.
+
+Automatically perform:
+
+1. Independent pre-launch audit.
+2. Frozen environment and resource verification.
+3. Principal dataset generation and sealing.
+4. Creation of the required registration-bound execution authorization.
+5. Principal execution of all 192 registered runs.
+6. Independent numerical and statistical audit.
+7. GO/NO-GO or inconclusive decision.
+8. Research report and artifact packaging.
+9. Git commit and delivery.
+
+Do not stop merely to request human confirmation between these stages.
+
+Nevertheless, all mandatory technical gates remain binding.
+
+The existing authorization fields must be populated truthfully. Record the source of approval as this user-submitted execution instruction, with an actual execution timestamp and available operator/session provenance.
+
+Do not invent a person’s name, forge a human signature, or claim cryptographic identity verification that did not occur.
+
+Archive the authorization basis and its SHA256 as part of the provenance record.
+
+If the frozen workflow requires approval evidence that cannot honestly be established from this instruction, stop with an authorization blocker rather than fabricating it.
+
+3. Stage A — Pre-launch verification
+
+Before generating principal data or creating the persistent launch claim:
+
+Registration integrity
+
+Verify:
+
+* Git branch, ancestry and clean working tree.
+* Exact registration SHA256.
+* Frozen protocol SHA256.
+* Dispatch SHA256 and 192 unique identities.
+* All registered source hashes.
+* Production binary SHA256.
+* Checkpoint SHA256.
+* Native dependency availability.
+* Frozen Python, NumPy, Torch, CUDA and compiler environment.
+* The exact registered RTX 3050 GPU.
+* Previously completed P2 technical gates.
+
+Recompute hashes independently.
+
+Do not modify registered source files or historical artifacts.
+
+Resource readiness
+
+Verify:
+
+* GPU availability and no conflicting workloads.
+* Two CPU threads.
+* Sufficient system memory.
+* CUDA memory availability.
+* Free disk space for all expected outputs.
+* Write permissions.
+* Required WSL and native library paths.
+* Parent watchdog functionality.
+* No existing principal launch claim.
+* No existing conflicting output directory.
+* No active conflicting GPU lock.
+
+Estimate disk requirements using actual P2 development artifacts, journal record sizes and the registered iteration/budget modes.
+
+Require conservative free-space headroom.
+
+Verify that all read-only preflight actions can complete before creating the persistent claim.
+
+Pre-launch decision
+
+If every check passes, continue automatically.
+
+If a blocker exists, stop with an explicit classification and preserve the audit. Do not change the frozen scientific protocol or delete any persistent claim.
+
+4. Stage B — Principal dataset generation and sealing
+
+Only after Stage A passes, generate the registered dataset exactly as specified:
+
+import numpy as np
+rng = np.random.Generator(np.random.PCG64(202612070201))
+instances = rng.random((16, 1000, 2), dtype=np.float32)
+
+Requirements:
+
+* Exactly 16 independent uniform Euclidean TSP1K instances.
+* Exactly one persisted dataset.
+* Correct registered NumPy version.
+* C-contiguous float32 representation.
+* No rescaling, rejection, filtering or replacement.
+* No use of Stage A reserved confirmation data.
+* No inspection or selection based on tour quality.
+* No trial dataset search.
+
+Persist the exact .npy file atomically.
+
+Generate a complete provenance record documenting generator specification, environment, timestamp, output path and SHA256.
+
+Independently verify the saved bytes against the deterministic registered generator specification. An in-memory deterministic verification is permitted solely to check the already selected dataset, never to produce an alternative dataset or choose among multiple draws.
+
+Produce the sealed dataset manifest with:
+
+* role = M2_PRINCIPAL_SEALED
+* Frozen registration SHA256.
+* Exact dataset filename.
+* Exact dataset SHA256.
+
+Verify the seal before any solver invocation.
+
+If generation, provenance or sealing fails, preserve evidence and stop. Never substitute a different dataset.
+
+5. Stage C — Bound execution authorization
+
+After successful sealing, create the authorization artifact required by the frozen P2 orchestrator.
+
+Use the registered action:
+
+APPROVE_M2_PRINCIPAL_192
+
+Bind authorization to:
+
+1. Exact frozen registration SHA256.
+2. Exact sealed dataset-manifest SHA256.
+3. This user-submitted one-time execution authorization.
+4. Actual execution timestamp.
+5. Available truthful operator provenance.
+
+Do not invent a human identity.
+
+Record the authorization artifact SHA256.
+
+Revalidate registration, dataset and resource prerequisites immediately before the principal launch.
+
+Do not bypass, weaken or remove any existing authorization check.
+
+6. Stage D — Principal experiment
+
+Use the already registered P2 orchestration without modifying its frozen execution semantics.
+
+Run exactly the registered 192-run matrix:
+
+* 16 TSP1K instances.
+* Three paired execution seeds: 31415, 27182, 16180.
+* Two arms: original K32 SRR and exactly two-pass K32 SRR.
+* Two budget modes: equal iterations and equal wall time.
+
+Equal-iteration mode
+
+* Exactly 1,000 completed iterations.
+* 100 ants.
+* Original checkpoint and neural guidance.
+* Original native seed derivation.
+* Same frozen candidate graph and pheromone settings.
+* Report actual runtime and evaluation counts.
+
+Equal-wall-time mode
+
+* Exactly 4.0 seconds registered search budget.
+* Variable completed iteration counts.
+* Preserve the 100-iteration guidance refresh schedule.
+* Primary result uses only the last completed synchronized state whose timestamp is at or before 4.0 seconds.
+* Never credit an over-budget iteration.
+* Retain all attempted work and overshoot information.
+
+Execution invariants
+
+* Use the frozen dispatch order.
+* No extra algorithm variants.
+* No new seeds.
+* No candidate expansion.
+* No neural retraining.
+* No changes to native 2-opt arithmetic.
+* No numerical no-op correction.
+* No new adaptive scheduling policy.
+* No modification to R1 or R3 experiments.
+* No selective exclusion.
+* No retries after a principal failure.
+* No post-hoc budget changes.
+* No early scientific GO decisions.
+
+Both arms must use the registered lightweight telemetry.
+
+Detailed route-copy diagnostics remain disabled.
+
+Do not subtract the previously observed telemetry overhead from measured time. Equal-time conclusions refer to the instrumented implementations.
+
+7. Hard resource controls
+
+Retain the frozen limits:
+
+* One GPU workload at a time.
+* Two CPU threads.
+* RTX 3050.
+* CUDA allocated-memory cap: 1 GiB.
+* Process RSS cap: 3 GiB.
+* Per-run equal-iteration search cap: 60 seconds.
+* Per-run setup cap: 120 seconds.
+* Aggregate experiment cap: 45 minutes, including registered setup, warmup, search, serialization and analysis.
+
+Preserve parent-process watchdog behavior.
+
+Do not extend budgets automatically.
+
+If any resource cap is exceeded, terminate according to the registered safety procedure and classify the study as RESOURCE-INCONCLUSIVE.
+
+Keep completed records and any partial journal.
+
+Never delete or reset the persistent launch claim to rerun the study.
+
+8. Evidence collection
+
+For every registered run, preserve:
+
+* Run identity and arm.
+* Dataset and execution seed.
+* Native RNG seed.
+* Full configuration.
+* Global-best tour states.
+* Completed iteration timestamps.
+* Actual completed iteration count.
+* In-budget and over-budget classification.
+* Primary float64 tour length.
+* Native SRR call count.
+* Native candidate evaluation count.
+* CPU/GPU timing.
+* Setup and warmup timing.
+* CUDA allocated/reserved memory.
+* Peak RSS.
+* Validation status.
+* File SHA256 hashes.
+
+Preserve raw .npz, JSON and crash journal artifacts.
+
+Never overwrite previous run evidence.
+
+A technical failure must not be represented as a zero improvement or as scientific NO-GO.
+
+9. Stage E — Independent numerical audit
+
+Only after all 192 runs have completed successfully:
+
+Independently verify:
+
+* Exactly 192 valid unique records.
+* Every registered instance/seed/arm/mode combination is present.
+* All tours are valid TSP permutations.
+* All primary tour lengths are recomputed in float64.
+* Equal-iteration runs completed 1,000 iterations.
+* Equal-time runs credit only eligible completed iterations.
+* Native call counts match the registered arm configuration.
+* No resource limit was violated.
+* All inputs and executable hashes match registration.
+* No duplicated or substituted experimental records.
+* No unsupported output alterations.
+
+Use a separate read-only analysis implementation for cross-checking where practical.
+
+If the full grid cannot be validated, classify the entire study as INCONCLUSIVE or RESOURCE-INCONCLUSIVE as appropriate.
+
+Do not compute an official scientific GO/NO-GO from a partial grid.
+
+10. Stage F — Statistical analysis
+
+Use the frozen scientific analysis protocol.
+
+For each instance, seed and budget mode, calculate:
+
+relative_gain = (control_length - treatment_length) / control_length
+
+Average the three paired seed-level gains within each independent TSP instance.
+
+Analyze the 16 instance-level summaries, not 48 seed-runs as independent observations.
+
+For each budget mode report:
+
+* Mean paired improvement.
+* Median paired improvement.
+* Sample standard deviation.
+* Minimum and maximum.
+* Number of positive instances.
+* All 16 instance-level effects.
+* Bootstrap 95% percentile confidence interval using 10,000 resamples.
+* Registered bootstrap seed 202612070202.
+* Per-run and per-instance raw metrics.
+* Actual iterations, runtime, evaluations and memory.
+
+Also report anytime global-best quality without crediting future states.
+
+Do not modify the registered bootstrap procedure or statistical thresholds.
+
+Scientific decision
+
+Apply the frozen co-primary GO rule.
+
+GO requires BOTH budget modes to satisfy:
+
+1. Median instance-level improvement at least 0.1%.
+2. Positive lower bound of the mean-bootstrap 95% interval.
+3. At least 12 of 16 instances with positive mean improvement.
+
+For a complete valid experiment:
+
+* All criteria satisfied: M2 SCIENTIFIC GO.
+* Otherwise: M2 SCIENTIFIC NO-GO.
+
+For incomplete or invalid evidence:
+
+* Technical/correctness failure: M2 INCONCLUSIVE.
+* Resource failure: M2 RESOURCE-INCONCLUSIVE.
+
+Report the decision faithfully even if the result contradicts M1 v2 exploratory evidence.
+
+Do not treat this screening rule as a formally calibrated significance test.
+
+11. Stage G — Research report
+
+Create a complete, professional scientific report including:
+
+11.1 Research question
+
+Does one additional unchanged K32 SRR pass improve end-to-end DyNACO under matched computational budgets?
+
+11.2 Experimental methodology
+
+Document dataset, seeds, solver settings, checkpoint, hardware, telemetry, resource caps, budgets and registration hashes.
+
+11.3 End-to-end results
+
+Provide separate results for:
+
+* Equal iterations.
+* Equal wall time.
+
+Include actual measured differences, not hypothetical or reconstructed results.
+
+11.4 Computational trade-offs
+
+Explain quality versus:
+
+* Runtime.
+* Native candidate evaluations.
+* Completed iterations.
+* CPU/GPU memory.
+* Measurement overhead.
+
+11.5 Statistical analysis
+
+Include all registered instance-level summaries, uncertainty and decisions.
+
+11.6 Limitations
+
+Explicitly discuss:
+
+* Only TSP1K studied.
+* Only 16 independent instances.
+* Three execution seeds.
+* RTX 3050 environment.
+* Instrumented implementation overhead.
+* One frozen DyNACO checkpoint.
+* No causal isolation of native duplicate suppression.
+* No evidence for adaptive candidate graph expansion.
+* Limitations of the prospective GO screening rule.
+
+11.7 Research recommendation
+
+If scientific GO, propose a separate follow-up protocol for broader independent confirmation and scaling to 5K/10K when resources permit.
+
+If scientific NO-GO, recommend stopping or redesigning the additional SRR scheduling direction, with the failed criteria identified.
+
+If INCONCLUSIVE, explain precisely why and recommend a separate future registration rather than silently rerunning this study.
+
+Do not automatically begin any follow-up experiment.
+
+12. Stage H — Delivery and Git
+
+Create a new versioned principal-results namespace, separate from frozen P0/P1/P2 artifacts.
+
+Deliver:
+
+* Principal dataset and sealed manifest.
+* Execution authorization provenance.
+* Registration references.
+* Raw run results.
+* Per-run journals and validations.
+* Full-grid audit.
+* Statistical summaries.
+* Human-readable research report.
+* Machine-readable scientific decision.
+* Input/output SHA256 manifests.
+* Final research handoff.
+
+Commit the completed evidence to a dedicated results branch.
+
+Push automatically to the corresponding remote branch only if:
+
+* All repository safety checks pass.
+* File sizes and repository policy permit the push.
+* No historical artifact is overwritten.
+* No force push is necessary.
+* The commit accurately represents COMPLETE, INCONCLUSIVE or RESOURCE-INCONCLUSIVE status.
+
+If the push is unavailable or unsafe, keep the local committed artifacts intact and report the exact blocker.
+
+Never force-push, rewrite historical commits or merge into main.
+
+Do not represent an unsuccessful or incomplete run as completed.
+
+13. Execution policy and final response
+
+This is a single autonomous workflow. Do not ask the user for intermediate approval.
+
+Proceed in the following order:
+
+Preflight → Dataset generation → Dataset sealing → Bound authorization → Principal execution → Independent audit → Statistical analysis → Research report → Commit/delivery.
+
+If all mandatory gates pass, carry out the entire workflow.
+
+If any mandatory gate fails, stop safely, preserve evidence, and provide the corresponding blocker report.
+
+Do not start new research directions, additional datasets or confirmatory experiments after the registered M2 study.
+
+Your final response must provide:
+
+1. Exact Git commit and branch.
+2. Frozen registration and dataset SHA256.
+3. Actual number of completed and valid runs.
+4. Actual resource consumption.
+5. Equal-iteration findings.
+6. Equal-wall-time findings.
+7. Official M2 scientific decision.
+8. Report/artifact locations.
+9. Delivery/push status.
+10. One evidence-grounded recommendation for the next research step.
+
+Scientific integrity takes priority over obtaining a positive result or finishing all 192 runs.

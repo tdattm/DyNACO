@@ -1,0 +1,13 @@
+{
+  "expected_packaging_HEAD": "466706b1163155561ecad37be8367cadba61a9ef",
+  "implementation_commit": "07af7acf09e1685db3c61500579f65420148b3dc",
+  "files": {
+    "FINAL_PROTOCOL.md": "574cd6781e7a026951521e12bfdef28f5790752289c029f21b8db0f4e5e5dedd",
+    "registration.json": "5d2d8942f900d4d1a4ef89e069668c3d0290d17c628d058150ffe6998d5bca45",
+    "registration.sha256": "c6665814e73eea0e5eff4fb3489885e0d1177b6d27892cf3c29453f484fcb1f8",
+    "dispatch.json": "874eb02f9afe8642a90bffb272137c42548f51ed09dc6e179ba8dc4002657efe",
+    "FINAL_REVIEW_REPORT.md": "45273474d0b97be1d577f52b3b85a93d77bd7e4354d64a18412c7c3d7b524a09",
+    "independent_audit.json": "8b2f6913c63fb0bd22d93e323d42fda959aaf4a6ccb2bfe630db4f79eb98f1ff",
+    "final_validation/tests.json": "39fe1dcdf0db69dcc8f87c37c90b0a0588532c38703c6e5685875d237f6a4784"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "NOT_RUN",
+  "reason": "Preflight stopped before data generation; no official statistics on a partial grid",
+  "completed": 0,
+  "valid": 0,
+  "missing": 192,
+  "equal_iteration_findings": null,
+  "equal_wall_findings": null
+}

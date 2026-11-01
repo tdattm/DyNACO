@@ -1,0 +1,9 @@
+{
+  "registration_sha256": "5d2d8942f900d4d1a4ef89e069668c3d0290d17c628d058150ffe6998d5bca45",
+  "authorization_basis_sha256": "126126a00682db4054d51154f0334b0bfec1211d5d79218bdb6c01fc0088c4f9",
+  "source_files": {
+    "m2_principal/package_stop.py": "6defa8fafa859fb5010ba7c29937f8a83e25f5c5b5fdaa30a16fa0615519a2d1",
+    "m2_principal/preflight.py": "1510ebd8a48a8070f1a8a57f5ab20dfd2120a02248659c8dd8253776cb8c2e3e",
+    "m2_principal/provenance.py": "f494f986150f9e420771b761ff207310232db9ad997d10eaa24bf7050e8892c7"
+  }
+}
